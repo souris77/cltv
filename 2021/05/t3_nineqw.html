@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>简简单单引个流</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nineqw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/wobushiyinzei">wobushiyinzei</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nineqw">May 22 2021 17:19:33</a>
+    </p>
+    <strong>简简单单引个流</strong>
+    <p><a href="https://www.reddit.com/r/CLTV/comments/nincsl/%E5%85%B8%E4%B8%AD%E5%85%B8%E4%B9%8B%E4%BE%BF%E5%AE%9C%E5%9B%9B%E8%82%A2%E5%97%AF%E9%80%A0/">https://www.reddit.com/r/CLTV/comments/nincsl/%E5%85%B8%E4%B8%AD%E5%85%B8%E4%B9%8B%E4%BE%BF%E5%AE%9C%E5%9B%9B%E8%82%A2%E5%97%AF%E9%80%A0/</a></p>
+</div>
+<div class="comment" id="t1_gz36z23">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/te3bagmafia">te3bagmafia</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nineqw/_/gz36z23">May 22 2021 19:58:35</a>
+    </p>
+    <div class="collapsible">
+        <p>霸霸霸霸 霸霸霸 霸霸霸霸</p>
+        <div class="comment" id="t1_gz8mn99">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Puzzled_Grapefruit57">Puzzled_Grapefruit57</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nineqw/_/gz8mn99">May 24 2021 04:21:01</a>
+    </p>
+    <div class="collapsible">
+        <p>阿黛西哟</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

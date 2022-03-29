@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>胡总编，你是真正的快乐吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lnesuo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/humblehamster123">humblehamster123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lnesuo">Feb 19 2021 12:33:19</a>
+    </p>
+    <strong>胡总编，你是真正的快乐吗？</strong>
+    <p><a href="https://v.redd.it/y05n5hvkhfi61">https://v.redd.it/y05n5hvkhfi61</a></p>
+</div>
+<div class="comment" id="t1_go009c4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/humblehamster123">humblehamster123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lnesuo/_/go009c4">Feb 19 2021 12:33:29</a>
+    </p>
+    <div class="collapsible">
+        <p>注：素材取自于 《胡锡进：我生活在政府和读者之间 就像陀螺一会这么转一会那么转》</p>
+<p>音乐：《你不是真正的快乐》于潼</p>
+<p>主要是音乐长度不够，要不然我还想做一个缝合版。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

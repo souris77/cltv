@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Churching</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lo6seb">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/johnwang21">johnwang21</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lo6seb">Feb 20 2021 13:07:26</a>
+    </p>
+    <strong>Churching</strong>
+    <p><a href="https://i.redd.it/14unu9f2tmi61.jpg">https://i.redd.it/14unu9f2tmi61.jpg</a></p>
+</div>
+<div class="comment" id="t1_go4bwa8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiao_e">xiao_e</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lo6seb/_/go4bwa8">Feb 20 2021 14:06:18</a>
+    </p>
+    <div class="collapsible">
+        <p>多发点漏点的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_go4s6ac">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/antispiderr">antispiderr</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lo6seb/_/go4s6ac">Feb 20 2021 16:37:05</a>
+    </p>
+    <div class="collapsible">
+        <p>媽媽媽媽媽媽媽媽媽媽媽們媽</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

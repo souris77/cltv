@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>鼠鼠竞赛</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rm1xxh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendshipPitiful719">FriendshipPitiful719</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rm1xxh">Dec 22 2021 09:53:43</a>
+    </p>
+    <strong>鼠鼠竞赛</strong>
+    <p><a href="https://youtu.be/HjTg1G8rpVc">https://youtu.be/HjTg1G8rpVc</a></p>
+</div>
+<div class="comment" id="t1_hpjh20h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Low-Rip3897">Low-Rip3897</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rm1xxh/_/hpjh20h">Dec 22 2021 10:07:33</a>
+    </p>
+    <div class="collapsible">
+        <p>在支多玛，参加rat race先得有金币可爆，爆不了就直接下放gusano race</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

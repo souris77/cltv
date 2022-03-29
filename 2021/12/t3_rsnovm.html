@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这下微博国有了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rsnovm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yomome">yomome</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rsnovm">Dec 31 2021 06:43:41</a>
+    </p>
+    <strong>这下微博国有了</strong>
+    <p><a href="https://i.redd.it/vbynbc4tqt881.jpg">https://i.redd.it/vbynbc4tqt881.jpg</a></p>
+</div>
+<div class="comment" id="t1_hqnotci">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rsnovm/_/hqnotci">Dec 31 2021 07:41:56</a>
+    </p>
+    <div class="collapsible">
+        <p>smg好像也持股了睿站</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqns4fg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Neat-Example3098">Neat-Example3098</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rsnovm/_/hqns4fg">Dec 31 2021 08:22:55</a>
+    </p>
+    <div class="collapsible">
+        <p>看到这事，我看到一个粉蛆说早该管控微博了，好事儿。实在支得我恶心，还嫌管控得不够多是吧。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

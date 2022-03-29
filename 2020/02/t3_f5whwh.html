@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Hokusai Gojira</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_f5whwh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Carl-Washington">Carl-Washington</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f5whwh">Feb 18 2020 18:43:14</a>
+    </p>
+    <strong>Hokusai Gojira</strong>
+    <p><a href="https://i.redd.it/27gwk5ki9qh41.jpg">https://i.redd.it/27gwk5ki9qh41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fi16kib">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Carl-Washington">Carl-Washington</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f5whwh/_/fi16kib">Feb 18 2020 18:47:15</a>
+    </p>
+    <div class="collapsible">
+        <p>Find it &rt;&rt;  <a href="https://twitter.com/byhuinso/status/1229840680857399301">https://twitter.com/byhuinso/status/1229840680857399301</a></p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

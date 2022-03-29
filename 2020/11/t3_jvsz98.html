@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>双重乐子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jvsz98">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ShunfeiZhang">ShunfeiZhang</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jvsz98">Nov 17 2020 13:29:48</a>
+    </p>
+    <strong>双重乐子</strong>
+    <p><a href="https://v.redd.it/ztjjdkrfysz51">https://v.redd.it/ztjjdkrfysz51</a></p>
+</div>
+<div class="comment" id="t1_gcm0tux">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GLero671">GLero671</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jvsz98/_/gcm0tux">Nov 17 2020 14:21:12</a>
+    </p>
+    <div class="collapsible">
+        <p>挺带感的，像经文</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gcp4ptw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kaleeric34">kaleeric34</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jvsz98/_/gcp4ptw">Nov 18 2020 07:07:50</a>
+    </p>
+    <div class="collapsible">
+        <p>冰火两重天是吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

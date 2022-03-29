@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>获得感</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rhixs8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/henanpunk">henanpunk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhixs8">Dec 16 2021 04:53:48</a>
+    </p>
+    <strong>获得感</strong>
+    <p><a href="https://i.redd.it/7obfmfwd5u581.jpg">https://i.redd.it/7obfmfwd5u581.jpg</a></p>
+</div>
+<div class="comment" id="t1_hoqtjln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhixs8/_/hoqtjln">Dec 16 2021 05:12:29</a>
+    </p>
+    <div class="collapsible">
+        <p>湾友？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horghnp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XJPassholefucker">XJPassholefucker</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhixs8/_/horghnp">Dec 16 2021 09:44:12</a>
+    </p>
+    <div class="collapsible">
+        <p>湾友能不能给点力把死码滞台臺支遣送过来啊，我们鼠鼠烂就算了总得留个念想吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

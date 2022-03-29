@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>要素过多，有其父必有其子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rnjjmk">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/giveitem">giveitem</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rnjjmk">Dec 24 2021 10:23:57</a>
+    </p>
+    <strong>要素过多，有其父必有其子</strong>
+    <p><p>来源: 《人民日报》1967年11月2日 </p>
+<p>https://preview.redd.it/4mwjt7cmvg781.jpg?width=1468&amp;format=pjpg&amp;auto=webp&amp;s=a6033a20e928b91c23610c4c43477938c76c5517</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

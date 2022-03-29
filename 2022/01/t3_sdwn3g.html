@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>这下无小礼无大义了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sdwn3g">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/vvsoymilk">vvsoymilk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sdwn3g">Jan 27 2022 11:51:03</a>
+    </p>
+    <strong>这下无小礼无大义了</strong>
+    <p><a href="https://i.redd.it/yi1wry0ay7e81.jpg">https://i.redd.it/yi1wry0ay7e81.jpg</a></p>
+</div>
+<div class="comment" id="t1_huffbm2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/vvsoymilk">vvsoymilk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sdwn3g/_/huffbm2">Jan 27 2022 11:55:12</a>
+    </p>
+    <div class="collapsible">
+        <p>拆那基本是无缘世界杯了 希望2026也见不到</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

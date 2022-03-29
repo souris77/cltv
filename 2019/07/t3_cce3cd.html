@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>中文Twitter十大网红</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cce3cd">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Daltonism">Daltonism</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cce3cd">Jul 12 2019 17:45:20</a>
+    </p>
+    <strong>中文Twitter十大网红</strong>
+    <p><a href="https://youtu.be/8jlyw-qt5Ew">https://youtu.be/8jlyw-qt5Ew</a></p>
+</div>
+<div class="comment" id="t1_etnrxfc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wlll5">wlll5</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cce3cd/_/etnrxfc">Jul 13 2019 06:05:01</a>
+    </p>
+    <div class="collapsible">
+        <p>整笑了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eu4b5si">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wxdot1">wxdot1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cce3cd/_/eu4b5si">Jul 18 2019 10:57:43</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈笑死我了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

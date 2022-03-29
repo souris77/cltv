@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>喔嚯</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ra43xn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/henanpunk">henanpunk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ra43xn">Dec 06 2021 10:18:24</a>
+    </p>
+    <strong>喔嚯</strong>
+    <p><a href="https://i.redd.it/7usj3uc6ew381.png">https://i.redd.it/7usj3uc6ew381.png</a></p>
+</div>
+<div class="comment" id="t1_hng1a55">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/langlangzi">langlangzi</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ra43xn/_/hng1a55">Dec 06 2021 10:47:16</a>
+    </p>
+    <div class="collapsible">
+        <p>政权交接的平稳运行</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hng1hhd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Suan-sun">Suan-sun</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ra43xn/_/hng1hhd">Dec 06 2021 10:50:06</a>
+    </p>
+    <div class="collapsible">
+        <p>什么东西？没有前因后果的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hng9ltk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SINOKITES">SINOKITES</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ra43xn/_/hng9ltk">Dec 06 2021 12:30:46</a>
+    </p>
+    <div class="collapsible">
+        <p>恒大？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

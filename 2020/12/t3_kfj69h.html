@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>防谁？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kfj69h">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Senbonkokome">Senbonkokome</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kfj69h">Dec 18 2020 11:05:34</a>
+    </p>
+    <strong>防谁？</strong>
+    <p><a href="https://www.reddit.com/gallery/kfj69h">https://www.reddit.com/gallery/kfj69h</a></p>
+</div>
+<div class="comment" id="t1_gg8oy3f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/John-pork">John-pork</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kfj69h/_/gg8oy3f">Dec 18 2020 11:10:56</a>
+    </p>
+    <div class="collapsible">
+        <p>繃不住了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gg9jssn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/good_baby">good_baby</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kfj69h/_/gg9jssn">Dec 18 2020 16:36:06</a>
+    </p>
+    <div class="collapsible">
+        <p>这种属于违法还是犯罪，法老嗨说一下</p>
+        <div class="comment" id="t1_ggashkx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/unbalancedstack">unbalancedstack</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kfj69h/_/ggashkx">Dec 18 2020 22:00:07</a>
+    </p>
+    <div class="collapsible">
+        <p>不好说，主要是看习大大知不知道这件事。“能谤讥于市朝，闻寡人之耳者，处三年以上七年以下有期徒刑。” 不知道的话算违法，知道就算犯罪了。</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

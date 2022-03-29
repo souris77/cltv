@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Are you sober now?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qbcnsx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendlySomewhere870">FriendlySomewhere870</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbcnsx">Oct 19 2021 14:28:21</a>
+    </p>
+    <strong>Are you sober now?</strong>
+    <p><a href="https://youtu.be/c5vh7jtrW2Y">https://youtu.be/c5vh7jtrW2Y</a></p>
+</div>
+<div class="comment" id="t1_hhfd6k6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Visible-Ad-8835">Visible-Ad-8835</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbcnsx/_/hhfd6k6">Oct 20 2021 23:31:36</a>
+    </p>
+    <div class="collapsible">
+        <p>什麼暗黑列儂</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

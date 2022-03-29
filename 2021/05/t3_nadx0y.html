@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>典</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nadx0y">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XhaBuDuoDeLe">XhaBuDuoDeLe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nadx0y">May 12 2021 02:08:05</a>
+    </p>
+    <strong>典</strong>
+    <p><a href="https://i.redd.it/yovl3tqorjy61.jpg">https://i.redd.it/yovl3tqorjy61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gxti3rb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Huayel">Huayel</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nadx0y/_/gxti3rb">May 12 2021 04:48:30</a>
+    </p>
+    <div class="collapsible">
+        <p>权力你可以说，但你不能有。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gxti7pi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/NOTCovidSpeader">NOTCovidSpeader</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nadx0y/_/gxti7pi">May 12 2021 04:49:41</a>
+    </p>
+    <div class="collapsible">
+        <p>什么911</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

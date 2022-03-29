@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>求问iOS如何可靠的防止支性app偷窥剪切板？（除了手动shortcuts指令外）</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oes745">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/kstavish">kstavish</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oes745">Jul 06 2021 10:24:51</a>
+    </p>
+    <strong>求问iOS如何可靠的防止支性app偷窥剪切板？（除了手动shortcuts指令外）</strong>
+    <p><p>如题，虽然把清空指令设置到底栏但跟人聊天查点东西难免要同时翻好几个app，而且运行指令本身也有卡顿，有无懂哥指导一哈？</p></p>
+</div>
+<div class="comment" id="t1_h486djp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AnnihilateGCD">AnnihilateGCD</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oes745/_/h486djp">Jul 06 2021 11:32:15</a>
+    </p>
+    <div class="collapsible">
+        <p>支国app何德何能调用苹果输入法的剪切板，连安卓都能拒绝权限</p>
+        <div class="comment" id="t1_h487jc4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ScreamSAW">ScreamSAW</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oes745/_/h487jc4">Jul 06 2021 11:46:51</a>
+    </p>
+    <div class="collapsible">
+        <p>苹果只会提示xxx应用调用了你的剪切板，没有禁用调用的选项</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>求救问题，我被关注了，但是看不到谁关注的我</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oiaq2m">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/WhiteHaloKing">WhiteHaloKing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oiaq2m">Jul 11 2021 19:18:11</a>
+    </p>
+    <strong>求救问题，我被关注了，但是看不到谁关注的我</strong>
+    <p><p>被关注列表显示有俩人，但是点开看不到，有没有懂老嗨解释解释为啥?</p></p>
+</div>
+<div class="comment" id="t1_h4u7ibo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Day31zzZ">Day31zzZ</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oiaq2m/_/h4u7ibo">Jul 11 2021 19:31:02</a>
+    </p>
+    <div class="collapsible">
+        <p>晶哥好手段</p>
+        <div class="comment" id="t1_h4u8dd5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oiaq2m/_/h4u8dd5">Jul 11 2021 19:38:06</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

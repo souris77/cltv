@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>红迪“升级”后，block功能的实际效果</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s9x06t">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FurudeSatoko">FurudeSatoko</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9x06t">Jan 22 2022 07:25:41</a>
+    </p>
+    <strong>红迪“升级”后，block功能的实际效果</strong>
+    <p><p>刚才看到有人发贴说红迪“升级”了（sub里发不了红迪站内链接，需要看红迪声明的话请自行补上通用前缀，后缀是：blog/comments/s71g03/announcing_blocking_updates/）block功能。我用小号测试了一下，目前的效果似乎和红迪宣布的效果不太一致。为了方便起见，下文中进行block的用户简称“block者”，被block的用户简称“被block者”：</p>
+<p>一、block者看不到被block者发的主题贴。即便通过链接直接进入也看不到正文，进行不了回复（除非解除block），但可以看到对该贴子的回复。block者看到的被block者发的回复会默认折叠，显示为“blocked account”，点击可以展开折叠，但是仍然无法回复（除非解除block）。</p>
+<p>二、block者在电脑端进不去被block者的用户主页，导致block似乎没法通过电脑端解除。移动端网页版可以进入被block者的主页，并且有unblock选项能解除block。但是看不到被block者发过的主题贴和回复（除非解除block）。</p>
+<p>三、被block者<strong>看得到</strong>block者发的主题贴和回复贴，但是没有回复的选项，在相应主题贴的回复或相应回复的楼中楼里也没法回复（即使楼中楼不是block者发的）。被block者点赞点踩不会改变block者的karma。</p>
+<p>四、被block者进入block者的用户主页后，看不到block者发过的主题贴或回复。</p>
+<p>五、mod被block基本不对mod产生影响，可以在该sub内照常回复。</p></p>
+</div>
+<div class="comment" id="t1_htpsn4j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FurudeSatoko">FurudeSatoko</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9x06t/_/htpsn4j">Jan 22 2022 07:28:55</a>
+    </p>
+    <div class="collapsible">
+        <p>在本次升级前，被block者可以正常回复block者发的主题贴和回复，也能正常查看block者的用户主页，只是无法私信；block者看不到被block者发的主题贴，看被block者发的回复会默认折叠显示。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htq6vy9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Arachnicide_Daisa">Arachnicide_Daisa</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9x06t/_/htq6vy9">Jan 22 2022 10:16:52</a>
+    </p>
+    <div class="collapsible">
+        <p>比贴吧超会那种单方面拷打合理</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

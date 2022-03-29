@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>大的要来了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_srgja0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/JINPING_ARASAKA">JINPING_ARASAKA</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/srgja0">Feb 13 2022 11:19:00</a>
+    </p>
+    <strong>大的要来了</strong>
+    <p><a href="https://v.redd.it/7yjvc8g14lh81">https://v.redd.it/7yjvc8g14lh81</a></p>
+</div>
+<div class="comment" id="t1_hwrmjmr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/srgja0/_/hwrmjmr">Feb 13 2022 11:32:51</a>
+    </p>
+    <div class="collapsible">
+        <p>记得有个视频是小孩开保时捷SUV的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hws77v0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Perfect-Example-2592">Perfect-Example-2592</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/srgja0/_/hws77v0">Feb 13 2022 14:56:02</a>
+    </p>
+    <div class="collapsible">
+        <p>很久以前的事了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

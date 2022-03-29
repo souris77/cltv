@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>简单抽张卡</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pqh0en">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Commercial-Welcome-5">Commercial-Welcome-5</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pqh0en">Sep 18 2021 06:08:06</a>
+    </p>
+    <strong>简单抽张卡</strong>
+    <p><a href="https://www.reddit.com/gallery/pqh0en">https://www.reddit.com/gallery/pqh0en</a></p>
+</div>
+<div class="comment" id="t1_hdawpy7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/shechingpink">shechingpink</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pqh0en/_/hdawpy7">Sep 18 2021 06:20:34</a>
+    </p>
+    <div class="collapsible">
+        <p>植物大战江尸是吧，🎵看你闹得欢，今后，拉清单，生产总值千万🎵哟哟哟哟哟哟哟哟，哟🎵图样图森破，图样图森破，你们呀，图森破，击败教授不通过，西方国家没去过，无可奉告苟利国，你们高，打新闻，特首钦定当吓人，谈笑风声的行程，我和来世肖你们，图样，艰难困苦</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

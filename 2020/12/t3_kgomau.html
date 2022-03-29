@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>杜紗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kgomau">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/taekohnuki">taekohnuki</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgomau">Dec 20 2020 05:44:48</a>
+    </p>
+    <strong>杜紗</strong>
+    <p><a href="https://v.redd.it/rnlrj55j5a661">https://v.redd.it/rnlrj55j5a661</a></p>
+</div>
+<div class="comment" id="t1_gggb9gp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Electric_Pork_Buns">Electric_Pork_Buns</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgomau/_/gggb9gp">Dec 20 2020 07:29:17</a>
+    </p>
+    <div class="collapsible">
+        <p>https://b23.tv/5kTMOc</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gggja13">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PAckage2048">PAckage2048</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgomau/_/gggja13">Dec 20 2020 09:50:03</a>
+    </p>
+    <div class="collapsible">
+        <p>绷不住</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ggh5y64">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Senbonkokome">Senbonkokome</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgomau/_/ggh5y64">Dec 20 2020 14:01:20</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

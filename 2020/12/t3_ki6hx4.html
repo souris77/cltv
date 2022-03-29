@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>死阿三開好頭是吧？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ki6hx4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/WarmBag52">WarmBag52</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ki6hx4">Dec 22 2020 14:37:05</a>
+    </p>
+    <strong>死阿三開好頭是吧？</strong>
+    <p><a href="https://i.redd.it/rgdg3wlc2r661.jpg">https://i.redd.it/rgdg3wlc2r661.jpg</a></p>
+</div>
+<div class="comment" id="t1_ggp17ek">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WarmBag52">WarmBag52</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ki6hx4/_/ggp17ek">Dec 22 2020 14:44:06</a>
+    </p>
+    <div class="collapsible">
+        <p>阿三 阿三 多少港友的生活，都被你毀了！</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>开盒喽</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_t1ky70">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/cyber-immigrant">cyber-immigrant</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t1ky70">Feb 26 2022 02:00:00</a>
+    </p>
+    <strong>开盒喽</strong>
+    <p><a href="https://i.redd.it/i8r6rtb643k81.jpg">https://i.redd.it/i8r6rtb643k81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hygnplz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zuyingsong">zuyingsong</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t1ky70/_/hygnplz">Feb 26 2022 02:02:05</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hygnqiw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/LobsterParty6916">LobsterParty6916</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t1ky70/_/hygnqiw">Feb 26 2022 02:02:17</a>
+    </p>
+    <div class="collapsible">
+        <p>不来段普京傻逼草你妈吗？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hyh7mda">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t1ky70/_/hyh7mda">Feb 26 2022 04:46:15</a>
+    </p>
+    <div class="collapsible">
+        <p>别睡太死</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

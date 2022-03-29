@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Madlads</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_f50k94">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/august0086">august0086</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f50k94">Feb 17 2020 01:06:54</a>
+    </p>
+    <strong>Madlads</strong>
+    <p><a href="https://i.redd.it/myv3ixem9ch41.jpg">https://i.redd.it/myv3ixem9ch41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fhw0im5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Br0nnOfTheBlackwater">Br0nnOfTheBlackwater</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f50k94/_/fhw0im5">Feb 17 2020 01:47:41</a>
+    </p>
+    <div class="collapsible">
+        <p>Dank。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fi1en2o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/trevzt">trevzt</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f50k94/_/fi1en2o">Feb 18 2020 20:03:47</a>
+    </p>
+    <div class="collapsible">
+        <p>老维尼了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

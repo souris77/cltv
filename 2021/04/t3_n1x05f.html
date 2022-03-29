@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>nmm的，这居然是真的</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_n1x05f">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/fastrunrun">fastrunrun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/n1x05f">Apr 30 2021 16:02:57</a>
+    </p>
+    <strong>nmm的，这居然是真的</strong>
+    <p><a href="https://i.redd.it/dn51lor93cw61.jpg">https://i.redd.it/dn51lor93cw61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gwi0mrr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/n1x05f/_/gwi0mrr">May 01 2021 02:34:02</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

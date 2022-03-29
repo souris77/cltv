@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>出来一个杀一个</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_hljx15">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/gredzeal">gredzeal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hljx15">Jul 05 2020 09:34:29</a>
+    </p>
+    <strong>出来一个杀一个</strong>
+    <p><a href="https://www.youtube.com/watch?v=KcbFClVFM9o">https://www.youtube.com/watch?v=KcbFClVFM9o</a></p>
+</div>
+<div class="comment" id="t1_fwzmdis">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liaoupupup">liaoupupup</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hljx15/_/fwzmdis">Jul 05 2020 11:15:46</a>
+    </p>
+    <div class="collapsible">
+        <p>还有这种歌的？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fx2lp9z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hzh123123321">hzh123123321</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hljx15/_/fx2lp9z">Jul 06 2020 05:22:31</a>
+    </p>
+    <div class="collapsible">
+        <p>我终于听明白摇滚的乐趣了。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fx37nbc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/_JerryZ_">_JerryZ_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hljx15/_/fx37nbc">Jul 06 2020 11:14:06</a>
+    </p>
+    <div class="collapsible">
+        <p>澎湃</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

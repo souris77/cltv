@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>什么时候点赞没字了，我这边只显示箭头</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nwkg8b">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/VD0NE">VD0NE</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwkg8b">Jun 10 2021 10:41:33</a>
+    </p>
+    <strong>什么时候点赞没字了，我这边只显示箭头</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_h19lc7a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/demoenival">demoenival</a>
+        |
+        <span class="score">12 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwkg8b/_/h19lc7a">Jun 10 2021 11:07:34</a>
+    </p>
+    <div class="collapsible">
+        <p>把reddit的夜间模式关了试试</p>
+        <div class="comment" id="t1_h19mdrp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/VD0NE">VD0NE</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwkg8b/_/h19mdrp">Jun 10 2021 11:20:08</a>
+    </p>
+    <div class="collapsible">
+        <p>换了有用，而且好像只有白天模式的原版主题有效</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_h19ju5z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/miyin0">miyin0</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwkg8b/_/h19ju5z">Jun 10 2021 10:48:39</a>
+    </p>
+    <div class="collapsible">
+        <p>我也，怎么会是呢</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h19kav3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lunixc">lunixc</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwkg8b/_/h19kav3">Jun 10 2021 10:54:35</a>
+    </p>
+    <div class="collapsible">
+        <p>疑似被标记了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h19k1j6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwkg8b/_/h19k1j6">Jun 10 2021 10:51:15</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

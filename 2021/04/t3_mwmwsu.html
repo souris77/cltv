@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>简单冲浪</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mwmwsu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lckaj">lckaj</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mwmwsu">Apr 23 2021 04:04:56</a>
+    </p>
+    <strong>简单冲浪</strong>
+    <p><a href="https://i.redd.it/sadl2udskuu61.jpg">https://i.redd.it/sadl2udskuu61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gvj3fgl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Emergency_Produce110">Emergency_Produce110</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mwmwsu/_/gvj3fgl">Apr 23 2021 04:07:13</a>
+    </p>
+    <div class="collapsible">
+        <p>什么晶哥收网</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvjg77z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mwmwsu/_/gvjg77z">Apr 23 2021 06:42:40</a>
+    </p>
+    <div class="collapsible">
+        <p>每天一个小技巧，教你如何减轻量刑</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

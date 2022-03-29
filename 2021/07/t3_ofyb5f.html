@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>支那の大智慧</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ofyb5f">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XiBaoZiShaBi">XiBaoZiShaBi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ofyb5f">Jul 08 2021 02:50:22</a>
+    </p>
+    <strong>支那の大智慧</strong>
+    <p><a href="https://i.redd.it/c5rpahxrkw971.jpg">https://i.redd.it/c5rpahxrkw971.jpg</a></p>
+</div>
+<div class="comment" id="t1_h4fjsxo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cjly3">cjly3</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ofyb5f/_/h4fjsxo">Jul 08 2021 02:52:56</a>
+    </p>
+    <div class="collapsible">
+        <p>一遍一遍都发同一个东西是吧，比贴吧还能水。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

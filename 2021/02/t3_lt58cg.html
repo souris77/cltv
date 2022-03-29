@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Reddit又在乳化</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lt58cg">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/redditdowcn">redditdowcn</a>
+        |
+        <span class="score">23 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt58cg">Feb 26 2021 19:09:13</a>
+    </p>
+    <strong>Reddit又在乳化</strong>
+    <p><a href="https://i.imgur.com/Gt2a12n.jpg">https://i.imgur.com/Gt2a12n.jpg</a></p>
+</div>
+<div class="comment" id="t1_govtnk0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KawasakiY">KawasakiY</a>
+        |
+        <span class="score">16 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt58cg/_/govtnk0">Feb 26 2021 20:45:08</a>
+    </p>
+    <div class="collapsible">
+        <p>再加上一个张维为表情贴图更加</p>
+        <div class="comment" id="t1_govvt4b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/200kgList">200kgList</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt58cg/_/govvt4b">Feb 26 2021 20:55:20</a>
+    </p>
+    <div class="collapsible">
+        <p>這就是中國 This is China</p>
+        <div class="comment" id="t1_gowlneu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/yogaskung">yogaskung</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt58cg/_/gowlneu">Feb 26 2021 23:06:31</a>
+    </p>
+    <div class="collapsible">
+        <p>China Now</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

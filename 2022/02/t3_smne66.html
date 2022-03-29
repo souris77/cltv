@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_smne66">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66">Feb 07 2022 10:50:35</a>
+    </p>
+    <strong>抽象</strong>
+    <p><a href="https://i.redd.it/gsjfhwsi5eg81.jpg">https://i.redd.it/gsjfhwsi5eg81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hvxivbz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TaidaQiongqu">TaidaQiongqu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66/_/hvxivbz">Feb 07 2022 10:56:09</a>
+    </p>
+    <div class="collapsible">
+        <p>两脚羊羊排是吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hvxl0bc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AMongolia">AMongolia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66/_/hvxl0bc">Feb 07 2022 11:23:15</a>
+    </p>
+    <div class="collapsible">
+        <p>嗯造两脚羊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hvxm53a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Dio-nysus">Dio-nysus</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66/_/hvxm53a">Feb 07 2022 11:36:40</a>
+    </p>
+    <div class="collapsible">
+        <p>商家故意的，还有个沉银</p>
+        <div class="comment" id="t1_hvxnq3l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kitagawahozo">kitagawahozo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66/_/hvxnq3l">Feb 07 2022 11:54:58</a>
+    </p>
+    <div class="collapsible">
+        <p>什麼意思</p>
+        <div class="comment" id="t1_hvxppmy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DisasterFine493">DisasterFine493</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66/_/hvxppmy">Feb 07 2022 12:16:44</a>
+    </p>
+    <div class="collapsible">
+        <p>在献忠溃败是把以前从巴蜀利亚掠夺来的金银沉入江内，便于日后重操图纸大业</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hvyafe6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Opposite-Message-997">Opposite-Message-997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/smne66/_/hvyafe6">Feb 07 2022 15:09:28</a>
+    </p>
+    <div class="collapsible">
+        <p>支式羊排为啥那么难吃</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

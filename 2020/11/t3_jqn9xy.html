@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>就嗯吱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jqn9xy">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/KitchenPool1176">KitchenPool1176</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jqn9xy">Nov 09 2020 00:36:05</a>
+    </p>
+    <strong>就嗯吱</strong>
+    <p><a href="https://i.redd.it/2xfimhp414y51.jpg">https://i.redd.it/2xfimhp414y51.jpg</a></p>
+</div>
+<div class="comment" id="t1_gbp3lux">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhinabig">zhinabig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jqn9xy/_/gbp3lux">Nov 09 2020 06:37:31</a>
+    </p>
+    <div class="collapsible">
+        <p>支那牲畜  haha</p>
+        <div class="comment" id="t1_gbpo3ce">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bomestick">Bomestick</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jqn9xy/_/gbpo3ce">Nov 09 2020 12:30:54</a>
+    </p>
+    <div class="collapsible">
+        <p>haha 后面加微笑才是</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>保留节目</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qb8ch3">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ShanDong_MAFIA">ShanDong_MAFIA</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qb8ch3">Oct 19 2021 10:05:53</a>
+    </p>
+    <strong>保留节目</strong>
+    <p><a href="https://i.redd.it/88c4zbvcsdu71.jpg">https://i.redd.it/88c4zbvcsdu71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hh7sdlg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dogccp">dogccp</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qb8ch3/_/hh7sdlg">Oct 19 2021 10:14:41</a>
+    </p>
+    <div class="collapsible">
+        <p>当场打死就不用抢救了 我就不信这帮人面畜生会放过他</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hh7vhr3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No_Calligrapher6690">No_Calligrapher6690</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qb8ch3/_/hh7vhr3">Oct 19 2021 10:56:20</a>
+    </p>
+    <div class="collapsible">
+        <p>龙岗是吧，马上到你家门口</p>
+        <div class="comment" id="t1_hh7z0yu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ShanDong_MAFIA">ShanDong_MAFIA</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qb8ch3/_/hh7z0yu">Oct 19 2021 11:37:50</a>
+    </p>
+    <div class="collapsible">
+        <p>不是，学校发的贴</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

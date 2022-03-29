@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>触摸屏</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_msdv15">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/styysxnkif">styysxnkif</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/msdv15">Apr 16 2021 22:14:39</a>
+    </p>
+    <strong>触摸屏</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_gus6xmk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/amodinnson">amodinnson</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/msdv15/_/gus6xmk">Apr 16 2021 23:29:47</a>
+    </p>
+    <div class="collapsible">
+        <p>心梗：触摸平</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gusviv5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ph0t0synthes1s">Ph0t0synthes1s</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/msdv15/_/gusviv5">Apr 17 2021 03:15:32</a>
+    </p>
+    <div class="collapsible">
+        <p>国内数码up：新iphone将会使用一块120hz刷新率的我不好说我擦</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gustc7u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Hugemouse123459">Hugemouse123459</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/msdv15/_/gustc7u">Apr 17 2021 02:54:02</a>
+    </p>
+    <div class="collapsible">
+        <p>我佛</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

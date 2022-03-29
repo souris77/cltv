@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>蚌</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p23cbf">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/_Psyber">_Psyber</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p23cbf">Aug 11 2021 01:49:27</a>
+    </p>
+    <strong>蚌</strong>
+    <p><a href="https://i.redd.it/fclhc8vvwmg71.png">https://i.redd.it/fclhc8vvwmg71.png</a></p>
+</div>
+<div class="comment" id="t1_h8hhexf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MundaneAssociation71">MundaneAssociation71</a>
+        |
+        <span class="score">12 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p23cbf/_/h8hhexf">Aug 11 2021 01:55:11</a>
+    </p>
+    <div class="collapsible">
+        <p>可不敢乱说</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8hllal">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OddBird_S">OddBird_S</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p23cbf/_/h8hllal">Aug 11 2021 02:30:12</a>
+    </p>
+    <div class="collapsible">
+        <p>新皮肤：阿里巴巴</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>微博</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sjizye">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/readingabook229">readingabook229</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjizye">Feb 03 2022 13:19:17</a>
+    </p>
+    <strong>微博</strong>
+    <p><p>用台灣網路好像不能上了（翻牆進去可以）
+一般瀏覽器&amp; app國際版都無法</p>
+<p>大的要來了嗎</p></p>
+</div>
+<div class="comment" id="t1_hvf03i0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Big_Uzi_Horizontal">Big_Uzi_Horizontal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjizye/_/hvf03i0">Feb 03 2022 13:22:48</a>
+    </p>
+    <div class="collapsible">
+        <p>太大了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hvf1254">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SameBrother">SameBrother</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjizye/_/hvf1254">Feb 03 2022 13:30:44</a>
+    </p>
+    <div class="collapsible">
+        <p>试了下，只有匪区的不能上</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hvf2nn6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/CaoMaKuangMo">CaoMaKuangMo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjizye/_/hvf2nn6">Feb 03 2022 13:43:41</a>
+    </p>
+    <div class="collapsible">
+        <p>清场</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

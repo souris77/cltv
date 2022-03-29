@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>新皮肤</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rywrwy">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/UnderstandingRespect">UnderstandingRespect</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rywrwy">Jan 08 2022 10:17:26</a>
+    </p>
+    <strong>新皮肤</strong>
+    <p><a href="https://www.reddit.com/gallery/rywrwy">https://www.reddit.com/gallery/rywrwy</a></p>
+</div>
+<div class="comment" id="t1_hrs4jjb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Witty-Albatross4149">Witty-Albatross4149</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rywrwy/_/hrs4jjb">Jan 08 2022 14:39:19</a>
+    </p>
+    <div class="collapsible">
+        <p>死神から逃げられない（悲）</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hrs6r7g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Emotional_Race7808">Emotional_Race7808</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rywrwy/_/hrs6r7g">Jan 08 2022 14:56:46</a>
+    </p>
+    <div class="collapsible">
+        <p>去看了，原视频删了这一段。全程没看到</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

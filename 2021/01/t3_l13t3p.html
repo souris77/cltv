@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>跟着节奏撸</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l13t3p">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/edm_miao">edm_miao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l13t3p">Jan 20 2021 06:49:56</a>
+    </p>
+    <strong>跟着节奏撸</strong>
+    <p><a href="https://v.redd.it/674ar4ncpfc61">https://v.redd.it/674ar4ncpfc61</a></p>
+</div>
+<div class="comment" id="t1_gjx87ns">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/b19980105">b19980105</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l13t3p/_/gjx87ns">Jan 20 2021 07:20:03</a>
+    </p>
+    <div class="collapsible">
+        <p>牛牛英雄</p>
+        <div class="comment" id="t1_gjx8xcu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/edm_miao">edm_miao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l13t3p/_/gjx8xcu">Jan 20 2021 07:30:25</a>
+    </p>
+    <div class="collapsible">
+        <p>这个世界需要英雄</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gjx745h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/edm_miao">edm_miao</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l13t3p/_/gjx745h">Jan 20 2021 07:04:26</a>
+    </p>
+    <div class="collapsible">
+        <p>没有音游大师吗？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>什么微服私访</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nmfr30">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Certain_Trip">Certain_Trip</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nmfr30">May 27 2021 19:42:57</a>
+    </p>
+    <strong>什么微服私访</strong>
+    <p><a href="https://i.redd.it/9tnwt0g34p171.jpg">https://i.redd.it/9tnwt0g34p171.jpg</a></p>
+</div>
+<div class="comment" id="t1_gzqtbkr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Dependent_Western269">Dependent_Western269</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nmfr30/_/gzqtbkr">May 28 2021 10:50:05</a>
+    </p>
+    <div class="collapsible">
+        <p>当年朕爷爷的皇军也从这里穿越而过，现在想来真是好不图支</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

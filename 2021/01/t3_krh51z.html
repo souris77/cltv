@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>我马云呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_krh51z">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/zhangjawen">zhangjawen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krh51z">Jan 06 2021 05:21:28</a>
+    </p>
+    <strong>我马云呢</strong>
+    <p><a href="https://i.redd.it/lxy5xk8lsj961.jpg">https://i.redd.it/lxy5xk8lsj961.jpg</a></p>
+</div>
+<div class="comment" id="t1_gi9xxfd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/twwalhoe">twwalhoe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krh51z/_/gi9xxfd">Jan 06 2021 05:48:43</a>
+    </p>
+    <div class="collapsible">
+        <p>这图行</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gia40fk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Famous-Collection684">Famous-Collection684</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krh51z/_/gia40fk">Jan 06 2021 07:01:40</a>
+    </p>
+    <div class="collapsible">
+        <p>🐎没了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

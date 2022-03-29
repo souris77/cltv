@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>你爱过吗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_of65w1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Rose_Murphy">Rose_Murphy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/of65w1">Jul 06 2021 22:53:57</a>
+    </p>
+    <strong>你爱过吗</strong>
+    <p><p>你爱过吗</p>
+<p><a href="https://www.reddit.com/poll/of65w1">View Poll</a></p></p>
+</div>
+<div class="comment" id="t1_h4alpl8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Experience9138">Ok-Experience9138</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/of65w1/_/h4alpl8">Jul 06 2021 23:21:03</a>
+    </p>
+    <div class="collapsible">
+        <p>你胆儿挺肥啊敢问这种问题</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

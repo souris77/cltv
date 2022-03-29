@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>是什么呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rnypwj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/SnooOwls9397">SnooOwls9397</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rnypwj">Dec 25 2021 00:40:56</a>
+    </p>
+    <strong>是什么呢</strong>
+    <p><a href="https://i.redd.it/1i8fxd1n4l781.jpg">https://i.redd.it/1i8fxd1n4l781.jpg</a></p>
+</div>
+<div class="comment" id="t1_hpvzxsc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/New-Edge-8765">New-Edge-8765</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rnypwj/_/hpvzxsc">Dec 25 2021 05:18:09</a>
+    </p>
+    <div class="collapsible">
+        <p>维!尼!猪!</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

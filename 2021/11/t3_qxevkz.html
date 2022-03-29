@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>注册了个新号，一天才发现发的东西别人都看不到</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qxevkz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yyq90">yyq90</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxevkz">Nov 19 2021 12:08:23</a>
+    </p>
+    <strong>注册了个新号，一天才发现发的东西别人都看不到</strong>
+    <p><p>啥意思？</p></p>
+</div>
+<div class="comment" id="t1_hl8vidi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxevkz/_/hl8vidi">Nov 19 2021 12:16:17</a>
+    </p>
+    <div class="collapsible">
+        <p>看wiki。冲浪TV回贴需要注册至少3天，发贴需要注册至少5天，否则自动移除。红迪上被mod移除贴子不一定有提示，被移除的贴子自己也依然能看见。</p>
+        <div class="comment" id="t1_hl8vmvg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxevkz/_/hl8vmvg">Nov 19 2021 12:17:35</a>
+    </p>
+    <div class="collapsible">
+        <p>想看自己被移除过多少贴子，可以Google搜索reveddit。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hl8x7v4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/yyq90">yyq90</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxevkz/_/hl8x7v4">Nov 19 2021 12:34:01</a>
+    </p>
+    <div class="collapsible">
+        <p>谢谢，我给你嗦牛子</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

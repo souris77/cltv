@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>真的哈人</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oo21af">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/diaojinhu">diaojinhu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oo21af">Jul 20 2021 13:28:47</a>
+    </p>
+    <strong>真的哈人</strong>
+    <p><a href="https://www.youtube.com/watch?v=p8wN_ydPHdo">https://www.youtube.com/watch?v=p8wN_ydPHdo</a></p>
+</div>
+<div class="comment" id="t1_h5vov3n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bnuygfc5577">bnuygfc5577</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oo21af/_/h5vov3n">Jul 20 2021 14:43:00</a>
+    </p>
+    <div class="collapsible">
+        <p>习特勒的加速主义</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h5x543w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Difficult_Day5625">Difficult_Day5625</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oo21af/_/h5x543w">Jul 20 2021 20:48:54</a>
+    </p>
+    <div class="collapsible">
+        <p>我打赌不敢打台湾，也就打打嘴炮，反正支那猪不敢造反</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

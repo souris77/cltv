@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>属实无脑</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_c46ot4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ChungCks">ChungCks</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c46ot4">Jun 23 2019 15:51:07</a>
+    </p>
+    <strong>属实无脑</strong>
+    <p><a href="https://i.redd.it/j91u8amyn4631.jpg">https://i.redd.it/j91u8amyn4631.jpg</a></p>
+</div>
+<div class="comment" id="t1_erv4jtu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aimerupup">Aimerupup</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c46ot4/_/erv4jtu">Jun 23 2019 16:10:11</a>
+    </p>
+    <div class="collapsible">
+        <p>什么游戏什么游戏？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ervgtjx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lostxia">lostxia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c46ot4/_/ervgtjx">Jun 23 2019 18:43:47</a>
+    </p>
+    <div class="collapsible">
+        <p>什么游戏？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_es5j2lu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/_b1ess_">_b1ess_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c46ot4/_/es5j2lu">Jun 27 2019 05:36:47</a>
+    </p>
+    <div class="collapsible">
+        <p>什么游戏</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

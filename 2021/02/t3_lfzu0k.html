@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>又怎样</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lfzu0k">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/rainbows233">rainbows233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lfzu0k">Feb 09 2021 10:26:24</a>
+    </p>
+    <strong>又怎样</strong>
+    <p><a href="https://i.redd.it/snnsv55bifg61.jpg">https://i.redd.it/snnsv55bifg61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gmoo0u2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Spiderman8964">Spiderman8964</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lfzu0k/_/gmoo0u2">Feb 09 2021 10:38:50</a>
+    </p>
+    <div class="collapsible">
+        <p>蜘蛛该管管了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gmp7mis">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ministryofmeme">ministryofmeme</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lfzu0k/_/gmp7mis">Feb 09 2021 14:31:09</a>
+    </p>
+    <div class="collapsible">
+        <p>图书管理员技能？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gmpjyty">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Durenthirteen13">Durenthirteen13</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lfzu0k/_/gmpjyty">Feb 09 2021 16:06:50</a>
+    </p>
+    <div class="collapsible">
+        <p>你是？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

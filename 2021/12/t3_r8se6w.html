@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>cs老嗨进，关于爬虫的问题</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r8se6w">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bakemonor">bakemonor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w">Dec 04 2021 15:49:31</a>
+    </p>
+    <strong>cs老嗨进，关于爬虫的问题</strong>
+    <p><p>因为之前微博号被橄榄，就学了下爬虫把收藏的几十页图存了下来。今天我准备在销红迪号之前也把save的nsfw图存到本地。<strong>但是有个问题</strong>：</p>
+<p>&#x200B;</p>
+<p>红迪的saved界面并没有“下一页“按钮，是等滚动条往下滚到底后才会加载新的收藏项，抓了包也没搞懂是怎么回事。因此我没办法一次性获取收藏界面帖子的所有地址</p>
+<p>&#x200B;</p>
+<p>最基本的requests，xpath本鼠还是会一点（毕竟之前把微博爬了），主要就是上面的问题没法解决，有无cs大手子指点一两句，本鼠先行谢过。</p></p>
+</div>
+<div class="comment" id="t1_hn7g6hg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tianlongren2">tianlongren2</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7g6hg">Dec 04 2021 16:02:30</a>
+    </p>
+    <div class="collapsible">
+        <p>用selenium可以执行js代码下拉网页</p>
+        <div class="comment" id="t1_hn7gsdk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bakemonor">bakemonor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7gsdk">Dec 04 2021 16:07:02</a>
+    </p>
+    <div class="collapsible">
+        <p>好的我试试</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hn7h40a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tianlongren2">tianlongren2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7h40a">Dec 04 2021 16:09:28</a>
+    </p>
+    <div class="collapsible">
+        <p>我只会python
+用selenium</p>
+<p>js='return document.body.scrollHeight;'
+driver.execute_script(js)
+然后写个循环，根据高度变化判断是否拉到底了</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hn7g720">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/okchillbrobreath">okchillbrobreath</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7g720">Dec 04 2021 16:02:37</a>
+    </p>
+    <div class="collapsible">
+        <p>gql.reddit.com这个地址 带时间戳，注意返回的start_cursor和end_cursor，post的时候after=end_cursor，first=25是条数，不明白就把控制台打开把请求导入到postman慢慢看</p>
+        <div class="comment" id="t1_hn7hbyw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bakemonor">bakemonor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7hbyw">Dec 04 2021 16:11:07</a>
+    </p>
+    <div class="collapsible">
+        <p>谢谢回复，我还是按照前面老哥说的看看selenium罢</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hn7gthd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Maojuicy">Maojuicy</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7gthd">Dec 04 2021 16:07:16</a>
+    </p>
+    <div class="collapsible">
+        <p>直接上selenium吧。核心问题就是infinite scroll。你只需要确定当前页面最后加载的element，然后让 selenium下拉就好了</p>
+        <div class="comment" id="t1_hn7gzz2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bakemonor">bakemonor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7gzz2">Dec 04 2021 16:08:38</a>
+    </p>
+    <div class="collapsible">
+        <p>确实，我之前找的教程也有说selenium，不过我发现我把前面的学了就满足我当时的需求了，看来还得学完才行</p>
+        <div class="comment" id="t1_hn7hrjx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Maojuicy">Maojuicy</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hn7hrjx">Dec 04 2021 16:14:20</a>
+    </p>
+    <div class="collapsible">
+        <p>你前面学的那些应该是不涉及到网页有复杂元素的。一旦页面变复杂，很多东西就不一样了。</p>
+<p>不过selenium现在有一些很傻瓜的自动化工具，你可以找一个模拟一下点击，然后用工具生成的代码改一下就可以。而且reddit爬虫非常多，随便找一个就行。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hnaflc2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hnaflc2">Dec 05 2021 05:08:46</a>
+    </p>
+    <div class="collapsible">
+        <p>用playwright，无限下拉</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnbdhi9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/LmA0_ZeD0nG">LmA0_ZeD0nG</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hnbdhi9">Dec 05 2021 12:05:40</a>
+    </p>
+    <div class="collapsible">
+        <p>github有现成的</p>
+        <div class="comment" id="t1_hnbef2m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bakemonor">bakemonor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8se6w/_/hnbef2m">Dec 05 2021 12:17:51</a>
+    </p>
+    <div class="collapsible">
+        <p>好的，我刚好也弄完我的，看看区别</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

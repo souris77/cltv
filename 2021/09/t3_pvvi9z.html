@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>百毒贴吧首页给我推送这个，是大数据精准推送，还是贴吧就是这样的？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pvvi9z">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Boring_Character_339">Boring_Character_339</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvvi9z">Sep 26 2021 15:00:49</a>
+    </p>
+    <strong>百毒贴吧首页给我推送这个，是大数据精准推送，还是贴吧就是这样的？</strong>
+    <p><a href="https://i.redd.it/5lijofg04vp71.jpg">https://i.redd.it/5lijofg04vp71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hecqjxh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Boring_Character_339">Boring_Character_339</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvvi9z/_/hecqjxh">Sep 26 2021 15:02:42</a>
+    </p>
+    <div class="collapsible">
+        <p>还有个小问题，我为什么在自己的reddot主页看不到自己发过的几个帖子😓</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

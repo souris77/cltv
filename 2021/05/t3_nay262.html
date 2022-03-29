@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>有reddit懂哥知道为什么有两种视频的浏览方式吗？ 有一种可以一直看视频 打字也方便 还有一种就很奇怪打字很不方便</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nay262">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Imabitchnig">Imabitchnig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nay262">May 12 2021 20:07:20</a>
+    </p>
+    <strong>有reddit懂哥知道为什么有两种视频的浏览方式吗？ 有一种可以一直看视频 打字也方便 还有一种就很奇怪打字很不方便</strong>
+    <p><a href="https://www.reddit.com/gallery/nay262">https://www.reddit.com/gallery/nay262</a></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

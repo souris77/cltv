@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>角度刁鑽</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ndedl7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AllenSpring">AllenSpring</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ndedl7">May 16 2021 02:22:34</a>
+    </p>
+    <strong>角度刁鑽</strong>
+    <p><a href="https://i.redd.it/8od2izuh7ez61.jpg">https://i.redd.it/8od2izuh7ez61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gyavfbn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lightdancer1997">lightdancer1997</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ndedl7/_/gyavfbn">May 16 2021 07:26:42</a>
+    </p>
+    <div class="collapsible">
+        <p>牛肉不健康，碳水，我劝你多吃。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gyakz5y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Hot_Gold_7518">Hot_Gold_7518</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ndedl7/_/gyakz5y">May 16 2021 05:03:20</a>
+    </p>
+    <div class="collapsible">
+        <p>以為是Tankie</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gybbrms">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ChampionshipIcy1888">ChampionshipIcy1888</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ndedl7/_/gybbrms">May 16 2021 11:31:23</a>
+    </p>
+    <div class="collapsible">
+        <p>确实，中国资本主义太发达了！</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

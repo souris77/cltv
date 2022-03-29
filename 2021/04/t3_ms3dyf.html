@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>谁啊发这么多帖子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ms3dyf">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lunixc">lunixc</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ms3dyf">Apr 16 2021 13:41:24</a>
+    </p>
+    <strong>谁啊发这么多帖子</strong>
+    <p><p>魔怔了?</p></p>
+</div>
+<div class="comment" id="t1_guq1oni">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Inside-Tourist-3455">Inside-Tourist-3455</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ms3dyf/_/guq1oni">Apr 16 2021 13:42:05</a>
+    </p>
+    <div class="collapsible">
+        <p>我发的，一直没有响应我就一直点下去post了，已经全部删除了</p>
+        <div class="comment" id="t1_guq1vs5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lunixc">lunixc</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ms3dyf/_/guq1vs5">Apr 16 2021 13:43:42</a>
+    </p>
+    <div class="collapsible">
+        <p>看来是误会了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

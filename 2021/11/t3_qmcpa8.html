@@ -1,0 +1,1156 @@
+<html>
+<head>
+<title>简单科普翻墙和审查的安全知识</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qmcpa8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8">Nov 04 2021 04:23:20</a>
+    </p>
+    <strong>简单科普翻墙和审查的安全知识</strong>
+    <p><p>最近发帖询问的翻老嗨多了起来，简单提几个基础安全知识。我也不是什么专业人士，有错误和遗漏请浪人补充。</p>
+<p>1.墙内触摸，私聊、群聊，语音、图片都是不安全的。</p>
+<p>图片上的工整文字可以被 OCR，语音可以用AI模型识别转文字。所以说只要支共想，没有不能审查的。但是语音和图片识别 don't come for free。识别这些都需要额外算力，所以到底识别不识别，识别的频率，不能确定时容忍的误差，都取决于服务商的风控策略。服务商的安全部门会编写风控策略，在符合这些条件的时候就会加大识别力度。如果你不被风控策略认为是高风险人物，<strong>或许</strong>你的图片和语音就会被识别的松一些。</p>
+<p>风控策略的力度是动态的，敏感时期（64,开会）&rt;正常时期，群聊&rt;私聊，新帐号&rt;旧账号，有被识别触摸案底的&rt;没案底的。</p>
+<p>我说的这几个都是很常见并且被证实的。具体的风控逻辑很复杂，并且是安全部门的核心秘密，在公司内都属于商业机密，非安全部门的接触不到。</p>
+<p>另外，如果只是想精确识别过滤特定的某张图，可以通过图片MD5匹配，这种操作很快，不需要什么算力。这也是前几天跟党走图片那个策略一种可能的实现。</p>
+<p>总结：需要识别算力越高的通讯方式越安全，但风控策略属于秘密，任何人都不知道究竟会怎样</p>
+<ol>
+<li>聊天记录留存</li>
+</ol>
+<p>支那规定<strong>所有聊天软件</strong>都要留记录若干个月。可以自行搜索该规定文件。</p>
+<ol>
+<li>翻墙行为是否被识别</li>
+</ol>
+<p>首先整明白用的软件名字和协议名字是两个事情。</p>
+<p>shadowsocks 原始协议已知被检测，后续改进版本我没有关注。VMESS 已知被检测，之前某个学校发了篇用神经网络检测的论文，识别率很高。但这个模型是否被实际部署没有人知道。同样的，还是算力问题，部署神经网络模型的成本是比较高的，个人倾向于认为没有部署。但我同时也怀疑有更快速简单的方法较为准确地识别 VMESS 协议。</p>
+<p>Trojan 和 TLS + VLESS 的想法是一样的，把流量伪装成正常 HTTPS 上网流量。GFW 只知道你以 HTTPS 方式浏览海外一个未被屏蔽的网站（你的或机场的跳板机）。HTTPS是加密的，因此 GFW 不知道你传输的具体内容是代理指令，指示跳板机帮你代理流量。从密码学上识别这种协议是不可能的。但代理软件的实现细节如果有疏忽，则可以被识别软件特征。</p>
+<p>另外，GFW 可以通过观察流量的时段、汇聚方向等统计学特征来确定某台服务器是不是用于代理的跳板机。但显然这种方式只能怀疑，不能肯定。</p>
+<p>协议安全级别：Trojan = TLS + VLESS  &rt; VMESS &rt; SS</p>
+<p>总结：Trojan, TLS + VLESS 一般人（非支共重点关心的人物）可以认为安全不被识别。还在用 ss 协议的机场我劝你趁早远离。</p>
+<ol>
+<li>翻墙访问的网站是否被记录</li>
+</ol>
+<p>首先，机场完全可以做到记录你的所有访问网站的<strong>域名</strong>、时间，对于 HTTPS 网站<strong>看不到网址</strong>。机场一旦沦陷，你就是裸奔。</p>
+<p>通过代理软件访问网站，运营商<strong>看不到你访问的网站域名和网址</strong>，只能看到你访问的跳板机地址。如果你的协议可以被识别，那么可以知道你<strong>有翻墙行为</strong>。</p>
+<p><strong>但是，不当的 DNS 设置可以泄露你试图访问的网站。</strong>比如你开了代理软件访问谷歌，但由于代理软件的实现或者配置等原因，中间某个环节你的电脑直接发出了大纪元的IP查询请求，此时流量链路上的所有设备都可以记录你在什么时候什么地点，查询大纪元的IP地址。对于大纪元这种网站来说，你可能已经被记录了。相反，如果你试图查询了谷歌的IP地址，由于太多应用软件其实都会试图连接谷歌来判断网络，这种行为噪声太高，不能作为什么确定翻墙的依据。</p></p>
+</div>
+<div class="comment" id="t1_hj8wpu0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/shinabutaisfreedom">shinabutaisfreedom</a>
+        |
+        <span class="score">28 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8wpu0">Nov 04 2021 05:00:02</a>
+    </p>
+    <div class="collapsible">
+        <p>晶哥：我将持续重点关注本sub，学习如何逮捕反贼。最后浪人没学会，晶哥一抓一个准</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8uewr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nonsensepasserby">nonsensepasserby</a>
+        |
+        <span class="score">18 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8uewr">Nov 04 2021 04:35:07</a>
+    </p>
+    <div class="collapsible">
+        <p>这下可以用科学知识恐吓自己做个良民了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8w9mh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Filet-O-">Filet-O-</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8w9mh">Nov 04 2021 04:55:00</a>
+    </p>
+    <div class="collapsible">
+        <p>什么云图计划</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8um7h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiaobaigaosan">xiaobaigaosan</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8um7h">Nov 04 2021 04:37:14</a>
+    </p>
+    <div class="collapsible">
+        <p>请问墙内DNS要怎么设置才能安全一点？</p>
+        <div class="comment" id="t1_hj8vqqw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8vqqw">Nov 04 2021 04:49:08</a>
+    </p>
+    <div class="collapsible">
+        <p>DNS 是否泄露信息主要看代理客户端是如何实现分流的。这和具体的客户端有关，你需要仔细研究一下你所使用的客户端的文档和分流原理。如果分流时不向墙内发出 DNS 请求且不明文发出 DNS 请求就是安全的。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9h8zx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ReinMayer">ReinMayer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9h8zx">Nov 04 2021 09:48:01</a>
+    </p>
+    <div class="collapsible">
+        <p>8.8.8.8</p>
+        <div class="comment" id="t1_hja3ygi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hja3ygi">Nov 04 2021 13:40:37</a>
+    </p>
+    <div class="collapsible">
+        <p>和dns服务器地址无关。dns协议本身是无加密的，支共在网络链路上记录请求易如反掌。</p>
+        <div class="comment" id="t1_hjaaaeh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Maojuicy">Maojuicy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjaaaeh">Nov 04 2021 14:26:45</a>
+    </p>
+    <div class="collapsible">
+        <p>DoH，dnscrypt都可以。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hjalxri">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjalxri">Nov 04 2021 15:43:33</a>
+    </p>
+    <div class="collapsible">
+        <p>可以路由器配置使用DoH</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj938dn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/qawedon">qawedon</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj938dn">Nov 04 2021 06:21:01</a>
+    </p>
+    <div class="collapsible">
+        <p>轮子的安全吗</p>
+        <div class="comment" id="t1_hj9lg05">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9lg05">Nov 04 2021 10:44:23</a>
+    </p>
+    <div class="collapsible">
+        <p>信则灵</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9iuaz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/VoiceOfRatman">VoiceOfRatman</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9iuaz">Nov 04 2021 10:10:26</a>
+    </p>
+    <div class="collapsible">
+        <p>自由门一直安全的</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9dex7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/UMP45XHK416">UMP45XHK416</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9dex7">Nov 04 2021 08:51:03</a>
+    </p>
+    <div class="collapsible">
+        <p>与机场相比，还是国外非中资VPN公司隐私更加强些，毕竟你不知道机场主究竟是什么人？倘若是个钓鱼机场就是监狱大门欢迎你的到来，毕竟机场大多数都是有审计规则的，即使没有审计规则也很难了解背后其人。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9j24c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Wjliu1996">Wjliu1996</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9j24c">Nov 04 2021 10:13:25</a>
+    </p>
+    <div class="collapsible">
+        <p>編程隨想被放出來了？</p>
+        <div class="comment" id="t1_hj9lh86">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9lh86">Nov 04 2021 10:44:48</a>
+    </p>
+    <div class="collapsible">
+        <p>我希望他放出来</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hja7sng">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/CarlOrz">CarlOrz</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hja7sng">Nov 04 2021 14:09:00</a>
+    </p>
+    <div class="collapsible">
+        <p>随想走后，人人都是随想\~</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8z86d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8z86d">Nov 04 2021 05:29:23</a>
+    </p>
+    <div class="collapsible">
+        <p>让我九评协议的就不评了，一个是我没那么懂，不是每个协议都仔细研究了，一个是我相信trojan思路的协议在相当长一段时间内都无法识别，对其他协议失去兴趣了。</p>
+        <div class="comment" id="t1_hj90c4s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj90c4s">Nov 04 2021 05:42:59</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8znwv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/11111010">11111010</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8znwv">Nov 04 2021 05:34:38</a>
+    </p>
+    <div class="collapsible">
+        <p>摇了我吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8zo2s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/qizhyywy">qizhyywy</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8zo2s">Nov 04 2021 05:34:41</a>
+    </p>
+    <div class="collapsible">
+        <p>请问ssr跟ss有差吗</p>
+        <div class="comment" id="t1_hj922h8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj922h8">Nov 04 2021 06:05:22</a>
+    </p>
+    <div class="collapsible">
+        <p>SSR 已经停更很久，也不支持 AEAD 加密协议，在「隐匿性」上确实已经不安全了（会被识别出 SSR 流量进而 ban 掉服务器）</p>
+<p>经过分析，SS能被很大概率检测出来，尤其是没有使用AEAD系列加密算法的．如果你一定要使用SS翻墙，建议一定要使用AEAD加密算法，如GCM系列，AES-128-GCM,AES-192-GCM,AES-256-GCM和POLY1305系列　CHACHA20-IETF-POLY1305,XCHACHA20-IETF-POLY1305．</p>
+<p>另外,推荐个帖子</p>
+<p>https://pincong.rocks/article/12173</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9cxos">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/UMP45XHK416">UMP45XHK416</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9cxos">Nov 04 2021 08:43:37</a>
+    </p>
+    <div class="collapsible">
+        <p>经过混淆处理的Open VPN XOR与V2Ray，Trojan等相比安全性如何呢？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9wlwy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/netking_sunxiaochuan">netking_sunxiaochuan</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9wlwy">Nov 04 2021 12:40:37</a>
+    </p>
+    <div class="collapsible">
+        <p>我只能说别碰支那人开的机场</p>
+        <div class="comment" id="t1_hj9wvgc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/netking_sunxiaochuan">netking_sunxiaochuan</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9wvgc">Nov 04 2021 12:42:57</a>
+    </p>
+    <div class="collapsible">
+        <p>最好学学怎么利用vps搭建私人服务器，基本上各大协议都能在GitHub搜到脚本，非cs相关只要学点网络基础和Linux命令行就行了，对于翻墙浪人来说，这点投入还是值得的</p>
+        <div class="comment" id="t1_hja41ky">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hja41ky">Nov 04 2021 13:41:17</a>
+    </p>
+    <div class="collapsible">
+        <p>建议有兴趣的浪人都自己买vps自己搭trojan</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hjaqpbt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhoucongyu">zhoucongyu</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjaqpbt">Nov 04 2021 16:14:16</a>
+    </p>
+    <div class="collapsible">
+        <p>目前在用vless+xtls，64期间都没断过网</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8wx03">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Saber_A1ter">Saber_A1ter</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8wx03">Nov 04 2021 05:02:19</a>
+    </p>
+    <div class="collapsible">
+        <p>还是那句话，正常翻墙行为有一堆老王VPN的为你打掩护 尽量保证自己的环节安全就行（代理 https DoH etc）</p>
+<p>敏感行为一定记得挂前置代理+tor，但是还是那句话 信安没有绝对的安全 主要还是看警力和你的价值，毕竟随想都没了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8x8yr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_8964">Ok_8964</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8x8yr">Nov 04 2021 05:06:03</a>
+    </p>
+    <div class="collapsible">
+        <p>迷雾通所用的niaucchi4协议，和trojan，tls+vless相比安全程度如何？</p>
+        <div class="comment" id="t1_hj8yt8r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8yt8r">Nov 04 2021 05:24:21</a>
+    </p>
+    <div class="collapsible">
+        <p>个人观点：udp传输层，看都不看。在 trojan 出来后的时代属于开倒车。未来是属于伪装 https 的，这样才能让 gfw 的识别成本最大。当然，因为我没仔细看，如果作者有什么特别精妙的想法，说不定是可以一用的。</p>
+        <div class="comment" id="t1_hjap8al">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjap8al">Nov 04 2021 16:04:49</a>
+    </p>
+    <div class="collapsible">
+        <p>http3使用的quic属于udp，如果成功推广用quic也是可以的</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8y7oh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8y7oh">Nov 04 2021 05:17:17</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj8yvwu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Deep-Wallaby-5337">Deep-Wallaby-5337</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8yvwu">Nov 04 2021 05:25:15</a>
+    </p>
+    <div class="collapsible">
+        <p>细说SS 和 SSR的区别</p>
+        <div class="comment" id="t1_hj8zp74">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj8zp74">Nov 04 2021 05:35:04</a>
+    </p>
+    <div class="collapsible">
+        <p>ShadowsocksR（简称SSR）是网名为breakwa11的用户发起的Shadowsocks分支，在Shadowsocks的基础上增加了一些资料混淆方式，称修复了部分安全问题并可以提高QoS优先级。[32]后来贡献者Librehat也为Shadowsocks补上了一些此类特性，[33]甚至增加了类似Tor的可插拔传输层功能。[34]</p>
+<p>ShadowsocksR开始时曾有过违反GPL、发放二进制时不发放源码的争议，使得原开发作者不满[35]。不过后来ShadowsocksR项目由breakwa11转为了与Shadowsocks相同的GPL、Apache许可证、MIT许可证等多重自由软件许可协议。</p>
+<p>2017年7月19日，ShadowsocksR作者breakwa11在Telegram频道ShadowsocksR news里转发了深圳市启用SS协议检测的消息并被大量用户转发，引发恐慌[36]。7月24日，breakwa11发布了闭源的SS被动检测程序，引发争议[37]。7月27日，breakwa11遭到自称“ESU.TV”（恶俗TV）的不明身份人士人身攻击，对方宣称如果不停止开发并阻止用户讨论此事件将发布更多包含个人隐私的资料[38]，随后breakwa11表示遭到对方人肉搜索并公开个人资料的是无关人士，为了防止对方继续伤害无关人士，breakwa11将删除GitHub上的所有代码、解散相关交流群组，停止ShadowsocksR项目。但项目已被多人fork，并有人在其基础上继续发布新的版本，例如较为知名的SSRR（页面存档备份，存于互联网档案馆）（ShadowsocksRR）。</p>
+<p>https://zh.wikipedia.org/wiki/Shadowsocks#ShadowsocksR</p>
+        <div class="comment" id="t1_hj95jen">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Deep-Wallaby-5337">Deep-Wallaby-5337</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj95jen">Nov 04 2021 06:52:43</a>
+    </p>
+    <div class="collapsible">
+        <p>看来还是ss ssr二选一的话还是前者更稳妥？</p>
+        <div class="comment" id="t1_hj96mdk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj96mdk">Nov 04 2021 07:08:32</a>
+    </p>
+    <div class="collapsible">
+        <p>对,SS更稳妥,如果要用的话一定要用AEAD加密</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj96k17">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj96k17">Nov 04 2021 07:07:34</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9a5ub">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ltty-zmls">ltty-zmls</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9a5ub">Nov 04 2021 08:01:30</a>
+    </p>
+    <div class="collapsible">
+        <p>有没有靠谱点的机场</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9atsv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PublicReference2063">PublicReference2063</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9atsv">Nov 04 2021 08:11:33</a>
+    </p>
+    <div class="collapsible">
+        <p>请问Clash安全吗</p>
+        <div class="comment" id="t1_hj9d2fo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9d2fo">Nov 04 2021 08:45:41</a>
+    </p>
+    <div class="collapsible">
+        <p>吗吗的，白写了。
+“首先整明白用的软件名字和协议是两回事”</p>
+        <div class="comment" id="t1_hj9d8b7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PublicReference2063">PublicReference2063</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9d8b7">Nov 04 2021 08:48:15</a>
+    </p>
+    <div class="collapsible">
+        <p>对不住 真的是电脑白痴 完全没网络常识😂</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9xv8l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pickle_Z">Pickle_Z</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9xv8l">Nov 04 2021 12:51:33</a>
+    </p>
+    <div class="collapsible">
+        <p>没学过计算机网络是这样的，我学过也不怎么看得懂</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9c49y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ApprehensiveFix5097">ApprehensiveFix5097</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9c49y">Nov 04 2021 08:31:07</a>
+    </p>
+    <div class="collapsible">
+        <p>clash只是个客户端，要看用什么协议。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9gwmi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/oneshotonepig">oneshotonepig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9gwmi">Nov 04 2021 09:43:09</a>
+    </p>
+    <div class="collapsible">
+        <p>我用的v2ray，安全吗？</p>
+        <div class="comment" id="t1_hj9lgqn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9lgqn">Nov 04 2021 10:44:38</a>
+    </p>
+    <div class="collapsible">
+        <p>v2ray不是协议，只是软件的名字</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9h798">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/oneshotonepig">oneshotonepig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9h798">Nov 04 2021 09:47:18</a>
+    </p>
+    <div class="collapsible">
+        <p>我看了一下有少量troyan的节点和vmss节点，大部分是ss的节点，以后不用ss就行了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9haea">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Kashiwaki">Kashiwaki</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9haea">Nov 04 2021 09:48:36</a>
+    </p>
+    <div class="collapsible">
+        <p>Google有個Outline</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9lbn7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/auspiciousness233">auspiciousness233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9lbn7">Nov 04 2021 10:42:54</a>
+    </p>
+    <div class="collapsible">
+        <p>信安老嗨是吧，请指导我</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj9tg92">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ApartmentOk9250">ApartmentOk9250</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hj9tg92">Nov 04 2021 12:11:35</a>
+    </p>
+    <div class="collapsible">
+        <p>买国外的比特币应该用什么？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hja06nh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MessaBombadWarrior">MessaBombadWarrior</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hja06nh">Nov 04 2021 13:10:59</a>
+    </p>
+    <div class="collapsible">
+        <p>中继和非中继有什么区别？</p>
+        <div class="comment" id="t1_hja3s0e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Explanation_8703">Ok_Explanation_8703</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hja3s0e">Nov 04 2021 13:39:16</a>
+    </p>
+    <div class="collapsible">
+        <p>比如现有海外跳板机A，但是在大陆各个地点连接速度不同差异很大，有的很慢。这时候可以引入国内中继B，B到全国各地都很快，到A也很快。这时候让用户连接B，B再连接A，速度会提升。机场老板通过中继B优化了线路。个人观点：有墙内中继的要么是公安部合作伙伴，要么在被橄榄的路上。可能有的老板会说他是什么门路，什么方法，在墙内开中继不会被橄榄。但我是不会用的。这是攻防，不是安全的方法。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hja9al2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fuckenti">fuckenti</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hja9al2">Nov 04 2021 14:19:51</a>
+    </p>
+    <div class="collapsible">
+        <p>突然想起ss作者clowwingy的发言
+https://github.com/shadowsocks/shadowsocks-windows/issues/293#issuecomment-132253168</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hjalklx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjalklx">Nov 04 2021 15:41:13</a>
+    </p>
+    <div class="collapsible">
+        <p>俺补充一些东西</p>
+<p>1.脂国APP的界面尽量少直接截屏，因为有可能会有暗部信息，或者频域水印，尽量使用其他相机拍摄代替。如果必须截图，请使用笔直接涂抹有关信息或不重要的部位。</p>
+<p>2.据俺得到的消息，微信的聊天记录可能会保留至少5年时间，就算你的聊天记录找不到，腾讯的服务器也会存留。</p>
+<p>3.翻墙会不会被抓，想搞清这需要有一定的计算机基础。（为方便表述，有些地方会不严谨）在TCP/IP协议中，计算机的通信都会涉及IP地址，数据包会经过一个个路由器的转发到对方的计算机。以前的计算机中，因为没有考虑到网络安全，所以有些古老的协议（比如DNS协议、HTTP）的内容是明文的。现在为了用户的隐私和网络安全性，通过密码学（对称加密和非对称加密），IEEE对协议进行了升级，比如HTTPS（HTTP+TLS/SSL）、DoH（DNS over HTTPS，可以理解为通过HTTPS传输DNS相关的数据）。所以理论上，CCP如果只通过截获HTTPS数据包查看里面的内容几乎是做不到的（除非CCP搞超算硬核计算，而且密码学是国际很多天才专家研究，他们设定了很多安全的加密算法，你觉得就CCP这土匪政党，会做得到么）。目前他们通过路由器，只能搞到这些信息：哪个IP请求了哪个域名、哪个IP和哪个IP通信，虽然这些信息很少，但结合大数据，CCP也能粗略打击国外节点。</p>
+<p>根据俺的知识体系，即便是最原始的ss协议（如果没有协议漏洞），它提供的加密足以让咱们安全上网。那为什么ss和ssr都被抛弃了？这是因为这些协议包括早期的vmess的翻墙思路仅仅只是粗暴的加密原始内容，对比其他协议的内容来开它们显得太鹤立鸡群。gfw看到大量这些与众不同的内容，肯定会被列为怀疑对象。所以现代协议像trojan这些的思路是伪装成正常流量，像现在比较常见的协议是HTTPS，它也能提供足够安全的加密，所以trojan 的思路是假装自己发送的是HTTPS数据，尽量保持和其他正常流量一样。这样节点就不容易被封锁。</p>
+<p>不管怎么说，咱要担心的，并不是协议本身，而是自己设备的软件是否足够信任+对方的节点是不是有可能是爱国节点。</p>
+<p>以下建议，可以让你减小被请去喝茶的可能性：</p>
+<p>1.少安装国内软件，比如QQ、微信、WPS，甚至国内版系统（比如MIUI）。</p>
+<p>2.尽量使用免费节点，有人可能会不理解为什么不付费买个节点。首先，你正常付费信息有很大的概率会被CCP知道，增加了风险，而且万一是爱国机场，他们就能更加容易定位哪些人是潜在的反贼。用免费机场，让你的特定信息被淹没在其他同样是🐀的流量海洋中。</p>
+<p>3.增加反侦察意识，比如telegram隐藏你的手机号信息，开启二步验证。（有可能CCP动用土匪3家电信运营商通过手机验证码登录你的telegram）</p>
+        <div class="comment" id="t1_hjasau1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhoucongyu">zhoucongyu</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjasau1">Nov 04 2021 16:24:29</a>
+    </p>
+    <div class="collapsible">
+        <p>我有两台电脑，一台主力机，一台NUC，支那软件单独装那台机器里，然后拉一块屏幕放旁边，主力机用来打游戏</p>
+        <div class="comment" id="t1_hjaszca">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhoucongyu">zhoucongyu</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjaszca">Nov 04 2021 16:28:46</a>
+    </p>
+    <div class="collapsible">
+        <p>手机同理，一台iPhone 12，一台wawei P40，支那反诈APP之类的垃圾使劲往P40里面塞</p>
+        <div class="comment" id="t1_hjdgpzk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjdgpzk">Nov 05 2021 03:36:09</a>
+    </p>
+    <div class="collapsible">
+        <p>俺穷买不起两台电脑和两台手机😭</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hjbaxc6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PE4AL">PE4AL</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjbaxc6">Nov 04 2021 18:24:55</a>
+    </p>
+    <div class="collapsible">
+        <p>人均电脑中级高手，这谁看得懂</p>
+        <div class="comment" id="t1_hjcgtiu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjcgtiu">Nov 04 2021 23:04:04</a>
+    </p>
+    <div class="collapsible">
+        <p>不用懂，你直接用迷雾通或者nthlink就OK，安全可靠稳定</p>
+        <div class="comment" id="t1_hjctcyq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PE4AL">PE4AL</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmcpa8/_/hjctcyq">Nov 05 2021 00:34:30</a>
+    </p>
+    <div class="collapsible">
+        <p>roger</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

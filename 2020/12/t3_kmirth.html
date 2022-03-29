@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>搬点编程哥整理的经典语录</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kmirth">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lvxingjia">lvxingjia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kmirth">Dec 29 2020 17:32:38</a>
+    </p>
+    <strong>搬点编程哥整理的经典语录</strong>
+    <p><a href="https://i.redd.it/gaghqr32w5861.jpg">https://i.redd.it/gaghqr32w5861.jpg</a></p>
+</div>
+<div class="comment" id="t1_ghf1isu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/baozhiyingcheng">baozhiyingcheng</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kmirth/_/ghf1isu">Dec 29 2020 18:52:56</a>
+    </p>
+    <div class="collapsible">
+        <p>支那国歌的作者之一聂耳转道家乡企图跑去苏联家乡人都没把它怎样，结果它自己游泳淹死了，后来家乡人还给它修缮墓地立纪念碑。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

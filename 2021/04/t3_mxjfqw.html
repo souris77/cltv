@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>简单说露个嘴</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mxjfqw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mxjfqw">Apr 24 2021 12:56:25</a>
+    </p>
+    <strong>简单说露个嘴</strong>
+    <p><a href="https://i.redd.it/o4eb55thc4v61.jpg">https://i.redd.it/o4eb55thc4v61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gvougxb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mxjfqw/_/gvougxb">Apr 24 2021 12:58:57</a>
+    </p>
+    <div class="collapsible">
+        <p>这些国社了，给我狠狠滴县中西域</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvoy5s0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Obituaryofcn">Obituaryofcn</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mxjfqw/_/gvoy5s0">Apr 24 2021 13:15:52</a>
+    </p>
+    <div class="collapsible">
+        <p>这下nazi了</p>
+        <div class="comment" id="t1_gvoybh0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mxjfqw/_/gvoybh0">Apr 24 2021 13:16:36</a>
+    </p>
+    <div class="collapsible">
+        <p>原形毕露</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

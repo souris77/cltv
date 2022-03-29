@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>怎么回事呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rb56bw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Surfingmouse">Surfingmouse</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rb56bw">Dec 07 2021 18:11:58</a>
+    </p>
+    <strong>怎么回事呢</strong>
+    <p><a href="https://i.redd.it/rx4ec395n5481.jpg">https://i.redd.it/rx4ec395n5481.jpg</a></p>
+</div>
+<div class="comment" id="t1_hnmc1xh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zuyingsong">zuyingsong</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rb56bw/_/hnmc1xh">Dec 07 2021 18:14:44</a>
+    </p>
+    <div class="collapsible">
+        <p>这个文风，梁家河图书馆学的吧，太土了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnmkeqd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Huge-Play2775">Huge-Play2775</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rb56bw/_/hnmkeqd">Dec 07 2021 19:13:54</a>
+    </p>
+    <div class="collapsible">
+        <p>这就是老右吧 平子哥政治斗争不够激烈 加把劲</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnnlffz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ropac85270">ropac85270</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rb56bw/_/hnnlffz">Dec 07 2021 23:42:09</a>
+    </p>
+    <div class="collapsible">
+        <p>狗咬狗，请继续</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

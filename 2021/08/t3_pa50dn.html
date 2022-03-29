@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>这是一张有故事的照片，也是一个有画面的故事</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pa50dn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ParticularIll9062">ParticularIll9062</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pa50dn">Aug 23 2021 17:50:04</a>
+    </p>
+    <strong>这是一张有故事的照片，也是一个有画面的故事</strong>
+    <p><a href="https://i.redd.it/9l65b73zx2j71.jpg">https://i.redd.it/9l65b73zx2j71.jpg</a></p>
+</div>
+<div class="comment" id="t1_ha39qg7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BrazilFrog">BrazilFrog</a>
+        |
+        <span class="score">12 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pa50dn/_/ha39qg7">Aug 23 2021 22:37:42</a>
+    </p>
+    <div class="collapsible">
+        <p>爸爸在搭帐篷</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>发首歌</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_obrslf">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendlySomewhere870">FriendlySomewhere870</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/obrslf">Jul 01 2021 18:19:50</a>
+    </p>
+    <strong>发首歌</strong>
+    <p><a href="https://youtu.be/pnJM_jC7j_4">https://youtu.be/pnJM_jC7j_4</a></p>
+</div>
+<div class="comment" id="t1_h3s2xhm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/leengmao">leengmao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/obrslf/_/h3s2xhm">Jul 02 2021 07:30:42</a>
+    </p>
+    <div class="collapsible">
+        <p>杰斐逊飞机这张属实经典，上学那会儿就爱听这种acid rock</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

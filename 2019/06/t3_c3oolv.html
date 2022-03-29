@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>啊这</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_c3oolv">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ligejing">ligejing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c3oolv">Jun 22 2019 11:35:43</a>
+    </p>
+    <strong>啊这</strong>
+    <p><a href="https://i.redd.it/r3i07ugk9w531.jpg">https://i.redd.it/r3i07ugk9w531.jpg</a></p>
+</div>
+<div class="comment" id="t1_ersa0vb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xr981209">xr981209</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c3oolv/_/ersa0vb">Jun 22 2019 12:36:32</a>
+    </p>
+    <div class="collapsible">
+        <p>早就没了，Apple music上都没了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_erslwkv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lostxia">lostxia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c3oolv/_/erslwkv">Jun 22 2019 15:37:46</a>
+    </p>
+    <div class="collapsible">
+        <p>还好我之前觉得不对赶紧本地存档了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这是墨子？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_suml7s">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/2005002000">2005002000</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/suml7s">Feb 17 2022 11:25:15</a>
+    </p>
+    <strong>这是墨子？</strong>
+    <p><a href="https://i.redd.it/pgvqit5todi81.jpg">https://i.redd.it/pgvqit5todi81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hxao4iq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AllHailPolobear">AllHailPolobear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/suml7s/_/hxao4iq">Feb 17 2022 11:35:11</a>
+    </p>
+    <div class="collapsible">
+        <p>水印去一下，要命的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hxao510">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/EXcaliburn233">EXcaliburn233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/suml7s/_/hxao510">Feb 17 2022 11:35:22</a>
+    </p>
+    <div class="collapsible">
+        <p>这是得了梅毒的墨子，口头禅是兼爱非共</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

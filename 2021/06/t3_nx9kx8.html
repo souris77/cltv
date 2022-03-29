@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>懂哥教教新人，为什么发不了图片</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nx9kx8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/VD0NE">VD0NE</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nx9kx8">Jun 11 2021 06:54:02</a>
+    </p>
+    <strong>懂哥教教新人，为什么发不了图片</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_h1dlezl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Anybody-Few">Anybody-Few</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nx9kx8/_/h1dlezl">Jun 11 2021 07:08:59</a>
+    </p>
+    <div class="collapsible">
+        <p>因为图片太大，你压缩下试试</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h1dq9ga">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Coghlan168754">Coghlan168754</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nx9kx8/_/h1dq9ga">Jun 11 2021 08:21:25</a>
+    </p>
+    <div class="collapsible">
+        <p>如果你用的是安卓系统，那应该是因为你没把reddit的存储权限打开。去设置里找应用权限，手动改一下就行。默认模式下reddit存储电话位置读取都是被禁止的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

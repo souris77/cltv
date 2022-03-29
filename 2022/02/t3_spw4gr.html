@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>能看到吗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_spw4gr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/mat-roska">mat-roska</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spw4gr">Feb 11 2022 10:14:42</a>
+    </p>
+    <strong>能看到吗</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_hwhl2r5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Felixpandam">Felixpandam</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spw4gr/_/hwhl2r5">Feb 11 2022 10:17:18</a>
+    </p>
+    <div class="collapsible">
+        <p>不能</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwhl5ge">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lzcrccc">lzcrccc</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spw4gr/_/hwhl5ge">Feb 11 2022 10:18:22</a>
+    </p>
+    <div class="collapsible">
+        <p>test</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwhtbf7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Every_Truck7018">Every_Truck7018</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spw4gr/_/hwhtbf7">Feb 11 2022 12:01:33</a>
+    </p>
+    <div class="collapsible">
+        <p>晶哥能，能看到这条说明都是同事</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwhw1iw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Equal_Translator_574">Equal_Translator_574</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spw4gr/_/hwhw1iw">Feb 11 2022 12:30:18</a>
+    </p>
+    <div class="collapsible">
+        <p>你好</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

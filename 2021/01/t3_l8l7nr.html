@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>銀杏果</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l8l7nr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/SeaFuzzy">SeaFuzzy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l8l7nr">Jan 30 2021 13:00:36</a>
+    </p>
+    <strong>銀杏果</strong>
+    <p><p>​秋天的校園是黃色的，女學生的小皮鞋是黑色的。秘徑小道上掉滿了銀杏果，一群女學生嬉笑走過，銀杏果被小皮鞋踩中，吧唧一聲流出了乳白色的汁水，就像我躲在廁所裡偷偷搗出的白漿一樣，黏稠且腥臭。</p></p>
+</div>
+<div class="comment" id="t1_gld3piv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Boxdelyuo">Boxdelyuo</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l8l7nr/_/gld3piv">Jan 30 2021 13:01:14</a>
+    </p>
+    <div class="collapsible">
+        <p>作业还是太少</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>想起一些往事</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qr0ber">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Top_Ad_7693">Top_Ad_7693</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qr0ber">Nov 10 2021 18:06:48</a>
+    </p>
+    <strong>想起一些往事</strong>
+    <p><p>多年前我亲人生病，遂到某一线三甲治疗。走了关系 找了主任。但是最后还是人财两空了。
+现在想起一些当年的细节，越发觉得这很可能是一起医疗事故（因为不是因为原来的病，而是相当于手术并发症），再加上一些不应该做的项目加重了病情。
+这几年看的东西多，才知道美国其实针对大多数的病都有治疗规范，但是国内有时候是不按照这种规范来的，他们医生会尝试一些自己的想法。
+我们家是有当地关系压着的都尚且如此，更别提那些真平民了。后来我陪房的亲人最讨厌的就是医院，说在医院见到很多不合理的事情，太失望了。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

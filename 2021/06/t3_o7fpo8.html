@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>典</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_o7fpo8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Slow-Fan7774">Slow-Fan7774</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o7fpo8">Jun 25 2021 03:45:17</a>
+    </p>
+    <strong>典</strong>
+    <p><a href="https://youtu.be/IOAMXsp_8KI">https://youtu.be/IOAMXsp_8KI</a></p>
+</div>
+<div class="comment" id="t1_h2z0yxv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Traditional-Ruin9150">Traditional-Ruin9150</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o7fpo8/_/h2z0yxv">Jun 25 2021 07:42:14</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈，好好笑</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h30kblp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No_Confidence_8440">No_Confidence_8440</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o7fpo8/_/h30kblp">Jun 25 2021 17:10:30</a>
+    </p>
+    <div class="collapsible">
+        <p>这估计是轮子的视频</p>
+        <div class="comment" id="t1_h32mupl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Slow-Fan7774">Slow-Fan7774</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o7fpo8/_/h32mupl">Jun 26 2021 03:57:24</a>
+    </p>
+    <div class="collapsible">
+        <p>怎么说</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

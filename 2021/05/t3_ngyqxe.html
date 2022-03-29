@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>《這就是瑞士》</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ngyqxe">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/200kgList">200kgList</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ngyqxe">May 20 2021 12:21:32</a>
+    </p>
+    <strong>《這就是瑞士》</strong>
+    <p><a href="https://i.redd.it/h6szwya0q9071.jpg">https://i.redd.it/h6szwya0q9071.jpg</a></p>
+</div>
+<div class="comment" id="t1_gytk1ca">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Tadaoki_Z">Tadaoki_Z</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ngyqxe/_/gytk1ca">May 20 2021 13:36:36</a>
+    </p>
+    <div class="collapsible">
+        <p>@司马太监阴阳人张维为</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gyvze8e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HoldenPhoebe">HoldenPhoebe</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ngyqxe/_/gyvze8e">May 21 2021 00:19:23</a>
+    </p>
+    <div class="collapsible">
+        <p>我早就是瑞士人了啊</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

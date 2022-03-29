@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>辱完了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_knmki8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/zhoutianxiang">zhoutianxiang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knmki8">Dec 31 2020 08:51:02</a>
+    </p>
+    <strong>辱完了</strong>
+    <p><a href="https://youtu.be/jAy7M2gUKFQ">https://youtu.be/jAy7M2gUKFQ</a></p>
+</div>
+<div class="comment" id="t1_ghleelr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cachn2018">cachn2018</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knmki8/_/ghleelr">Dec 31 2020 10:03:33</a>
+    </p>
+    <div class="collapsible">
+        <p>最后被干掉的不应该是 Trump 和 U.S. 嘛 😂</p>
+        <div class="comment" id="t1_ghlo1dr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Shirley202011">Shirley202011</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knmki8/_/ghlo1dr">Dec 31 2020 12:47:57</a>
+    </p>
+    <div class="collapsible">
+        <p>先把拆哪痛扁一顿再说</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

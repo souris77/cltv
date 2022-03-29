@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>是狱友吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nw8oeu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lckaj">lckaj</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nw8oeu">Jun 09 2021 22:53:37</a>
+    </p>
+    <strong>是狱友吗？</strong>
+    <p><a href="https://i.redd.it/q2pzfgwzkb471.jpg">https://i.redd.it/q2pzfgwzkb471.jpg</a></p>
+</div>
+<div class="comment" id="t1_h18ckgw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Independent_Buy_3676">Independent_Buy_3676</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nw8oeu/_/h18ckgw">Jun 10 2021 02:05:51</a>
+    </p>
+    <div class="collapsible">
+        <p>傻逼一个</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

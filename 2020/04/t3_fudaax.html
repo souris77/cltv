@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>有权人的世界是彩色的</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fudaax">
+    <p class="userinfo">
+        [deleted]
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fudaax">Apr 03 2020 18:07:55</a>
+    </p>
+    <strong>有权人的世界是彩色的</strong>
+    <p><a href="https://i.redd.it/2e9zr3x88nq41.jpg">https://i.redd.it/2e9zr3x88nq41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fmc2hf6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/thfjdjdjdjshek">thfjdjdjdjshek</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fudaax/_/fmc2hf6">Apr 03 2020 18:14:31</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈哈哈  整笑了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

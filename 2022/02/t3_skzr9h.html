@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_skzr9h">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Hhjgghhjj">Hhjgghhjj</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/skzr9h">Feb 05 2022 06:00:49</a>
+    </p>
+    <strong>Test</strong>
+    <p><p>Test</p></p>
+</div>
+<div class="comment" id="t1_hvo2945">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/communistsamurai">communistsamurai</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/skzr9h/_/hvo2945">Feb 05 2022 06:13:27</a>
+    </p>
+    <div class="collapsible">
+        <p>习主席您好</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hvo3cv7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/St_rbtidlkc">St_rbtidlkc</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/skzr9h/_/hvo3cv7">Feb 05 2022 06:25:14</a>
+    </p>
+    <div class="collapsible">
+        <p>发的什么，看不见</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

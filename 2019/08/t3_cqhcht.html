@@ -1,0 +1,538 @@
+<html>
+<head>
+<title>浪人冲浪之个人vps搭建翻墙服务器指南</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cqhcht">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht">Aug 14 2019 22:55:12</a>
+    </p>
+    <strong>浪人冲浪之个人vps搭建翻墙服务器指南</strong>
+    <p><p>针对最近一些浪人们在使用各种vpn时对厂商跑路的担忧和对个人信息隐私保护的疑问，以及对vpn价格的不够亲民的抱怨，作为坚定忠诚的浪人一员，资深计算机专业副学士懂哥，我打算在这里根据各位浪人不同层次、各个方位的墙外冲浪需求，提供不同安全上网冲浪教程。作为这个主题的第一篇教程，本片文章将着眼于搭建基于shaowsocks协议及相关应用的易用、价格便宜、流量充足、可供多人多设备同时使用的个人vps翻墙服务器。如果各位有需要这篇文章后还将根据各位需求及能力介绍一些匿名网络知识与软件。</p>
+<p>【一】基于shadowsocks与个人vps的冲浪方案的优势</p>
+<p>shadowsocks作为目前主流的加密传输协议，其在突破防火墙封禁上所表现出的优秀性能使得其成为当下翻墙的主要选择。需要注意到的是，shadowsocks本质上是一个代理加密传输服务，并不能提供匿性服务。但是由于vpn的主要目的是提供匿名的网络服务，其网络特征都很明显，导致防火墙对vpn的封禁比较严重，shadowsocks及其协议是为了对抗防火墙的封锁而诞生，经过shadowsocks混淆的后的流量可以比vpn更加容易的穿透防火墙。而其传输过程中数据经加密使得防火墙无法分析该连接的信息，在防火墙看来我们仅仅是访问了一个境外无关痛痒的ip地址并建立了连接。最近提出的有关通过流量分析识别shadowsocks的威胁，在没有确切证明的之前，这种代理方案还是非常安全且能够保护隐私的。王晶叔叔要是真的监控你的网络并检测到了你连接外网的异常行为，他直接通过查看的你加密的网络流量信息是无法获取你发出了什么样的信息。当然如果防火墙直接封禁了vps提供商的ip网段，那就是有天大的本事也没办法连接出墙了。需要注意的是对于shadowsocks的提供商，他是可以清楚的看到你的网络访问记录，当然我们也可以在自己搭设的代理服务器中看到自己的信息。若提供商被内鬼拿下，出墙冲浪是毫无隐私所言的。这也是个人搭设代理服务器比直接购买shadowsocks服务更加安全的原因。王晶叔叔只能通过黑进reddit、twitter和google的公司里查看你的ip登陆信息沿着线路反向查找才能获取你的个人信息，一般来说是不可能的。另一种情况是你id泄露了信息或者邮箱设置公开直接自爆了，建议大家谷歌或百度自己的id尝试社工自己信息看能否成功。</p>
+<p>【二】vps选取与shadsowcks服务器搭建</p>
+<p>为了翻墙，境外的服务器必不可少，为了方便和没有那么高冲浪隐私的浪人，选择vlutr这类便宜且支持支付宝的服务商就可以，了，但是由于vultr的实在是太适合当翻墙vps导致网络有可能发生波动，发生防火墙直接封禁提供商ip段的可能也会很大，遇到这种情况可以直接通过更换地区来更换ip地址重新搭设代理服务器。如果对隐私有更高要求，可以选择支持比特币支付的vps提供商，这里不再赘述。以vultr为例，我们直接访问<a href="https://www.vultr.com/">https://www.vultr.com/</a>，点击右上角sign up注册获取一个账号，如果你害怕邮箱被泄露可以尝试使用境外的邮箱服务，或者更狠一点的临时邮箱。现在注册应该有充多少送多少的活动。</p>
+<p>登陆之后进入他的主界面，直接点击蓝色+号按钮添加vps服务器，首先是choose server选项，显然我们并不需要这个服务器干什么惊天动地的大事，直接选择最便宜的cloud compute选项。</p>
+<p>接下来是server location选项，现在比较具有性价比的是america的new york地区，他提供了3.5美元的包含公网ipv4地址的一个服务器，这里浪人们不要选择2.5美元的套餐，因为它之提供ipv6地址，如果在不支持ipv6的网络运营商环境下你是无法访问到这个服务器的。</p>
+<p>server type直接选择debian 10，作为一个大量用于建设服务器的稳定发行版linux它非常稳定，而且内核直接包含了新的tcp_bbr算法，可以用来加速访问。</p>
+<p>确定选择后点击右下角deploy now，运营商就会为你生成一个小小的虚拟服务器，花费为3.5美元接近25元人民币包含500gb的流量。每天上pornhub嗯看10gb黄色视频，一个月都花不完。你可以在左边的billing选项中进行充值，可以发现alipay、wechatpay这些熟悉的选项。</p>
+<p>回到products选项后可以发现一个新的cloud instance，需要等待它的状态从installing变成running后你就可以使用了。直接点击cloud instance进入查看server information。我们可以看到ip address（IP地址）password（密码）等重要选项。接下来就是搭建代理服务器了。考虑到某些浪人可能没有电脑，手机端与电脑端我都将详细说明。</p>
+<p>为了登录这个服务器的终端，我们需要下载使用支持ssh协议的终端。在电脑端我们直接选择putty，访问<a href="https://the.earth.li/~sgtatham/putty/0.72/w64/putty.exe">下载地址</a>直接获取。打开后直接在host name一栏输入server information中提供的ip地址，点击open开始连接。出现第一次连接警告窗口直接选是。login as直接输入server information提供的username，也就是root，接下来直接输入密码并登录。</p>
+<p>手机端使用juicessh这款免费的ssh应用，访问<a href="http://apd1.shouji.com.cn/cdn/shouji/zhuanxia/JuiceSSH_V2.1.4.apk">地址</a>进行下载。用苹果的富哥们自己找一款吧。进入juicessh后选择连接选项，点击右下角+号键新建连接，这里填入地址，认证选项选择新建，用户名填入root，密码设置成server information中提供的密码，点击右上角打勾键完成设置。可以在连接中看到具有vps地址和root用户名的连接项，直接点击进行连接。第一次连接提示直接选择接受。</p>
+<p>成功进入服务器后开始shadowsocks服务的安装。尽管shadowsocks的配置对于初学者有点有点复杂，但是已经有热心群众帮助我们写好了一键脚本，我们直接发扬拿来主义，在此感谢这些先行浪人做出的贡献。直接在终端输入wget  <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</a> 并回车下载一键安装脚本，然后我们需要更改它权限使得它能够运行，输入 chmod +x shadowsocks-all.sh 给脚本添加可执行权限。完成后我们就可以输入 ./shadowsocks-all.sh 进入自动安装过程。</p>
+<p>首先是选择服务器版本，我们选择性能较好的libev版本，直接输入4。接下来是输入代理服务器的密码，这个没有强制的要求，因人而异。接下来是端口选择，我们直接回车选择默认的9632端口。随后是加密方式选择，同样使用默认的aes-256-gcm。然后是obfs混淆，混淆需要额外的设置，以我个人之见没有必要在进行混淆，且obfs混淆已被淘汰，现在有更复杂的混淆方案，这里直接选择默认n。最后回车确认进行自动安装配置。完成后我们便得到了一个shadowsocks代理服务器。由于安装脚本包含了开机自启功能，所以我们重启vps后shadowsocks不需要人为开启就能自动启用。</p>
+<p>同时补充一开启tcp_bbr的方法，直接复制输入下面三行命令并重启就行了：</p>
+<p>echo "net.core.default_qdisc=fq" &rt;&rt; /etc/sysctl.conf </p>
+<p>echo "net.ipv4.tcp_congestion_control=bbr" &rt;&rt; /etc/sysctl.conf </p>
+<p>sysctl -p </p>
+<p>重启可以使用命令reboot，当然嫌麻烦这一步也不是必要的。</p>
+<p>【三】shadsowcks客户端使用</p>
+<p>完成服务器搭建后我们就需要在电脑或手机上运行shadowsocks客户端连接服务器。感谢伟大github没有被封，我们可以直接在上面下载shadowsocks的客户端，最新的Windows客户端地址为<a href="https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.1.7.1/Shadowsocks-4.1.7.1.zip">https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.1.7.1/Shadowsocks-4.1.7.1.zip</a>，最新的安卓客户端地址为<a href="https://github.com/shadowsocks/shadowsocks-android/releases/download/v4.8.3/shadowsocks--universal-4.8.3.apk">https://github.com/shadowsocks/shadowsocks-android/releases/download/v4.8.3/shadowsocks--universal-4.8.3.apk</a>，用苹果的富哥们自己找吧。运行windows客户端后右下角任务栏会出现小飞机的图标，右键进入服务器选项选择编辑服务器，填入vps的地址与之前自动安装过程中设置的端口（9632）、密码与加密方法（aes-256-gcm），点击确定进行连接。如果不启用系统代理，浏览器需要下载代理插件。开启系统代理后，选择系统代理模式中的全局或者pac模式，软件同目录下有pac列表，可以将想要走代理的网站域名放进去，就能实现特定网址走代理服务器，国内地址和未被封禁的地址走国内的方案，节省了不必要的流量花费。手机客户端的设置基本相同，点击右上角+号键，选择手动设置输入各项信息，其中路由选项选择绕过局域网和中国大陆地址，如果需要全局代理可以将此项改为全局。点击右上角打勾键就能生成连接，选中后点击下方小飞机按钮进行连接，连接后可以再次点击下方区域进行连接测试。</p>
+<p>至此我们就完成翻墙服务器的设置，虽然看上去很长但实际动起手来全是复制粘贴自动设置即可。本计算机专业副学士懂哥花了一晚上给各位浪人嗯写了一个较为容易的教程。虽然reddit很不友好不能发多张图片，但是我觉得这个纯文字教程已经足够详细了。照着做就完事了，不过我没有苹果设备所以用苹果的富哥们就自己解决吧。这样的vps自己的控制度高，流量用不完，大家可以几个浪人合租众筹一个服务器大大减少花销，速度也能得到保证，也不用担忧提供商跑路这样的天灾了。之后我可能根据浪人们更高层次的隐私需求推出洋葱+shadowsocks的高强度匿名冲浪教程指南，敬请期待。各位浪人如果有什么疑问直接发帖问我，我老懂哥了。</p></p>
+</div>
+<div class="comment" id="t1_ewwboe5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bigfkgun">bigfkgun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwboe5">Aug 14 2019 23:26:32</a>
+    </p>
+    <div class="collapsible">
+        <p>支持👍混淆直接走默认没问题吗，我的搬瓦工vps上个月就刚被干烂。怀疑是混淆的问题，设的是https混淆</p>
+        <div class="comment" id="t1_ewwchol">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwchol">Aug 14 2019 23:36:22</a>
+    </p>
+    <div class="collapsible">
+        <p>socks5协议已经对流量进行很好的加密了，通过混淆把流量模拟成对网站的访问的流量有没有用其实没有确切的证据可以证明，网传的流量分析可以捕获特征的那篇论文也被扒出来崴的不行。当然要是短时间流量过大还是很好逮到的，个人用完全没这个顾虑。而且有关vps的封禁一般都是一封一大片，一个ip段不能用了。一般就说来就是看这个ip网段流量太大，连接的人太多，又是vps商的网段，不用想就知道是翻墙服务，一封一片人挂了。找一些冷门的vps就很稳定，我之前脑残搞了个日本二次元vps商conoha，网慢的一批一个月50块，用了三年到毕业都没封，不过估计就只有我这样的傻狗才去那上面搭服务器。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ewwmlxv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RomancingSugar">RomancingSugar</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwmlxv">Aug 15 2019 00:57:51</a>
+    </p>
+    <div class="collapsible">
+        <p>SS已经有些危险了，真心建议SSR或者V2Ray，特别V2Ray强烈推荐。</p>
+<p>搬瓦工这种有名机场被批量干IP非常正常，你得自己试IP行不行，所以不建议就准备一种翻墙手段，至少得准备个自由门保证万一机场IP爆了你能翻得出去调整设置。</p>
+        <div class="comment" id="t1_ewwp3px">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwp3px">Aug 15 2019 01:18:53</a>
+    </p>
+    <div class="collapsible">
+        <p>v2ray对于一般浪人可能看到文档就放弃了，我看能不能再写篇介绍下。鬼子的封锁越来越紧了。</p>
+        <div class="comment" id="t1_ewwu539">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/skt-oTTo">skt-oTTo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwu539">Aug 15 2019 02:16:58</a>
+    </p>
+    <div class="collapsible">
+        <p>其实v2ray也一样，都有一键脚本</p>
+        <div class="comment" id="t1_ewwvdrh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwvdrh">Aug 15 2019 02:32:14</a>
+    </p>
+    <div class="collapsible">
+        <p>是的。什么时候乳包也搞个一键脚本，经典语录全部整上。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ewx5oj8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Another135">Another135</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx5oj8">Aug 15 2019 05:01:18</a>
+    </p>
+    <div class="collapsible">
+        <p>Kitsunebi不是v2ray吗？苹果市场下的</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ewwrbrk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SurfingGypsy">SurfingGypsy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewwrbrk">Aug 15 2019 01:44:02</a>
+    </p>
+    <div class="collapsible">
+        <p>干货👍</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewx0ikz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/daizhongdai">daizhongdai</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx0ikz">Aug 15 2019 03:39:34</a>
+    </p>
+    <div class="collapsible">
+        <p>提供商能看到我浏览记录？我黄网都不敢看了</p>
+        <div class="comment" id="t1_ewx11oq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx11oq">Aug 15 2019 03:47:11</a>
+    </p>
+    <div class="collapsible">
+        <p>原理上可以看，但人家又不是鉴黄师，要是对人妖嗯了不是血亏。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewx2sh6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bigfkgun">bigfkgun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx2sh6">Aug 15 2019 04:13:22</a>
+    </p>
+    <div class="collapsible">
+        <p>当然可以啊，所以敢用阿里云的都是勇士</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewxraj5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RomancingSugar">RomancingSugar</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxraj5">Aug 15 2019 10:56:07</a>
+    </p>
+    <div class="collapsible">
+        <p>另外强烈建议不要用国产的安全软件比如金山腾讯管家360等，微软自带的Defender已经完全足够。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ewx4igq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/6324vpvp">6324vpvp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx4igq">Aug 15 2019 04:41:25</a>
+    </p>
+    <div class="collapsible">
+        <p>说的什么狗鸡巴</p>
+        <div class="comment" id="t1_ewx4lik">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx4lik">Aug 15 2019 04:42:48</a>
+    </p>
+    <div class="collapsible">
+        <p>安全上网，让妈妈放心。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ewx74ej">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OVOOAO">OVOOAO</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewx74ej">Aug 15 2019 05:27:41</a>
+    </p>
+    <div class="collapsible">
+        <p>标记</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewxfet4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dta002">dta002</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxfet4">Aug 15 2019 07:48:59</a>
+    </p>
+    <div class="collapsible">
+        <p>糙，怎么收藏</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewxjhk9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hxb517">hxb517</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxjhk9">Aug 15 2019 08:57:30</a>
+    </p>
+    <div class="collapsible">
+        <p>太有牌面了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewxk0ug">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Fan_gege">Fan_gege</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxk0ug">Aug 15 2019 09:07:14</a>
+    </p>
+    <div class="collapsible">
+        <p>我在putty界面无法输入密码咋办，就是password那里按键盘没用</p>
+        <div class="comment" id="t1_ewxk6w0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iakwal">iakwal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxk6w0">Aug 15 2019 09:10:23</a>
+    </p>
+    <div class="collapsible">
+        <p>vultt上密码旁边有个复制按钮，复制之后在输密码的时候直接在终端单击右键然后回车就能登录了。</p>
+        <div class="comment" id="t1_ewxkm0j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Fan_gege">Fan_gege</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxkm0j">Aug 15 2019 09:18:19</a>
+    </p>
+    <div class="collapsible">
+        <p>好的，我查了下说不显示密码然后手打了😅</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ewxt0pm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/QwQbluedeer">QwQbluedeer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewxt0pm">Aug 15 2019 11:14:58</a>
+    </p>
+    <div class="collapsible">
+        <p>右上角有收藏标志</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewy60qr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/morningling">morningling</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewy60qr">Aug 15 2019 13:24:09</a>
+    </p>
+    <div class="collapsible">
+        <p>所有浪人必须把这个整明白了！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewyd9rp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FKNXM">FKNXM</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewyd9rp">Aug 15 2019 14:24:35</a>
+    </p>
+    <div class="collapsible">
+        <p>啊 这 也太difficult了吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewyl9q3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HyperCyberBoi">HyperCyberBoi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewyl9q3">Aug 15 2019 15:30:01</a>
+    </p>
+    <div class="collapsible">
+        <p>中！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ewyv7rt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/aimuchainiri">aimuchainiri</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqhcht/_/ewyv7rt">Aug 15 2019 16:40:58</a>
+    </p>
+    <div class="collapsible">
+        <p>你的妈妈的，手机版不能复制，手打太难了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

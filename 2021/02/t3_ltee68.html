@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>人均图纸大作</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ltee68">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/EcstaticChef1">EcstaticChef1</a>
+        |
+        <span class="score">15 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ltee68">Feb 27 2021 02:44:36</a>
+    </p>
+    <strong>人均图纸大作</strong>
+    <p><a href="https://i.redd.it/tuwwyqzboxj61.jpg">https://i.redd.it/tuwwyqzboxj61.jpg</a></p>
+</div>
+<div class="comment" id="t1_goxk0df">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Swan9624">Swan9624</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ltee68/_/goxk0df">Feb 27 2021 03:05:17</a>
+    </p>
+    <div class="collapsible">
+        <p>遥了我把，啊不，算我一个</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_goy0w1q">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/firesys">firesys</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ltee68/_/goy0w1q">Feb 27 2021 04:39:44</a>
+    </p>
+    <div class="collapsible">
+        <p>And so do I.</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>神似</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ls7y4b">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Errrrrxi">Errrrrxi</a>
+        |
+        <span class="score">22 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ls7y4b">Feb 25 2021 14:39:00</a>
+    </p>
+    <strong>神似</strong>
+    <p><a href="https://www.reddit.com/gallery/ls7y4b">https://www.reddit.com/gallery/ls7y4b</a></p>
+</div>
+<div class="comment" id="t1_gopz0xm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MedinaD24">MedinaD24</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ls7y4b/_/gopz0xm">Feb 25 2021 16:32:33</a>
+    </p>
+    <div class="collapsible">
+        <p>以为图二会是本拉登竖食指</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gopkcc4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hittaito">hittaito</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ls7y4b/_/gopkcc4">Feb 25 2021 14:47:08</a>
+    </p>
+    <div class="collapsible">
+        <p>侮辱周恩来了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

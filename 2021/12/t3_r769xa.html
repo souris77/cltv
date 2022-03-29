@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>最高指示</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r769xa">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/cyber-immigrant">cyber-immigrant</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r769xa">Dec 02 2021 12:20:40</a>
+    </p>
+    <strong>最高指示</strong>
+    <p><p>国家主席习近平今日强调，由于豆瓣在历史探索中的一些小小挫折，集美狂暴鸿儒红迪已成不可阻挡之历史大势，在集美鸿儒的新常态下各级单位要充分做好准备，放弃清零的幻想，充分做到与集美有序合理共存</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

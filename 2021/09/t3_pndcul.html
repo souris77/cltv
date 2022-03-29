@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>好玩</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pndcul">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/4sth">4sth</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pndcul">Sep 13 2021 11:16:42</a>
+    </p>
+    <strong>好玩</strong>
+    <p><a href="https://i.redd.it/70aapg7jr3n71.gif">https://i.redd.it/70aapg7jr3n71.gif</a></p>
+</div>
+<div class="comment" id="t1_hcofaa4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dark_devil_blade">dark_devil_blade</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pndcul/_/hcofaa4">Sep 13 2021 11:23:17</a>
+    </p>
+    <div class="collapsible">
+        <p>草，走，忽略！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hcokzxp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/shechingpink">shechingpink</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pndcul/_/hcokzxp">Sep 13 2021 12:23:46</a>
+    </p>
+    <div class="collapsible">
+        <p>小亮给他整个火s plus pro max</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

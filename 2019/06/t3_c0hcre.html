@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>这个页面咋弄回去啊</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_c0hcre">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Ruisososiii">Ruisososiii</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0hcre">Jun 14 2019 07:40:07</a>
+    </p>
+    <strong>这个页面咋弄回去啊</strong>
+    <p><p>我之前浏览的页面还阔以，不知道点了哪就成了这个b样了</p></p>
+</div>
+<div class="comment" id="t1_er4m3v5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ruisososiii">Ruisososiii</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0hcre/_/er4m3v5">Jun 14 2019 07:40:32</a>
+    </p>
+    <div class="collapsible">
+        <p>评论怎么发图啊透</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_er4mn4z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zaingo">zaingo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0hcre/_/er4mn4z">Jun 14 2019 07:53:43</a>
+    </p>
+    <div class="collapsible">
+        <p>评论没法发图片嗷鐵支</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_er4mqqt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zaingo">zaingo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0hcre/_/er4mqqt">Jun 14 2019 07:56:16</a>
+    </p>
+    <div class="collapsible">
+        <p>你可以先上传图片到imgur，在复制粘贴网址</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

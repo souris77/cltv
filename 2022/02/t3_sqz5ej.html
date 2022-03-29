@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>恰早饭</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sqz5ej">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/2rdjjjjjj">2rdjjjjjj</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sqz5ej">Feb 12 2022 19:28:03</a>
+    </p>
+    <strong>恰早饭</strong>
+    <p><a href="https://v.redd.it/w3sv984begh81">https://v.redd.it/w3sv984begh81</a></p>
+</div>
+<div class="comment" id="t1_hwolx88">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Zealousideal-Ear4603">Zealousideal-Ear4603</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sqz5ej/_/hwolx88">Feb 12 2022 19:39:16</a>
+    </p>
+    <div class="collapsible">
+        <p>什么阿久氏井戸</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwqezb2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sqz5ej/_/hwqezb2">Feb 13 2022 03:31:36</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>雅作</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sb2y1f">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/watchingsunset">watchingsunset</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sb2y1f">Jan 23 2022 20:25:40</a>
+    </p>
+    <strong>雅作</strong>
+    <p><a href="https://i.redd.it/yocb3l6gyhd81.jpg">https://i.redd.it/yocb3l6gyhd81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hty0soh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Penguin_Q">Penguin_Q</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sb2y1f/_/hty0soh">Jan 23 2022 23:17:15</a>
+    </p>
+    <div class="collapsible">
+        <p>新皮肤：富贵儿</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htydfgl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Agitated_Habit514">Agitated_Habit514</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sb2y1f/_/htydfgl">Jan 24 2022 00:41:47</a>
+    </p>
+    <div class="collapsible">
+        <p>反转了，其实富贵啥也没穿，是想当皇帝的光屁股小丑</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htytp32">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Octane3610">Octane3610</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sb2y1f/_/htytp32">Jan 24 2022 02:34:22</a>
+    </p>
+    <div class="collapsible">
+        <p>实际上还没到脱衣服的时候</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Cursed tweet</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mf3iw5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/IsolationAssistance">IsolationAssistance</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mf3iw5">Mar 28 2021 15:55:14</a>
+    </p>
+    <strong>Cursed tweet</strong>
+    <p><a href="https://twitter.com/ReginaIplau/status/1375364238907072512">https://twitter.com/ReginaIplau/status/1375364238907072512</a></p>
+</div>
+<div class="comment" id="t1_gsl9bef">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mf3iw5/_/gsl9bef">Mar 28 2021 16:07:17</a>
+    </p>
+    <div class="collapsible">
+        <p>她是？</p>
+        <div class="comment" id="t1_gslbz7j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/IsolationAssistance">IsolationAssistance</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mf3iw5/_/gslbz7j">Mar 28 2021 16:27:48</a>
+    </p>
+    <div class="collapsible">
+        <p>China daily主编</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

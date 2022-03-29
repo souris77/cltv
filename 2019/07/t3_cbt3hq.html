@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>贴吧怎么回事儿?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cbt3hq">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/orangeBABU">orangeBABU</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cbt3hq">Jul 11 2019 08:09:32</a>
+    </p>
+    <strong>贴吧怎么回事儿?</strong>
+    <p><p>一直显示获取帖子失败，无法回复也看不到新回复。</p></p>
+</div>
+<div class="comment" id="t1_etig5oc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AsanoShimaiDon">AsanoShimaiDon</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cbt3hq/_/etig5oc">Jul 11 2019 12:44:34</a>
+    </p>
+    <div class="collapsible">
+        <p>被标记了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eti02u7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cbt3hq/_/eti02u7">Jul 11 2019 08:19:36</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_etkh7rg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lostxia">lostxia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cbt3hq/_/etkh7rg">Jul 12 2019 02:18:48</a>
+    </p>
+    <div class="collapsible">
+        <p>我还好啊，你被标记了吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

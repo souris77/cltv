@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>支那猪</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_t170tn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dklon5">dklon5</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t170tn">Feb 25 2022 15:45:24</a>
+    </p>
+    <strong>支那猪</strong>
+    <p><a href="https://i.redd.it/5werob1j20k81.jpg">https://i.redd.it/5werob1j20k81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hye6hf8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Tiny_Tip_5573">Tiny_Tip_5573</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t170tn/_/hye6hf8">Feb 25 2022 15:58:36</a>
+    </p>
+    <div class="collapsible">
+        <p>战争即和平，自由即奴役，无知即力量</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

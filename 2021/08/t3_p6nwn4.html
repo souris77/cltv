@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>今日第？绷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p6nwn4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/alanzung">alanzung</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p6nwn4">Aug 18 2021 09:42:48</a>
+    </p>
+    <strong>今日第？绷</strong>
+    <p><a href="https://i.redd.it/vw4cemzen1i71.jpg">https://i.redd.it/vw4cemzen1i71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h9i7vrr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Boushiyouchiyou">Boushiyouchiyou</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p6nwn4/_/h9i7vrr">Aug 19 2021 07:06:43</a>
+    </p>
+    <div class="collapsible">
+        <p>满18了，该整点R18的东西了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h9iga1t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/loneliness_tim21">loneliness_tim21</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p6nwn4/_/h9iga1t">Aug 19 2021 09:07:56</a>
+    </p>
+    <div class="collapsible">
+        <p>他的昵稱怎麼會是呢</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

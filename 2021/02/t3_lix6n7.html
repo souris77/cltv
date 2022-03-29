@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>有谁想私下看看我刚制作的高雅作品</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lix6n7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/humblehamster123">humblehamster123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lix6n7">Feb 13 2021 09:09:50</a>
+    </p>
+    <strong>有谁想私下看看我刚制作的高雅作品</strong>
+    <p><p>想要一些私下的一些意见，然后我再决定发不发作品</p></p>
+</div>
+<div class="comment" id="t1_gn67isr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/humblehamster123">humblehamster123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lix6n7/_/gn67isr">Feb 13 2021 09:28:25</a>
+    </p>
+    <div class="collapsible">
+        <p>他娘的，没人想看是吗，回去睡大觉去</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

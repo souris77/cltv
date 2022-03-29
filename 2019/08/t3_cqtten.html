@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>啊 这</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cqtten">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ChungCks">ChungCks</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqtten">Aug 15 2019 18:27:20</a>
+    </p>
+    <strong>啊 这</strong>
+    <p><a href="https://i.redd.it/ukydofa8ong31.jpg">https://i.redd.it/ukydofa8ong31.jpg</a></p>
+</div>
+<div class="comment" id="t1_ewzo8gf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/household_man">household_man</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqtten/_/ewzo8gf">Aug 15 2019 19:46:45</a>
+    </p>
+    <div class="collapsible">
+        <p>我昨天在首页上看见了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ex235yq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jingzhengen">jingzhengen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqtten/_/ex235yq">Aug 16 2019 13:23:30</a>
+    </p>
+    <div class="collapsible">
+        <p>我也看见了，辱包经典之一被自己人拿来用哈哈</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ex9zd1k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/6324vpvp">6324vpvp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cqtten/_/ex9zd1k">Aug 18 2019 02:50:36</a>
+    </p>
+    <div class="collapsible">
+        <p>昨天还能看，今天没了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

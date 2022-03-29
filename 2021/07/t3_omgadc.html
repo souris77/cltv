@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>哈哈</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_omgadc">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/RedRamster">RedRamster</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/omgadc">Jul 18 2021 00:42:18</a>
+    </p>
+    <strong>哈哈</strong>
+    <p><a href="https://i.redd.it/0vcj0291bvb71.jpg">https://i.redd.it/0vcj0291bvb71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h5lis27">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/duren13b">duren13b</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/omgadc/_/h5lis27">Jul 18 2021 05:04:05</a>
+    </p>
+    <div class="collapsible">
+        <p>反转了，圆谷就是最大右翼分子，为了反华故意在七月七日这天出生</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h5lq1mv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GandWall">GandWall</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/omgadc/_/h5lq1mv">Jul 18 2021 06:30:33</a>
+    </p>
+    <div class="collapsible">
+        <p>圆谷为帝国军部拍电影，还因此被盟军驻日长官亲自开除，是昭和好男儿啊</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

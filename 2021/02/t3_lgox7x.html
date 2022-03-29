@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>什么智能推荐</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lgox7x">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Impressive_Doctor586">Impressive_Doctor586</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgox7x">Feb 10 2021 07:58:04</a>
+    </p>
+    <strong>什么智能推荐</strong>
+    <p><a href="https://i.redd.it/g4n2c55rwlg61.jpg">https://i.redd.it/g4n2c55rwlg61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gmsuiej">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lO_Ov">lO_Ov</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgox7x/_/gmsuiej">Feb 10 2021 09:45:14</a>
+    </p>
+    <div class="collapsible">
+        <p>看成百里屠支新剧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gmsxmpf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HundredPoundFish">HundredPoundFish</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgox7x/_/gmsxmpf">Feb 10 2021 10:36:51</a>
+    </p>
+    <div class="collapsible">
+        <p>威廉马是吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

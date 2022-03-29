@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>大家觉得我这ID怎么样</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_os1fkp">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Economy-Baseball-776">Economy-Baseball-776</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/os1fkp">Jul 26 2021 15:45:47</a>
+    </p>
+    <strong>大家觉得我这ID怎么样</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_h6lm81m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ShitKingpin">ShitKingpin</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/os1fkp/_/h6lm81m">Jul 26 2021 16:08:46</a>
+    </p>
+    <div class="collapsible">
+        <p>评评我的</p>
+        <div class="comment" id="t1_h6ln8bl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RequirementPopular69">RequirementPopular69</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/os1fkp/_/h6ln8bl">Jul 26 2021 16:16:11</a>
+    </p>
+    <div class="collapsible">
+        <p>我投你一票</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

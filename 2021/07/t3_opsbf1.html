@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>多少有点无奈了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_opsbf1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/pisstips">pisstips</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/opsbf1">Jul 23 2021 01:55:33</a>
+    </p>
+    <strong>多少有点无奈了</strong>
+    <p><a href="https://i.redd.it/wwzibarncvc71.jpg">https://i.redd.it/wwzibarncvc71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h6798p4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/baozhiyingcheng">baozhiyingcheng</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/opsbf1/_/h6798p4">Jul 23 2021 02:10:06</a>
+    </p>
+    <div class="collapsible">
+        <p>不关注支那这帮无论唱歌还是演戏都做得批烂的艺人</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>高雅改编</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_g2td5a">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/v6291">v6291</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g2td5a">Apr 17 2020 02:37:26</a>
+    </p>
+    <strong>高雅改编</strong>
+    <p><a href="https://youtu.be/Y81G3BC7mV8">https://youtu.be/Y81G3BC7mV8</a></p>
+</div>
+<div class="comment" id="t1_fnng4ur">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/all730">all730</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g2td5a/_/fnng4ur">Apr 17 2020 02:46:31</a>
+    </p>
+    <div class="collapsible">
+        <p>你妈你妈死啦</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fnsd7f9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/thatWasXiSaid">thatWasXiSaid</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g2td5a/_/fnsd7f9">Apr 18 2020 14:10:46</a>
+    </p>
+    <div class="collapsible">
+        <p>支 那 国 歌</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

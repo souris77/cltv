@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>感觉自己支了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rf6pr1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/kelekele50">kelekele50</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rf6pr1">Dec 13 2021 04:07:44</a>
+    </p>
+    <strong>感觉自己支了</strong>
+    <p><p>这学期网课，学期时候宁可天天导管也不写作业，现在期末疯狂疯狂补。考试成绩自然也是低的离谱。但是我明明知道完全是自己不努力，还有种想要好绩点想法，是不是把支性带出国了。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

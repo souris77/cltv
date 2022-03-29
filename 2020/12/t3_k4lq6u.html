@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>热心网友</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k4lq6u">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yangguo1997">yangguo1997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lq6u">Dec 01 2020 14:21:23</a>
+    </p>
+    <strong>热心网友</strong>
+    <p><a href="https://i.redd.it/0jofv48f4l261.png">https://i.redd.it/0jofv48f4l261.png</a></p>
+</div>
+<div class="comment" id="t1_ge9itan">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HatsuneKokome">HatsuneKokome</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lq6u/_/ge9itan">Dec 01 2020 15:09:10</a>
+    </p>
+    <div class="collapsible">
+        <p>热心狱友</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ge9pn97">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HeannyHY">HeannyHY</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lq6u/_/ge9pn97">Dec 01 2020 16:06:15</a>
+    </p>
+    <div class="collapsible">
+        <p>回答的像个傻逼</p>
+        <div class="comment" id="t1_geakf35">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Import_Case">Import_Case</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lq6u/_/geakf35">Dec 01 2020 20:08:00</a>
+    </p>
+    <div class="collapsible">
+        <p>去死吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gebza8j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PuzzleheadedLoquat1">PuzzleheadedLoquat1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lq6u/_/gebza8j">Dec 02 2020 03:28:58</a>
+    </p>
+    <div class="collapsible">
+        <p>典</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

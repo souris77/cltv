@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>今日首笑</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mfth27">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/moreonenight">moreonenight</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mfth27">Mar 29 2021 16:34:01</a>
+    </p>
+    <strong>今日首笑</strong>
+    <p><p>大概这就是 trying too hard 吧。</p>
+<p>&#x200B;</p>
+<p>https://preview.redd.it/m8jrh0dlvzp61.jpg?width=1080&amp;format=pjpg&amp;auto=webp&amp;s=eaca7bf61de60a6f0d81131b142c88533cdc5999</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

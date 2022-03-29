@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>锁小了的牛子恢复记</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s4eez2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s4eez2">Jan 15 2022 06:59:22</a>
+    </p>
+    <strong>锁小了的牛子恢复记</strong>
+    <p><a href="https://v.redd.it/8xu0rex9vsb81">https://v.redd.it/8xu0rex9vsb81</a></p>
+</div>
+<div class="comment" id="t1_hsr0bxs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cbtv258">cbtv258</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s4eez2/_/hsr0bxs">Jan 15 2022 10:20:34</a>
+    </p>
+    <div class="collapsible">
+        <p>才知道原来里面也有个环</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

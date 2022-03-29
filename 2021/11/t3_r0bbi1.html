@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>如何在手机端实现多重代理，如vpn+app内置代理（如vpn+ TG/signal内置代理）， 还可以在vpn+vpn环境下产生无法监测的流量，如何操作？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r0bbi1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/No_Pride5131">No_Pride5131</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r0bbi1">Nov 23 2021 11:36:11</a>
+    </p>
+    <strong>如何在手机端实现多重代理，如vpn+app内置代理（如vpn+ TG/signal内置代理）， 还可以在vpn+vpn环境下产生无法监测的流量，如何操作？</strong>
+    <p><p>假设你用的是“Tor ＋ 赛风”。虽然“赛风服务器”知道你的真实公网 IP，但是无法知道你访问哪个网站，也不知道你访问的的内容（因为 Tor 的流量是加密滴）；而 Tor 的“最后一个节点”（出口节点）虽然知道你访问了哪个网站以及访问的内容，但是它不知道你来自哪里（不清楚你的真实公网 IP）</p>
+<p>-- 摘录自“随想君”</p></p>
+</div>
+<div class="comment" id="t1_hls10jz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r0bbi1/_/hls10jz">Nov 23 2021 15:40:08</a>
+    </p>
+    <div class="collapsible">
+        <p>手机上就不应该进行高风险操作，如果你是极度追求安全的人士</p>
+<p>一般鼠人根本没必要</p>
+<p>因此，如果需要的话请尽量使用PC虚拟机的环境进行操作</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hlsehcn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Positive_Ad_9418">Positive_Ad_9418</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r0bbi1/_/hlsehcn">Nov 23 2021 17:09:56</a>
+    </p>
+    <div class="collapsible">
+        <p>为什么非要在手机端操作，手机系统的安全根本比不过PC+Linux，即使你费尽心思实现了这些操作，手机里某个软件简单读取个应用列表，晶哥看你手机里又是赛风又是Tor的直接就给你安排了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hlso1st">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No-Hunt-4486">No-Hunt-4486</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r0bbi1/_/hlso1st">Nov 23 2021 18:10:57</a>
+    </p>
+    <div class="collapsible">
+        <p>你这个不现实。
+伪装到没有特征就是最大的特征。
+推荐用V2ray +CDN代理，你的流量就会像浏览https网页一样，连接的服务器ip也不是自己的，流量经CDN转发到你的服务器。唯一有可能泄漏的就是建立连接时的DNS查询，这个是明文。写个host记录就不会漏了，Android iOS不行。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

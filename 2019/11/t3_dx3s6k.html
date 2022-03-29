@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>太批爆了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_dx3s6k">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/nimingyonghu">nimingyonghu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dx3s6k">Nov 16 2019 07:23:37</a>
+    </p>
+    <strong>太批爆了</strong>
+    <p><a href="https://i.redd.it/u9g5bvfh20z31.png">https://i.redd.it/u9g5bvfh20z31.png</a></p>
+</div>
+<div class="comment" id="t1_f7urqxw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Nashnet">Nashnet</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dx3s6k/_/f7urqxw">Nov 17 2019 19:02:48</a>
+    </p>
+    <div class="collapsible">
+        <p>今天的帝吧就是缝合山庄日后的下场</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

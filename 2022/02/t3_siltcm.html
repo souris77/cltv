@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>吃整只</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_siltcm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/CatRollKeyBoard">CatRollKeyBoard</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/siltcm">Feb 02 2022 10:54:30</a>
+    </p>
+    <strong>吃整只</strong>
+    <p><a href="https://i.redd.it/t4un1oknhef81.png">https://i.redd.it/t4un1oknhef81.png</a></p>
+</div>
+<div class="comment" id="t1_hv9iqsv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/neo4life01">neo4life01</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/siltcm/_/hv9iqsv">Feb 02 2022 11:39:43</a>
+    </p>
+    <div class="collapsible">
+        <p>一个她，一个密子君，再加一个上了央视的甄能吃，仨人算是国内最早一批大胃王吃播了，现在全糊了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hv9qwnk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/NingChoww">NingChoww</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/siltcm/_/hv9qwnk">Feb 02 2022 13:01:31</a>
+    </p>
+    <div class="collapsible">
+        <p>也，这不是伞个七去过的吗</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

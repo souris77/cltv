@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>吧师</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mndtf8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Inside-Tourist-3455">Inside-Tourist-3455</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mndtf8">Apr 09 2021 09:54:17</a>
+    </p>
+    <strong>吧师</strong>
+    <p><a href="https://i.redd.it/1zh9y5zce4s61.jpg">https://i.redd.it/1zh9y5zce4s61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gtx2rgb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/shizidawang123">shizidawang123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mndtf8/_/gtx2rgb">Apr 09 2021 11:25:42</a>
+    </p>
+    <div class="collapsible">
+        <p>没用的，罗翔发再多的进步理念，也会被滞纳人曲解，一切都是资本家的错</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>什么鼠人嗯卷?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m66lrh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Curious_Community937">Curious_Community937</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m66lrh">Mar 16 2021 11:08:54</a>
+    </p>
+    <strong>什么鼠人嗯卷?</strong>
+    <p><a href="https://youtu.be/pM_dWTggCbM">https://youtu.be/pM_dWTggCbM</a></p>
+</div>
+<div class="comment" id="t1_gr43gog">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ministryofmeme">ministryofmeme</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m66lrh/_/gr43gog">Mar 16 2021 12:02:22</a>
+    </p>
+    <div class="collapsible">
+        <p>我要是这么可爱就好了😧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

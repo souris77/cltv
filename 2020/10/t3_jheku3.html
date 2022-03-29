@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>笑嘻了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jheku3">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/diaojinhu">diaojinhu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jheku3">Oct 24 2020 19:03:55</a>
+    </p>
+    <strong>笑嘻了</strong>
+    <p><a href="https://i.redd.it/b2hd5ba7b3v51.png">https://i.redd.it/b2hd5ba7b3v51.png</a></p>
+</div>
+<div class="comment" id="t1_g9xtv9j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/diaojinhu">diaojinhu</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jheku3/_/g9xtv9j">Oct 24 2020 19:05:05</a>
+    </p>
+    <div class="collapsible">
+        <p>不怕死（指冒着前线空袭做蛋炒饭）</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ga190yp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Next-Fig-3971">Next-Fig-3971</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jheku3/_/ga190yp">Oct 25 2020 09:25:31</a>
+    </p>
+    <div class="collapsible">
+        <p>小逼崽子敢不敢比划比划，三小时给你骨灰都扬了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

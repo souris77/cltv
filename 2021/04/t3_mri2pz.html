@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mri2pz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/nsieosl">nsieosl</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz">Apr 15 2021 16:17:16</a>
+    </p>
+    <strong>抽象</strong>
+    <p><a href="https://i.redd.it/ewoe8d654dt61.jpg">https://i.redd.it/ewoe8d654dt61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gumbt4s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Tuzhili">Tuzhili</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz/_/gumbt4s">Apr 15 2021 16:20:49</a>
+    </p>
+    <div class="collapsible">
+        <p>《我的蜘蛛室友喜歡外放，想圖了》</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gumdfl3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/rarwer">rarwer</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz/_/gumdfl3">Apr 15 2021 16:32:35</a>
+    </p>
+    <div class="collapsible">
+        <p>反转了，老年神友在寝室刷chonglangTV，被同寝室爱国兔友打死</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gumcemo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lapour_meta">lapour_meta</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz/_/gumcemo">Apr 15 2021 16:25:06</a>
+    </p>
+    <div class="collapsible">
+        <p>支纳寝室从幼儿园到养老院都这个比样</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gumchs9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/As_yun">As_yun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz/_/gumchs9">Apr 15 2021 16:25:44</a>
+    </p>
+    <div class="collapsible">
+        <p>老年抖音傻狗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gumj4ho">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Red-Is-Always-Sus">Red-Is-Always-Sus</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz/_/gumj4ho">Apr 15 2021 17:13:32</a>
+    </p>
+    <div class="collapsible">
+        <p>北欧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_guohb5p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/eatbonus">eatbonus</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mri2pz/_/guohb5p">Apr 16 2021 02:24:19</a>
+    </p>
+    <div class="collapsible">
+        <p>外放崽种是该杀杀</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

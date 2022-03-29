@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>圣诞礼物</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rodbrf">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rodbrf">Dec 25 2021 17:05:59</a>
+    </p>
+    <strong>圣诞礼物</strong>
+    <p><a href="https://www.reddit.com/gallery/rodbrf">https://www.reddit.com/gallery/rodbrf</a></p>
+</div>
+<div class="comment" id="t1_hpy8i8h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Peasant598">Peasant598</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rodbrf/_/hpy8i8h">Dec 25 2021 20:38:12</a>
+    </p>
+    <div class="collapsible">
+        <p>这😛😛😛</p>
+        <div class="comment" id="t1_hpy8pab">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rodbrf/_/hpy8pab">Dec 25 2021 20:39:51</a>
+    </p>
+    <div class="collapsible">
+        <p>喜欢这个圣诞树吗？</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

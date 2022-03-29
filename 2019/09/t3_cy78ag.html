@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>节目效果来了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cy78ag">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/6324xingping">6324xingping</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cy78ag">Sep 01 2019 07:47:16</a>
+    </p>
+    <strong>节目效果来了</strong>
+    <p><a href="https://i.redd.it/576iexuitxj31.jpg">https://i.redd.it/576iexuitxj31.jpg</a></p>
+</div>
+<div class="comment" id="t1_eyq7rvp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kkyhfsrhjgdd">kkyhfsrhjgdd</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cy78ag/_/eyq7rvp">Sep 01 2019 09:23:41</a>
+    </p>
+    <div class="collapsible">
+        <p>这是反串吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eyqaoid">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cy78ag/_/eyqaoid">Sep 01 2019 10:42:58</a>
+    </p>
+    <div class="collapsible">
+        <p>那么问题来了，谁才是帆船呢</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eyqdeuz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zaingo">zaingo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cy78ag/_/eyqdeuz">Sep 01 2019 11:49:27</a>
+    </p>
+    <div class="collapsible">
+        <p>来个链接</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eyskqnh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/weinidadi">weinidadi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cy78ag/_/eyskqnh">Sep 02 2019 05:22:37</a>
+    </p>
+    <div class="collapsible">
+        <p>哪个视频</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

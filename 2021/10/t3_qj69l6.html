@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>你的名字暴露了自己</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qj69l6">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/longlivetheroc">longlivetheroc</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qj69l6">Oct 30 2021 17:30:15</a>
+    </p>
+    <strong>你的名字暴露了自己</strong>
+    <p><a href="https://i.redd.it/r0dxouznhmw71.jpg">https://i.redd.it/r0dxouznhmw71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hio2bq8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RenTuRunZhi">RenTuRunZhi</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qj69l6/_/hio2bq8">Oct 30 2021 17:50:14</a>
+    </p>
+    <div class="collapsible">
+        <p>我丟嘞，怎麼看到我賬號了，怪不得最近反串總失敗，馬上更名嶗山可樂。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hipuylb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/suuhuanzhen">suuhuanzhen</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qj69l6/_/hipuylb">Oct 31 2021 02:11:14</a>
+    </p>
+    <div class="collapsible">
+        <p>沙丘确实挺好看的啊，但是这部只像一个楔子，好多内容还没展现出来</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hio52hx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qj69l6/_/hio52hx">Oct 30 2021 18:09:21</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

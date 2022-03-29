@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>一个小小测试</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lmimw1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Xingyulans">Xingyulans</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lmimw1">Feb 18 2021 09:15:58</a>
+    </p>
+    <strong>一个小小测试</strong>
+    <p><a href="https://www.reddit.com/gallery/lmimw1">https://www.reddit.com/gallery/lmimw1</a></p>
+</div>
+<div class="comment" id="t1_gnvj837">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Remarkable-Pea184">Remarkable-Pea184</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lmimw1/_/gnvj837">Feb 18 2021 11:32:40</a>
+    </p>
+    <div class="collapsible">
+        <p>🤝</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gnvmz47">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/JmmmkJay">JmmmkJay</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lmimw1/_/gnvmz47">Feb 18 2021 12:23:16</a>
+    </p>
+    <div class="collapsible">
+        <p>跟我差不多</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

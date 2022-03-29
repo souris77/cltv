@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>简介很难绷得住</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_njpia7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/VOLODYA_C">VOLODYA_C</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/njpia7">May 24 2021 04:28:27</a>
+    </p>
+    <strong>简介很难绷得住</strong>
+    <p><a href="https://i.redd.it/lmcxoyv6xz071.png">https://i.redd.it/lmcxoyv6xz071.png</a></p>
+</div>
+<div class="comment" id="t1_gz8sk54">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XingPing_the_Pooh">XingPing_the_Pooh</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/njpia7/_/gz8sk54">May 24 2021 05:36:27</a>
+    </p>
+    <div class="collapsible">
+        <p>不用chingchong很难绷的住</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gzc30t4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Dozorov">Dozorov</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/njpia7/_/gzc30t4">May 25 2021 00:17:50</a>
+    </p>
+    <div class="collapsible">
+        <p>大佐的迫真中文和英文</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

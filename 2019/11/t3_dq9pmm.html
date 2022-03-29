@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>reddit环境之复杂，不适合浪人</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_dq9pmm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Miyauchi_Renge">Miyauchi_Renge</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dq9pmm">Nov 01 2019 20:15:27</a>
+    </p>
+    <strong>reddit环境之复杂，不适合浪人</strong>
+    <p><p>如果说浪人嗨粉还属于同一“目”的话，那么Reddit环境之复杂，很可能跨越了“门”甚至“界”这一级别，</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

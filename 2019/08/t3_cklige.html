@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>他咋不开枪呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cklige">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/HikariQAQ">HikariQAQ</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cklige">Aug 01 2019 08:18:31</a>
+    </p>
+    <strong>他咋不开枪呢</strong>
+    <p><a href="https://twitter.com/i/status/1156518300269998081">https://twitter.com/i/status/1156518300269998081</a></p>
+</div>
+<div class="comment" id="t1_evpj063">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SurfingGypsy">SurfingGypsy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cklige/_/evpj063">Aug 01 2019 15:47:37</a>
+    </p>
+    <div class="collapsible">
+        <p>明明知道大家都知道他不敢开枪 还举 估计是想新闻给他们拍照片拍个帅的姿势吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

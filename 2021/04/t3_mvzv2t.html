@@ -1,0 +1,524 @@
+<html>
+<head>
+<title>蜘蛛的科学精神：向 linux kernel 提交含有漏洞的补丁</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mvzv2t">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AnteaterSufficient14">AnteaterSufficient14</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t">Apr 22 2021 07:52:49</a>
+    </p>
+    <strong>蜘蛛的科学精神：向 linux kernel 提交含有漏洞的补丁</strong>
+    <p><p><a href="https://www.solidot.org/story?sid=67561">https://www.solidot.org/story?sid=67561</a></p>
+<p>明尼苏达大学的博士生 Qiushi Wu 和助理教授 <a href="https://www-users.cs.umn.edu/~kjlu/">Kangjie Lu</a> 发表了论文《<a href="https://github.com/QiushiWu/QiushiWu.github.io/blob/main/papers/OpenSourceInsecurity.pdf">On the Feasibility of Stealthily Introducing Vulnerabilities in Open-Source Software via Hypocrite Commits</a>》，通过有意向内核递交含有安全漏洞的补丁测试悄悄向开源软件引入漏洞的可行性。两位研究人员称，他们向大学的评审委员会递交了实验申请，因为不涉及人类研究评审会批准了他们的实验。而当他们的补丁获得维护者的积极评价之后，他们立即通知维护者补丁是有漏洞，不要合并存在问题的补丁。他们的论文将在五月举行的 IEEE Symposium on Security and Privacy 虚拟会议上公开发表。Linux 内核社区随后知道了这次实验，但当有更多明尼苏达大学的研究人员递交存在疑问的补丁之后，稳定版内核维护者 Greg Kroah-Hartman <a href="https://twitter.com/gregkh/status/1384785747874656257">宣布</a>不再接受该大学的任何补丁，称内核开发者不愿意被做实验，内核也不是做实验的地方，研究人员是在浪费维护者的时间。此举也可能是向<a href="https://www.neowin.net/news/linux-bans-university-of-minnesota-for-sending-buggy-patches-in-the-name-of-research/">大学施压</a>，希望评审会不要再批准此类的实验。</p>
+<p>明尼苏达大学计算机科学和工程系在获悉它的一名教员和学生因做了向 Linux 内核引入 bug 的研究而导致内核拒绝接受大学补丁之后发表<a href="https://cse.umn.edu/cs/statement-cse-linux-kernel-research-april-21-2021">声明</a>，表示对此事非常严肃，已经立即停止了这方面的研究，将对研究方法和批准该研究方法的流程展开调查，确定合适的补救程序，防止未来发生类似的问题。他们会对外公布调查结果。</p></p>
+</div>
+<div class="comment" id="t1_gvf8flj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DaddyJinping">DaddyJinping</a>
+        |
+        <span class="score">13 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf8flj">Apr 22 2021 08:20:53</a>
+    </p>
+    <div class="collapsible">
+        <p>哈人，本sub人均程序员是吧，一个个消息跑的比香港记者还快</p>
+        <div class="comment" id="t1_gvfdys1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Liulang28">Liulang28</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfdys1">Apr 22 2021 09:51:41</a>
+    </p>
+    <div class="collapsible">
+        <p>左一个!=右一个==的</p>
+        <div class="comment" id="t1_gvgbd5v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/100kgwheat">100kgwheat</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvgbd5v">Apr 22 2021 15:18:13</a>
+    </p>
+    <div class="collapsible">
+        <p>==?</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gvf7ywr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Icy_Demand_3798">Icy_Demand_3798</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf7ywr">Apr 22 2021 08:13:26</a>
+    </p>
+    <div class="collapsible">
+        <p>本科一个北大一个中科大的</p>
+        <div class="comment" id="t1_gvhqgi9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nn1ght">nn1ght</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvhqgi9">Apr 22 2021 21:17:19</a>
+    </p>
+    <div class="collapsible">
+        <p>&rt; Kangjie Lu</p>
+<p>重庆大学本科，北大硕士，简历上自称来自北大</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gvf9a77">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/LAMSTREAM">LAMSTREAM</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf9a77">Apr 22 2021 08:34:40</a>
+    </p>
+    <div class="collapsible">
+        <p>什么华为工程师</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvf8j8y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RomancingSugar">RomancingSugar</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf8j8y">Apr 22 2021 08:22:29</a>
+    </p>
+    <div class="collapsible">
+        <p>把爷气笑了，支那人真他妈是世界之癌。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvf9wou">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TheKeyToSchool">TheKeyToSchool</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf9wou">Apr 22 2021 08:44:52</a>
+    </p>
+    <div class="collapsible">
+        <p>我不觉得这个实验有道德问题。黑客向开源软件提交恶意补丁是真实的安全风险。如果这个补丁真的合进去了，那确实是另一回事，但他们在合并补丁之前就已经摊牌了，告诉了别人他这个补丁是有安全漏洞的。</p>
+<p>如果因为这个实验浪费了别人的时间就不道德，那Alan Sokal当年在Social Text发表钓鱼文章算是什么？</p>
+        <div class="comment" id="t1_gvfkioj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Wandsong">Wandsong</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfkioj">Apr 22 2021 11:24:48</a>
+    </p>
+    <div class="collapsible">
+        <p>对啊，这事又不是没发生过，某为不就这么干过？</p>
+<p>关键在于这个实验有社会学的性质。而且网络社区被当成实验对象有点哈人</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfo55j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/1igansss">1igansss</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfo55j">Apr 22 2021 12:06:45</a>
+    </p>
+    <div class="collapsible">
+        <p>确实，维护方的反应像恼羞成怒，虽然确实恶心人，但必须针对这个问题研究解决方案</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gvf9wup">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Rachekocht">Rachekocht</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf9wup">Apr 22 2021 08:44:57</a>
+    </p>
+    <div class="collapsible">
+        <p>知乎现在在把风向往这教授手下的一个三哥助教身上带</p>
+        <div class="comment" id="t1_gvfgs9o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/springarrow133">springarrow133</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfgs9o">Apr 22 2021 10:34:58</a>
+    </p>
+    <div class="collapsible">
+        <p>這印度人好像為這件事跟人吵起來，不過這篇論文連他的署名都沒有</p>
+<p>純粹來替教授給人罵的</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfc1yq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/_Newdkmf_">_Newdkmf_</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfc1yq">Apr 22 2021 09:20:14</a>
+    </p>
+    <div class="collapsible">
+        <p>开源精神基于什么？是信任。这几个支猪的行为相当于直接打 开源工作者的脸</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvf7i7m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Whythebanhammer">Whythebanhammer</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvf7i7m">Apr 22 2021 08:05:49</a>
+    </p>
+    <div class="collapsible">
+        <p>犧牲別人成就自己不就是支那信條之一嗎？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfj8lu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ImpossibleTech">ImpossibleTech</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfj8lu">Apr 22 2021 11:08:43</a>
+    </p>
+    <div class="collapsible">
+        <p>实验技术设计本身没有问题，问题主要出在社区那边认为这浪费了社区reviewer的时间。我觉得这事是实验流程设计问题，你的实验确实involve了别人进来，那么一是应该首先征得Linux社区委员会同意，二是事后应对受影响人员做出补偿</p>
+        <div class="comment" id="t1_gvfohk0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/1igansss">1igansss</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfohk0">Apr 22 2021 12:10:31</a>
+    </p>
+    <div class="collapsible">
+        <p>但是提前说明了就没有实验意义了，正是这种恶意实验曝光了现实层面的BUG，我觉得这个实验不厚道但有意义</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfjnz5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TheKeyToSchool">TheKeyToSchool</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfjnz5">Apr 22 2021 11:14:14</a>
+    </p>
+    <div class="collapsible">
+        <p>相比开源项目的安全性问题这些都无足轻重。如果斯诺登是美国英雄，那写这论文的人以后就是开源英雄。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfg8q7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TheKeyToSchool">TheKeyToSchool</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfg8q7">Apr 22 2021 10:27:01</a>
+    </p>
+    <div class="collapsible">
+        <p>貌似不少人没理解这事儿的性质，我搬个旧闻回顾一下黑客的科学精神吧：</p>
+<p>event-stream包是一个流行的npm库，每周下载量在200万次以上，但现在发现包含恶意代码，到目前为止已经有大约800万次的下载量，持续时间为2.5个月。</p>
+<p>event-stream 被很多的前端流行框架和库使用，每月有几千万下载量。Vue的官方脚手架 vue-cli 中使用了该依赖，React 则躲过了此次影响。</p>
+<p>flatmap-stream 中的恶意代码会扫描用户的 nodemodules 目录，因为所有从 npm 下载的模块都会放在此目录。如果发现在 nodemodules 存在特定的模块，则将恶意代码注入进去，从而盗取用户的数字货币。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfgzs0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/catbladespider">catbladespider</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfgzs0">Apr 22 2021 10:37:58</a>
+    </p>
+    <div class="collapsible">
+        <p>开源软件引入漏洞？给共享单车插个私人锁是吧？胡子早该剃剃了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvfbrpp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kleggclayton">kleggclayton</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvfbrpp">Apr 22 2021 09:15:33</a>
+    </p>
+    <div class="collapsible">
+        <p>读标题就评论是吧？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvhlney">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Any_Air5754">Any_Air5754</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvhlney">Apr 22 2021 20:42:55</a>
+    </p>
+    <div class="collapsible">
+        <p>反转了，这是美国人</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gvflsmn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Western-Project2094">Western-Project2094</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvflsmn">Apr 22 2021 11:40:06</a>
+    </p>
+    <div class="collapsible">
+        <p>看不懂内容直接评论，真就支那竟是我自己。</p>
+        <div class="comment" id="t1_gvhlum5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Any_Air5754">Any_Air5754</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvhlum5">Apr 22 2021 20:44:20</a>
+    </p>
+    <div class="collapsible">
+        <p>“我早就是兔友了”</p>
+        <div class="comment" id="t1_gvhlun4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AutoModerator">AutoModerator</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvhlun4">Apr 22 2021 20:44:20</a>
+    </p>
+    <div class="collapsible">
+        <p>还好，一切如愿以偿</p>
+<p><em>I am a bot, and this action was performed automatically. Please <a href="/message/compose/?to=/r/chonglangTV">contact the moderators of this subreddit</a> if you have any questions or concerns.</em></p>
+        <div class="comment" id="t1_gvhmot3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Any_Air5754">Any_Air5754</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mvzv2t/_/gvhmot3">Apr 22 2021 20:50:15</a>
+    </p>
+    <div class="collapsible">
+        <p>Good bot</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>简简单单又赢了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qheurm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/suuhuanzhen">suuhuanzhen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qheurm">Oct 28 2021 04:25:31</a>
+    </p>
+    <strong>简简单单又赢了</strong>
+    <p><a href="https://i.redd.it/y9h4dmutb4w71.jpg">https://i.redd.it/y9h4dmutb4w71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hichfsa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dark_devil_blade">dark_devil_blade</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qheurm/_/hichfsa">Oct 28 2021 05:17:42</a>
+    </p>
+    <div class="collapsible">
+        <p>赢了个"毛"</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hidbrxs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mr_QAQ_Malone">Mr_QAQ_Malone</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qheurm/_/hidbrxs">Oct 28 2021 11:52:15</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈哈抽象杯子，要是没有一代目的大头照，我都想买了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

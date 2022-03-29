@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Tankman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nwfipi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Upisd0wn">Upisd0wn</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwfipi">Jun 10 2021 05:01:17</a>
+    </p>
+    <strong>Tankman</strong>
+    <p><a href="https://i.redd.it/frqmigzv0a471.jpg">https://i.redd.it/frqmigzv0a471.jpg</a></p>
+</div>
+<div class="comment" id="t1_h1945dc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jiang_zemin">jiang_zemin</a>
+        |
+        <span class="score">19 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwfipi/_/h1945dc">Jun 10 2021 06:55:32</a>
+    </p>
+    <div class="collapsible">
+        <p>下月后，所有的人忘了。see you in 12 months</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h19lj1i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Quick-Accident2555">Quick-Accident2555</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nwfipi/_/h19lj1i">Jun 10 2021 11:09:54</a>
+    </p>
+    <div class="collapsible">
+        <p>哭了，你明明是真正的人，大写的人</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

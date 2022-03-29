@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sajpi2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/CommieHelicopterSea">CommieHelicopterSea</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sajpi2">Jan 23 2022 03:12:52</a>
+    </p>
+    <strong>抽象</strong>
+    <p><a href="https://i.redd.it/clcx86h5ucd81.jpg">https://i.redd.it/clcx86h5ucd81.jpg</a></p>
+</div>
+<div class="comment" id="t1_httyzhc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tuzhixuePhd">tuzhixuePhd</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sajpi2/_/httyzhc">Jan 23 2022 03:17:23</a>
+    </p>
+    <div class="collapsible">
+        <p>各路“防疫产品”商家赚的盆满钵满。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hturooj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AMongolia">AMongolia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sajpi2/_/hturooj">Jan 23 2022 07:23:17</a>
+    </p>
+    <div class="collapsible">
+        <p>鲁迅:?还能这么玩<img alt="gif" src="emote|free_emotes_pack|facepalm"></p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htuuctm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Few_Promise_663">Few_Promise_663</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sajpi2/_/htuuctm">Jan 23 2022 07:55:40</a>
+    </p>
+    <div class="collapsible">
+        <p>智商黑洞</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htv2a0h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tthob">tthob</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sajpi2/_/htv2a0h">Jan 23 2022 09:37:03</a>
+    </p>
+    <div class="collapsible">
+        <p>这是国外吧，有点抽象了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htvzp5c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kuwakatatakuma">kuwakatatakuma</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sajpi2/_/htvzp5c">Jan 23 2022 15:25:49</a>
+    </p>
+    <div class="collapsible">
+        <p>各个板子更刺激是吧，男女两人隔板接吻</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

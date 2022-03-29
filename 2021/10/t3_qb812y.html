@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>粉紅日常</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qb812y">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Brutus831201">Brutus831201</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qb812y">Oct 19 2021 09:41:06</a>
+    </p>
+    <strong>粉紅日常</strong>
+    <p><p>曾祖父被送到朝鮮吃凍土豆
+祖父碰到三年大吃飽十年大健身
+父親在天安門廣場前差點被坦克壓扁
+自己卻整天看吳京櫓管一邊高喊厲害了我的國</p></p>
+</div>
+<div class="comment" id="t1_hh7rrno">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MasterMandarin">MasterMandarin</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qb812y/_/hh7rrno">Oct 19 2021 10:05:56</a>
+    </p>
+    <div class="collapsible">
+        <p>我家那边有个志愿军九十年代搞p2p卷款run法国了，江泽民访法时还作为华人代表握手，照片被裱起来挂在自己老家大厅里。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

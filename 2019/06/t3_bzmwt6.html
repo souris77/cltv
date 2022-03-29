@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>是图片吗？咋没人说话呢？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_bzmwt6">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Northeastpark">Northeastpark</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzmwt6">Jun 12 2019 04:56:09</a>
+    </p>
+    <strong>是图片吗？咋没人说话呢？</strong>
+    <p><a href="https://i.redd.it/joqywut5xu331.png">https://i.redd.it/joqywut5xu331.png</a></p>
+</div>
+<div class="comment" id="t1_eqtvl7o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ilikepvssy">ilikepvssy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzmwt6/_/eqtvl7o">Jun 12 2019 06:20:38</a>
+    </p>
+    <div class="collapsible">
+        <p>？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eqxrbre">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/surfers_">surfers_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzmwt6/_/eqxrbre">Jun 12 2019 20:56:28</a>
+    </p>
+    <div class="collapsible">
+        <p>不是图片 是本人 怎么了？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这是否有点</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qs6sji">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AntonChen-">AntonChen-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qs6sji">Nov 12 2021 08:24:22</a>
+    </p>
+    <strong>这是否有点</strong>
+    <p><a href="https://i.redd.it/9q1hmzc4k4z71.jpg">https://i.redd.it/9q1hmzc4k4z71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hkb9kxl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiaoliu66666">xiaoliu66666</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qs6sji/_/hkb9kxl">Nov 12 2021 08:55:33</a>
+    </p>
+    <div class="collapsible">
+        <p>原来一个投诉扣这么多  还好我没投诉过 不然可能就出现在新闻上了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hkbei67">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lubenweinba">lubenweinba</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qs6sji/_/hkbei67">Nov 12 2021 10:09:14</a>
+    </p>
+    <div class="collapsible">
+        <p>互害社会，就该狠狠偷</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

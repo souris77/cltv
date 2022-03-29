@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>简单打点胶</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pieipr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/everythingbeginning">everythingbeginning</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pieipr">Sep 05 2021 14:54:43</a>
+    </p>
+    <strong>简单打点胶</strong>
+    <p><p>https://twitter.com/2mmbPkM00IJwIUV/status/1434501882483859462</p></p>
+</div>
+<div class="comment" id="t1_hboz3hl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/munemunechan">munemunechan</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pieipr/_/hboz3hl">Sep 05 2021 15:00:53</a>
+    </p>
+    <div class="collapsible">
+        <p>什么等日本人来侵略，谁有空侵略你？只要粮食足够的话夺取领土已经过时了。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

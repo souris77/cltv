@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>首页看到的，日漫痴太恩实力了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_dbns89">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/a8883116">a8883116</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dbns89">Oct 01 2019 04:02:47</a>
+    </p>
+    <strong>首页看到的，日漫痴太恩实力了</strong>
+    <p><a href="https://i.redd.it/6ino5nrtsup31.jpg">https://i.redd.it/6ino5nrtsup31.jpg</a></p>
+</div>
+<div class="comment" id="t1_f25t8dy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Another135">Another135</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dbns89/_/f25t8dy">Oct 02 2019 02:26:46</a>
+    </p>
+    <div class="collapsible">
+        <p>狂</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>哈哈</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mhnghr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/daiyub233">daiyub233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mhnghr">Apr 01 2021 04:22:04</a>
+    </p>
+    <strong>哈哈</strong>
+    <p><a href="https://i.redd.it/me9crppw0fq61.jpg">https://i.redd.it/me9crppw0fq61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gt06ghv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Independent-Ad-3257">Independent-Ad-3257</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mhnghr/_/gt06ghv">Apr 01 2021 06:56:11</a>
+    </p>
+    <div class="collapsible">
+        <p>左上被孤立了，笑</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>每天早上起床看帖子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mn74wd">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Anybody-Few">Anybody-Few</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn74wd">Apr 09 2021 02:02:49</a>
+    </p>
+    <strong>每天早上起床看帖子</strong>
+    <p><p>为什么总是记不住自己思绪飞扬的时候想的什么？老是看到最后就把前面忘的差不多了，弄的我感觉自己脑子有问题了</p></p>
+</div>
+<div class="comment" id="t1_gtwi8ed">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/modaoshishuo">modaoshishuo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn74wd/_/gtwi8ed">Apr 09 2021 06:17:14</a>
+    </p>
+    <div class="collapsible">
+        <p>不需要记得，又不用考试。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

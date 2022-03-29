@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>什么生物</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_gpv18q">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/j0l5a_6k2n2">j0l5a_6k2n2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gpv18q">May 24 2020 18:49:34</a>
+    </p>
+    <strong>什么生物</strong>
+    <p><a href="https://v.redd.it/9lhl87c5er051">https://v.redd.it/9lhl87c5er051</a></p>
+</div>
+<div class="comment" id="t1_frqbjkh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/passione1">passione1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gpv18q/_/frqbjkh">May 25 2020 02:39:28</a>
+    </p>
+    <div class="collapsible">
+        <p>猫</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_frqog0l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bluebird-flyingfish">Bluebird-flyingfish</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gpv18q/_/frqog0l">May 25 2020 05:09:04</a>
+    </p>
+    <div class="collapsible">
+        <p>小丑皇</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_frr5sce">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iloveaeon">iloveaeon</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gpv18q/_/frr5sce">May 25 2020 09:31:57</a>
+    </p>
+    <div class="collapsible">
+        <p>金毛狮王</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

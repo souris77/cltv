@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>guin!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jdw5hx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lvxingjia">lvxingjia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jdw5hx">Oct 19 2020 05:52:12</a>
+    </p>
+    <strong>guin!</strong>
+    <p><a href="https://v.redd.it/5t0focycqzt51">https://v.redd.it/5t0focycqzt51</a></p>
+</div>
+<div class="comment" id="t1_g9awowt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/yingzhen251">yingzhen251</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jdw5hx/_/g9awowt">Oct 19 2020 07:07:56</a>
+    </p>
+    <div class="collapsible">
+        <p>荷兰人</p>
+        <div class="comment" id="t1_g9awyt6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jdw5hx/_/g9awyt6">Oct 19 2020 07:12:46</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_g9b6o31">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/suiso2kayumi">suiso2kayumi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jdw5hx/_/g9b6o31">Oct 19 2020 10:18:40</a>
+    </p>
+    <div class="collapsible">
+        <p>马路没加盖，不喜欢开发商就滚出小区</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

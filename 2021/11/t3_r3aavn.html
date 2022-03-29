@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>怎么会事呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r3aavn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/StarPing">StarPing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r3aavn">Nov 27 2021 09:47:48</a>
+    </p>
+    <strong>怎么会事呢</strong>
+    <p><a href="https://www.reddit.com/gallery/r3aavn">https://www.reddit.com/gallery/r3aavn</a></p>
+</div>
+<div class="comment" id="t1_hm9bxpw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XiBaoZiShaBi">XiBaoZiShaBi</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r3aavn/_/hm9bxpw">Nov 27 2021 09:50:13</a>
+    </p>
+    <div class="collapsible">
+        <p>這種打碼根本沒有任何意義，不如不要打了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hm9yrpf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SINOKITES">SINOKITES</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r3aavn/_/hm9yrpf">Nov 27 2021 14:26:49</a>
+    </p>
+    <div class="collapsible">
+        <p>我们放假多少天啊？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

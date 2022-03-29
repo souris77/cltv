@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>简单对个联</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lk9b1e">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TimmyAlex599">TimmyAlex599</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9b1e">Feb 15 2021 08:26:38</a>
+    </p>
+    <strong>简单对个联</strong>
+    <p><a href="https://i.redd.it/av0al1ceqlh61.png">https://i.redd.it/av0al1ceqlh61.png</a></p>
+</div>
+<div class="comment" id="t1_gnimz99">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aggravating_Bison644">Aggravating_Bison644</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9b1e/_/gnimz99">Feb 15 2021 08:39:31</a>
+    </p>
+    <div class="collapsible">
+        <p>本是同根生</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gnj1o3w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Love-sky">Love-sky</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9b1e/_/gnj1o3w">Feb 15 2021 12:29:21</a>
+    </p>
+    <div class="collapsible">
+        <p>一直通过年度最乳网站！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gnj5ryg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Memento_mori69">Memento_mori69</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9b1e/_/gnj5ryg">Feb 15 2021 13:22:20</a>
+    </p>
+    <div class="collapsible">
+        <p>这网站也太狂了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

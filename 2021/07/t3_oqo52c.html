@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>简单玩个MC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oqo52c">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TW930211">TW930211</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqo52c">Jul 24 2021 11:22:38</a>
+    </p>
+    <strong>简单玩个MC</strong>
+    <p><a href="https://i.redd.it/miwywi4ra5d71.jpg">https://i.redd.it/miwywi4ra5d71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h6ctx93">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Broad-Cicada-6232">Broad-Cicada-6232</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqo52c/_/h6ctx93">Jul 24 2021 11:41:55</a>
+    </p>
+    <div class="collapsible">
+        <p>mc世界确实是平的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

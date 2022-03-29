@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>老不死的东西</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qnv1lm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Sea-Patient-1804">Sea-Patient-1804</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qnv1lm">Nov 06 2021 07:10:41</a>
+    </p>
+    <strong>老不死的东西</strong>
+    <p><a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20190917-%E5%8C%97%E4%BA%AC301%E5%8C%BB%E9%99%A2%E5%B9%BF%E5%91%8A%E8%AE%A9%E4%B8%AD%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%BB%B6%E5%AF%BF105%E5%B9%B4-%E6%AC%A1%E6%97%A5%E6%89%8D%E5%B1%8F%E8%94%BD">https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20190917-%E5%8C%97%E4%BA%AC301%E5%8C%BB%E9%99%A2%E5%B9%BF%E5%91%8A%E8%AE%A9%E4%B8%AD%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%BB%B6%E5%AF%BF105%E5%B9%B4-%E6%AC%A1%E6%97%A5%E6%89%8D%E5%B1%8F%E8%94%BD</a></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

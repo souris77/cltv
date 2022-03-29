@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>简单测试下隔壁狱友浓度</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oaqzqc">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/babosanmsl">babosanmsl</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oaqzqc">Jun 30 2021 06:04:16</a>
+    </p>
+    <strong>简单测试下隔壁狱友浓度</strong>
+    <p><a href="https://i.redd.it/tss5pxeqbc871.png">https://i.redd.it/tss5pxeqbc871.png</a></p>
+</div>
+<div class="comment" id="t1_h3jb46r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Unclezhou">Unclezhou</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oaqzqc/_/h3jb46r">Jun 30 2021 07:22:45</a>
+    </p>
+    <div class="collapsible">
+        <p>中国病毒是吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h3jdc65">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Shaun111Yang">Shaun111Yang</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oaqzqc/_/h3jdc65">Jun 30 2021 07:56:10</a>
+    </p>
+    <div class="collapsible">
+        <p>让顶针试试</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

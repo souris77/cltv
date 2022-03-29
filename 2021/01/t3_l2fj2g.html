@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>鼠人末路</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l2fj2g">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/datnoobisbloodthirst">datnoobisbloodthirst</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l2fj2g">Jan 22 2021 03:59:09</a>
+    </p>
+    <strong>鼠人末路</strong>
+    <p><a href="https://imgur.com/a/5fRDqwZ">https://imgur.com/a/5fRDqwZ</a></p>
+</div>
+<div class="comment" id="t1_gk591qc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/aint_black">aint_black</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l2fj2g/_/gk591qc">Jan 22 2021 05:04:36</a>
+    </p>
+    <div class="collapsible">
+        <p>鼠人鸡鸡好小</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

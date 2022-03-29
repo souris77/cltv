@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>借助github搭建的匿名论坛</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_g41g19">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/95fae2a0">95fae2a0</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g41g19">Apr 19 2020 04:21:20</a>
+    </p>
+    <strong>借助github搭建的匿名论坛</strong>
+    <p><p>主题列表：<a href="https://github.com/duty-machine/forum/issues">https://github.com/duty-machine/forum/issues</a></p>
+<p>新建主题：<a href="https://duty-machine-forum.herokuapp.com/">https://duty-machine-forum.herokuapp.com/</a></p>
+<p>回复主题请使用主题内文里指引的链接进行提交，如 <a href="https://github.com/duty-machine/forum/issues/1">https://github.com/duty-machine/forum/issues/1</a> 里指引的 <a href="https://duty-machine-forum.herokuapp.com/reply/1">https://duty-machine-forum.herokuapp.com/reply/1</a> 。</p>
+<p>所有回复都会使用repo所有者的账号发出，所以不用担心身份暴露。</p></p>
+</div>
+<div class="comment" id="t1_fnutcfu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xixixixijijijiay">xixixixijijijiay</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g41g19/_/fnutcfu">Apr 19 2020 04:29:14</a>
+    </p>
+    <div class="collapsible">
+        <p>repo所有者可以看到回复人的信息吗？</p>
+        <div class="comment" id="t1_fnuutqp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/95fae2a0">95fae2a0</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g41g19/_/fnuutqp">Apr 19 2020 04:47:48</a>
+    </p>
+    <div class="collapsible">
+        <p>原则上 <a href="https://duty-machine-forum.herokuapp.com/">https://duty-machine-forum.herokuapp.com/</a> 是可以获得提交者的ip的，但是我没有这么干，这个页面的代码也非常简单，开源在 <a href="https://github.com/duty-machine/forum-form">https://github.com/duty-machine/forum-form</a> 。除了ip外我不可能获得提交者的任何信息（即使我想）。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_fnvd4p7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FCIJQUWBF">FCIJQUWBF</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g41g19/_/fnvd4p7">Apr 19 2020 09:33:16</a>
+    </p>
+    <div class="collapsible">
+        <p>没体验</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fnwi5iu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aidenfred">Aidenfred</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/g41g19/_/fnwi5iu">Apr 19 2020 17:53:47</a>
+    </p>
+    <div class="collapsible">
+        <p>因垂死听</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

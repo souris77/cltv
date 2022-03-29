@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>这下大吃饱了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_su6l21">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/wantfre">wantfre</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/su6l21">Feb 16 2022 21:13:04</a>
+    </p>
+    <strong>这下大吃饱了</strong>
+    <p><a href="https://i.redd.it/i8p2i2wrg9i81.jpg">https://i.redd.it/i8p2i2wrg9i81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hx82lrx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Lower-Mulberry2684">Lower-Mulberry2684</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/su6l21/_/hx82lrx">Feb 16 2022 21:15:33</a>
+    </p>
+    <div class="collapsible">
+        <p>你在暗示什么？你在隐喻什么？你想干什么？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

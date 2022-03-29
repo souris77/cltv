@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>你帮我我不帮你</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_e0239j">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/liaoupupup">liaoupupup</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e0239j">Nov 22 2019 14:59:17</a>
+    </p>
+    <strong>你帮我我不帮你</strong>
+    <p><p>新换了个号</p></p>
+</div>
+<div class="comment" id="t1_f8bm0up">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wwe9527">wwe9527</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e0239j/_/f8bm0up">Nov 22 2019 16:27:12</a>
+    </p>
+    <div class="collapsible">
+        <p>盖茨回来了？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f8d8h6i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cyrano-">cyrano-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e0239j/_/f8d8h6i">Nov 23 2019 03:58:39</a>
+    </p>
+    <div class="collapsible">
+        <p>盖茨回来了？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f8g1d1v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AsanoShimaiDon">AsanoShimaiDon</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e0239j/_/f8g1d1v">Nov 23 2019 23:43:59</a>
+    </p>
+    <div class="collapsible">
+        <p>什么盖茨回来了？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

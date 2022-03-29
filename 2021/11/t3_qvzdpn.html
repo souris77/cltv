@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>评论绷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qvzdpn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Butters_777999">Butters_777999</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qvzdpn">Nov 17 2021 13:33:40</a>
+    </p>
+    <strong>评论绷</strong>
+    <p><a href="https://www.reddit.com/gallery/qvzdpn">https://www.reddit.com/gallery/qvzdpn</a></p>
+</div>
+<div class="comment" id="t1_hkzrvfq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/John_Best_14425">John_Best_14425</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qvzdpn/_/hkzrvfq">Nov 17 2021 14:55:08</a>
+    </p>
+    <div class="collapsible">
+        <p>万科就是 国内最清醒的 房企巨头</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

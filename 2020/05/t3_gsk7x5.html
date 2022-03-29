@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>有种无以名状的状态</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_gsk7x5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/PeaceKeepingAccount">PeaceKeepingAccount</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gsk7x5">May 29 2020 02:28:06</a>
+    </p>
+    <strong>有种无以名状的状态</strong>
+    <p><a href="https://www.youtube.com/watch?v=hOnqPvNZF9c&amp;list=RDCMUCJy4nUo1D4R3hlcP8XCLX9Q&amp;start_radio=1">https://www.youtube.com/watch?v=hOnqPvNZF9c&amp;list=RDCMUCJy4nUo1D4R3hlcP8XCLX9Q&amp;start_radio=1</a></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

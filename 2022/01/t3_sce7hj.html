@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>匿了，新家@我</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sce7hj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/zhonghuarabbit">zhonghuarabbit</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sce7hj">Jan 25 2022 13:51:13</a>
+    </p>
+    <strong>匿了，新家@我</strong>
+    <p><a href="https://i.redd.it/i88tl9pv9ud81.jpg">https://i.redd.it/i88tl9pv9ud81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hu5hvhw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kuwakatatakuma">kuwakatatakuma</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sce7hj/_/hu5hvhw">Jan 25 2022 13:53:12</a>
+    </p>
+    <div class="collapsible">
+        <p>新家看守所，和晶哥一起过年咯</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hu5juk4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Relative-Ad-5696">Relative-Ad-5696</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sce7hj/_/hu5juk4">Jan 25 2022 14:08:32</a>
+    </p>
+    <div class="collapsible">
+        <p>胆小如鼠</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

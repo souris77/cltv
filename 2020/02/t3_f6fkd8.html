@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>什么监狱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_f6fkd8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f6fkd8">Feb 19 2020 19:06:23</a>
+    </p>
+    <strong>什么监狱</strong>
+    <p><a href="https://twitter.com/cute2uu/status/1230144881143607298">https://twitter.com/cute2uu/status/1230144881143607298</a></p>
+</div>
+<div class="comment" id="t1_fi5cogg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f6fkd8/_/fi5cogg">Feb 20 2020 00:54:54</a>
+    </p>
+    <div class="collapsible">
+        <p>梁山好汉专用监狱</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

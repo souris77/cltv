@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>有意思吗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rzse4o">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/china-negtive">china-negtive</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzse4o">Jan 09 2022 14:04:37</a>
+    </p>
+    <strong>有意思吗</strong>
+    <p><a href="https://youtu.be/F4nczjS0j30">https://youtu.be/F4nczjS0j30</a></p>
+</div>
+<div class="comment" id="t1_hrx20zx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Some-Commercial-4387">Some-Commercial-4387</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzse4o/_/hrx20zx">Jan 09 2022 14:39:56</a>
+    </p>
+    <div class="collapsible">
+        <p>俄罗斯到底当过蒙古人的狗啊，蒙古人统治过的地方怎么都那么支</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

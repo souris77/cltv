@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>为什么挂梯子也能收到红迪的推送？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rii881">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Affectionate-Bet5747">Affectionate-Bet5747</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881">Dec 17 2021 14:09:45</a>
+    </p>
+    <strong>为什么挂梯子也能收到红迪的推送？</strong>
+    <p><p>app会推送，在网页版登录过设置了网页权限允许推送消息之后，网页版也会在不挂梯子的情况下推送帖子消息。像红迪这种半橄榄状态的墙外平台还有吗</p></p>
+</div>
+<div class="comment" id="t1_hox41z6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Affectionate-Bet5747">Affectionate-Bet5747</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hox41z6">Dec 17 2021 14:12:34</a>
+    </p>
+    <div class="collapsible">
+        <p>我操，标题缺了“不”字，中文都用不明白了，英语怎么办！红迪不能改标题吗？只找到改帖子内容的开关，</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hox5ken">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Real__XiJinPing">Real__XiJinPing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hox5ken">Dec 17 2021 14:23:45</a>
+    </p>
+    <div class="collapsible">
+        <p>正常，墙管出不管进。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hox5w2w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SagerKing_xswl">SagerKing_xswl</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hox5w2w">Dec 17 2021 14:26:09</a>
+    </p>
+    <div class="collapsible">
+        <p>我gmail也是..开推送不管有没有开一律发新邮件</p>
+        <div class="comment" id="t1_hox7atx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Affectionate-Bet5747">Affectionate-Bet5747</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hox7atx">Dec 17 2021 14:36:31</a>
+    </p>
+    <div class="collapsible">
+        <p>邮箱一直都是能收到境外发过来的邮件的，橄榄大户都是境外电话短信电视信号这种视觉听觉上的敌台，还有网络热门平台如Google系列Facebook系列，以前有傻逼用QQ邮箱当twitter的辅助邮箱，评论点赞热门帖子全都嗯推送到QQ邮箱里，提醒浪人不要蠢蛋到这种地步</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hox84xr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pornlymorphism">Pornlymorphism</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hox84xr">Dec 17 2021 14:42:31</a>
+    </p>
+    <div class="collapsible">
+        <p>如果是使用 iOS 的话，那应该就是苹果的推送机制（APNS）。大概就是有新消息的时候，reddit 服务器会发送请求给苹果的服务器，然后苹果再转发到你的手机，手机再给那个app推送提示。而那个苹果服务器相当于把外网的消息取到局域网了。</p>
+<p>具体见<a href="https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1">APNS</a></p>
+<p>安卓的不太清楚</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hoxdtww">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SensitiveLie1788">SensitiveLie1788</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hoxdtww">Dec 17 2021 15:21:40</a>
+    </p>
+    <div class="collapsible">
+        <p>推送建议了解一下fcm是什么</p>
+<p>遇到点不理解的事就来下水道上窜下跳，鉴定为支</p>
+        <div class="comment" id="t1_hoxdyee">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Affectionate-Bet5747">Affectionate-Bet5747</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hoxdyee">Dec 17 2021 15:22:30</a>
+    </p>
+    <div class="collapsible">
+        <p>不许说我支😡</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hoxp44k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Coloful_cloud">Coloful_cloud</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rii881/_/hoxp44k">Dec 17 2021 16:34:36</a>
+    </p>
+    <div class="collapsible">
+        <p>一眼ios</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

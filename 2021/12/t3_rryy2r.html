@@ -1,0 +1,458 @@
+<html>
+<head>
+<title>Youtube视频下载教程 yt-dlp的使用(Win 10)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rryy2r">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r">Dec 30 2021 10:44:30</a>
+    </p>
+    <strong>Youtube视频下载教程 yt-dlp的使用(Win 10)</strong>
+    <p><p>如果没有Youtube Premium，下载Youtube视频一直是一个令人比较头痛的事情。无论你用的是油猴插件、解析网站还是<code>YoutubeDownloader</code>等工具，以前的下载方法多是基于项目<a href="https://youtube-dl.org/">youtube-dl</a>，这个项目在GitHub上有100k star，可以说造福了很多人。可是最近youtube-dl项目的发展一直停滞不前，在10月份左右的时候，终于在和Google程序员的斗争中败下阵来，不仅被限速到80KB/s，连清晰度也被限制在720P。</p>
+<p>那就只能买premium了吗？当然不是，youtube-dl的一个分支<a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>成为一颗冉冉升起的新星，接过了youtube-dl大旗，可是简中互联网少有yt-dlp的教程，官方英文教程又写的事无巨细，这篇教程就简单说明一下win10中yt-dlp怎么使用。</p>
+<h1>1 安装Python</h1>
+<ol>
+<li>首先检查一下自己电脑上有没有python，按Win+R并输入<code>cmd</code>，在弹出的终端中输入<code>python</code>，如果能正确显示版本号就说明已安装，版本号必须是3开头，例如3.10.1。</li>
+<li>下载并打开最新release包，链接 <a href="https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe">https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe</a> ，勾选最下面的"Add Python 3.10 to PATH"，然后选择"install now"，安装完毕后close。</li>
+<li>同步骤1，在终端中输入<code>python</code>，如果能正确显示版本号3.10.1就说明安装成功。键入<code>exit()</code>退出python，但不要关闭cmd</li>
+</ol>
+<h1>2 安装yt-dlp</h1>
+<ol>
+<li>在刚刚的cmd中键入<code>python -m pip install -U yt-dlp</code></li>
+<li>安装完成后就开始开始使用了，详细的使用教程见 <a href="https://github.com/yt-dlp/yt-dlp">https://github.com/yt-dlp/yt-dlp</a></li>
+<li>下面以下载这个视频为例: <a href="https://www.youtube.com/watch?v=njX2bu-_Vw4&amp;ab_channel=LGGlobal">https://www.youtube.com/watch?v=njX2bu-_Vw4&amp;ab_channel=LGGlobal</a></li>
+<li>打开你想保存视频的文件夹，按住shift后右键，选择"在此处打开PoweShell窗口"，输入<code>yt-dlp -F "https://www.youtube.com/watch?v=njX2bu-_Vw4&amp;ab_channel=LGGlobal"</code>查看视频信息(如果需要用代理，则加上<code>--proxy socks5://127.0.0.1:端口号</code>，以下同理，蝙蝠人无视)</li>
+<li>之后弹出一堆选项，注意到前几个行是封面图，接着几个行是音频，后面大部分都是视频(不含声音)，也就是视频和音频需要分别下载，然后再用第三步中的ffmpeg合并。可以注意到，第一列是不同选项的id，其中258是品质最高的音频文件.m4a，701是品质最高的视频文件.mp4(4k格式)</li>
+<li>接下来输入 <code>yt-dlp -f [ID] [视频链接]</code> 下载第二步中心仪的视频和音频，假如想下载最高的4K格式，就是 <code>yt-dlp -f 258+701 "https://www.youtube.com/watch?v=njX2bu-_Vw4&amp;ab_channel=LGGlobal"</code>，如果想下载1080p格式，ID就替换成399(或299或699)+701</li>
+<li>如果只是想下载720p或者更低清晰度的格式，是可以视频音频一起下载的，省去了第三步，上述视频对应的720p的id就是22，很简单可以辨别</li>
+</ol>
+<h1>3 安装ffmpeg</h1>
+<p>如上所说，如果想要下载清晰度超过720p的视频，只能将视频文件和音频文件分开下载，而ffmpeg则用来将二者合为一个视频。</p>
+<ol>
+<li>下载release包，链接 <a href="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip">https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip</a> 下载完成后，把安装包放到你喜欢的地方解压，例如 E:\ffmpeg，解压完成后出现bin文件夹，复制bin文件夹的路径，例如 E:\ffmpeg\bin</li>
+<li>按win+i打开设置，搜索"环境变量"，打开第一个，选择高级-&rt;环境变量-&rt;(第二栏)系统变量-&rt;找到PATH后单击-&rt;编辑-&rt;右侧的新建，然后把刚刚的路径(例如 E:\ffmpeg\bin)添加进去，保存并退出。</li>
+<li>参考2.4，在刚刚下载视频的文件夹下打开Poweshell，输入<code>ffmpeg -version</code>进行验证，不报错就是安装成功</li>
+<li>输入<code>ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a aac -strict experimental output.mp4</code>合并文件，其中把video和audio分别替换成第二步中下载文件的名字，output替换成你喜欢的名字</li>
+</ol>
+<h1>总结</h1>
+<ol>
+<li>如果需要更新，2.1再跑一遍就行</li>
+<li>先用<code>yt-dlp -F "[链接]"</code>查看视频信息</li>
+<li>再用<code>yt-dlp -f [ID+ID] "[链接]"</code>下载它们</li>
+<li>最后用<code>ffmpeg -i [video.mp4] -i [audio.m4a] -c:v copy -c:a aac -strict experimental [output.mp4]</code>合并文件</li>
+<li>高级功能，例如下载整个list，默认下载最高清晰度，开启多线程等等，可以查阅<a href="https://github.com/yt-dlp/yt-dlp">官方Github教程</a></li>
+</ol></p>
+</div>
+<div class="comment" id="t1_hqj6lth">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/river_mama">river_mama</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj6lth">Dec 30 2021 10:46:56</a>
+    </p>
+    <div class="collapsible">
+        <p>mac用户别看了，直接下downie，什么视频都能下</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqj6rgf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/InstructionStatus264">InstructionStatus264</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj6rgf">Dec 30 2021 10:48:58</a>
+    </p>
+    <div class="collapsible">
+        <p>我买了premium，因为手机听歌youtube不能关屏幕很烦</p>
+<p>买了以后能关屏幕了</p>
+        <div class="comment" id="t1_hqj76s6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj76s6">Dec 30 2021 10:54:20</a>
+    </p>
+    <div class="collapsible">
+        <p>别用APP，chrome桌面版网站就可以息屏播放</p>
+        <div class="comment" id="t1_hqj78pl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/InstructionStatus264">InstructionStatus264</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj78pl">Dec 30 2021 10:55:01</a>
+    </p>
+    <div class="collapsible">
+        <p>等等我试试</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqj7ihp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/InstructionStatus264">InstructionStatus264</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj7ihp">Dec 30 2021 10:58:33</a>
+    </p>
+    <div class="collapsible">
+        <p>真可以！！谢谢你</p>
+        <div class="comment" id="t1_hqj7ji0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj7ji0">Dec 30 2021 10:58:55</a>
+    </p>
+    <div class="collapsible">
+        <p>不客气</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hqjaccb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Infinite_History3180">Infinite_History3180</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjaccb">Dec 30 2021 11:34:10</a>
+    </p>
+    <div class="collapsible">
+        <p>安卓有vanced</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqnu48u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tough_leek">tough_leek</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqnu48u">Dec 31 2021 08:48:38</a>
+    </p>
+    <div class="collapsible">
+        <p>YouTube vanced，invidious.io</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hqj8j7g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Buckethead525">Buckethead525</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj8j7g">Dec 30 2021 11:11:41</a>
+    </p>
+    <div class="collapsible">
+        <p>idm也能下载吧</p>
+        <div class="comment" id="t1_hqj98qn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqj98qn">Dec 30 2021 11:20:29</a>
+    </p>
+    <div class="collapsible">
+        <p>idm纯纯的靠多线程提速，不过也还好。环境方面只有一个Python和添加环境变量，没啥问题</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hqjce87">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Practical-Car-6240">Practical-Car-6240</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjce87">Dec 30 2021 11:59:09</a>
+    </p>
+    <div class="collapsible">
+        <p>仅仅是下载单个视频的话，每次还要修改多个命令参数，和idm相比步骤还是略多了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqjfan9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SagerKing_xswl">SagerKing_xswl</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjfan9">Dec 30 2021 12:32:15</a>
+    </p>
+    <div class="collapsible">
+        <p>下什么视频，没有版权意识的东西</p>
+        <div class="comment" id="t1_hqjfd2j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjfd2j">Dec 30 2021 12:32:58</a>
+    </p>
+    <div class="collapsible">
+        <p>bad bot</p>
+        <div class="comment" id="t1_hqjfd39">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AutoModerator">AutoModerator</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjfd39">Dec 30 2021 12:32:59</a>
+    </p>
+    <div class="collapsible">
+        <p>没有教养的东西，怎么说话的</p>
+<p><em>I am a bot, and this action was performed automatically. Please <a href="/message/compose/?to=/r/chonglangTV">contact the moderators of this subreddit</a> if you have any questions or concerns.</em></p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hqjfhvh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Squirrel-6725">Ok-Squirrel-6725</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjfhvh">Dec 30 2021 12:34:25</a>
+    </p>
+    <div class="collapsible">
+        <p>you-get这个工具是不能用了吗</p>
+        <div class="comment" id="t1_hqjftf7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjftf7">Dec 30 2021 12:37:54</a>
+    </p>
+    <div class="collapsible">
+        <p>这个不是早就被限速了吗</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hqji6yq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sugarasker">sugarasker</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqji6yq">Dec 30 2021 13:02:37</a>
+    </p>
+    <div class="collapsible">
+        <p>插眼</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqjlg0u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ApartmentOk9250">ApartmentOk9250</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjlg0u">Dec 30 2021 13:33:48</a>
+    </p>
+    <div class="collapsible">
+        <p>保存了，挺好</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqjoagi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/annyance">annyance</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqjoagi">Dec 30 2021 13:58:43</a>
+    </p>
+    <div class="collapsible">
+        <p>我选择用解析网站</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqkbtqd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rryy2r/_/hqkbtqd">Dec 30 2021 16:48:24</a>
+    </p>
+    <div class="collapsible">
+        <p>直接idm插件完事</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

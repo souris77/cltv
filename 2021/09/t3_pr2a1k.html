@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>愛國</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pr2a1k">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/mario61752">mario61752</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pr2a1k">Sep 19 2021 05:47:47</a>
+    </p>
+    <strong>愛國</strong>
+    <p><a href="https://www.reddit.com/gallery/pqrvnu">https://www.reddit.com/gallery/pqrvnu</a></p>
+</div>
+<div class="comment" id="t1_hdfnhop">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Top_Cartoonist5383">Top_Cartoonist5383</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pr2a1k/_/hdfnhop">Sep 19 2021 06:45:01</a>
+    </p>
+    <div class="collapsible">
+        <p>下面看到个评论笑嘻了，先叫人拆房子再把拆房的人毙了就行</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hdfsl29">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pr2a1k/_/hdfsl29">Sep 19 2021 07:51:11</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

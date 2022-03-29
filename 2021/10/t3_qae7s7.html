@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>raddit里面欧友把我一个帖子给删了 因为发表了内容不符合信息</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qae7s7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Suitable_Freedom6570">Suitable_Freedom6570</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qae7s7">Oct 18 2021 03:18:17</a>
+    </p>
+    <strong>raddit里面欧友把我一个帖子给删了 因为发表了内容不符合信息</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_hh2fv2u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Melibolg-Yaegaki">Melibolg-Yaegaki</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qae7s7/_/hh2fv2u">Oct 18 2021 03:26:35</a>
+    </p>
+    <div class="collapsible">
+        <p>快进到rabbit</p>
+        <div class="comment" id="t1_hh2hxpx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhiyingbo">zhiyingbo</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qae7s7/_/hh2hxpx">Oct 18 2021 03:45:16</a>
+    </p>
+    <div class="collapsible">
+        <p>什么指左为右</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

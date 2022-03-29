@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>？？？求證</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rzzvfz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Euphoric-Tale2900">Euphoric-Tale2900</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzzvfz">Jan 09 2022 19:52:20</a>
+    </p>
+    <strong>？？？求證</strong>
+    <p><a href="https://i.redd.it/ev35mqjqvpa81.jpg">https://i.redd.it/ev35mqjqvpa81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hrzi0yt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/onakapekopekoda">onakapekopekoda</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzzvfz/_/hrzi0yt">Jan 09 2022 23:41:24</a>
+    </p>
+    <div class="collapsible">
+        <p>这里是中国</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hs1wcao">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ct_Gitcoin">ct_Gitcoin</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzzvfz/_/hs1wcao">Jan 10 2022 11:58:07</a>
+    </p>
+    <div class="collapsible">
+        <p>台友支了，这下又得做法事了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

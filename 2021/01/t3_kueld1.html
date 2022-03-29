@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>赢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kueld1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yangguo1997">yangguo1997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kueld1">Jan 10 2021 13:37:46</a>
+    </p>
+    <strong>赢</strong>
+    <p><a href="https://i.redd.it/t12gl6o3dia61.png">https://i.redd.it/t12gl6o3dia61.png</a></p>
+</div>
+<div class="comment" id="t1_girgnkp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Chink4ever">Chink4ever</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kueld1/_/girgnkp">Jan 10 2021 13:53:55</a>
+    </p>
+    <div class="collapsible">
+        <p>全世界唯有中国，坦克下还有</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_girnz8o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/LmA0_ZeD0nG">LmA0_ZeD0nG</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kueld1/_/girnz8o">Jan 10 2021 15:17:40</a>
+    </p>
+    <div class="collapsible">
+        <p>人民日报_ _ _，人民警察_ _ _</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_girto9b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dhhhja">dhhhja</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kueld1/_/girto9b">Jan 10 2021 16:11:39</a>
+    </p>
+    <div class="collapsible">
+        <p>吐了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>二次创作来了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kc1498">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/qigongqiangzhe">qigongqiangzhe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kc1498">Dec 13 2020 01:07:02</a>
+    </p>
+    <strong>二次创作来了</strong>
+    <p><a href="https://www.reddit.com/gallery/kc1498">https://www.reddit.com/gallery/kc1498</a></p>
+</div>
+<div class="comment" id="t1_gfmg6gk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/surfing_man">surfing_man</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kc1498/_/gfmg6gk">Dec 13 2020 01:28:06</a>
+    </p>
+    <div class="collapsible">
+        <p>有段时间贴吧疯狂发猪猪侠表情包，那个到底是吧友自制的还是去别的地方偷的，一直没看到有人申明梗来源</p>
+        <div class="comment" id="t1_gfodibr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HatsuneKokome">HatsuneKokome</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kc1498/_/gfodibr">Dec 13 2020 10:34:19</a>
+    </p>
+    <div class="collapsible">
+        <p>梗来源：B站Up主</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

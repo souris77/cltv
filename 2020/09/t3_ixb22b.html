@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>大的来了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ixb22b">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/qwer4790">qwer4790</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ixb22b">Sep 21 2020 22:37:00</a>
+    </p>
+    <strong>大的来了</strong>
+    <p><a href="http://www.cnbc.com/amp/2020/09/21/nypd-cop-charged-with-acting-as-china-agent.html">http://www.cnbc.com/amp/2020/09/21/nypd-cop-charged-with-acting-as-china-agent.html</a></p>
+</div>
+<div class="comment" id="t1_g6ai6kt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/teochewnang">teochewnang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ixb22b/_/g6ai6kt">Sep 23 2020 05:13:51</a>
+    </p>
+    <div class="collapsible">
+        <p>CNBC 新闻：</p>
+<p>藏裔美国纽约警察局官员被指控为中国特工。</p>
+<p>据称，出生在中国西藏自治区的警官白玛达杰·昂旺（Baimadajie Angwang）曾多次向中国驻纽约领事馆的官员报告纽约地区其他藏人的活动。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

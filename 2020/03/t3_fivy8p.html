@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>整上了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fivy8p">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Allen-ZOOM">Allen-ZOOM</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fivy8p">Mar 15 2020 04:36:48</a>
+    </p>
+    <strong>整上了</strong>
+    <p><a href="https://youtu.be/lKLlUq6Wd-o">https://youtu.be/lKLlUq6Wd-o</a></p>
+</div>
+<div class="comment" id="t1_fkjnwy4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/p315">p315</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fivy8p/_/fkjnwy4">Mar 15 2020 06:04:03</a>
+    </p>
+    <div class="collapsible">
+        <p>“一定要去训练哦，不是说枪给你你就会咯”<br>
+“我们要看到这个101的上空有歼20哦”</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fkku5a6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/waitimscrewed">waitimscrewed</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fivy8p/_/fkku5a6">Mar 15 2020 17:06:35</a>
+    </p>
+    <div class="collapsible">
+        <p>长得好像卢本伟</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fkn0p3d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WallStreetOldDog">WallStreetOldDog</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fivy8p/_/fkn0p3d">Mar 16 2020 08:40:59</a>
+    </p>
+    <div class="collapsible">
+        <p>有点机车哎</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

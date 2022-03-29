@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>惡意返鄉圖</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sd9i7e">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sd9i7e">Jan 26 2022 16:11:06</a>
+    </p>
+    <strong>惡意返鄉圖</strong>
+    <p><a href="https://www.reddit.com/gallery/sd9i7e">https://www.reddit.com/gallery/sd9i7e</a></p>
+</div>
+<div class="comment" id="t1_hubna96">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lilanarkiddy">lilanarkiddy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sd9i7e/_/hubna96">Jan 26 2022 17:58:35</a>
+    </p>
+    <div class="collapsible">
+        <p>恶意画画</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hubo2fm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dongmoto">dongmoto</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sd9i7e/_/hubo2fm">Jan 26 2022 18:03:11</a>
+    </p>
+    <div class="collapsible">
+        <p>恶意评论一下</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

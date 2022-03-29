@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>我亲自实验了一下，发现百度贴吧上确实不能使用“翠”字了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oapj3y">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/kuaileqitian">kuaileqitian</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oapj3y">Jun 30 2021 04:27:17</a>
+    </p>
+    <strong>我亲自实验了一下，发现百度贴吧上确实不能使用“翠”字了</strong>
+    <p><p>这件事做的很隐蔽，你在百度贴吧上回复个翠字，不会有任何风险提示，你不会发现任何问题，但你若是退出你的账号，就会发现回复看不到了，原来这个回复仅仅只有你才可以看到，别人是看不到的，又或者你用手机贴吧登录你的账号，点击一下你的回复，在自己的回复楼里才会发现回复被提示了存在风险，需要人工审核才可以显示</p>
+<p>我尝试过了，不管是词语还是句子还是一个短文，只要里面包含翠字就会被立刻锁定到，看来后台是已经把这个翠字列为敏感字了</p>
+<p>同样的，翠吧已经不能发消息</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>哈人</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pt43yo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/New-Edge-8765">New-Edge-8765</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pt43yo">Sep 22 2021 09:51:11</a>
+    </p>
+    <strong>哈人</strong>
+    <p><a href="https://youtu.be/j800SVeiS5I">https://youtu.be/j800SVeiS5I</a></p>
+</div>
+<div class="comment" id="t1_he0wmnn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No_Description9749">No_Description9749</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pt43yo/_/he0wmnn">Sep 23 2021 23:17:03</a>
+    </p>
+    <div class="collapsible">
+        <p>呜呜呜～～～～邪恶资本要吃人了～～～～～～～～～～</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hdtvt58">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ChongLangMan">ChongLangMan</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pt43yo/_/hdtvt58">Sep 22 2021 10:56:39</a>
+    </p>
+    <div class="collapsible">
+        <p>什么几把东西</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

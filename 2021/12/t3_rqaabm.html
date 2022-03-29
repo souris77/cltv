@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>一些烦恼</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rqaabm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/jobsjoestar">jobsjoestar</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rqaabm">Dec 28 2021 07:44:03</a>
+    </p>
+    <strong>一些烦恼</strong>
+    <p><p>我是那种比较典型的小镇做题家，成绩不好不坏，考上了个211的工科专业，高中时期我一直觉得虽然我与聪明两个字没有关系，但也不至于太笨。但是上了大学之后，学习却越来越力不从心。大学知识的宽度和深度都不是高中能比的，在学习中我遇到了很多的困难，对于很多知识，我都难以掌握原理，最后只能发挥做题家的本能，从课程中找出做题需要的知识点，忽略高深的部分，把知识变成了为做题而需的机械性练习。一想到接下来还要学习更多我根本理解不了的课程，我就越发受挫，也没有学习的积极性，不知道能否坚持下去</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

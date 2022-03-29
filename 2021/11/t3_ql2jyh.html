@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>Java 容器添加泛型限定后存在不可修改容器元素的情况 的通俗解释</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ql2jyh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Dangerous-Excuse4836">Dangerous-Excuse4836</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh">Nov 02 2021 11:55:43</a>
+    </p>
+    <strong>Java 容器添加泛型限定后存在不可修改容器元素的情况 的通俗解释</strong>
+    <p><p>&#x200B;</p>
+<p><strong>之前在网上找也没个好解释  后来想了下应该是这个原因  然后把这个回答发知乎没人关注 这里发出来验证下这个通俗解释合不合理</strong></p>
+<p>&#x200B;</p>
+<pre><code>class Person {
+    String name;
+    Person(String name){
+        this.name=name;
+    }
+}
+
+class Student extends Person{   
+    Student(String name){
+        super(name);
+    }
+}
+
+ArrayList&amp;lt;Student&amp;rt; x=new ArrayList&amp;lt;Student&amp;rt;();
+x.add(new Student("001"));
+ArrayList &amp;lt;? extends Person&amp;rt; s1=x;
+sop(s1.get(0).name);//可行 泛型上限将泛型类中泛型成员转为上限超类存储
+//s1.add(new Student("002"));//报错 设置泛型上限后无法添加/修改元素，原因：子类分支间不兼容
+
+ArrayList&amp;lt;? super Student&amp;rt; y=new ArrayList&amp;lt;Person&amp;rt;();
+//sop(y.get(0).name);//报错 泛型下限将泛型类中泛型成员转为Object存储
+y.add(new Student("002"));//可行 设置泛型下限后可添加/修改元素，原因：超类间兼容
+Student m=(Student)(y.get(0));
+sop(m.name);
+</code></pre>
+<p><strong>泛型限定的操作安全问题的原因：</strong></p>
+<p><strong>①设置泛型上限后无法添加/修改元素，原因：子类分支间不兼容（无共同下限类型），若加入新元素排序时（Set/Map）存在 新元素无已存元素的成员属性导致无法比较的问题</strong></p>
+<p><strong>②设置泛型下限后可添加/修改下限类型元素，原因：超类间兼容（存在共同下限类型），加入的新元素（被限定为共同下限类型）都包含已存元素的成员属性，新元素排序时（Set/Map）不存在已存元素比较方法由于新元素无指定成员属性导致无法比较的问题</strong></p></p>
+</div>
+<div class="comment" id="t1_hj07vb8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/NoChinaNoLife">NoChinaNoLife</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj07vb8">Nov 02 2021 12:55:58</a>
+    </p>
+    <div class="collapsible">
+        <p>不怎么会Java，但我不太明白①是什么意思。如果只比较泛型上限类所具有的属性会出问题吗...另外这样发贴相当于把红迪账户关联到了你的知乎账户。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj2g1lc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BenjilewisC">BenjilewisC</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj2g1lc">Nov 02 2021 21:57:24</a>
+    </p>
+    <div class="collapsible">
+        <p>真听不懂，能不能说英文</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj09hao">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/winniepooh-197977">winniepooh-197977</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj09hao">Nov 02 2021 13:09:35</a>
+    </p>
+    <div class="collapsible">
+        <p>第二到四行是构造方法吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj0fu37">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Scientist_691">Ok_Scientist_691</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj0fu37">Nov 02 2021 13:59:19</a>
+    </p>
+    <div class="collapsible">
+        <p>編程學不進去了 完全搞不清甚麼意思 草</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj0gdad">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/beatmysoymeat">beatmysoymeat</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj0gdad">Nov 02 2021 14:03:19</a>
+    </p>
+    <div class="collapsible">
+        <p>这好像是什么协变逆变的东西，平时基本用不到</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj0c1uj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj0c1uj">Nov 02 2021 13:30:20</a>
+    </p>
+    <div class="collapsible">
+        <p>Java真不熟</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hj2fd2b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Maxmilianbus">Maxmilianbus</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj2fd2b">Nov 02 2021 21:53:04</a>
+    </p>
+    <div class="collapsible">
+        <p>魔怔支那猪滚</p>
+        <div class="comment" id="t1_hj2h4gj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Dangerous-Excuse4836">Dangerous-Excuse4836</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj2h4gj">Nov 02 2021 22:04:26</a>
+    </p>
+    <div class="collapsible">
+        <p>能不能不要如此恶毒</p>
+        <div class="comment" id="t1_hj3v1ll">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/NingChoww">NingChoww</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ql2jyh/_/hj3v1ll">Nov 03 2021 03:57:03</a>
+    </p>
+    <div class="collapsible">
+        <p>抱抱</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

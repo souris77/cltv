@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>已经无动于衷了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_krautg">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FunnyEnvironment">FunnyEnvironment</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krautg">Jan 05 2021 23:35:12</a>
+    </p>
+    <strong>已经无动于衷了</strong>
+    <p><a href="https://i.redd.it/whtprykruj961.gif">https://i.redd.it/whtprykruj961.gif</a></p>
+</div>
+<div class="comment" id="t1_gi8zb12">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/T_F_Catus">T_F_Catus</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krautg/_/gi8zb12">Jan 06 2021 00:50:32</a>
+    </p>
+    <div class="collapsible">
+        <p>麻了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gi9cqdr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Eddie_Watermark4820">Eddie_Watermark4820</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krautg/_/gi9cqdr">Jan 06 2021 02:41:35</a>
+    </p>
+    <div class="collapsible">
+        <p>🐰：FBI  Everyone</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>顶级拉扯</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p2x34f">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/4sth">4sth</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p2x34f">Aug 12 2021 10:28:04</a>
+    </p>
+    <strong>顶级拉扯</strong>
+    <p><a href="https://v.redd.it/y2929rhuttg71">https://v.redd.it/y2929rhuttg71</a></p>
+</div>
+<div class="comment" id="t1_h8n3p0p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bihiki">bihiki</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p2x34f/_/h8n3p0p">Aug 12 2021 11:15:31</a>
+    </p>
+    <div class="collapsible">
+        <p>三颗星</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8oqf76">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Professional_Ice3229">Professional_Ice3229</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p2x34f/_/h8oqf76">Aug 12 2021 18:40:39</a>
+    </p>
+    <div class="collapsible">
+        <p>原帖下面的🐑大人怎么也😅了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

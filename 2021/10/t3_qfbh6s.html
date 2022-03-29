@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>怎么会是呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qfbh6s">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Training-Ad-584">Training-Ad-584</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qfbh6s">Oct 25 2021 07:33:29</a>
+    </p>
+    <strong>怎么会是呢</strong>
+    <p><a href="https://i.redd.it/4n0kna1nujv71.jpg">https://i.redd.it/4n0kna1nujv71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hhyuwpj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ChampionBitter5026">ChampionBitter5026</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qfbh6s/_/hhyuwpj">Oct 25 2021 09:52:10</a>
+    </p>
+    <div class="collapsible">
+        <p>这也能偷</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hhyv8a9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/CesareBorgia-">CesareBorgia-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qfbh6s/_/hhyv8a9">Oct 25 2021 09:56:52</a>
+    </p>
+    <div class="collapsible">
+        <p>偷完了，改吧，改成齐心tv</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

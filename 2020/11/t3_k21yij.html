@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>火折子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k21yij">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/tired2live">tired2live</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k21yij">Nov 27 2020 14:22:50</a>
+    </p>
+    <strong>火折子</strong>
+    <p><a href="https://v.redd.it/c71xps5ujs161">https://v.redd.it/c71xps5ujs161</a></p>
+</div>
+<div class="comment" id="t1_gdrths5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HatsuneKokome">HatsuneKokome</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k21yij/_/gdrths5">Nov 27 2020 15:40:33</a>
+    </p>
+    <div class="collapsible">
+        <p>这是什么鸡巴</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gdrwtkv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/calcalchad">calcalchad</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k21yij/_/gdrwtkv">Nov 27 2020 16:11:56</a>
+    </p>
+    <div class="collapsible">
+        <p>你妈的 不截完是吧</p>
+        <div class="comment" id="t1_geftkh9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tired2live">tired2live</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k21yij/_/geftkh9">Dec 03 2020 01:10:05</a>
+    </p>
+    <div class="collapsible">
+        <p>芯<br>
+https://v.redd.it/i8opdp3biv161</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

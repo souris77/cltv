@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>什么派对</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ivz9nq">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yangguo1997">yangguo1997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ivz9nq">Sep 19 2020 19:38:25</a>
+    </p>
+    <strong>什么派对</strong>
+    <p><a href="https://i.redd.it/wy7gn1xfq5o51.png">https://i.redd.it/wy7gn1xfq5o51.png</a></p>
+</div>
+<div class="comment" id="t1_g5x7a6f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/52hands">52hands</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ivz9nq/_/g5x7a6f">Sep 20 2020 03:49:34</a>
+    </p>
+    <div class="collapsible">
+        <p>正规吗？正规的我不去</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g5x697t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Soga_No_Shin">Soga_No_Shin</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ivz9nq/_/g5x697t">Sep 20 2020 03:43:30</a>
+    </p>
+    <div class="collapsible">
+        <p>桃谷六仙扯人服务</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g5v98k9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/privatehub">privatehub</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ivz9nq/_/g5v98k9">Sep 19 2020 21:36:14</a>
+    </p>
+    <div class="collapsible">
+        <p>这是啥服务啊</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

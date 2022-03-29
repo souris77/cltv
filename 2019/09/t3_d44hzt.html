@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>为什么呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_d44hzt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/6324xingping">6324xingping</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/d44hzt">Sep 14 2019 12:23:35</a>
+    </p>
+    <strong>为什么呢</strong>
+    <p><a href="https://i.redd.it/tm17o25oyjm31.jpg">https://i.redd.it/tm17o25oyjm31.jpg</a></p>
+</div>
+<div class="comment" id="t1_f0az5xq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/d44hzt/_/f0az5xq">Sep 15 2019 04:09:49</a>
+    </p>
+    <div class="collapsible">
+        <p>林俊杰可以</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f0b83w2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/JagPantherII">JagPantherII</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/d44hzt/_/f0b83w2">Sep 15 2019 05:00:37</a>
+    </p>
+    <div class="collapsible">
+        <p>还有这种歌词啊 我马上举报！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f0gwkt1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/d44hzt/_/f0gwkt1">Sep 16 2019 04:21:55</a>
+    </p>
+    <div class="collapsible">
+        <p>乱说是吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

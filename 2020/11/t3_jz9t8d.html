@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>帮忙填一下</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jz9t8d">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/somethin4nothing">somethin4nothing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jz9t8d">Nov 23 2020 03:20:14</a>
+    </p>
+    <strong>帮忙填一下</strong>
+    <p><a href="https://i.redd.it/q1d45bl6rw061.jpg">https://i.redd.it/q1d45bl6rw061.jpg</a></p>
+</div>
+<div class="comment" id="t1_gdb0myt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AdeptAd7944">AdeptAd7944</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jz9t8d/_/gdb0myt">Nov 23 2020 05:36:48</a>
+    </p>
+    <div class="collapsible">
+        <p>晶哥别钓了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gdazkzz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Import_Case">Import_Case</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jz9t8d/_/gdazkzz">Nov 23 2020 05:23:31</a>
+    </p>
+    <div class="collapsible">
+        <p>没有没有没有</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gdbru7a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/z707114356">z707114356</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jz9t8d/_/gdbru7a">Nov 23 2020 12:56:22</a>
+    </p>
+    <div class="collapsible">
+        <p>一切向好的方向在发展，稳定稳定还是稳定</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>这位更是重量级</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_i10tch">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/SnowzTail">SnowzTail</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i10tch">Jul 31 2020 04:02:18</a>
+    </p>
+    <strong>这位更是重量级</strong>
+    <p><a href="https://i.redd.it/nkkxvnqr23e51.gif">https://i.redd.it/nkkxvnqr23e51.gif</a></p>
+</div>
+<div class="comment" id="t1_fzu6e1f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/evilmindteddy">evilmindteddy</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i10tch/_/fzu6e1f">Jul 31 2020 06:33:35</a>
+    </p>
+    <div class="collapsible">
+        <p>跟r皇一样sb，比r皇帅了一匹。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fzu7nmq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Lunarfalcon666">Lunarfalcon666</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i10tch/_/fzu7nmq">Jul 31 2020 06:52:33</a>
+    </p>
+    <div class="collapsible">
+        <p>这是模仿David Blaine吧？<a href="https://youtu.be/wTqsV3q7rRU">street magic</a></p>
+        <div class="comment" id="t1_g01xq95">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/thatWasXiSaid">thatWasXiSaid</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i10tch/_/g01xq95">Aug 02 2020 03:44:12</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈笑死我了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

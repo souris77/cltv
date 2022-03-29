@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>繃不住了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_katigo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/rebutv">rebutv</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/katigo">Dec 11 2020 02:19:02</a>
+    </p>
+    <strong>繃不住了</strong>
+    <p><a href="https://i.redd.it/9kiacaokwg461.png">https://i.redd.it/9kiacaokwg461.png</a></p>
+</div>
+<div class="comment" id="t1_gfdgope">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KBS-114514">KBS-114514</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/katigo/_/gfdgope">Dec 11 2020 08:11:04</a>
+    </p>
+    <div class="collapsible">
+        <p>轮友行，节目效果还得看轮友</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gfd221l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sjpsuckmydick">sjpsuckmydick</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/katigo/_/gfd221l">Dec 11 2020 04:59:04</a>
+    </p>
+    <div class="collapsible">
+        <p>轮友滚，和粉蛆一样魔怔比属于是</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

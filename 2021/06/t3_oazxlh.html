@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Day7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oazxlh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oazxlh">Jun 30 2021 15:41:09</a>
+    </p>
+    <strong>Day7</strong>
+    <p><p>感觉浑身充满了力量</p></p>
+</div>
+<div class="comment" id="t1_h3kl9py">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FayeValente">FayeValente</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oazxlh/_/h3kl9py">Jun 30 2021 15:41:43</a>
+    </p>
+    <div class="collapsible">
+        <p>第七天睾酮水平会达到峰值</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h3kn6u6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/flymess233">flymess233</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oazxlh/_/h3kn6u6">Jun 30 2021 15:54:59</a>
+    </p>
+    <div class="collapsible">
+        <p>15天后，只要不主动触碰，从此可以成佛了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h3klh7i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PalatineTHEsenate">PalatineTHEsenate</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oazxlh/_/h3klh7i">Jun 30 2021 15:43:09</a>
+    </p>
+    <div class="collapsible">
+        <p>恰度他雄胺和螺内酯 吃上一年 永远解决问题</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

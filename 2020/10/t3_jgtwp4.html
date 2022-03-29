@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>你听说过安利吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jgtwp4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/wearneck">wearneck</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jgtwp4">Oct 23 2020 19:25:22</a>
+    </p>
+    <strong>你听说过安利吗？</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_g9tl8q6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/flymess233">flymess233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jgtwp4/_/g9tl8q6">Oct 24 2020 00:00:38</a>
+    </p>
+    <div class="collapsible">
+        <p>扭锤肾？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g9vaw6o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiaogoubaodi">xiaogoubaodi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jgtwp4/_/g9vaw6o">Oct 24 2020 07:08:42</a>
+    </p>
+    <div class="collapsible">
+        <p>1.卖保健品的
+2.灵灵后用语</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

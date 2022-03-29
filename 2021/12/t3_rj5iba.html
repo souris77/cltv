@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>盒老嗨细🔒，真的假的</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rj5iba">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Supreme_TF">Supreme_TF</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rj5iba">Dec 18 2021 11:19:57</a>
+    </p>
+    <strong>盒老嗨细🔒，真的假的</strong>
+    <p><a href="https://i.redd.it/mmxnqlm9ca681.jpg">https://i.redd.it/mmxnqlm9ca681.jpg</a></p>
+</div>
+<div class="comment" id="t1_hp1dtg0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rj5iba/_/hp1dtg0">Dec 18 2021 11:33:14</a>
+    </p>
+    <div class="collapsible">
+        <p>不绑手机号也可以查到，比较简单的是在你的社交平台都用一个昵称的情况下，直接查另外几个社交账号绑定的手机号就行。编程随想被抓，官方说是通过豆瓣的一个叫编程随想的ID找到信息的，是不是真的我暂且蒙古。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

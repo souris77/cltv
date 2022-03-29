@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>統治者的基本規則啊……真有趣</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p11auq">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Local-Light4539">Local-Light4539</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p11auq">Aug 09 2021 13:19:20</a>
+    </p>
+    <strong>統治者的基本規則啊……真有趣</strong>
+    <p><a href="https://youtu.be/rStL7niR7gs">https://youtu.be/rStL7niR7gs</a></p>
+</div>
+<div class="comment" id="t1_h8b6dzd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lifeisabit">lifeisabit</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p11auq/_/h8b6dzd">Aug 09 2021 17:41:02</a>
+    </p>
+    <div class="collapsible">
+        <p>这人做的科普视频质量都挺高的 并且都有极大量的research 甚至还有实地考察</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

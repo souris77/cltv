@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>什么小粉红</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k1h1z6">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Library-Subject">Library-Subject</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k1h1z6">Nov 26 2020 15:25:17</a>
+    </p>
+    <strong>什么小粉红</strong>
+    <p><a href="https://youtu.be/ZAbhK0Kggmw">https://youtu.be/ZAbhK0Kggmw</a></p>
+</div>
+<div class="comment" id="t1_gdpczxz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/champ1onchan">champ1onchan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k1h1z6/_/gdpczxz">Nov 26 2020 21:21:34</a>
+    </p>
+    <div class="collapsible">
+        <p>李毅可太聪明了，只要死死抱住党的大腿，哪怕鼓吹韭菜上前线梧桐台湾，发动战争也必受追捧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

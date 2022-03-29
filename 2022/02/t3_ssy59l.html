@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>简单出来sport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ssy59l">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/mulikezi">mulikezi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssy59l">Feb 15 2022 08:22:38</a>
+    </p>
+    <strong>简单出来sport</strong>
+    <p><a href="https://i.redd.it/6e5b0s7biyh81.jpg">https://i.redd.it/6e5b0s7biyh81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hx0j8rg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Scientist_691">Ok_Scientist_691</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssy59l/_/hx0j8rg">Feb 15 2022 08:51:17</a>
+    </p>
+    <div class="collapsible">
+        <p>我手腳不太協調 自卑了</p>
+        <div class="comment" id="t1_hx0lcvt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/mulikezi">mulikezi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssy59l/_/hx0lcvt">Feb 15 2022 09:20:44</a>
+    </p>
+    <div class="collapsible">
+        <p>抱抱，可以试着锻炼一下</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hx0m20z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WhiteHaloKing">WhiteHaloKing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssy59l/_/hx0m20z">Feb 15 2022 09:30:27</a>
+    </p>
+    <div class="collapsible">
+        <p>跳绳好运动诶</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

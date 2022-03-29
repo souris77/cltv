@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>忠拉</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kewkk5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/taekohnuki">taekohnuki</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kewkk5">Dec 17 2020 12:29:21</a>
+    </p>
+    <strong>忠拉</strong>
+    <p><a href="https://v.redd.it/7cz2otxxqq561">https://v.redd.it/7cz2otxxqq561</a></p>
+</div>
+<div class="comment" id="t1_gg5l3mt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/qkf62752">qkf62752</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kewkk5/_/gg5l3mt">Dec 17 2020 16:37:21</a>
+    </p>
+    <div class="collapsible">
+        <p>新人不懂解释下这个怎么回事</p>
+        <div class="comment" id="t1_gg6bsfz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Adiwang1989">Adiwang1989</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kewkk5/_/gg6bsfz">Dec 17 2020 20:11:17</a>
+    </p>
+    <div class="collapsible">
+        <p>中年男人钟某，和他的好女儿魔法🐷</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

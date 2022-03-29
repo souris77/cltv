@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>我比较高级我是神蛆</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rfbrym">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/auspiciousness233">auspiciousness233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rfbrym">Dec 13 2021 09:19:09</a>
+    </p>
+    <strong>我比较高级我是神蛆</strong>
+    <p><a href="https://i.redd.it/sacz08m52a581.jpg">https://i.redd.it/sacz08m52a581.jpg</a></p>
+</div>
+<div class="comment" id="t1_hoczrgy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XiBaoZiShaBi">XiBaoZiShaBi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rfbrym/_/hoczrgy">Dec 13 2021 09:21:19</a>
+    </p>
+    <div class="collapsible">
+        <p>前幾天發過了</p>
+        <div class="comment" id="t1_hoczurh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/auspiciousness233">auspiciousness233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rfbrym/_/hoczurh">Dec 13 2021 09:22:36</a>
+    </p>
+    <div class="collapsible">
+        <p>我火星了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

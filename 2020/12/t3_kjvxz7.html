@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>最后一次发帖（暂时的）</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kjvxz7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XJPNGWXl">XJPNGWXl</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kjvxz7">Dec 25 2020 08:41:53</a>
+    </p>
+    <strong>最后一次发帖（暂时的）</strong>
+    <p><p>之前发的很多贴都是用手机发的，自以为科学翻了以后就可以随便狂，这一次虽然是玩笑让我意识到人在墙国就算网络翻了也不安全。感谢神必人。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

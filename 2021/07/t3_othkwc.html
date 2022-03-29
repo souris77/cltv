@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>簡單乳個包</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_othkwc">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/jacky890818">jacky890818</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/othkwc">Jul 28 2021 19:53:59</a>
+    </p>
+    <strong>簡單乳個包</strong>
+    <p><a href="https://i.redd.it/y4lbwrjmd0e71.jpg">https://i.redd.it/y4lbwrjmd0e71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h6w5xrd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jiaiguo">jiaiguo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/othkwc/_/h6w5xrd">Jul 28 2021 23:36:52</a>
+    </p>
+    <div class="collapsible">
+        <p>反轉了，說的是宋師傅</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h6wob8k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Technical_Gold_5002">Technical_Gold_5002</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/othkwc/_/h6wob8k">Jul 29 2021 02:05:51</a>
+    </p>
+    <div class="collapsible">
+        <p>简单自个杀</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h6xwgew">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OK_Shirt123">OK_Shirt123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/othkwc/_/h6xwgew">Jul 29 2021 10:46:16</a>
+    </p>
+    <div class="collapsible">
+        <p>隔着屏幕都能闻到血腥味</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

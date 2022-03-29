@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>@晶哥</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kxgy16">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Leon_czebyczew">Leon_czebyczew</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kxgy16">Jan 14 2021 22:51:29</a>
+    </p>
+    <strong>@晶哥</strong>
+    <p><a href="https://i.redd.it/u2jwqrmjndb61.jpg">https://i.redd.it/u2jwqrmjndb61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gjad2i6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ScMassy">ScMassy</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kxgy16/_/gjad2i6">Jan 14 2021 23:53:09</a>
+    </p>
+    <div class="collapsible">
+        <p>洋大人的事那必须好好办。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gjc65w7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Beijing_cyber_police">Beijing_cyber_police</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kxgy16/_/gjc65w7">Jan 15 2021 12:39:12</a>
+    </p>
+    <div class="collapsible">
+        <p>收到，马上安排专人服务</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>简简单单唱个歌</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m3g7fd">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Taiwan_FKCCP">Taiwan_FKCCP</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m3g7fd">Mar 12 2021 12:06:28</a>
+    </p>
+    <strong>简简单单唱个歌</strong>
+    <p><a href="https://v.redd.it/cwpizmr98lm61">https://v.redd.it/cwpizmr98lm61</a></p>
+</div>
+<div class="comment" id="t1_gqosxub">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/LorenzoValentino2021">LorenzoValentino2021</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m3g7fd/_/gqosxub">Mar 12 2021 13:44:37</a>
+    </p>
+    <div class="collapsible">
+        <p>多发点 就爱看这个</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>这就是中国</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qvvpy7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Artorious233">Artorious233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qvvpy7">Nov 17 2021 09:40:27</a>
+    </p>
+    <strong>这就是中国</strong>
+    <p><a href="https://youtube.com/watch?v=mn0t8-5WPRI&amp;feature=share">https://youtube.com/watch?v=mn0t8-5WPRI&amp;feature=share</a></p>
+</div>
+<div class="comment" id="t1_hkzk1az">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Living_Traffic6324">Living_Traffic6324</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qvvpy7/_/hkzk1az">Nov 17 2021 13:55:11</a>
+    </p>
+    <div class="collapsible">
+        <p>这种片头和特效在当时是怎么做出来的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

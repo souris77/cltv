@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>简单复刻一下</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nqfu1j">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/sydgvs">sydgvs</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nqfu1j">Jun 02 2021 07:09:47</a>
+    </p>
+    <strong>简单复刻一下</strong>
+    <p><a href="https://www.reddit.com/gallery/nqfu1j">https://www.reddit.com/gallery/nqfu1j</a></p>
+</div>
+<div class="comment" id="t1_h0baqgg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Better_Broccoli14">Better_Broccoli14</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nqfu1j/_/h0baqgg">Jun 02 2021 13:54:01</a>
+    </p>
+    <div class="collapsible">
+        <p>小平还是敢认错的，腊肉是死要面子活受罪。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0ajl47">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SituationSmall">SituationSmall</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nqfu1j/_/h0ajl47">Jun 02 2021 08:37:31</a>
+    </p>
+    <div class="collapsible">
+        <p>第一次覺得鄧爺爺這麼高大偉岸</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0athgm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nqfu1j/_/h0athgm">Jun 02 2021 11:02:13</a>
+    </p>
+    <div class="collapsible">
+        <p>腊粉和神友少见能同时狂喜的场景</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0bampt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Better_Broccoli14">Better_Broccoli14</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nqfu1j/_/h0bampt">Jun 02 2021 13:53:12</a>
+    </p>
+    <div class="collapsible">
+        <p>邓小平：“我曾经也头脑发过热，不能把错误都归到毛主席，我当时也是党的书记，我也有责任”</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>普通背稿</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m06s1x">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yx4554041">yx4554041</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m06s1x">Mar 08 2021 03:31:02</a>
+    </p>
+    <strong>普通背稿</strong>
+    <p><a href="https://v.redd.it/rzsn2qfo4ql61">https://v.redd.it/rzsn2qfo4ql61</a></p>
+</div>
+<div class="comment" id="t1_gq6acqe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/qingzhenzhurou">qingzhenzhurou</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m06s1x/_/gq6acqe">Mar 08 2021 03:42:05</a>
+    </p>
+    <div class="collapsible">
+        <p>这说的话跟考试答案写串了一样</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

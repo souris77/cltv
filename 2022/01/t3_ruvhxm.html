@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>純純的蜘蛛</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ruvhxm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Arksheken">Arksheken</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ruvhxm">Jan 03 2022 06:54:16</a>
+    </p>
+    <strong>純純的蜘蛛</strong>
+    <p><a href="https://www.reddit.com/gallery/ruvhxm">https://www.reddit.com/gallery/ruvhxm</a></p>
+</div>
+<div class="comment" id="t1_hr1nb7t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Cuthbertism">Cuthbertism</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ruvhxm/_/hr1nb7t">Jan 03 2022 07:03:05</a>
+    </p>
+    <div class="collapsible">
+        <p>你们不懂法律是什么--我查了下百度百科</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hr1xkr0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sea-Technology-5291">Sea-Technology-5291</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ruvhxm/_/hr1xkr0">Jan 03 2022 09:10:38</a>
+    </p>
+    <div class="collapsible">
+        <p>怎么好像沙东人居多？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hr2fyh7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RatOfSewer">RatOfSewer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ruvhxm/_/hr2fyh7">Jan 03 2022 12:56:08</a>
+    </p>
+    <div class="collapsible">
+        <p>沙东人是这样</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

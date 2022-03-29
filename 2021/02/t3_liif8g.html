@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>SERRINI - 網絡安全隱患</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_liif8g">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/distantfiction">distantfiction</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/liif8g">Feb 12 2021 19:17:15</a>
+    </p>
+    <strong>SERRINI - 網絡安全隱患</strong>
+    <p><a href="https://www.youtube.com/watch?v=TyuMSmvNnhY&amp;ab_channel=Serrini">https://www.youtube.com/watch?v=TyuMSmvNnhY&amp;ab_channel=Serrini</a></p>
+</div>
+<div class="comment" id="t1_gn3abjl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/distantfiction">distantfiction</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/liif8g/_/gn3abjl">Feb 12 2021 19:20:24</a>
+    </p>
+    <div class="collapsible">
+        <p>香港歌手，人還滿有趣的。<a href="https://www.youtube.com/watch?v=Hqfe6HrQXUY&amp;ab_channel=Goomusic">這裡</a>可以聽她上何韻詩的podcast，雖然是廣東話。youtube有上中文字幕。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

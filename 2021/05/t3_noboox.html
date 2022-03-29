@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>简单抄个作业</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_noboox">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Green_Offer">Green_Offer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox">May 30 2021 13:54:57</a>
+    </p>
+    <strong>简单抄个作业</strong>
+    <p><a href="https://i.redd.it/8ahgyrmsj9271.jpg">https://i.redd.it/8ahgyrmsj9271.jpg</a></p>
+</div>
+<div class="comment" id="t1_gzz58pg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/CIRNO_8964">CIRNO_8964</a>
+        |
+        <span class="score">20 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox/_/gzz58pg">May 30 2021 14:08:04</a>
+    </p>
+    <div class="collapsible">
+        <p>之前台灣有個YouTuber惡整沒戴口罩的人，結果有人說在菲律賓直接槍斃了，這下成真了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gzz8v4p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Jared_att">Jared_att</a>
+        |
+        <span class="score">12 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox/_/gzz8v4p">May 30 2021 14:42:43</a>
+    </p>
+    <div class="collapsible">
+        <p>真假？菲利宾这么傻逼？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gzz6x7o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DangerousAd1191">DangerousAd1191</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox/_/gzz6x7o">May 30 2021 14:24:27</a>
+    </p>
+    <div class="collapsible">
+        <p>支那人不抄个作业么</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gzznbq8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/flymess233">flymess233</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox/_/gzznbq8">May 30 2021 16:48:12</a>
+    </p>
+    <div class="collapsible">
+        <p>枪毙的是图片上这个没带的吗？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h01kabc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox/_/h01kabc">May 31 2021 03:01:11</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h01to5j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/LeMoonSoda">LeMoonSoda</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/noboox/_/h01to5j">May 31 2021 04:42:12</a>
+    </p>
+    <div class="collapsible">
+        <p>還是標靶治療有效</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

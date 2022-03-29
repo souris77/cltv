@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>要素察觉</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rngcwb">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/gsygtr">gsygtr</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rngcwb">Dec 24 2021 06:47:01</a>
+    </p>
+    <strong>要素察觉</strong>
+    <p><a href="https://i.redd.it/r1uu5hf1tf781.jpg">https://i.redd.it/r1uu5hf1tf781.jpg</a></p>
+</div>
+<div class="comment" id="t1_hps7gy8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Row9134">Ok-Row9134</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rngcwb/_/hps7gy8">Dec 24 2021 07:01:48</a>
+    </p>
+    <div class="collapsible">
+        <p>蜘蛛感應</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hps7z8x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Black_Jack_008">Black_Jack_008</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rngcwb/_/hps7z8x">Dec 24 2021 07:08:04</a>
+    </p>
+    <div class="collapsible">
+        <p>支猪的灵敏感觉</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

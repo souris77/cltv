@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>选前典中典回忆</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p2dcs1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/DigitalReporterS01">DigitalReporterS01</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p2dcs1">Aug 11 2021 13:44:57</a>
+    </p>
+    <strong>选前典中典回忆</strong>
+    <p><p>美国盗票党总统候选人B登毫无征兆地在社交媒体上宣布："我现在是以一个盗票党人的身份竞选，但我将成为所有美国人的总统，无论你们给我投赞成票还是反对票，我都将代表你们。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

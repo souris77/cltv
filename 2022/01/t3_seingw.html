@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>这又是什么吧</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_seingw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Koigggyear">Koigggyear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/seingw">Jan 28 2022 04:59:10</a>
+    </p>
+    <strong>这又是什么吧</strong>
+    <p><a href="https://i.redd.it/gcq55z4p1de81.jpg">https://i.redd.it/gcq55z4p1de81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hujnb6b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nul3i">nul3i</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/seingw/_/hujnb6b">Jan 28 2022 05:18:54</a>
+    </p>
+    <div class="collapsible">
+        <p>引流缝合怪B小将</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hujno4a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Only_Egg_9751">Only_Egg_9751</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/seingw/_/hujno4a">Jan 28 2022 05:22:10</a>
+    </p>
+    <div class="collapsible">
+        <p>死妈嫣红让所有贴吧同质化摧毁小圈子的恶毒诡计之一</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_humnqe9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kyoko214">kyoko214</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/seingw/_/humnqe9">Jan 28 2022 20:22:53</a>
+    </p>
+    <div class="collapsible">
+        <p>缝合怪</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

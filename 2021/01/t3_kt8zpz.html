@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>微博彩蛋</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kt8zpz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/9u0kka">9u0kka</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kt8zpz">Jan 08 2021 18:54:31</a>
+    </p>
+    <strong>微博彩蛋</strong>
+    <p><a href="https://i.redd.it/upqjwwpsn5a61.jpg">https://i.redd.it/upqjwwpsn5a61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gild0ky">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Curious_Community937">Curious_Community937</a>
+        |
+        <span class="score">12 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kt8zpz/_/gild0ky">Jan 08 2021 22:42:47</a>
+    </p>
+    <div class="collapsible">
+        <p>什么精瓶</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gill6o3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bosvik">Bosvik</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kt8zpz/_/gill6o3">Jan 08 2021 23:49:31</a>
+    </p>
+    <div class="collapsible">
+        <p>什么飞机杯</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_giljvdc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sagerking_">sagerking_</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kt8zpz/_/giljvdc">Jan 08 2021 23:39:04</a>
+    </p>
+    <div class="collapsible">
+        <p>什么捐精用具？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gin2d9x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PuzzleheadedLoquat1">PuzzleheadedLoquat1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kt8zpz/_/gin2d9x">Jan 09 2021 08:58:38</a>
+    </p>
+    <div class="collapsible">
+        <p>非正常搜索标记</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

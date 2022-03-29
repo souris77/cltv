@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>这是否</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ptlkwt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Ziyv">Ziyv</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ptlkwt">Sep 23 2021 02:27:02</a>
+    </p>
+    <strong>这是否</strong>
+    <p><a href="https://www.zhihu.com/answer/2079703914">https://www.zhihu.com/answer/2079703914</a></p>
+</div>
+<div class="comment" id="t1_hdx2277">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Comenever911">Comenever911</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ptlkwt/_/hdx2277">Sep 23 2021 02:33:42</a>
+    </p>
+    <div class="collapsible">
+        <p>不要发支那的网站链接，看不了，而且还会钓鱼你</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hdx223n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/little_yellow_rat">little_yellow_rat</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ptlkwt/_/hdx223n">Sep 23 2021 02:33:41</a>
+    </p>
+    <div class="collapsible">
+        <p>墙内链接不标注是吧，晶哥这是准备收网了？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hdyhnak">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ziyv">Ziyv</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ptlkwt/_/hdyhnak">Sep 23 2021 12:46:50</a>
+    </p>
+    <div class="collapsible">
+        <p>哈人 俺错了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

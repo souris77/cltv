@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>最近发现一个很奇怪的现象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_st4cad">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/After-Breaker">After-Breaker</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/st4cad">Feb 15 2022 14:36:58</a>
+    </p>
+    <strong>最近发现一个很奇怪的现象</strong>
+    <p><p>我每次都在搜索栏上打一个“r”，然后就会弹出我自己很早以前发的一个post的历史记录，虽然听起来很蠢，但我都是通过点这个记录进reddit。但是常常点进去发现“支”变少了，我不认为会有人翻到这么早的post然后点个反，会不会是晶哥每扫描一遍全sub就会给所有post点一次反</p></p>
+</div>
+<div class="comment" id="t1_hx1houg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Cartographer7461">Ok-Cartographer7461</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/st4cad/_/hx1houg">Feb 15 2022 14:54:00</a>
+    </p>
+    <div class="collapsible">
+        <p>聪明的你怎么就没发现，从帖子进入会增加，从消息进入会减少呢？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hx1jahr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/thenamewasused">thenamewasused</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/st4cad/_/hx1jahr">Feb 15 2022 15:05:17</a>
+    </p>
+    <div class="collapsible">
+        <p>这是红迪的特性,点赞数会随机浮动</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

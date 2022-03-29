@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>什么游戏</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fq1l4y">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/woshiXJPdeyedie">woshiXJPdeyedie</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fq1l4y">Mar 27 2020 17:43:09</a>
+    </p>
+    <strong>什么游戏</strong>
+    <p><a href="https://v.redd.it/l4uk4ov859p41">https://v.redd.it/l4uk4ov859p41</a></p>
+</div>
+<div class="comment" id="t1_flu17u8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Tutulangren">Tutulangren</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fq1l4y/_/flu17u8">Mar 29 2020 14:41:05</a>
+    </p>
+    <div class="collapsible">
+        <p>什么游戏</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>每日一葱6</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sbhio2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbhio2">Jan 24 2022 08:38:58</a>
+    </p>
+    <strong>每日一葱6</strong>
+    <p><a href="https://youtu.be/RH4XUQjs9vk">https://youtu.be/RH4XUQjs9vk</a></p>
+</div>
+<div class="comment" id="t1_hu0zy9b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ZH_Ray">ZH_Ray</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbhio2/_/hu0zy9b">Jan 24 2022 15:20:36</a>
+    </p>
+    <div class="collapsible">
+        <p>我去！初音未来！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hu1g61l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jiangjindong">jiangjindong</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbhio2/_/hu1g61l">Jan 24 2022 17:04:42</a>
+    </p>
+    <div class="collapsible">
+        <p>我一直都是葱友啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hu3l005">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Complete-Garden-9500">Complete-Garden-9500</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbhio2/_/hu3l005">Jan 25 2022 02:12:30</a>
+    </p>
+    <div class="collapsible">
+        <p>老婆我爱你</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

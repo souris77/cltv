@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Twitter太拉了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_i1rfau">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1rfau">Aug 01 2020 12:28:21</a>
+    </p>
+    <strong>Twitter太拉了</strong>
+    <p><a href="https://i.redd.it/t5whc16ywde51.jpg">https://i.redd.it/t5whc16ywde51.jpg</a></p>
+</div>
+<div class="comment" id="t1_fzzb814">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiaogoubaodi">xiaogoubaodi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1rfau/_/fzzb814">Aug 01 2020 13:09:10</a>
+    </p>
+    <div class="collapsible">
+        <p>美版微博</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g0775bn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/b19980105">b19980105</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1rfau/_/g0775bn">Aug 03 2020 12:07:31</a>
+    </p>
+    <div class="collapsible">
+        <p>漏洞永远是人</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

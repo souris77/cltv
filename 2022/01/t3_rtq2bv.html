@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这企业有点狂了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rtq2bv">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rtq2bv">Jan 01 2022 19:09:54</a>
+    </p>
+    <strong>这企业有点狂了</strong>
+    <p><a href="https://i.redd.it/slrixs7vk4981.jpg">https://i.redd.it/slrixs7vk4981.jpg</a></p>
+</div>
+<div class="comment" id="t1_hqu7zp6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pilaffff">Pilaffff</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rtq2bv/_/hqu7zp6">Jan 01 2022 19:28:34</a>
+    </p>
+    <div class="collapsible">
+        <p>太后牌是吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqubr8o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Infinite_History3180">Infinite_History3180</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rtq2bv/_/hqubr8o">Jan 01 2022 19:54:02</a>
+    </p>
+    <div class="collapsible">
+        <p>这牌子我小学就用过</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

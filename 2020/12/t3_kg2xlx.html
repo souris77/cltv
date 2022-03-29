@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>頭頂皮球</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kg2xlx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/taekohnuki">taekohnuki</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kg2xlx">Dec 19 2020 06:38:26</a>
+    </p>
+    <strong>頭頂皮球</strong>
+    <p><a href="https://v.redd.it/f9js1m17a3661">https://v.redd.it/f9js1m17a3661</a></p>
+</div>
+<div class="comment" id="t1_ggcn2l0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KUKUKUMIKO">KUKUKUMIKO</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kg2xlx/_/ggcn2l0">Dec 19 2020 11:22:37</a>
+    </p>
+    <div class="collapsible">
+        <p>之西瓜射手</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ggduyyb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/20duleon">20duleon</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kg2xlx/_/ggduyyb">Dec 19 2020 18:17:31</a>
+    </p>
+    <div class="collapsible">
+        <p>草</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

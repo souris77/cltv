@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>麻了麻了，微信给我推的广告</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sqh2o2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Arnoldinmelb">Arnoldinmelb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sqh2o2">Feb 12 2022 02:55:14</a>
+    </p>
+    <strong>麻了麻了，微信给我推的广告</strong>
+    <p><a href="https://i.redd.it/a1przfn9hbh81.jpg">https://i.redd.it/a1przfn9hbh81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hwlh38i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Chigusasayoko">Chigusasayoko</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sqh2o2/_/hwlh38i">Feb 12 2022 03:06:52</a>
+    </p>
+    <div class="collapsible">
+        <p>精准</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwlhki1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ukpkmkk01">ukpkmkk01</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sqh2o2/_/hwlhki1">Feb 12 2022 03:10:39</a>
+    </p>
+    <div class="collapsible">
+        <p>页游做的广告</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

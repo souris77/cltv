@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>绷不住了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ctqpy2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/liuyang1993">liuyang1993</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctqpy2">Aug 22 2019 01:54:57</a>
+    </p>
+    <strong>绷不住了</strong>
+    <p><a href="https://i.redd.it/lqz8ebsjpwh31.jpg">https://i.redd.it/lqz8ebsjpwh31.jpg</a></p>
+</div>
+<div class="comment" id="t1_exmu954">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sunxiaoyan">sunxiaoyan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctqpy2/_/exmu954">Aug 22 2019 02:07:27</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈你要高考两百分大专生出去扬国威是这个下场啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_exsbbfv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/laoshuren">laoshuren</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctqpy2/_/exsbbfv">Aug 23 2019 05:36:04</a>
+    </p>
+    <div class="collapsible">
+        <p>抽象</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

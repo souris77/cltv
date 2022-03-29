@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>难绷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_prottw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/derrick912">derrick912</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/prottw">Sep 20 2021 06:02:50</a>
+    </p>
+    <strong>难绷</strong>
+    <p><a href="https://youtu.be/INbRpclIFsE">https://youtu.be/INbRpclIFsE</a></p>
+</div>
+<div class="comment" id="t1_hdkmfck">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Immediate_Singer_390">Immediate_Singer_390</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/prottw/_/hdkmfck">Sep 20 2021 09:47:30</a>
+    </p>
+    <div class="collapsible">
+        <p>主席Native speaker啊
+这种水平的恶搞应该是老外做的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

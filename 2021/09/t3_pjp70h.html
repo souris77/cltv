@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>这下触摸了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pjp70h">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pjp70h">Sep 07 2021 15:22:48</a>
+    </p>
+    <strong>这下触摸了</strong>
+    <p><p>“ 一个寓言恰如其分地概括了本世纪有关数学基础的进展状况。在莱茵河畔，一座美丽的城堡已经矗立了许多个世纪。在城堡的地下室中生活着一群蜘蛛，突然一阵大风吹散了它们辛辛苦苦编织的一张繁复的蛛网，于是它们慌乱地加以修补，因为它们认为，正是蛛网支撑着整个城堡。 ”</p></p>
+</div>
+<div class="comment" id="t1_hby3gkd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/trashytrash663">trashytrash663</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pjp70h/_/hby3gkd">Sep 07 2021 16:17:04</a>
+    </p>
+    <div class="collapsible">
+        <p>请问出自什么书？</p>
+        <div class="comment" id="t1_hby9anl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pjp70h/_/hby9anl">Sep 07 2021 16:56:54</a>
+    </p>
+    <div class="collapsible">
+        <p>csdn转的
+https://blog.csdn.net/xianlingmao/article/details/5835625</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

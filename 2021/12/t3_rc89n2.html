@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>前一秒还在挂在热搜上骂，下一秒就不给显示了，怂了？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rc89n2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Rebeccasilly">Rebeccasilly</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rc89n2">Dec 09 2021 03:13:06</a>
+    </p>
+    <strong>前一秒还在挂在热搜上骂，下一秒就不给显示了，怂了？</strong>
+    <p><a href="https://www.reddit.com/gallery/rc89n2">https://www.reddit.com/gallery/rc89n2</a></p>
+</div>
+<div class="comment" id="t1_hnt2o7p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jdskkhdjsnak">jdskkhdjsnak</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rc89n2/_/hnt2o7p">Dec 09 2021 03:17:07</a>
+    </p>
+    <div class="collapsible">
+        <p>原系统太行了，vivo简单辱个华为</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hntdsdq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Joke_Biden">Joke_Biden</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rc89n2/_/hntdsdq">Dec 09 2021 04:50:49</a>
+    </p>
+    <div class="collapsible">
+        <p>怕粉蛆反噬吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnu34uw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/huangkangfu">huangkangfu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rc89n2/_/hnu34uw">Dec 09 2021 09:58:26</a>
+    </p>
+    <div class="collapsible">
+        <p>后台热搜管理员都要精神分裂了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

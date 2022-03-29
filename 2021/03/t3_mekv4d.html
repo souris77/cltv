@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>簡單辱個支</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mekv4d">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XiBaoZiShaBi">XiBaoZiShaBi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mekv4d">Mar 27 2021 19:34:09</a>
+    </p>
+    <strong>簡單辱個支</strong>
+    <p><a href="https://i.redd.it/p224x1tyhmp61.jpg">https://i.redd.it/p224x1tyhmp61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gsj24ym">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/thbn72666">thbn72666</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mekv4d/_/gsj24ym">Mar 28 2021 00:30:29</a>
+    </p>
+    <div class="collapsible">
+        <p>穿上出门试试，特别在学校附近溜达几圈</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

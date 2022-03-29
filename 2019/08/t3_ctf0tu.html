@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>幸及到底说了啥</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ctf0tu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/hhhh2333">hhhh2333</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctf0tu">Aug 21 2019 10:38:36</a>
+    </p>
+    <strong>幸及到底说了啥</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_exkd82e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sauce-tartare">Sauce-tartare</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctf0tu/_/exkd82e">Aug 21 2019 10:59:49</a>
+    </p>
+    <div class="collapsible">
+        <p>不知道真假，据他说是转载了一个外网对香港的新闻</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_exkd92t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sauce-tartare">Sauce-tartare</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctf0tu/_/exkd92t">Aug 21 2019 11:00:23</a>
+    </p>
+    <div class="collapsible">
+        <p>不知道真假，据他说是转载了一个外网对香港的评论</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_exkexh3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bigfkgun">bigfkgun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ctf0tu/_/exkexh3">Aug 21 2019 11:31:54</a>
+    </p>
+    <div class="collapsible">
+        <p>你不会以为他真被传唤了吧，一眼太君自演</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

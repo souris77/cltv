@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>鸭子TV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rr6wg4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendlySomewhere870">FriendlySomewhere870</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rr6wg4">Dec 29 2021 12:17:23</a>
+    </p>
+    <strong>鸭子TV</strong>
+    <p><a href="https://i.redd.it/iocjm45j4h881.jpg">https://i.redd.it/iocjm45j4h881.jpg</a></p>
+</div>
+<div class="comment" id="t1_hqewjjz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Adam__wang">Adam__wang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rr6wg4/_/hqewjjz">Dec 29 2021 14:39:17</a>
+    </p>
+    <div class="collapsible">
+        <p>怎么做鸭子啊</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

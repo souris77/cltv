@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>抄作业</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k2yinj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/xijinpingsi">xijinpingsi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k2yinj">Nov 28 2020 23:48:31</a>
+    </p>
+    <strong>抄作业</strong>
+    <p><a href="https://i.redd.it/09w1o9gvi2261.jpg">https://i.redd.it/09w1o9gvi2261.jpg</a></p>
+</div>
+<div class="comment" id="t1_gdyz4ex">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Positive_Ad_1482">Positive_Ad_1482</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k2yinj/_/gdyz4ex">Nov 29 2020 03:23:19</a>
+    </p>
+    <div class="collapsible">
+        <p>俄罗斯是和平演变，大量腐败的共产党要员成为财阀继续把持经济动脉，而且叶利钦无力也不打算建立健全的法制与选举去制约这批人，于是只能是铁腕独裁者上来收拾局面。不把这批人清洗掉，实际上换汤不换药，想要完全粉碎独裁不只是共产党的话只能是暴力革命</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ge29zu1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k2yinj/_/ge29zu1">Nov 29 2020 18:28:22</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>节目效果</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_i1oxyz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/fewmaster">fewmaster</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1oxyz">Aug 01 2020 08:33:14</a>
+    </p>
+    <strong>节目效果</strong>
+    <p><a href="https://news.mingpao.com/ins/%e6%b8%af%e8%81%9e/article/20200731/s00001/1596158678154">https://news.mingpao.com/ins/%e6%b8%af%e8%81%9e/article/20200731/s00001/1596158678154</a></p>
+</div>
+<div class="comment" id="t1_fzyum7m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/formalisme">formalisme</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1oxyz/_/fzyum7m">Aug 01 2020 08:39:08</a>
+    </p>
+    <div class="collapsible">
+        <p>逗你玩儿呢</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fzywm41">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/trashytrash663">trashytrash663</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1oxyz/_/fzywm41">Aug 01 2020 09:14:51</a>
+    </p>
+    <div class="collapsible">
+        <p>给我绕晕了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g06ccps">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/412thcadian">412thcadian</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/i1oxyz/_/g06ccps">Aug 03 2020 04:14:34</a>
+    </p>
+    <div class="collapsible">
+        <p>转中有转，转中转</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

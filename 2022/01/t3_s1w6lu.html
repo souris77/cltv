@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>技术老嗨进，有没有办法可以看到微博精选评论前的评论区？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s1w6lu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Statueofliberty258">Statueofliberty258</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s1w6lu">Jan 12 2022 03:34:29</a>
+    </p>
+    <strong>技术老嗨进，有没有办法可以看到微博精选评论前的评论区？</strong>
+    <p><p>用web archive查看历史网页还是精选评论的。对此想请教技术老嗨如何看原来的评论区？</p></p>
+</div>
+<div class="comment" id="t1_hsb63ty">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Practical-Car-6240">Practical-Car-6240</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s1w6lu/_/hsb63ty">Jan 12 2022 04:46:00</a>
+    </p>
+    <div class="collapsible">
+        <p>我觉得要么在精选前archive或截图或把数据爬下来了，要么事后花钱买数据（淘宝、舆情监测平台等），然后把删评+狱友狂暴鸿儒前的评论按照点赞量排排序</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

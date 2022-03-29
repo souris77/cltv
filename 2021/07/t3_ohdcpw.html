@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>这个人能处吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ohdcpw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/crazyuniverse_198964">crazyuniverse_198964</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ohdcpw">Jul 10 2021 06:15:26</a>
+    </p>
+    <strong>这个人能处吗？</strong>
+    <p><p>[Imgur](<a href="https://i.imgur.com/wuRl3Sv.png">https://i.imgur.com/wuRl3Sv.png</a>)</p>
+<p><a href="https://www.bilibili.com/video/BV1mM4y1M7x4">https://www.bilibili.com/video/BV1mM4y1M7x4</a></p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

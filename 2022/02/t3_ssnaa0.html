@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Sunset</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ssnaa0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ChiangKaiShek1949">ChiangKaiShek1949</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssnaa0">Feb 14 2022 22:41:04</a>
+    </p>
+    <strong>Sunset</strong>
+    <p><a href="https://i.redd.it/9cgvqvonmvh81.jpg">https://i.redd.it/9cgvqvonmvh81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hwyrewj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pacific_Mariner">Pacific_Mariner</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssnaa0/_/hwyrewj">Feb 14 2022 22:54:31</a>
+    </p>
+    <div class="collapsible">
+        <p>Go train是吧 标记</p>
+        <div class="comment" id="t1_hwyx1yo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ChiangKaiShek1949">ChiangKaiShek1949</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ssnaa0/_/hwyx1yo">Feb 14 2022 23:42:17</a>
+    </p>
+    <div class="collapsible">
+        <p>No sir, plz let me go! やめてください!😭</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

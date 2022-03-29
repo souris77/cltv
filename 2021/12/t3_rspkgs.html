@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>先绑后爱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rspkgs">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rspkgs">Dec 31 2021 08:46:41</a>
+    </p>
+    <strong>先绑后爱</strong>
+    <p><a href="https://www.reddit.com/gallery/rspkgs">https://www.reddit.com/gallery/rspkgs</a></p>
+</div>
+<div class="comment" id="t1_hqo671l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Whole-Strike9024">Whole-Strike9024</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rspkgs/_/hqo671l">Dec 31 2021 11:31:16</a>
+    </p>
+    <div class="collapsible">
+        <p>打码不太尊重人啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqodvgf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Upstairs-Upper">Upstairs-Upper</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rspkgs/_/hqodvgf">Dec 31 2021 13:02:39</a>
+    </p>
+    <div class="collapsible">
+        <p>虾仁</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

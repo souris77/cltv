@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>典</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ojx6k5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/huanqiuTV">huanqiuTV</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ojx6k5">Jul 14 2021 04:54:01</a>
+    </p>
+    <strong>典</strong>
+    <p><a href="https://i.redd.it/nymhprla04b71.jpg">https://i.redd.it/nymhprla04b71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h54j415">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ccheester">ccheester</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ojx6k5/_/h54j415">Jul 14 2021 05:58:22</a>
+    </p>
+    <div class="collapsible">
+        <p>反轉了，是利江澤民的大好事</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h55nh7g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/showmewhatuvegot">showmewhatuvegot</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ojx6k5/_/h55nh7g">Jul 14 2021 14:19:22</a>
+    </p>
+    <div class="collapsible">
+        <p>改革开放法制建设归零的一天</p>
+        <div class="comment" id="t1_h55rrmr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/huanqiuTV">huanqiuTV</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ojx6k5/_/h55rrmr">Jul 14 2021 14:52:24</a>
+    </p>
+    <div class="collapsible">
+        <p>本来也是0，现在是负</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

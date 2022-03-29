@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>夫面前犯</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_n1u0c9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lvxingjia">lvxingjia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/n1u0c9">Apr 30 2021 13:37:15</a>
+    </p>
+    <strong>夫面前犯</strong>
+    <p><a href="https://i.redd.it/tpsmvs9adbw61.jpg">https://i.redd.it/tpsmvs9adbw61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gwf9u93">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/n1u0c9/_/gwf9u93">Apr 30 2021 13:38:13</a>
+    </p>
+    <div class="collapsible">
+        <p>什么游戏</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

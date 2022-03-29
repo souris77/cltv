@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>朋友圈狂人</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qtgvki">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dam4hayu">dam4hayu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qtgvki">Nov 14 2021 03:20:47</a>
+    </p>
+    <strong>朋友圈狂人</strong>
+    <p><a href="https://i.redd.it/brm88udsbhz71.jpg">https://i.redd.it/brm88udsbhz71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hkjhly8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xizhubi">xizhubi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qtgvki/_/hkjhly8">Nov 14 2021 03:23:12</a>
+    </p>
+    <div class="collapsible">
+        <p>狂友行，能处！
+恰个v好吗🤗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hkjho10">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ccplastforever">ccplastforever</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qtgvki/_/hkjho10">Nov 14 2021 03:23:39</a>
+    </p>
+    <div class="collapsible">
+        <p>➕v细聊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hkjhws7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nonsensepasserby">nonsensepasserby</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qtgvki/_/hkjhws7">Nov 14 2021 03:25:39</a>
+    </p>
+    <div class="collapsible">
+        <p>器官不想要了是吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

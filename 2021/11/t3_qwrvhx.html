@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>这是什么MEME？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qwrvhx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/JONUNUO">JONUNUO</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qwrvhx">Nov 18 2021 15:14:16</a>
+    </p>
+    <strong>这是什么MEME？</strong>
+    <p><a href="https://i.redd.it/nuf81p9oed081.jpg">https://i.redd.it/nuf81p9oed081.jpg</a></p>
+</div>
+<div class="comment" id="t1_hl4o908">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/skeletoner1">skeletoner1</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qwrvhx/_/hl4o908">Nov 18 2021 15:23:34</a>
+    </p>
+    <div class="collapsible">
+        <p>右边是美国芝加哥drill嘻哈始祖 去听听chief keef就知道了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

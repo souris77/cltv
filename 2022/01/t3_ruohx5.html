@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>过年生活小妙招</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ruohx5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Leedoctor">Leedoctor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ruohx5">Jan 03 2022 00:53:29</a>
+    </p>
+    <strong>过年生活小妙招</strong>
+    <p><p>1.瓜子买没有味道的淡瓜子（减少了客人的实用量，避免了瓜子壳乱扔</p>
+<p>2.糖果别买巧克力（又贵又讨孩子喜欢）</p>
+<p>3.水果摆放橙子（客人无从下手）</p>
+<p>4.所有需要削皮的水果，都别把刀放在可见的地方</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>想念我的毛妹</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qoj9cw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/thierryhung">thierryhung</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qoj9cw">Nov 07 2021 07:01:35</a>
+    </p>
+    <strong>想念我的毛妹</strong>
+    <p><p>大夥還記得以前出現過的毛妹嗎？我到處找都找不到她，好難過再也硬不起來了，給我毛妹！</p></p>
+</div>
+<div class="comment" id="t1_hjng3pv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/aiglas0209">aiglas0209</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qoj9cw/_/hjng3pv">Nov 07 2021 07:50:56</a>
+    </p>
+    <div class="collapsible">
+        <p>反轉了，俄羅斯牛子妹妹</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

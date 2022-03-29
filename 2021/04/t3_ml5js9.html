@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>各位有没有人把这张图片里的帖子藏起来? 就是原本在流浪防区上发的那条</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ml5js9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/lostinmodu">lostinmodu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ml5js9">Apr 06 2021 06:44:45</a>
+    </p>
+    <strong>各位有没有人把这张图片里的帖子藏起来? 就是原本在流浪防区上发的那条</strong>
+    <p><a href="https://i.redd.it/di53pedt1ir61.jpg">https://i.redd.it/di53pedt1ir61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gtjmir1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/williamp012">williamp012</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ml5js9/_/gtjmir1">Apr 06 2021 07:03:56</a>
+    </p>
+    <div class="collapsible">
+        <p>https://www.reddit.com/r/China_irl/comments/lzb06d/怎么跟老外说新疆问题/?utm_medium=android_app&amp;utm_source=share</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

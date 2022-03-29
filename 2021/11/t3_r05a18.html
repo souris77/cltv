@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>统计下这里浪人的男女比例</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r05a18">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/HannibalLecterSaw">HannibalLecterSaw</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r05a18">Nov 23 2021 04:52:59</a>
+    </p>
+    <strong>统计下这里浪人的男女比例</strong>
+    <p><p>想探究下性别和意识心态形成的关联</p>
+<ul>
+<li>男</li>
+<li>女</li>
+<li>gay</li>
+<li>les</li>
+</ul></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

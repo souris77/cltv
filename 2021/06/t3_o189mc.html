@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>原来是父子情深</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_o189mc">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/MontblancAlps">MontblancAlps</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o189mc">Jun 16 2021 16:01:29</a>
+    </p>
+    <strong>原来是父子情深</strong>
+    <p><a href="https://i.redd.it/z755ir4vhn571.jpg">https://i.redd.it/z755ir4vhn571.jpg</a></p>
+</div>
+<div class="comment" id="t1_h200xxr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zswlp">zswlp</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o189mc/_/h200xxr">Jun 16 2021 18:55:27</a>
+    </p>
+    <div class="collapsible">
+        <p>亂倫片很受歡迎不是沒有原因的</p>
+        <div class="comment" id="t1_h25s8qj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/plarq">plarq</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o189mc/_/h25s8qj">Jun 18 2021 01:29:36</a>
+    </p>
+    <div class="collapsible">
+        <p>说明很多人对家庭成员有隐秘的征服欲</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

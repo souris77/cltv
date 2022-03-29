@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>简单回忆下</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mfkmg7">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Tosakisan">Tosakisan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mfkmg7">Mar 29 2021 08:08:36</a>
+    </p>
+    <strong>简单回忆下</strong>
+    <p><p>我喜欢一个漫画角色，她见了生父一面就被打得骨折，在朋友面前自言自语：“有时候人生就是怪得很。”</p>
+<p>家人从来没有成为我安心的避风港，追溯到童年，父母会因为一点鸡毛蒜皮的事打骂到我大哭为止。那时候，我的生父会用训斥的语气让我去洗手间洗脸，不哭了再回来，仿佛哭泣是我犯的第二个错误。但这是无所谓的事，因为被罚去厕所就是最大的解脱，我可以坐在马桶上，等到他们懒得骂我的时候才出去。</p>
+<p>后来，我养成了情绪激动的时候会不停地洗脸洗手的习惯。</p>
+<p>就这点吧。刚才难受的时候想起来很多小时候的事，但是我好像越是难过愤怒的时候，越是什么也说不出来，越是听着身边的人说些表达关心或是充满误解的话，我越是保持沉默。到最后，没人知道我到底在想些什么。</p>
+<p>我倒希望我是得了精神病，因为那样家人就能理解我已经“失控”了，而不是“幼稚”，“任性”，“故意搏同情”。</p>
+<p>（写完一看，发现有些地方跟其他回忆操蛋童年的人写得差不多，原来人和人的悲欢还是相通的。想到啥写啥所以乱得很，想起来再说两句）</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

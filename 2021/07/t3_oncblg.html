@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>绷不住了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oncblg">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Once_upon_a_time233">Once_upon_a_time233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oncblg">Jul 19 2021 11:39:02</a>
+    </p>
+    <strong>绷不住了</strong>
+    <p><a href="https://i.redd.it/nsven5q3p5c71.jpg">https://i.redd.it/nsven5q3p5c71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h5qu0a0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Own-Butterscotch627">Own-Butterscotch627</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oncblg/_/h5qu0a0">Jul 19 2021 12:27:06</a>
+    </p>
+    <div class="collapsible">
+        <p>呃呃，区块链和农产品组合的项目据我所知19年就有人做了。老实说没鸡吧用，支那人对于食物的溯源根本就不在意，有个毛市场。是不是搞个新潮玩意儿的名头骗经费我且蒙古里。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h5sxl61">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OddBird_S">OddBird_S</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oncblg/_/h5sxl61">Jul 19 2021 21:53:00</a>
+    </p>
+    <div class="collapsible">
+        <p>韭菜怎么和区块链缝在一起我🇲🇳，难道是每拔一根就加一个block？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

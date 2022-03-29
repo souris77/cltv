@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>是不是应该高兴</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sn2mka">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/rongYan2002">rongYan2002</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sn2mka">Feb 07 2022 22:13:21</a>
+    </p>
+    <strong>是不是应该高兴</strong>
+    <p><a href="https://i.redd.it/gm1y2a4cjhg81.jpg">https://i.redd.it/gm1y2a4cjhg81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hw0608k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Turanic_Raider_">Turanic_Raider_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sn2mka/_/hw0608k">Feb 07 2022 22:31:20</a>
+    </p>
+    <div class="collapsible">
+        <p>英雄之证.mp3</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hw08k1n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Glittering-Ad-506">Glittering-Ad-506</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sn2mka/_/hw08k1n">Feb 07 2022 22:48:40</a>
+    </p>
+    <div class="collapsible">
+        <p>Happy dick day!</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

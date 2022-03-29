@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>蚊子。</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k6g6ci">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/GLero671">GLero671</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k6g6ci">Dec 04 2020 07:18:49</a>
+    </p>
+    <strong>蚊子。</strong>
+    <p><p>这个天气大概是冻麻了，反应迟钝，用手指就压死了，人也一样，一旦活麻了就离死期不远。冬日感概。</p></p>
+</div>
+<div class="comment" id="t1_gekslkf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Axashanco">Axashanco</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k6g6ci/_/gekslkf">Dec 04 2020 08:43:50</a>
+    </p>
+    <div class="collapsible">
+        <p>能死是解脱，可以安心睡一觉了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

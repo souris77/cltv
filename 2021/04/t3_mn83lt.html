@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>有cuda老嗨吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mn83lt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/somethih4nothing">somethih4nothing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt">Apr 09 2021 02:59:35</a>
+    </p>
+    <strong>有cuda老嗨吗？</strong>
+    <p><p>为什么cudaMalloc要用二级指针(void **)啊？</p></p>
+</div>
+<div class="comment" id="t1_gtw246s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kky508">kky508</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtw246s">Apr 09 2021 03:11:35</a>
+    </p>
+    <div class="collapsible">
+        <p>All CUDA API functions return an error code (or cudaSuccess if no error occured). All other parameters are passed by reference. However, in plain C you cannot have references, that's why you have to pass an address of the variable that you want the return information to be stored. Since you are returning a pointer, you need to pass a double-pointer.</p>
+<p>简单来说 C里面，当cudamalloc被调用时，将创建一个名为d_array的局部变量，并为其分配第一个函数参数的值。这个是无法在函数范围之外检索该局部变量中的值的。所以说要用双指针。</p>
+        <div class="comment" id="t1_gtw4nc7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/somethih4nothing">somethih4nothing</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtw4nc7">Apr 09 2021 03:36:45</a>
+    </p>
+    <div class="collapsible">
+        <p>所以cuda是developed based on C对吧，double pointer是为了这个d_array 能在函数范围之外被获取使用的</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gtw4i88">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Historical-Sample-14">Historical-Sample-14</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtw4i88">Apr 09 2021 03:35:20</a>
+    </p>
+    <div class="collapsible">
+        <p>二级指针一律按指针数组处理</p>
+        <div class="comment" id="t1_gtw4poh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/somethih4nothing">somethih4nothing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtw4poh">Apr 09 2021 03:37:25</a>
+    </p>
+    <div class="collapsible">
+        <p>roger!</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gtw2xs5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kky508">kky508</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtw2xs5">Apr 09 2021 03:19:35</a>
+    </p>
+    <div class="collapsible">
+        <p>这个和c语言的一些特性也有关系，c和c++引用和函数重构都不太一样，我记得c++不用double pointer。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gtw3a1w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Avocado19890604">Avocado19890604</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtw3a1w">Apr 09 2021 03:22:54</a>
+    </p>
+    <div class="collapsible">
+        <p>快</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gtwhz6d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Intelligent_Wish276">Intelligent_Wish276</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtwhz6d">Apr 09 2021 06:13:40</a>
+    </p>
+    <div class="collapsible">
+        <p>这回不葱了，改chonglangoverflow了是吧</p>
+        <div class="comment" id="t1_gtx2uah">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FerretBorn9279">FerretBorn9279</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mn83lt/_/gtx2uah">Apr 09 2021 11:26:39</a>
+    </p>
+    <div class="collapsible">
+        <p>都run出去18万美元了chonglangtv就可以转型了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

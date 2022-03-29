@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>非常喜欢的一出传统戏</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nohjrk">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/POPELEOXI">POPELEOXI</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nohjrk">May 30 2021 18:42:57</a>
+    </p>
+    <strong>非常喜欢的一出传统戏</strong>
+    <p><a href="https://i.redd.it/fvnuzcf6za271.jpg">https://i.redd.it/fvnuzcf6za271.jpg</a></p>
+</div>
+<div class="comment" id="t1_h006w9e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Penguin_Q">Penguin_Q</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nohjrk/_/h006w9e">May 30 2021 19:31:06</a>
+    </p>
+    <div class="collapsible">
+        <p>请赶紧坐到唱片机上来</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

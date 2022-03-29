@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>reddit suit扩展有tag的功能，助你精准识别，亲自部署，亲自打击。并学会看发言历史，学会看注册时间以及学会看post karma 和comment karma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mmiv9j">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ehj18661">ehj18661</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mmiv9j">Apr 08 2021 03:19:25</a>
+    </p>
+    <strong>reddit suit扩展有tag的功能，助你精准识别，亲自部署，亲自打击。并学会看发言历史，学会看注册时间以及学会看post karma 和comment karma</strong>
+    <p><a href="https://www.reddit.com/gallery/mmiv9j">https://www.reddit.com/gallery/mmiv9j</a></p>
+</div>
+<div class="comment" id="t1_gtrtk38">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Brilliant_Picture_73">Brilliant_Picture_73</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mmiv9j/_/gtrtk38">Apr 08 2021 04:11:52</a>
+    </p>
+    <div class="collapsible">
+        <p>我reddit还没玩明白..</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gtrtkv7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Brilliant_Picture_73">Brilliant_Picture_73</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mmiv9j/_/gtrtkv7">Apr 08 2021 04:12:06</a>
+    </p>
+    <div class="collapsible">
+        <p>都不知道哪换中文</p>
+        <div class="comment" id="t1_gts2b3e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ppp213">ppp213</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mmiv9j/_/gts2b3e">Apr 08 2021 05:57:13</a>
+    </p>
+    <div class="collapsible">
+        <p>没中文。。。。翻译网站和工具那么多，自力更生丰衣足食</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

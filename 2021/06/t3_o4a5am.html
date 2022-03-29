@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>反转了是吧</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_o4a5am">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/_Psyber">_Psyber</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o4a5am">Jun 20 2021 17:07:04</a>
+    </p>
+    <strong>反转了是吧</strong>
+    <p><a href="https://i.redd.it/p7yn9w15dg671.jpg">https://i.redd.it/p7yn9w15dg671.jpg</a></p>
+</div>
+<div class="comment" id="t1_h2hrnul">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ordinary-Ladder-9500">Ordinary-Ladder-9500</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o4a5am/_/h2hrnul">Jun 21 2021 02:05:06</a>
+    </p>
+    <div class="collapsible">
+        <p>這是在bilibili的代理人發的吧，這傢伙畢業都不知道多久了，現在在hololive辱華呢</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h2gu277">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jacky890818">jacky890818</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o4a5am/_/h2gu277">Jun 20 2021 20:56:17</a>
+    </p>
+    <div class="collapsible">
+        <p>這傢伙不是畢業很久了嗎？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

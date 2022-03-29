@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>友橘真没了？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pzhmla">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/stupid-and-idiot">stupid-and-idiot</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pzhmla">Oct 01 2021 21:31:23</a>
+    </p>
+    <strong>友橘真没了？</strong>
+    <p><p>国庆晶哥有点太吓人了，好好的app说没就没</p></p>
+</div>
+<div class="comment" id="t1_hf22xd8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Three_Cokes">Three_Cokes</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pzhmla/_/hf22xd8">Oct 02 2021 03:45:03</a>
+    </p>
+    <div class="collapsible">
+        <p>友橘是什么</p>
+        <div class="comment" id="t1_hf2oglo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DefinitionOnly5916">DefinitionOnly5916</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pzhmla/_/hf2oglo">Oct 02 2021 08:00:49</a>
+    </p>
+    <div class="collapsible">
+        <p>墙内浪人阵地</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

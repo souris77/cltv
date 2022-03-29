@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>去除post里的Blocked account</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rho8b4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rho8b4">Dec 16 2021 10:45:54</a>
+    </p>
+    <strong>去除post里的Blocked account</strong>
+    <p><p>只针对PC端,请先安装好Tampermonkey</p>
+<p>``` js
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @grant        none
+// @include     <em>.reddit.com/</em>*
+// ==/UserScript==</p>
+<p>(function () {
+    "use strict";</p>
+<pre><code>// Your code here...
+var dom;
+var wrapper;
+setInterval(() =&amp;rt; {
+    dom = document.querySelectorAll("p");
+    wrapper = dom.forEach((item) =&amp;rt; {
+        if (item.innerHTML.trim() === "Blocked account") {
+            var node =
+                item.parentNode.parentNode.parentNode.parentNode.parentNode
+                    .parentNode.parentNode.parentNode.parentNode;
+            node.remove();
+        }
+    });
+}, 5000);
+</code></pre>
+<p>})();</p>
+<p>```
+使用步骤:
+1. 安装好Tampermonkey后点击扩展图标,
+2. 添加新脚本
+3. 把里面的默认内容清空
+4. 然后复制上面的代码粘贴
+5. ctrl+S保存
+6. 到已安装脚本里面把这个脚本启用
+7. 重新打开红迪</p>
+<p>原理:每5秒查找页面上的Blocked account关键字,然后删除父元素,还你一片清净.</p>
+<p>是,存在性能问题.但是能用</p></p>
+</div>
+<div class="comment" id="t1_horls79">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No-Battle-8981">No-Battle-8981</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rho8b4/_/horls79">Dec 16 2021 10:56:43</a>
+    </p>
+    <div class="collapsible">
+        <p>Blocked account是什么东西？</p>
+        <div class="comment" id="t1_horn48k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rho8b4/_/horn48k">Dec 16 2021 11:14:10</a>
+    </p>
+    <div class="collapsible">
+        <p>被你拉黑的人在post里的回复会显示为Blocked account</p>
+<p>以前是不会显示的,被你拉黑就再也感觉不到他的存在.</p>
+<p>但从某个版本起.就多出了个这么个恶心人的玩意儿</p>
+<p>红迪死妈也不是一天两天了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

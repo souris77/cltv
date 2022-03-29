@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>简单分享</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m07bn9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/JacketOk8933">JacketOk8933</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m07bn9">Mar 08 2021 04:02:49</a>
+    </p>
+    <strong>简单分享</strong>
+    <p><a href="https://i.redd.it/pfaqvv9haql61.jpg">https://i.redd.it/pfaqvv9haql61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gq6dxjc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SPIDER-MAN_Ping">SPIDER-MAN_Ping</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m07bn9/_/gq6dxjc">Mar 08 2021 04:17:52</a>
+    </p>
+    <div class="collapsible">
+        <p>我们中国真的是太厉害了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gq6e195">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ChampionshipIcy1888">ChampionshipIcy1888</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m07bn9/_/gq6e195">Mar 08 2021 04:18:58</a>
+    </p>
+    <div class="collapsible">
+        <p>如何操纵意识</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

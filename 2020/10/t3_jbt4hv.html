@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>reddit这个垃圾服务器什么原理？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jbt4hv">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/houchiku">houchiku</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv">Oct 15 2020 18:21:19</a>
+    </p>
+    <strong>reddit这个垃圾服务器什么原理？</strong>
+    <p><p>同样的网络环境，推特和ytb都能正常使用，就reddit卡出屎。还发不了图。
+我们reddit的服务器真是太厉害了👍</p></p>
+</div>
+<div class="comment" id="t1_g8y4blr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mother-Cat-3681">Mother-Cat-3681</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv/_/g8y4blr">Oct 15 2020 22:57:54</a>
+    </p>
+    <div class="collapsible">
+        <p>被腾讯接盘后瓦房店化？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g8y8atb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv/_/g8y8atb">Oct 15 2020 23:36:16</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g8ynxbz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DaddyOfXi">DaddyOfXi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv/_/g8ynxbz">Oct 16 2020 02:05:59</a>
+    </p>
+    <div class="collapsible">
+        <p>后台审核程序正在加速工作中</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g8ypaux">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/grando_foo">grando_foo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv/_/g8ypaux">Oct 16 2020 02:19:38</a>
+    </p>
+    <div class="collapsible">
+        <p>所以你知道为啥都瞧不起python了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g8yvyif">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/amvnoaki">amvnoaki</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv/_/g8yvyif">Oct 16 2020 03:28:40</a>
+    </p>
+    <div class="collapsible">
+        <p>还有reddit的Android客户端也是一泡污
+中文字体渲染垃圾还容易卡住</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g90g0lg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Linshiyouxiang005">Linshiyouxiang005</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jbt4hv/_/g90g0lg">Oct 16 2020 15:47:24</a>
+    </p>
+    <div class="collapsible">
+        <p>试一试旧版reddit？
+reddit.com =&rt;old.reddit.com</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

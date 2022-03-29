@@ -1,0 +1,435 @@
+<html>
+<head>
+<title>做一个完全加密的聊天软件有没有市场？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pvl5ex">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/GatherCake">GatherCake</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex">Sep 26 2021 02:40:49</a>
+    </p>
+    <strong>做一个完全加密的聊天软件有没有市场？</strong>
+    <p><p>软件运作逻辑：用户打开软件后通过公开算法生成一个私钥，然后私钥生成公钥。A给B发信息的底层逻辑就是text用B的公钥加密，然后text结尾放上A的私钥加密后的数字签名，再通过服务器发送给B，这样B收到text后就能用B的私钥解密text内容，再用A的公钥解密数字签名，就能确保这个text是来自于A且发送给B的，服务器只是做了传递信息的作用，是看不到文本内容的。</p>
+<p>这样的话只有A和B能知道信息内容，就算服务器被攻击泄露了黑客也只能得到一堆加密后的文本，无法知道内容是什么，只能知道某时某刻这个公钥地址给这个公钥地址发送信息，但信息内容是啥就不知道了。</p>
+<p>再进一步甚至你都可以不使用官方服务器的转发服务，自己搭建一个小型服务器供群组内人使用</p>
+<p>最后软件所有代码都开源，这样的软件有没有市场呢？</p>
+<p>感觉收入模式只能弄成需要官方服务器转发信息的话就要付费订阅，用私人服务器则不受限制</p></p>
+</div>
+<div class="comment" id="t1_hearwqa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Fangslash">Fangslash</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/hearwqa">Sep 26 2021 02:43:36</a>
+    </p>
+    <div class="collapsible">
+        <p>没市场</p>
+<p>赚不了钱，一般人不会订阅这玩意，有需求的不会用开源软件</p>
+        <div class="comment" id="t1_heaskci">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GatherCake">GatherCake</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heaskci">Sep 26 2021 02:49:01</a>
+    </p>
+    <div class="collapsible">
+        <p>开源更安全，在互联网加密聊天领域的话，算法都是公开的，可供审查</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_heav0o9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Permisssion">Permisssion</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heav0o9">Sep 26 2021 03:09:30</a>
+    </p>
+    <div class="collapsible">
+        <p>无语，绝大部分app不就这个原理？https 了解下？电报不就这样的？不会是晶哥故意发文盲贴钓鱼吧</p>
+        <div class="comment" id="t1_heav510">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GatherCake">GatherCake</a>
+        |
+        <span class="score">-4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heav510">Sep 26 2021 03:10:31</a>
+    </p>
+    <div class="collapsible">
+        <p>问题是这些APP会被审查</p>
+        <div class="comment" id="t1_heavwuu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Permisssion">Permisssion</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heavwuu">Sep 26 2021 03:17:00</a>
+    </p>
+    <div class="collapsible">
+        <p>你用telegram 秘密聊天功能，就是端对端加密，怎么审查。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_heas5k6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DoubleThink1987">DoubleThink1987</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heas5k6">Sep 26 2021 02:45:38</a>
+    </p>
+    <div class="collapsible">
+        <p>早就已经有了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heaw9as">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dffgfh_4368">dffgfh_4368</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heaw9as">Sep 26 2021 03:20:00</a>
+    </p>
+    <div class="collapsible">
+        <p>有加密需求用tg就好了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heasf46">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/National_Grade1898">National_Grade1898</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heasf46">Sep 26 2021 02:47:48</a>
+    </p>
+    <div class="collapsible">
+        <p>有很多去中心化的聊天软件，但目前用的人都很少</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heawq5s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pelifax">Pelifax</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heawq5s">Sep 26 2021 03:23:53</a>
+    </p>
+    <div class="collapsible">
+        <p>外国已经有了，中国不许存在。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heauvsg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liveybraen">liveybraen</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heauvsg">Sep 26 2021 03:08:20</a>
+    </p>
+    <div class="collapsible">
+        <p>你说的是whatsup吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heaz3e8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Winnie_PoohPooh">Winnie_PoohPooh</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heaz3e8">Sep 26 2021 03:43:50</a>
+    </p>
+    <div class="collapsible">
+        <p>为何不用iMessage，就是端对端加密的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heaswnv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Expensive_Ebb_3897">Expensive_Ebb_3897</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heaswnv">Sep 26 2021 02:51:48</a>
+    </p>
+    <div class="collapsible">
+        <p>这么基础的理论应该早就有人做过了吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heatkju">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/yeahwsc">yeahwsc</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heatkju">Sep 26 2021 02:57:20</a>
+    </p>
+    <div class="collapsible">
+        <p>signal表示</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heb48jg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/gemgem0816">gemgem0816</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heb48jg">Sep 26 2021 04:29:46</a>
+    </p>
+    <div class="collapsible">
+        <p>话说我有个疑问，你这个设计怎么做到跨平台登录同一个账号？私钥理论上是不应该通过网络传输的，我 PC 端和手机端怎样共享私钥？</p>
+        <div class="comment" id="t1_heb7zql">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GatherCake">GatherCake</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heb7zql">Sep 26 2021 05:06:36</a>
+    </p>
+    <div class="collapsible">
+        <p>手动输入私钥呗</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_heb4q16">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fajicumeE">fajicumeE</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heb4q16">Sep 26 2021 04:34:18</a>
+    </p>
+    <div class="collapsible">
+        <p>小看大陆的量子计算机？找到你的私钥不是不可能的。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heb054o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Leexiitto">Leexiitto</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heb054o">Sep 26 2021 03:52:49</a>
+    </p>
+    <div class="collapsible">
+        <p>早有了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_heb3uug">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/heb3uug">Sep 26 2021 04:26:19</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hebevzf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/minormajordude">minormajordude</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/hebevzf">Sep 26 2021 06:20:35</a>
+    </p>
+    <div class="collapsible">
+        <p>一没市场
+二你敢做大吗，警察想抓人分分钟的事</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hebfwvq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sunrise_zc">sunrise_zc</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pvl5ex/_/hebfwvq">Sep 26 2021 06:32:57</a>
+    </p>
+    <div class="collapsible">
+        <p>这比https简单多了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

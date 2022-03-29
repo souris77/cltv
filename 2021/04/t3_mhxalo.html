@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>想你 張國榮</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mhxalo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ppp213">ppp213</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mhxalo">Apr 01 2021 15:07:14</a>
+    </p>
+    <strong>想你 張國榮</strong>
+    <p><a href="https://www.youtube.com/watch?v=8OBCPET4uYI">https://www.youtube.com/watch?v=8OBCPET4uYI</a></p>
+</div>
+<div class="comment" id="t1_gt1ex51">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/rcb741557477">rcb741557477</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mhxalo/_/gt1ex51">Apr 01 2021 15:16:29</a>
+    </p>
+    <div class="collapsible">
+        <p>什么猛1</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gt1smc4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Emphasis5852">Ok-Emphasis5852</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mhxalo/_/gt1smc4">Apr 01 2021 16:58:55</a>
+    </p>
+    <div class="collapsible">
+        <p>又复活了？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>JavaScript 里面array 的.push() 底层原理是什么？为什么他是destructive array method？Java里面的arraylist是把原先的数组里面的数据都copy一遍，再加上新加入的数据。这两个一样吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r9nxov">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/BeneficialYam7">BeneficialYam7</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov">Dec 05 2021 19:59:57</a>
+    </p>
+    <strong>JavaScript 里面array 的.push() 底层原理是什么？为什么他是destructive array method？Java里面的arraylist是把原先的数组里面的数据都copy一遍，再加上新加入的数据。这两个一样吗？</strong>
+    <p><p>不是说array用const修饰符就只能修改里面的元素，不能够改变variable对应的数组吗？那用.push() 的时候为什么可以咧。码哥们教教我。</p></p>
+</div>
+<div class="comment" id="t1_hnd67b5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No-Battle-8981">No-Battle-8981</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnd67b5">Dec 05 2021 20:09:04</a>
+    </p>
+    <div class="collapsible">
+        <p>想知道答案，去stackoverflow、语言规范、v8源码。</p>
+<p>总之，别钓鱼了。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnd4tkg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FakerTzeentch_2">FakerTzeentch_2</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnd4tkg">Dec 05 2021 20:01:02</a>
+    </p>
+    <div class="collapsible">
+        <p>支蛆滚</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hndso9p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bubbly_Lengthiness22">Bubbly_Lengthiness22</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hndso9p">Dec 05 2021 22:28:58</a>
+    </p>
+    <div class="collapsible">
+        <p>连谷歌都不会还学你妈的IT</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hndmtz1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Responsible_Pain_973">Responsible_Pain_973</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hndmtz1">Dec 05 2021 21:51:22</a>
+    </p>
+    <div class="collapsible">
+        <p>js 狗都不用好吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnd6olt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Jacuening">Jacuening</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnd6olt">Dec 05 2021 20:11:55</a>
+    </p>
+    <div class="collapsible">
+        <p>码蛆滚</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnd6cn0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Old_Suspect2563">Old_Suspect2563</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnd6cn0">Dec 05 2021 20:09:57</a>
+    </p>
+    <div class="collapsible">
+        <p>炒作蛆滚</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnd78iy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Hutao_hutao">Hutao_hutao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnd78iy">Dec 05 2021 20:15:07</a>
+    </p>
+    <div class="collapsible">
+        <p>我看看我的小本本上有没有这个问题</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hndchzc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hndchzc">Dec 05 2021 20:47:06</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnegdnt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/netking_sunxiaochuan">netking_sunxiaochuan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnegdnt">Dec 06 2021 01:13:40</a>
+    </p>
+    <div class="collapsible">
+        <p>Google一下的东西你在这发帖问</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnegs2b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnegs2b">Dec 06 2021 01:16:37</a>
+    </p>
+    <div class="collapsible">
+        <p>JavaScript恶心的一批，狗都不用</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnek01y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Shawxxxxxx">Shawxxxxxx</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r9nxov/_/hnek01y">Dec 06 2021 01:40:13</a>
+    </p>
+    <div class="collapsible">
+        <p>收收题味</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

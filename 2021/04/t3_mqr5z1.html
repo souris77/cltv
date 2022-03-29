@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Stage3 麻了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mqr5z1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/crazzzyjustin">crazzzyjustin</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mqr5z1">Apr 14 2021 14:00:11</a>
+    </p>
+    <strong>Stage3 麻了</strong>
+    <p><a href="https://i.redd.it/ubiyrty2x3t61.jpg">https://i.redd.it/ubiyrty2x3t61.jpg</a></p>
+</div>
+<div class="comment" id="t1_guhqeth">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sunday-reg">Sunday-reg</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mqr5z1/_/guhqeth">Apr 14 2021 14:43:03</a>
+    </p>
+    <div class="collapsible">
+        <p>可是章鱼哥对吹箫一直是认真的啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_guhqwhi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iwangbowen">iwangbowen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mqr5z1/_/guhqwhi">Apr 14 2021 14:46:40</a>
+    </p>
+    <div class="collapsible">
+        <p>我也跳过了第二阶段</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_guhx8h3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ministryofmeme">ministryofmeme</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mqr5z1/_/guhx8h3">Apr 14 2021 15:32:54</a>
+    </p>
+    <div class="collapsible">
+        <p>什么卷王小黄人</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

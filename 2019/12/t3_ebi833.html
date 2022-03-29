@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>还是做成图才好玩</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ebi833">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ebi833">Dec 16 2019 17:32:53</a>
+    </p>
+    <strong>还是做成图才好玩</strong>
+    <p><a href="https://i.redd.it/bl2g6p4c61541.jpg">https://i.redd.it/bl2g6p4c61541.jpg</a></p>
+</div>
+<div class="comment" id="t1_fb77jb5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liaoupupup">liaoupupup</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ebi833/_/fb77jb5">Dec 17 2019 10:24:04</a>
+    </p>
+    <div class="collapsible">
+        <p>刘鹤啥意思</p>
+        <div class="comment" id="t1_fb883wb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/EmperorPooh">EmperorPooh</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ebi833/_/fb883wb">Dec 17 2019 18:43:24</a>
+    </p>
+    <div class="collapsible">
+        <p>意思是鹤仙人谈好了熊一把毁约了，这图老了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>没想到帅总在b站这么抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l3c86s">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/timtomcook">timtomcook</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3c86s">Jan 23 2021 13:38:14</a>
+    </p>
+    <strong>没想到帅总在b站这么抽象</strong>
+    <p><a href="https://www.reddit.com/gallery/l3c86s">https://www.reddit.com/gallery/l3c86s</a></p>
+</div>
+<div class="comment" id="t1_gkf7rsp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/yolobingyao">yolobingyao</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3c86s/_/gkf7rsp">Jan 23 2021 18:31:00</a>
+    </p>
+    <div class="collapsible">
+        <p>唉</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gkflhvx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Edwardsun001">Edwardsun001</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3c86s/_/gkflhvx">Jan 23 2021 19:40:37</a>
+    </p>
+    <div class="collapsible">
+        <p>呦这不保安帅总么，怎么这么拉了？走，我们去逗逗他</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>节目效果爆炸</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cvawls">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Daltonism">Daltonism</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cvawls">Aug 25 2019 16:50:59</a>
+    </p>
+    <strong>节目效果爆炸</strong>
+    <p><a href="https://youtu.be/LxHNI_vJh-s">https://youtu.be/LxHNI_vJh-s</a></p>
+</div>
+<div class="comment" id="t1_ey3w1lf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cvawls/_/ey3w1lf">Aug 25 2019 23:20:11</a>
+    </p>
+    <div class="collapsible">
+        <p>太长了简述一下</p>
+        <div class="comment" id="t1_ey454i1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jingzhengen">jingzhengen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cvawls/_/ey454i1">Aug 26 2019 01:14:29</a>
+    </p>
+    <div class="collapsible">
+        <p>在护旗手的集会现场用音响放辱包视频</p>
+        <div class="comment" id="t1_ey456ug">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cvawls/_/ey456ug">Aug 26 2019 01:15:20</a>
+    </p>
+    <div class="collapsible">
+        <p>结果呢，斗架没</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

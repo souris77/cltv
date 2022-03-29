@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>什么缝合怪</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lgqigu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/BorntobeBleu">BorntobeBleu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgqigu">Feb 10 2021 09:59:10</a>
+    </p>
+    <strong>什么缝合怪</strong>
+    <p><a href="https://i.redd.it/hrz31t9dimg61.jpg">https://i.redd.it/hrz31t9dimg61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gmsvmw5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GohanKuri">GohanKuri</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgqigu/_/gmsvmw5">Feb 10 2021 10:04:11</a>
+    </p>
+    <div class="collapsible">
+        <p>后现代援交流产会</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gmt095j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Muyan93">Muyan93</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgqigu/_/gmt095j">Feb 10 2021 11:18:24</a>
+    </p>
+    <div class="collapsible">
+        <p>一眼反串</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

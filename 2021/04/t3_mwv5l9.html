@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>reddit安全性评估</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mwv5l9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ehj18661">ehj18661</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mwv5l9">Apr 23 2021 13:23:12</a>
+    </p>
+    <strong>reddit安全性评估</strong>
+    <p><a href="https://old.reddit.com/r/chonglangTV/comments/mmkyzi/rchina_irl%E7%9A%84%E8%83%8C%E6%99%AF%E5%8F%8A%E5%AE%89%E5%85%A8%E6%80%A7%E6%B5%85%E8%AF%84/">https://old.reddit.com/r/chonglangTV/comments/mmkyzi/rchina_irl%E7%9A%84%E8%83%8C%E6%99%AF%E5%8F%8A%E5%AE%89%E5%85%A8%E6%80%A7%E6%B5%85%E8%AF%84/</a></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

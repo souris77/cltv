@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>开始运作</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_c02340">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/6324xingping">6324xingping</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c02340">Jun 13 2019 05:58:16</a>
+    </p>
+    <strong>开始运作</strong>
+    <p><a href="https://twitter.com/doomsdayspecter/status/1138757991954505729">https://twitter.com/doomsdayspecter/status/1138757991954505729</a></p>
+</div>
+<div class="comment" id="t1_er0i2az">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RatOfUnderground">RatOfUnderground</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c02340/_/er0i2az">Jun 13 2019 09:14:18</a>
+    </p>
+    <div class="collapsible">
+        <p>也不知道这事最后是个啥结果。</p>
+        <div class="comment" id="t1_er1ikcx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Jduo5c">Jduo5c</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c02340/_/er1ikcx">Jun 13 2019 13:25:48</a>
+    </p>
+    <div class="collapsible">
+        <p>这件事改变不了，这是必定会推行的。</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

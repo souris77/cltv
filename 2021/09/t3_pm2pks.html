@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>(问完自删) 为什么显示2条评论下面却什么都没有？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pm2pks">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/deepintheglass">deepintheglass</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pm2pks">Sep 11 2021 07:09:51</a>
+    </p>
+    <strong>(问完自删) 为什么显示2条评论下面却什么都没有？</strong>
+    <p><a href="https://i.redd.it/rxs0cb7bqtm71.jpg">https://i.redd.it/rxs0cb7bqtm71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hces02b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Freqjule">Freqjule</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pm2pks/_/hces02b">Sep 11 2021 07:16:02</a>
+    </p>
+    <div class="collapsible">
+        <p>评论人的号被标记了，只能自己看见，别人看不见，解决方法只能是换号甚至换ip。建议玩红迪的善用reveddit，并且创个小号时不时看一下大号言论可见性。</p>
+        <div class="comment" id="t1_hces2xp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/deepintheglass">deepintheglass</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pm2pks/_/hces2xp">Sep 11 2021 07:17:13</a>
+    </p>
+    <div class="collapsible">
+        <p>原来如此，懂了</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

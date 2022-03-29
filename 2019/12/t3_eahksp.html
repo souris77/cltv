@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>多图测试</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_eahksp">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/SurfingGypsy">SurfingGypsy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/eahksp">Dec 14 2019 09:05:53</a>
+    </p>
+    <strong>多图测试</strong>
+    <p><p>1.
+https://i.imgur.com/J1CsCTF.jpg
+2.
+https://i.imgur.com/f1tnRYH.jpg
+3.
+https://i.imgur.com/oR1RRsu.jpg</p></p>
+</div>
+<div class="comment" id="t1_fasio28">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/j0l5a_6k2n2">j0l5a_6k2n2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/eahksp/_/fasio28">Dec 14 2019 12:51:04</a>
+    </p>
+    <div class="collapsible">
+        <p>呃呃 直接把图拖进reddit发帖界面就可以了</p>
+        <div class="comment" id="t1_faswe62">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SurfingGypsy">SurfingGypsy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/eahksp/_/faswe62">Dec 14 2019 14:02:06</a>
+    </p>
+    <div class="collapsible">
+        <p>我是手机人！不懂得网页红迪！</p>
+        <div class="comment" id="t1_fasyj93">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/j0l5a_6k2n2">j0l5a_6k2n2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/eahksp/_/fasyj93">Dec 14 2019 14:14:54</a>
+    </p>
+    <div class="collapsible">
+        <p>那可以整合到一个imgur链接里</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

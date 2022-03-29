@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>太典了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l7jkwb">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TheBig_Benjamin">TheBig_Benjamin</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l7jkwb">Jan 29 2021 04:48:36</a>
+    </p>
+    <strong>太典了</strong>
+    <p><p>大清国的猫托邦 ,  https://www.douban.com/people/1508253/status/3277107819/?dt_platform=other&amp;dt_dapp=1</p></p>
+</div>
+<div class="comment" id="t1_gl73qi0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/rorschachlizeyu">rorschachlizeyu</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l7jkwb/_/gl73qi0">Jan 29 2021 04:58:38</a>
+    </p>
+    <div class="collapsible">
+        <p>发的像个傻逼一样，去死吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Happy End - Kaze wo Atsumete</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lahaou">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/distantfiction">distantfiction</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lahaou">Feb 01 2021 23:19:04</a>
+    </p>
+    <strong>Happy End - Kaze wo Atsumete</strong>
+    <p><a href="https://www.youtube.com/watch?v=0b6inZfiGrw&amp;ab_channel=C%C3%A9lineRojas">https://www.youtube.com/watch?v=0b6inZfiGrw&amp;ab_channel=C%C3%A9lineRojas</a></p>
+</div>
+<div class="comment" id="t1_gloisi6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/leengmao">leengmao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lahaou/_/gloisi6">Feb 02 2021 02:04:57</a>
+    </p>
+    <div class="collapsible">
+        <p>唉，在学校的最后一年都是听happy end这几张专辑度过的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

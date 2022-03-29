@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>鞑子戏，我劝你多看</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ozoioo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/langren-y">langren-y</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ozoioo">Aug 07 2021 06:57:39</a>
+    </p>
+    <strong>鞑子戏，我劝你多看</strong>
+    <p><p>马:倘若北兵渡河，叫谁迎敌？
+阮向马耳介:北兵一到，还要迎敌么？
+马:不迎敌，更有何法？
+阮:只有两法。
+马:请教！
+（阮作抠衣介:跑。又作跪地介:降。
+马:说的也是。大丈夫烈烈轰轰，宁可叩北兵之马，不可试南贼之刀。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>越看越想笑</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ooivwo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/63244236">63244236</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ooivwo">Jul 21 2021 04:36:39</a>
+    </p>
+    <strong>越看越想笑</strong>
+    <p><p>没有一个无辜的</p></p>
+</div>
+<div class="comment" id="t1_h5yrcky">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Commercial-Welcome-5">Commercial-Welcome-5</a>
+        |
+        <span class="score">16 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ooivwo/_/h5yrcky">Jul 21 2021 04:38:18</a>
+    </p>
+    <div class="collapsible">
+        <p>我今天已经快笑抽了，从凌晨笑到现在。</p>
+        <div class="comment" id="t1_h5ysl4a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Big_Uzi_Horizontal">Big_Uzi_Horizontal</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ooivwo/_/h5ysl4a">Jul 21 2021 04:51:13</a>
+    </p>
+    <div class="collapsible">
+        <p>这下做梦都笑醒了</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_h5yxs98">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liveybraen">liveybraen</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ooivwo/_/h5yxs98">Jul 21 2021 05:49:43</a>
+    </p>
+    <div class="collapsible">
+        <p>过几天又跟没事人一样一切照旧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

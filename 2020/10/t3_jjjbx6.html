@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>这么久没上来怎么一点节目效果都没了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jjjbx6">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/wwe9527">wwe9527</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jjjbx6">Oct 28 2020 07:23:02</a>
+    </p>
+    <strong>这么久没上来怎么一点节目效果都没了</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_gacznui">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/houchiku">houchiku</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jjjbx6/_/gacznui">Oct 28 2020 07:39:14</a>
+    </p>
+    <div class="collapsible">
+        <p>是这样的，每天都是二次元那点屁事</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gae2shk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RoseQun">RoseQun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jjjbx6/_/gae2shk">Oct 28 2020 15:47:33</a>
+    </p>
+    <div class="collapsible">
+        <p>你整个试试</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gaeflx1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kaiorinshinn">kaiorinshinn</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jjjbx6/_/gaeflx1">Oct 28 2020 17:25:49</a>
+    </p>
+    <div class="collapsible">
+        <p>还不是你不整活</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

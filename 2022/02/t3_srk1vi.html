@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>推特浪友</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_srk1vi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ehoaii">ehoaii</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/srk1vi">Feb 13 2022 14:41:10</a>
+    </p>
+    <strong>推特浪友</strong>
+    <p><p>推上帮韩友的人比去年汉服事件翻倍，提供大量优质辱华图，浪人数量大爆发？</p></p>
+</div>
+<div class="comment" id="t1_hws8o5r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Particular_Scallion">Particular_Scallion</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/srk1vi/_/hws8o5r">Feb 13 2022 15:06:59</a>
+    </p>
+    <div class="collapsible">
+        <p>人都有正义感</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

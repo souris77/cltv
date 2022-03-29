@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>什么反转</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m4cleo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Cook_Unique">Cook_Unique</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m4cleo">Mar 13 2021 18:50:49</a>
+    </p>
+    <strong>什么反转</strong>
+    <p><a href="https://v.redd.it/24oew73fdum61">https://v.redd.it/24oew73fdum61</a></p>
+</div>
+<div class="comment" id="t1_gqu5i1i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DevilShendu">DevilShendu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m4cleo/_/gqu5i1i">Mar 13 2021 21:31:24</a>
+    </p>
+    <div class="collapsible">
+        <p>什么游戏？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gqurpv6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Naivek3301">Naivek3301</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m4cleo/_/gqurpv6">Mar 14 2021 01:03:30</a>
+    </p>
+    <div class="collapsible">
+        <p>最后特效给他可爱完了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gqv958r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/7954189MOON">7954189MOON</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m4cleo/_/gqv958r">Mar 14 2021 04:00:58</a>
+    </p>
+    <div class="collapsible">
+        <p>蜘蛛不配使用文明工具</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

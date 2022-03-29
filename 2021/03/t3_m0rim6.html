@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>We do a little trolling</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m0rim6">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yingzhen251">yingzhen251</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m0rim6">Mar 08 2021 22:08:15</a>
+    </p>
+    <strong>We do a little trolling</strong>
+    <p><a href="https://youtu.be/d2Gs586bSsA">https://youtu.be/d2Gs586bSsA</a></p>
+</div>
+<div class="comment" id="t1_gq9hoqv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/VaporTXY">VaporTXY</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m0rim6/_/gq9hoqv">Mar 08 2021 22:24:19</a>
+    </p>
+    <div class="collapsible">
+        <p>不要再发越南了，我他妈都玩出Ptsd了</p>
+        <div class="comment" id="t1_gq9hxdl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/yingzhen251">yingzhen251</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m0rim6/_/gq9hxdl">Mar 08 2021 22:26:15</a>
+    </p>
+    <div class="collapsible">
+        <p>玩不够，通宵玩</p>
+        <div class="comment" id="t1_gq9jpc7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/VaporTXY">VaporTXY</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m0rim6/_/gq9jpc7">Mar 08 2021 22:40:34</a>
+    </p>
+    <div class="collapsible">
+        <p>我已经Rewrite the history好几次了</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

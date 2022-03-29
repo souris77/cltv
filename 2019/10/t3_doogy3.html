@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>这又是什么操作......</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_doogy3">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Garrykk">Garrykk</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/doogy3">Oct 29 2019 11:28:22</a>
+    </p>
+    <strong>这又是什么操作......</strong>
+    <p><a href="https://i.redd.it/ye4jbkkutgv31.png">https://i.redd.it/ye4jbkkutgv31.png</a></p>
+</div>
+<div class="comment" id="t1_f5p5gfv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dhhhja">dhhhja</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/doogy3/_/f5p5gfv">Oct 29 2019 11:42:56</a>
+    </p>
+    <div class="collapsible">
+        <p>胡编日常放左右摆动屁</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f5p5p86">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iloveaeon">iloveaeon</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/doogy3/_/f5p5p86">Oct 29 2019 11:47:25</a>
+    </p>
+    <div class="collapsible">
+        <p>又想引蛇出洞？糟老头子坏得很</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f5p6pmy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/QwQbluedeer">QwQbluedeer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/doogy3/_/f5p6pmy">Oct 29 2019 12:04:58</a>
+    </p>
+    <div class="collapsible">
+        <p>八月份还在香港问题上左右逢源呢吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f5pgbrz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Andromeda147">Andromeda147</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/doogy3/_/f5pgbrz">Oct 29 2019 14:17:46</a>
+    </p>
+    <div class="collapsible">
+        <p>要开始大鸣大放了,言者无罪,闻者足戒</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

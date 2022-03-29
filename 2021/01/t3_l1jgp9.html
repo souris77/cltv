@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>做题家，差不多得了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l1jgp9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Maple560">Maple560</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l1jgp9">Jan 20 2021 21:50:03</a>
+    </p>
+    <strong>做题家，差不多得了</strong>
+    <p><a href="https://i.redd.it/7sjk5qx16kc61.jpg">https://i.redd.it/7sjk5qx16kc61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gjzqhur">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Maple560">Maple560</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l1jgp9/_/gjzqhur">Jan 20 2021 21:51:05</a>
+    </p>
+    <div class="collapsible">
+        <p>别人没笑话你混吃等死像头猪，你倒跑来指指点点传授人生经验了。非得人人像你一样背上三十年房贷才算活明白了？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

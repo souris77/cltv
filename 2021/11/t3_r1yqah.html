@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>哈哈</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r1yqah">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AntonChen-">AntonChen-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r1yqah">Nov 25 2021 15:15:11</a>
+    </p>
+    <strong>哈哈</strong>
+    <p><a href="https://i.redd.it/zb1jchi9dr181.jpg">https://i.redd.it/zb1jchi9dr181.jpg</a></p>
+</div>
+<div class="comment" id="t1_hm1n49n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/tengbiao">tengbiao</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r1yqah/_/hm1n49n">Nov 25 2021 15:53:59</a>
+    </p>
+    <div class="collapsible">
+        <p>贫困国家对资源的消耗非常少，因此不需要通过疫苗减少人口</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hm22s3b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Conscious-Boss">Conscious-Boss</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r1yqah/_/hm22s3b">Nov 25 2021 17:45:25</a>
+    </p>
+    <div class="collapsible">
+        <p>我也觉得挺怪 只是为了拿钱的话给穷国不也一样吗 反正联合国拨款</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

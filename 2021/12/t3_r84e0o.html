@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>简单点</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r84e0o">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendshipPitiful719">FriendshipPitiful719</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r84e0o">Dec 03 2021 17:31:54</a>
+    </p>
+    <strong>简单点</strong>
+    <p><p><a href="https://www.reddit.com/poll/r84e0o">View Poll</a></p></p>
+</div>
+<div class="comment" id="t1_hn4npj2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lee_jianguo">lee_jianguo</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r84e0o/_/hn4npj2">Dec 03 2021 23:21:23</a>
+    </p>
+    <div class="collapsible">
+        <p>哈，支女和织女，蝈楠和蝈娚不是同义词吗？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hn6hm4x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/waver321ever">waver321ever</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r84e0o/_/hn6hm4x">Dec 04 2021 09:58:55</a>
+    </p>
+    <div class="collapsible">
+        <p>织女支女一个东西吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

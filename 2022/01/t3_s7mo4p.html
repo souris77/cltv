@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>鲁迅</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s7mo4p">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Hour_Ad32">Hour_Ad32</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s7mo4p">Jan 19 2022 09:53:06</a>
+    </p>
+    <strong>鲁迅</strong>
+    <p><p>看赵超构的《延安一月》，全延安找不到一本鲁迅。只有高岗家里有一套</p></p>
+</div>
+<div class="comment" id="t1_htat7md">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Large_Road_953">Large_Road_953</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s7mo4p/_/htat7md">Jan 19 2022 09:57:32</a>
+    </p>
+    <div class="collapsible">
+        <p>未名BBS上的帖子啊，都半个高华了还盗贴，好想把你的鸡儿揪掉</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

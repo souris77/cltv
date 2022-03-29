@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Maybe Maybe Maybe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_krkzcf">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/laoli1999">laoli1999</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krkzcf">Jan 06 2021 10:01:44</a>
+    </p>
+    <strong>Maybe Maybe Maybe</strong>
+    <p><a href="https://v.redd.it/y64gdefkam961">https://v.redd.it/y64gdefkam961</a></p>
+</div>
+<div class="comment" id="t1_giaj8zx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/flashmindsea">flashmindsea</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krkzcf/_/giaj8zx">Jan 06 2021 10:59:12</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈哈哈哈</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_giawdco">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/YueNanJiZhe">YueNanJiZhe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krkzcf/_/giawdco">Jan 06 2021 13:50:40</a>
+    </p>
+    <div class="collapsible">
+        <p>吓老子一跳</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gie46cd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/CR7-gOaTt">CR7-gOaTt</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/krkzcf/_/gie46cd">Jan 07 2021 04:40:55</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈哈</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

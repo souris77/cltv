@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>尼，好吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_bwz9u3">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/IwanttodrinkCoke">IwanttodrinkCoke</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bwz9u3">Jun 05 2019 06:05:31</a>
+    </p>
+    <strong>尼，好吗？</strong>
+    <p><a href="https://i.redd.it/az7jiox3bh231.jpg">https://i.redd.it/az7jiox3bh231.jpg</a></p>
+</div>
+<div class="comment" id="t1_eq1yd3d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/daizhongdai">daizhongdai</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bwz9u3/_/eq1yd3d">Jun 05 2019 08:22:42</a>
+    </p>
+    <div class="collapsible">
+        <p>你好，我习近平</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eq8sbax">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/QingYanGe">QingYanGe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bwz9u3/_/eq8sbax">Jun 07 2019 02:20:35</a>
+    </p>
+    <div class="collapsible">
+        <p>不要命了？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

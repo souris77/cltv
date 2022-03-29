@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>回顾</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s1zpqb">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/pray250">pray250</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s1zpqb">Jan 12 2022 06:45:28</a>
+    </p>
+    <strong>回顾</strong>
+    <p><a href="https://v.redd.it/vamdbnx2e7b81">https://v.redd.it/vamdbnx2e7b81</a></p>
+</div>
+<div class="comment" id="t1_hsbk0ea">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/POPCATmeow">POPCATmeow</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s1zpqb/_/hsbk0ea">Jan 12 2022 07:06:13</a>
+    </p>
+    <div class="collapsible">
+        <p>微博水印都出来了，下一次看到就是屄里屄里水印了吧？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hsdbwky">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/YueNanShuRen">YueNanShuRen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s1zpqb/_/hsdbwky">Jan 12 2022 17:08:40</a>
+    </p>
+    <div class="collapsible">
+        <p>典</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

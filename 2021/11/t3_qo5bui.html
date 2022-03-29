@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>多讀趙選</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qo5bui">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/LILEFtrofe">LILEFtrofe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qo5bui">Nov 06 2021 17:44:24</a>
+    </p>
+    <strong>多讀趙選</strong>
+    <p><a href="https://i.redd.it/i3mvvipki0y71.jpg">https://i.redd.it/i3mvvipki0y71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hjktdmj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/K_Instructor">K_Instructor</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qo5bui/_/hjktdmj">Nov 06 2021 18:09:31</a>
+    </p>
+    <div class="collapsible">
+        <p>有出处吗？关注一波</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hjlizvv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RemoteHoney">RemoteHoney</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qo5bui/_/hjlizvv">Nov 06 2021 21:17:50</a>
+    </p>
+    <div class="collapsible">
+        <p>講蛋炒飯？？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

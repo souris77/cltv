@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>渣渣</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_c62zy0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/412thcadian">412thcadian</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c62zy0">Jun 27 2019 08:31:33</a>
+    </p>
+    <strong>渣渣</strong>
+    <p><a href="https://v.redd.it/6dv32n291v631">https://v.redd.it/6dv32n291v631</a></p>
+</div>
+<div class="comment" id="t1_es5v8to">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/6324vpvp">6324vpvp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c62zy0/_/es5v8to">Jun 27 2019 10:09:13</a>
+    </p>
+    <div class="collapsible">
+        <p>赣b终于上分了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_es9iacn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/killu_in3days">killu_in3days</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c62zy0/_/es9iacn">Jun 28 2019 15:47:20</a>
+    </p>
+    <div class="collapsible">
+        <p>我寻思这扎儿也没人要</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>推薦一位浪友的頻道</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sgz1d6">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XComhghall">XComhghall</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sgz1d6">Jan 31 2022 11:23:01</a>
+    </p>
+    <strong>推薦一位浪友的頻道</strong>
+    <p><a href="https://www.youtube.com/watch?v=SVA8eZUtrIw">https://www.youtube.com/watch?v=SVA8eZUtrIw</a></p>
+</div>
+<div class="comment" id="t1_hv4070o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PuzzleheadedSun1460">PuzzleheadedSun1460</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sgz1d6/_/hv4070o">Feb 01 2022 08:50:27</a>
+    </p>
+    <div class="collapsible">
+        <p>我还以为你要说900 news呢</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

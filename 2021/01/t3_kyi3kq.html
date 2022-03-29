@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>太哈人了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kyi3kq">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yingzhen251">yingzhen251</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kyi3kq">Jan 16 2021 12:27:26</a>
+    </p>
+    <strong>太哈人了</strong>
+    <p><a href="https://www.reddit.com/gallery/kyi3kq">https://www.reddit.com/gallery/kyi3kq</a></p>
+</div>
+<div class="comment" id="t1_gjg9539">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xialan2016">xialan2016</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kyi3kq/_/gjg9539">Jan 16 2021 12:36:07</a>
+    </p>
+    <div class="collapsible">
+        <p>杀完人居然不处理尸体，要么做事的人不专业，要么就是故意这么干的把事情搞的越大越好</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

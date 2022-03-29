@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>典中典之拉清單</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nrhepe">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TW930211">TW930211</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nrhepe">Jun 03 2021 16:21:52</a>
+    </p>
+    <strong>典中典之拉清單</strong>
+    <p><a href="https://v.redd.it/5zhsy22mt2371">https://v.redd.it/5zhsy22mt2371</a></p>
+</div>
+<div class="comment" id="t1_h0ggeww">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Shaun111Yang">Shaun111Yang</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nrhepe/_/h0ggeww">Jun 03 2021 16:29:00</a>
+    </p>
+    <div class="collapsible">
+        <p>抽象</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0ihw90">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/leengmao">leengmao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nrhepe/_/h0ihw90">Jun 04 2021 01:31:07</a>
+    </p>
+    <div class="collapsible">
+        <p>三星手机是吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

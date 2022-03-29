@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>怎么查自己有没有被拉清单</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sjoyzx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Jingoooooooo">Jingoooooooo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjoyzx">Feb 03 2022 17:30:20</a>
+    </p>
+    <strong>怎么查自己有没有被拉清单</strong>
+    <p><a href="https://i.redd.it/w5wkf847lnf81.jpg">https://i.redd.it/w5wkf847lnf81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hvgu094">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Key-Mud-6810">Key-Mud-6810</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjoyzx/_/hvgu094">Feb 03 2022 20:26:06</a>
+    </p>
+    <div class="collapsible">
+        <p>同问，这人一眼晶哥</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hvh2y2c">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/16A77F5D0">16A77F5D0</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sjoyzx/_/hvh2y2c">Feb 03 2022 21:23:44</a>
+    </p>
+    <div class="collapsible">
+        <p>冲完了，被太监区拉黑了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

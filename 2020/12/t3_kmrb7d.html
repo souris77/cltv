@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>轻松一刻</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kmrb7d">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/iamchinesepig">iamchinesepig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kmrb7d">Dec 30 2020 00:55:51</a>
+    </p>
+    <strong>轻松一刻</strong>
+    <p><a href="https://i.redd.it/6x2cfl6538861.jpg">https://i.redd.it/6x2cfl6538861.jpg</a></p>
+</div>
+<div class="comment" id="t1_ghgu5cs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DaddyOfXi">DaddyOfXi</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kmrb7d/_/ghgu5cs">Dec 30 2020 04:15:24</a>
+    </p>
+    <div class="collapsible">
+        <p>什么肖申克？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ghgu7ww">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Eddie_Watermark4820">Eddie_Watermark4820</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kmrb7d/_/ghgu7ww">Dec 30 2020 04:16:06</a>
+    </p>
+    <div class="collapsible">
+        <p>肖申克的救赎梗吗</p>
+        <div class="comment" id="t1_ghgw7ei">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/iamchinesepig">iamchinesepig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kmrb7d/_/ghgw7ei">Dec 30 2020 04:36:09</a>
+    </p>
+    <div class="collapsible">
+        <p>是</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

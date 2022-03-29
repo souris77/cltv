@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>疑似有点不懂事了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_osvq8y">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Interesting-Age2367">Interesting-Age2367</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/osvq8y">Jul 27 2021 21:31:57</a>
+    </p>
+    <strong>疑似有点不懂事了</strong>
+    <p><a href="https://i.imgur.com/1SDUo0h.jpg">https://i.imgur.com/1SDUo0h.jpg</a></p>
+</div>
+<div class="comment" id="t1_h6rhbj2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SpiderKiller8964">SpiderKiller8964</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/osvq8y/_/h6rhbj2">Jul 27 2021 22:48:50</a>
+    </p>
+    <div class="collapsible">
+        <p>经典回顾：一看就没什么政治素养，在大是大非面前谈事实和科学</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

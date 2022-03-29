@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>傻子总以为别人才是傻子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_svuxr5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ShowaEmperor">ShowaEmperor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/svuxr5">Feb 18 2022 22:58:08</a>
+    </p>
+    <strong>傻子总以为别人才是傻子</strong>
+    <p><a href="https://i.redd.it/eud8nbqc9oi81.jpg">https://i.redd.it/eud8nbqc9oi81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hxicwxe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/charszb">charszb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/svuxr5/_/hxicwxe">Feb 18 2022 23:06:02</a>
+    </p>
+    <div class="collapsible">
+        <p>难说天堂里没有傻子。智力不纳入进入天堂的标准。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

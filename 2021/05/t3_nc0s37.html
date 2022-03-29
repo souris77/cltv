@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>白日焰火</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nc0s37">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ppp213">ppp213</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nc0s37">May 14 2021 05:00:42</a>
+    </p>
+    <strong>白日焰火</strong>
+    <p><a href="https://www.youtube.com/watch?v=mcUpeaSX8BE">https://www.youtube.com/watch?v=mcUpeaSX8BE</a></p>
+</div>
+<div class="comment" id="t1_gy2y2ph">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nero1209">nero1209</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nc0s37/_/gy2y2ph">May 14 2021 09:46:28</a>
+    </p>
+    <div class="collapsible">
+        <p>上次看到的是晚上的，这次是白天的，还是挺震撼的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

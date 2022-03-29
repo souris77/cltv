@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>想家</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_gyrzlw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/killu_in3days">killu_in3days</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gyrzlw">Jun 08 2020 04:34:55</a>
+    </p>
+    <strong>想家</strong>
+    <p><a href="https://i.redd.it/ajdx7qogmi351.jpg">https://i.redd.it/ajdx7qogmi351.jpg</a></p>
+</div>
+<div class="comment" id="t1_ftcd16r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Lonely-Fall">Lonely-Fall</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gyrzlw/_/ftcd16r">Jun 08 2020 05:47:13</a>
+    </p>
+    <div class="collapsible">
+        <p>这狗整挺严肃</p>
+        <div class="comment" id="t1_ftcdc0p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/killu_in3days">killu_in3days</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gyrzlw/_/ftcdc0p">Jun 08 2020 05:51:09</a>
+    </p>
+    <div class="collapsible">
+        <p>就是来拍照收费的，类似中国打扮成孙悟空的猴</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

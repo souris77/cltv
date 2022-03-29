@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>我终于run了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_olx35g">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Ill_Paleontologist19">Ill_Paleontologist19</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/olx35g">Jul 17 2021 04:07:07</a>
+    </p>
+    <strong>我终于run了</strong>
+    <p><a href="https://i.redd.it/0ybm10ao6pb71.jpg">https://i.redd.it/0ybm10ao6pb71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h5hbwzj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MouseandRabbit">MouseandRabbit</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/olx35g/_/h5hbwzj">Jul 17 2021 04:08:39</a>
+    </p>
+    <div class="collapsible">
+        <p>刚才看到一个回家的老哥，今天是什么马拉松节？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h5hc3ys">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Anybody-Few">Anybody-Few</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/olx35g/_/h5hc3ys">Jul 17 2021 04:10:41</a>
+    </p>
+    <div class="collapsible">
+        <p>好</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

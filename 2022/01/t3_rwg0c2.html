@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>oak and a duh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rwg0c2">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendlySomewhere870">FriendlySomewhere870</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rwg0c2">Jan 05 2022 06:15:21</a>
+    </p>
+    <strong>oak and a duh</strong>
+    <p><a href="https://youtu.be/GOJrccMD-WE">https://youtu.be/GOJrccMD-WE</a></p>
+</div>
+<div class="comment" id="t1_hrbrr3b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Relative-Ad-5696">Relative-Ad-5696</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rwg0c2/_/hrbrr3b">Jan 05 2022 07:26:07</a>
+    </p>
+    <div class="collapsible">
+        <p>凉凉</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

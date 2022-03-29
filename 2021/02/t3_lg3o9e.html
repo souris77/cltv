@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>是吧卡吧</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lg3o9e">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Individual-Captain-8">Individual-Captain-8</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lg3o9e">Feb 09 2021 13:48:41</a>
+    </p>
+    <strong>是吧卡吧</strong>
+    <p><a href="https://i.redd.it/ike4xh2eigg61.png">https://i.redd.it/ike4xh2eigg61.png</a></p>
+</div>
+<div class="comment" id="t1_gmppsjp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Joseph_Luo_Personal">Joseph_Luo_Personal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lg3o9e/_/gmppsjp">Feb 09 2021 16:48:23</a>
+    </p>
+    <div class="collapsible">
+        <p>赞迪卡再起疑似有些火星救援了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gmsaqey">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ksn1ght">ksn1ght</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lg3o9e/_/gmsaqey">Feb 10 2021 05:09:05</a>
+    </p>
+    <div class="collapsible">
+        <p>画还行，卡是垃圾</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

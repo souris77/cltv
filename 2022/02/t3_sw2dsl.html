@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>豆瓣评论区</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sw2dsl">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Jaskaran546831">Jaskaran546831</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sw2dsl">Feb 19 2022 05:23:17</a>
+    </p>
+    <strong>豆瓣评论区</strong>
+    <p><p>升官升级靠裙带，</p>
+<p>投机倒把发大财。</p>
+<p>出人头地要出国，</p>
+<p>安享晚年嫁老外。</p>
+<p>门当户对看阶级，</p>
+<p>吃饭送礼看作派。</p>
+<p>两面三刀为拿钱，</p>
+<p>忘恩负义说真爱。</p>
+<p>独立自主坑别人，</p>
+<p>学成出国不回来。</p>
+<p>乱搞关系臭老九，</p>
+<p>水浅王八浮上来。</p>
+<p>一个傻子是郑娟，</p>
+<p>吃苦受累小白菜，</p>
+<p>另个傻子周秉昆，</p>
+<p>孩子长大心向外。</p>
+<p>老实干活没房住，</p>
+<p>无官无财爹不爱。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

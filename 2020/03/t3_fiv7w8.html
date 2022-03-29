@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>你敢和他作对？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fiv7w8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/car_repair_man">car_repair_man</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fiv7w8">Mar 15 2020 03:38:05</a>
+    </p>
+    <strong>你敢和他作对？</strong>
+    <p><a href="https://twitter.com/nytimesworld/status/1238948290042920966?s=19">https://twitter.com/nytimesworld/status/1238948290042920966?s=19</a></p>
+</div>
+<div class="comment" id="t1_fkjlgpr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/s1as">s1as</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fiv7w8/_/fkjlgpr">Mar 15 2020 05:21:42</a>
+    </p>
+    <div class="collapsible">
+        <p>说真话的都给我抓起来</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

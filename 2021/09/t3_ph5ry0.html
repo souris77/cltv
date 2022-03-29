@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>讲的太好了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ph5ry0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Slow-Fan7774">Slow-Fan7774</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ph5ry0">Sep 03 2021 14:02:36</a>
+    </p>
+    <strong>讲的太好了</strong>
+    <p><a href="https://youtu.be/sgnGs8LbKHc">https://youtu.be/sgnGs8LbKHc</a></p>
+</div>
+<div class="comment" id="t1_hbg522e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Slow-Fan7774">Slow-Fan7774</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ph5ry0/_/hbg522e">Sep 03 2021 14:05:25</a>
+    </p>
+    <div class="collapsible">
+        <p>只是有一点不理解，为什么马云那么轻易的被斗翻了，马化腾却一直好好的</p>
+        <div class="comment" id="t1_hbgi71g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bright_Cause_914">Bright_Cause_914</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ph5ry0/_/hbgi71g">Sep 03 2021 15:37:16</a>
+    </p>
+    <div class="collapsible">
+        <p>马云比较狂</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

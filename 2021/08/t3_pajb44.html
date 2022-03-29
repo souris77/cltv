@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>how？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pajb44">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ParticularIll9062">ParticularIll9062</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pajb44">Aug 24 2021 08:38:37</a>
+    </p>
+    <strong>how？</strong>
+    <p><a href="https://i.redd.it/hhqy6mhnx8j71.jpg">https://i.redd.it/hhqy6mhnx8j71.jpg</a></p>
+</div>
+<div class="comment" id="t1_ha54bj4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/loadofthewing">loadofthewing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pajb44/_/ha54bj4">Aug 24 2021 09:26:39</a>
+    </p>
+    <div class="collapsible">
+        <p>https://evchk.wikia.org/zh/wiki/%E6%B4%BB%E5%A1%9E%E7%94%B7%E4%BA%8B%E4%BB%B6</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

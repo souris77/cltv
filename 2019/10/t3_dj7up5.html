@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>有内味了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_dj7up5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/xiaodongfang">xiaodongfang</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dj7up5">Oct 17 2019 15:19:25</a>
+    </p>
+    <strong>有内味了</strong>
+    <p><a href="https://youtu.be/4ONfQXcSnLA">https://youtu.be/4ONfQXcSnLA</a></p>
+</div>
+<div class="comment" id="t1_f420u9a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wwe9527">wwe9527</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dj7up5/_/f420u9a">Oct 17 2019 15:28:51</a>
+    </p>
+    <div class="collapsible">
+        <p>有湾湾内味了，李敖大闹立法院.MP3</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f42xoi7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/897921333">897921333</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dj7up5/_/f42xoi7">Oct 17 2019 18:21:58</a>
+    </p>
+    <div class="collapsible">
+        <p>抽象</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

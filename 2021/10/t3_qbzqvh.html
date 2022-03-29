@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>红线</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qbzqvh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Mtso2021">Mtso2021</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbzqvh">Oct 20 2021 12:30:52</a>
+    </p>
+    <strong>红线</strong>
+    <p><a href="https://i.redd.it/936wn955nlu71.jpg">https://i.redd.it/936wn955nlu71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hhcrgnd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TAM_Tankiese">TAM_Tankiese</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbzqvh/_/hhcrgnd">Oct 20 2021 12:35:52</a>
+    </p>
+    <div class="collapsible">
+        <p>触摸这方面，港友道行还是挺高的</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

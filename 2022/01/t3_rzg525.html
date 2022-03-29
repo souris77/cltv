@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>投票</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rzg525">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FriendlySomewhere870">FriendlySomewhere870</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzg525">Jan 09 2022 01:41:28</a>
+    </p>
+    <strong>投票</strong>
+    <p><p><a href="https://www.reddit.com/poll/rzg525">View Poll</a></p></p>
+</div>
+<div class="comment" id="t1_hruww1y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Leedoctor">Leedoctor</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzg525/_/hruww1y">Jan 09 2022 02:03:49</a>
+    </p>
+    <div class="collapsible">
+        <p>附带开盒和高雅创造的话我还是挺支持的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hruxn17">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/is1human">is1human</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rzg525/_/hruxn17">Jan 09 2022 02:09:11</a>
+    </p>
+    <div class="collapsible">
+        <p>蝙蝠人可能爱看。翻墙出来的应该不爱看，因为身边都是这些蛆</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

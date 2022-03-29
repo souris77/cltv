@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>触摸触摸</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_knfmu5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TimmyAlex599">TimmyAlex599</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knfmu5">Dec 31 2020 01:20:21</a>
+    </p>
+    <strong>触摸触摸</strong>
+    <p><a href="https://v.redd.it/28mskooecf861">https://v.redd.it/28mskooecf861</a></p>
+</div>
+<div class="comment" id="t1_ghkoky9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/swatMin">swatMin</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knfmu5/_/ghkoky9">Dec 31 2020 04:06:26</a>
+    </p>
+    <div class="collapsible">
+        <p>段奕宏老狂人了 非常适合当浪人的形象代言人 
+以前很喜欢看他的团长</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ghkywsr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/9u0kka">9u0kka</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knfmu5/_/ghkywsr">Dec 31 2020 05:59:17</a>
+    </p>
+    <div class="collapsible">
+        <p>贾志国</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ghlche6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/alexaugustsunny">alexaugustsunny</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/knfmu5/_/ghlche6">Dec 31 2020 09:29:25</a>
+    </p>
+    <div class="collapsible">
+        <p>萧何能处，秦时的公知</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

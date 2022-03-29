@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>每日批话之特例</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ecpskm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Henanrentoujinggai">Henanrentoujinggai</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ecpskm">Dec 19 2019 07:12:24</a>
+    </p>
+    <strong>每日批话之特例</strong>
+    <p><p><a href="https://weibo.com/n/%E5%80%9F%E5%8F%A3%E9%99%A2%E9%99%A2%E9%95%BFV?from=feed&amp;loc=at">@借口院院长V</a>：支那人普遍分不清“特例”和“普遍”区别。比如这种高素质人群在日本相当普遍，在支那则是特例。而支那人的思维就是以“有”和“没有”抹杀了这其中的区别，比如右边这只👉//<a href="https://weibo.com/n/%E8%B5%B5%E5%BA%86%E5%AE%892009?from=feed&amp;loc=at">@赵庆安2009</a>：这种小细节哪个国家都有。这种人哪个国家也都有。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>哪位浪人？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qbv14o">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Current_Cry_7006">Current_Cry_7006</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbv14o">Oct 20 2021 07:04:24</a>
+    </p>
+    <strong>哪位浪人？</strong>
+    <p><a href="https://i.redd.it/2msfyusv0ku71.jpg">https://i.redd.it/2msfyusv0ku71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hhc2bsr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AdLittle6844">AdLittle6844</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbv14o/_/hhc2bsr">Oct 20 2021 07:05:39</a>
+    </p>
+    <div class="collapsible">
+        <p>穿绿衣服短头发戴口罩的是你吗。小王 标记一下 收网了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

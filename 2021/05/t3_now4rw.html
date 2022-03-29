@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>难绷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_now4rw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bingbang721">bingbang721</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/now4rw">May 31 2021 06:02:11</a>
+    </p>
+    <strong>难绷</strong>
+    <p><p>昨天我想到大西王那首诗,就念了起来,"天生万物以养人,人无一物以报天",然后旁边有人外放英雄联盟比赛的直播,一个女主播突然喊到"全都给杀了"</p></p>
+</div>
+<div class="comment" id="t1_h0255qq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bihiki">bihiki</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/now4rw/_/h0255qq">May 31 2021 07:10:16</a>
+    </p>
+    <div class="collapsible">
+        <p>说一个趣事，支国字幕不能直接弄出带有献忠字眼的字(比如，杀、死，都用S来作为代替)其视频多出现于贴吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

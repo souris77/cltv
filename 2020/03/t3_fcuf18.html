@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>怎么样多发几张 整晕了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fcuf18">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/daidai007">daidai007</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fcuf18">Mar 03 2020 13:16:39</a>
+    </p>
+    <strong>怎么样多发几张 整晕了</strong>
+    <p><a href="https://i.redd.it/ez9zyp20kgk41.jpg">https://i.redd.it/ez9zyp20kgk41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fjddpjd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Dyoue">Dyoue</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fcuf18/_/fjddpjd">Mar 03 2020 15:59:31</a>
+    </p>
+    <div class="collapsible">
+        <p>什么意思？讲讲？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

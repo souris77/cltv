@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>太行了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rsss0i">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dhe485">dhe485</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rsss0i">Dec 31 2021 12:21:15</a>
+    </p>
+    <strong>太行了</strong>
+    <p><a href="https://i.redd.it/z0nwvj32fv881.jpg">https://i.redd.it/z0nwvj32fv881.jpg</a></p>
+</div>
+<div class="comment" id="t1_hqsd82x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XIWEINI80000000">XIWEINI80000000</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rsss0i/_/hqsd82x">Jan 01 2022 08:39:32</a>
+    </p>
+    <div class="collapsible">
+        <p>写这篇文章的又是什么蜘蛛，要是能乖乖居家好好睡觉谁又想逃？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

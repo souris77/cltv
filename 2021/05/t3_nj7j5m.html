@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>睿了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nj7j5m">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Dozorov">Dozorov</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nj7j5m">May 23 2021 13:15:05</a>
+    </p>
+    <strong>睿了</strong>
+    <p><a href="https://i.redd.it/zyxwigo6ev071.jpg">https://i.redd.it/zyxwigo6ev071.jpg</a></p>
+</div>
+<div class="comment" id="t1_gz5tsno">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/pinky4ne">pinky4ne</a>
+        |
+        <span class="score">21 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nj7j5m/_/gz5tsno">May 23 2021 14:01:08</a>
+    </p>
+    <div class="collapsible">
+        <p>什么铜雀春深锁冰冰？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gz6ax8i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/maligous">maligous</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nj7j5m/_/gz6ax8i">May 23 2021 16:20:35</a>
+    </p>
+    <div class="collapsible">
+        <p>什么连词成句</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gz7rief">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Independent_Buy_3676">Independent_Buy_3676</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nj7j5m/_/gz7rief">May 23 2021 23:19:53</a>
+    </p>
+    <div class="collapsible">
+        <p>支那都在搜</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

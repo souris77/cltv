@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>简单做了个计算</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lx56ha">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/NGSKW">NGSKW</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lx56ha">Mar 03 2021 21:44:58</a>
+    </p>
+    <strong>简单做了个计算</strong>
+    <p><p>按照现在时间本版在线347/12500=0.0276</p>
+<p>r/China 1.3k/207k=0.0062</p>
+<p>r/China_irl 423/26100=0.0162</p>
+<p>r/GenZedong 569/25300=0.02249011857</p>
+<p>r/ChinaMemes 5/2300=0.00217391304</p>
+<p>很难证明不在线的都是王晶</p></p>
+</div>
+<div class="comment" id="t1_gpl8coh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/askratt">askratt</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lx56ha/_/gpl8coh">Mar 03 2021 22:52:04</a>
+    </p>
+    <div class="collapsible">
+        <p>sub时间越长僵尸账号越多吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

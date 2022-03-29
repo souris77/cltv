@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>简单做个统计（2）</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oem7md">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/damemeee">damemeee</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oem7md">Jul 06 2021 02:52:15</a>
+    </p>
+    <strong>简单做个统计（2）</strong>
+    <p><p>你是？</p>
+<p><a href="https://www.reddit.com/poll/oem7md">View Poll</a></p></p>
+</div>
+<div class="comment" id="t1_h474y5d">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Wallcountrypeople">Wallcountrypeople</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oem7md/_/h474y5d">Jul 06 2021 03:05:51</a>
+    </p>
+    <div class="collapsible">
+        <p>我是你爹</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h4766t8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DogRarelySee">DogRarelySee</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oem7md/_/h4766t8">Jul 06 2021 03:17:47</a>
+    </p>
+    <div class="collapsible">
+        <p>键政傻狗能不能滚去r/cltv</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h47nf2q">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/imperatorfidelis">imperatorfidelis</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oem7md/_/h47nf2q">Jul 06 2021 06:46:15</a>
+    </p>
+    <div class="collapsible">
+        <p>什么傻狗统计</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

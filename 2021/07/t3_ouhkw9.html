@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>你触摸谁呢？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ouhkw9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/4sth">4sth</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ouhkw9">Jul 30 2021 09:49:08</a>
+    </p>
+    <strong>你触摸谁呢？</strong>
+    <p><a href="https://i.redd.it/2jagu6ajnbe71.jpg">https://i.redd.it/2jagu6ajnbe71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h72r25e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Cartographer7461">Ok-Cartographer7461</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ouhkw9/_/h72r25e">Jul 30 2021 12:37:37</a>
+    </p>
+    <div class="collapsible">
+        <p>那可不一定</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h73cysc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Love-sky">Love-sky</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ouhkw9/_/h73cysc">Jul 30 2021 15:31:33</a>
+    </p>
+    <div class="collapsible">
+        <p>德玛西亚，人人皆可称王</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h75yuyn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sodomfarm">sodomfarm</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ouhkw9/_/h75yuyn">Jul 31 2021 03:43:57</a>
+    </p>
+    <div class="collapsible">
+        <p>不會才能當國家主席，一幫傻缺</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

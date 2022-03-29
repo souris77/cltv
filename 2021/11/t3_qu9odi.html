@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>太狂了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qu9odi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ParticularIll9062">ParticularIll9062</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qu9odi">Nov 15 2021 06:07:28</a>
+    </p>
+    <strong>太狂了</strong>
+    <p><a href="https://youtu.be/aiPjwGAr8zg">https://youtu.be/aiPjwGAr8zg</a></p>
+</div>
+<div class="comment" id="t1_hkp61j9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/natsuki0403">natsuki0403</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qu9odi/_/hkp61j9">Nov 15 2021 08:32:01</a>
+    </p>
+    <div class="collapsible">
+        <p>your execution day is tomorrow</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hkplgrb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Uchi_Jeon">Uchi_Jeon</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qu9odi/_/hkplgrb">Nov 15 2021 12:04:48</a>
+    </p>
+    <div class="collapsible">
+        <p>[Spare organs detected]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

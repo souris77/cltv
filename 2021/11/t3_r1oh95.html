@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>難繃</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r1oh95">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Hikari9096">Hikari9096</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r1oh95">Nov 25 2021 04:59:49</a>
+    </p>
+    <strong>難繃</strong>
+    <p><p>我媽今天打電話來問我說今天是不是感恩節放假，我說不是，她問那為什麼朋友圈都發感恩節，是不是每個國家有不同的感恩節</p></p>
+</div>
+<div class="comment" id="t1_hm06z4j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Brutus831201">Brutus831201</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r1oh95/_/hm06z4j">Nov 25 2021 06:21:53</a>
+    </p>
+    <div class="collapsible">
+        <p>感恩波蘭飛行員👉中國版的感恩節</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>你这说的什么话</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lj497t">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/PuzzleheadedLoquat1">PuzzleheadedLoquat1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lj497t">Feb 13 2021 16:58:03</a>
+    </p>
+    <strong>你这说的什么话</strong>
+    <p><p>你这说的什么话？谁说爸爸就不能做儿子了，只要咸菜腌的好，人人都能做CEO。吃饭不吃大蒜，活着有什么意思呢？像你这种天天把钱攥在手里的人，根本不能理解我每天开飞机的乐趣。说到飞机我又想起来我的游艇忘记充电了，今天家里买了三条草鱼，你猜怎么着，我刚跑了步。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

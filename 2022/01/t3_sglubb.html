@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>想到一个有趣的故事</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sglubb">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Old_Suspect2563">Old_Suspect2563</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sglubb">Jan 30 2022 23:16:56</a>
+    </p>
+    <strong>想到一个有趣的故事</strong>
+    <p><p>我在上初中的时候，嘴唇下边长了个特别大的青春痘，当时我就自言自语说我长大之后必定会成为像毛腊肉那样的开国领袖，现在我在这里复读屠支，也算是我对小时候说过的话的印证吧</p></p>
+</div>
+<div class="comment" id="t1_hux424f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sanit_Francis">Sanit_Francis</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sglubb/_/hux424f">Jan 30 2022 23:23:40</a>
+    </p>
+    <div class="collapsible">
+        <p>毛亲手并没杀过人，都是借别人的手杀人，其实毛真正的屠支也就是靠着手下张献忠打着毛的旗号屠支。真正屠支还是要看共产国际和张献忠。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

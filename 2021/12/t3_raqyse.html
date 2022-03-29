@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>微要素</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_raqyse">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/wangyouxingping">wangyouxingping</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/raqyse">Dec 07 2021 04:45:50</a>
+    </p>
+    <strong>微要素</strong>
+    <p><a href="https://i.redd.it/vsmtvhcxv1481.jpg">https://i.redd.it/vsmtvhcxv1481.jpg</a></p>
+</div>
+<div class="comment" id="t1_hnk2az5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Row9134">Ok-Row9134</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/raqyse/_/hnk2az5">Dec 07 2021 04:48:55</a>
+    </p>
+    <div class="collapsible">
+        <p>新皮膚：泰國路邊攤</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnkhmxl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bakemonor">bakemonor</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/raqyse/_/hnkhmxl">Dec 07 2021 07:33:55</a>
+    </p>
+    <div class="collapsible">
+        <p>这人最喜欢的表情也有点乳</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnk6nuj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wuhuqifei777">wuhuqifei777</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/raqyse/_/hnk6nuj">Dec 07 2021 05:29:32</a>
+    </p>
+    <div class="collapsible">
+        <p>人在泰国就可以随便触摸了是吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hnmudlu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bangbuzhule">bangbuzhule</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/raqyse/_/hnmudlu">Dec 07 2021 20:26:21</a>
+    </p>
+    <div class="collapsible">
+        <p>完了，都怪你，本来我想早睡的，现在刷了他的视频饿的睡不着了</p>
+        <div class="comment" id="t1_hnnnqu9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wangyouxingping">wangyouxingping</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/raqyse/_/hnnnqu9">Dec 08 2021 00:00:10</a>
+    </p>
+    <div class="collapsible">
+        <p>🙇对不起友友</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

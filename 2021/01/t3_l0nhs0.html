@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>懂完了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l0nhs0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/zzqlike">zzqlike</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l0nhs0">Jan 19 2021 16:39:17</a>
+    </p>
+    <strong>懂完了</strong>
+    <p><a href="https://i.redd.it/e2shzgtohbc61.jpg">https://i.redd.it/e2shzgtohbc61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gjuft36">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Circular_Perfection">Circular_Perfection</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l0nhs0/_/gjuft36">Jan 19 2021 16:42:09</a>
+    </p>
+    <div class="collapsible">
+        <p>反转了，是制药公司让央视带节奏转移视线</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gjv5fx8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Particular_Scallion">Particular_Scallion</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l0nhs0/_/gjv5fx8">Jan 19 2021 19:55:53</a>
+    </p>
+    <div class="collapsible">
+        <p>断交部也是从这儿偷的？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gjwsh9h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Yimoc">Yimoc</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l0nhs0/_/gjwsh9h">Jan 20 2021 04:11:55</a>
+    </p>
+    <div class="collapsible">
+        <p>看了评论区才知道蠢比🕷️是真他妈多啊</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

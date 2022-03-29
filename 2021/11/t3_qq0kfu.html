@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>这是否有点</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qq0kfu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AntonChen-">AntonChen-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qq0kfu">Nov 09 2021 10:09:32</a>
+    </p>
+    <strong>这是否有点</strong>
+    <p><a href="https://i.redd.it/pxoz1be4ojy71.jpg">https://i.redd.it/pxoz1be4ojy71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hjx4v62">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/suoer1212">suoer1212</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qq0kfu/_/hjx4v62">Nov 09 2021 10:19:16</a>
+    </p>
+    <div class="collapsible">
+        <p>他的頭確實很讓人印象深刻…</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hjxtysw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Disastrous-Length-38">Disastrous-Length-38</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qq0kfu/_/hjxtysw">Nov 09 2021 14:36:50</a>
+    </p>
+    <div class="collapsible">
+        <p>开运昌隆：回锅酥真鲳😋</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hjxu67g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Disastrous-Length-38">Disastrous-Length-38</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qq0kfu/_/hjxu67g">Nov 09 2021 14:38:24</a>
+    </p>
+    <div class="collapsible">
+        <p>開運昌隆：回鍋酥真鯧😋</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

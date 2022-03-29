@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>笑嘻了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pog25p">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/LILEFtrofe">LILEFtrofe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pog25p">Sep 15 2021 01:19:37</a>
+    </p>
+    <strong>笑嘻了</strong>
+    <p><a href="https://i.redd.it/huzhnbchjkn71.jpg">https://i.redd.it/huzhnbchjkn71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hcwen3s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Inevitable_Bag7587">Inevitable_Bag7587</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pog25p/_/hcwen3s">Sep 15 2021 02:01:15</a>
+    </p>
+    <div class="collapsible">
+        <p>曹哲答案是吧，这里面有一个是我，人狂速抓</p>
+        <div class="comment" id="t1_hcwjr8o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Type-Jolly">Type-Jolly</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pog25p/_/hcwjr8o">Sep 15 2021 02:41:49</a>
+    </p>
+    <div class="collapsible">
+        <p>一堆人里选一个，什么犹大</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

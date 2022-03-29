@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>支的我头晕眼花</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_prysl1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/apidya2">apidya2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/prysl1">Sep 20 2021 16:51:24</a>
+    </p>
+    <strong>支的我头晕眼花</strong>
+    <p><a href="https://www.reddit.com/gallery/prysl1">https://www.reddit.com/gallery/prysl1</a></p>
+</div>
+<div class="comment" id="t1_hdlzhbh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/apidya2">apidya2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/prysl1/_/hdlzhbh">Sep 20 2021 16:51:45</a>
+    </p>
+    <div class="collapsible">
+        <p>原帖地址
+http://tieba.baidu.com/p/7546557898?share=9105&amp;fr=share&amp;see_lz=0&amp;share_from=post&amp;sfc=copy&amp;client_type=2&amp;client_version=11.9.8.0&amp;st=1632156611&amp;unique=27B65CF9E0ACD74F9E6A3A6E62DF0154</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

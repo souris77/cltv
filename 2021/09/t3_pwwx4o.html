@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>这，就是蜘蛛</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pwwx4o">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/hahhahahah111233">hahhahahah111233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwwx4o">Sep 28 2021 02:49:26</a>
+    </p>
+    <strong>这，就是蜘蛛</strong>
+    <p><a href="https://www.reddit.com/gallery/pwwx4o">https://www.reddit.com/gallery/pwwx4o</a></p>
+</div>
+<div class="comment" id="t1_hejt97p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hahhahahah111233">hahhahahah111233</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwwx4o/_/hejt97p">Sep 28 2021 02:49:40</a>
+    </p>
+    <div class="collapsible">
+        <p>test</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hekyyuu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/houchiku">houchiku</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwwx4o/_/hekyyuu">Sep 28 2021 11:18:20</a>
+    </p>
+    <div class="collapsible">
+        <p>我看了下后台记录，不是管理删的也不是automod删的，是红迪自身的过滤系统删除的。这个我们没有办法的，出现类似的问题可以尝试在回复里艾特管理让管理手动通过。艾特方式：</p>
+<p>u/houchiku</p>
+        <div class="comment" id="t1_hekzkcx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hahhahahah111233">hahhahahah111233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwwx4o/_/hekzkcx">Sep 28 2021 11:25:05</a>
+    </p>
+    <div class="collapsible">
+        <p>好</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

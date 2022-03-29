@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>怎么验证邮箱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_bws6vc">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/suantouwang8">suantouwang8</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bws6vc">Jun 04 2019 18:31:34</a>
+    </p>
+    <strong>怎么验证邮箱</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_epzv0cm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lostxia">lostxia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bws6vc/_/epzv0cm">Jun 04 2019 18:32:53</a>
+    </p>
+    <div class="collapsible">
+        <p>我用的outlook，点一下邮件里的链接就好了。尽量别用国内邮箱</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eq300ul">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/keepain7">keepain7</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bws6vc/_/eq300ul">Jun 05 2019 15:06:21</a>
+    </p>
+    <div class="collapsible">
+        <p>pc端注册谷歌，浏览器调成英文就可以用手机接验证码</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

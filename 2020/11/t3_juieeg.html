@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>有点厉害</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_juieeg">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/b19980105">b19980105</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/juieeg">Nov 15 2020 07:54:08</a>
+    </p>
+    <strong>有点厉害</strong>
+    <p><a href="https://www.macrumors.com/2020/11/11/m1-macbook-air-first-benchmark/">https://www.macrumors.com/2020/11/11/m1-macbook-air-first-benchmark/</a></p>
+</div>
+<div class="comment" id="t1_gcd2g85">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/taekohnuki">taekohnuki</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/juieeg/_/gcd2g85">Nov 15 2020 08:29:23</a>
+    </p>
+    <div class="collapsible">
+        <p>Geekbench 5 設計的太簡單，分數設計不合理。</p>
+<p>Geekbench 設計上工作集小，訪存指令小，分支指令少。基本上就是在測試晶體ＡＬＵ指令性能（加減乘除與或非）。</p>
+<p>只要晶體發射數高，ＡＬＵ單元多，自然分數就高，這也正是ＡＲＭ處理器設計上的優勢。</p>
+<p>&#x200B;</p>
+<p>ＳＯ這樣的跑分與實際使用一點關係都沒有。實際場景非常非常複雜。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

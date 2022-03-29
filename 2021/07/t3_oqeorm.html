@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oqeorm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/XiBaoZiShaBi">XiBaoZiShaBi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm">Jul 23 2021 23:56:10</a>
+    </p>
+    <strong>抽象</strong>
+    <p><a href="https://i.redd.it/dkzy0i1aw1d71.gif">https://i.redd.it/dkzy0i1aw1d71.gif</a></p>
+</div>
+<div class="comment" id="t1_h6b6oq4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DamageWinter367">DamageWinter367</a>
+        |
+        <span class="score">13 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm/_/h6b6oq4">Jul 23 2021 23:59:46</a>
+    </p>
+    <div class="collapsible">
+        <p>手艺啊。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h6bbilf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KAMENRIDER_ZEROTSU">KAMENRIDER_ZEROTSU</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm/_/h6bbilf">Jul 24 2021 00:43:11</a>
+    </p>
+    <div class="collapsible">
+        <p>看了好久终于射了</p>
+        <div class="comment" id="t1_h6fecjv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GrififthsArrow">GrififthsArrow</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm/_/h6fecjv">Jul 25 2021 01:23:15</a>
+    </p>
+    <div class="collapsible">
+        <p>信了你的邪</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_h6bbu0e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MrSchithole">MrSchithole</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm/_/h6bbu0e">Jul 24 2021 00:45:59</a>
+    </p>
+    <div class="collapsible">
+        <p>按比例，這是驢行貨。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h6cmx0y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Cest_la_vie_Gary">Cest_la_vie_Gary</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm/_/h6cmx0y">Jul 24 2021 09:58:55</a>
+    </p>
+    <div class="collapsible">
+        <p>这个衣服褶皱好灵性</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h6c8cs7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MarsupialEmotional23">MarsupialEmotional23</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oqeorm/_/h6c8cs7">Jul 24 2021 06:17:30</a>
+    </p>
+    <div class="collapsible">
+        <p>帕金森得治，不能拖着</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

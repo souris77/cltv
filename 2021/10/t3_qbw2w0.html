@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qbw2w0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/CesareBorgia-">CesareBorgia-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qbw2w0">Oct 20 2021 08:23:57</a>
+    </p>
+    <strong>抽象</strong>
+    <p><a href="https://twitter.com/LandofYelang/status/1450737120180535303?t=KK0A5Vps1rslw3nYsk9LSA&amp;s=09">https://twitter.com/LandofYelang/status/1450737120180535303?t=KK0A5Vps1rslw3nYsk9LSA&amp;s=09</a></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

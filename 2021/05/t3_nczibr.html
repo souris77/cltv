@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>狠狠地触摸</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nczibr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ReasonableHousing475">ReasonableHousing475</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nczibr">May 15 2021 13:59:35</a>
+    </p>
+    <strong>狠狠地触摸</strong>
+    <p><a href="https://i.redd.it/ffyrixvxiaz61.jpg">https://i.redd.it/ffyrixvxiaz61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gy7rlj7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Historical_Produce_8">Historical_Produce_8</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nczibr/_/gy7rlj7">May 15 2021 14:02:04</a>
+    </p>
+    <div class="collapsible">
+        <p>Yao😄</p>
+        <div class="comment" id="t1_gy7rqfz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Math235711">Math235711</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nczibr/_/gy7rqfz">May 15 2021 14:03:19</a>
+    </p>
+    <div class="collapsible">
+        <p>Yao(文元)</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

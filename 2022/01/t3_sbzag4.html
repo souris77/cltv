@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>No homo诗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sbzag4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/StrawberryMochiMouth">StrawberryMochiMouth</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbzag4">Jan 24 2022 23:06:00</a>
+    </p>
+    <strong>No homo诗</strong>
+    <p><a href="https://i.redd.it/dvdl8rbwvpd81.jpg">https://i.redd.it/dvdl8rbwvpd81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hu334qp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ohmyshoulder893">ohmyshoulder893</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbzag4/_/hu334qp">Jan 24 2022 23:16:41</a>
+    </p>
+    <div class="collapsible">
+        <p>这手够肥的</p>
+        <div class="comment" id="t1_hu346j5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/StrawberryMochiMouth">StrawberryMochiMouth</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sbzag4/_/hu346j5">Jan 24 2022 23:23:48</a>
+    </p>
+    <div class="collapsible">
+        <p>那是我的手</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

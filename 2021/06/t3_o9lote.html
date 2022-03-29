@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_o9lote">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ligejing">ligejing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o9lote">Jun 28 2021 14:44:49</a>
+    </p>
+    <strong>Test</strong>
+    <p><a href="https://v.redd.it/rrmy4g62r0871">https://v.redd.it/rrmy4g62r0871</a></p>
+</div>
+<div class="comment" id="t1_h3cfx9k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HideOnBushToT">HideOnBushToT</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o9lote/_/h3cfx9k">Jun 28 2021 17:56:12</a>
+    </p>
+    <div class="collapsible">
+        <p>Cctv 6电影频道是吧，经典老番轮播</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h3bzipd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Jared_att">Jared_att</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o9lote/_/h3bzipd">Jun 28 2021 15:57:02</a>
+    </p>
+    <div class="collapsible">
+        <p>反共经验？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>典</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_q4gmdi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/KODACHI-2020">KODACHI-2020</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q4gmdi">Oct 09 2021 07:45:23</a>
+    </p>
+    <strong>典</strong>
+    <p><a href="https://i.redd.it/h8wl9al6qds71.jpg">https://i.redd.it/h8wl9al6qds71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hfyhigx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/qizhyywy">qizhyywy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q4gmdi/_/hfyhigx">Oct 09 2021 07:50:26</a>
+    </p>
+    <div class="collapsible">
+        <p>我已經厭倦火星人了，加個典字再發古董真的沒有節目效果</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

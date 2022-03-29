@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>颂支三首</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_orhx1d">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ruisnow">ruisnow</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/orhx1d">Jul 25 2021 19:17:34</a>
+    </p>
+    <strong>颂支三首</strong>
+    <p><p>九州齐俯首，华夏俱折腰，万民皆留发，天下争入旗。</p>
+<p>南渡金陵城，北登塘沽口，北狩平洋夷，西巡荡列寇。</p>
+<p>学用皆出西，平等由人授，东高丽无耻，西高丽居上。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

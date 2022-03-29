@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>带哥们，nsfw这个选项不能关咋办啊</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_bxqvis">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dxxd21">dxxd21</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bxqvis">Jun 07 2019 05:22:36</a>
+    </p>
+    <strong>带哥们，nsfw这个选项不能关咋办啊</strong>
+    <p><a href="https://i.redd.it/h5g01ycycv231.jpg">https://i.redd.it/h5g01ycycv231.jpg</a></p>
+</div>
+<div class="comment" id="t1_eq9474j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lostxia">lostxia</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bxqvis/_/eq9474j">Jun 07 2019 05:31:22</a>
+    </p>
+    <div class="collapsible">
+        <p>你这个页面看上去是旧版的页面啊。浏览器选择桌面模式，按电脑的方式打开</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>什么1984</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lk9t4e">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/rorschachlizeyu">rorschachlizeyu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9t4e">Feb 15 2021 09:03:33</a>
+    </p>
+    <strong>什么1984</strong>
+    <p><a href="https://i.redd.it/ktgadqszwlh61.jpg">https://i.redd.it/ktgadqszwlh61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gnixtln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ministryofmeme">ministryofmeme</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9t4e/_/gnixtln">Feb 15 2021 11:32:37</a>
+    </p>
+    <div class="collapsible">
+        <p>哈人</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gnj6d9p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/golangolang">golangolang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lk9t4e/_/gnj6d9p">Feb 15 2021 13:29:26</a>
+    </p>
+    <div class="collapsible">
+        <p>圈假, 刚查了百度能查到.</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

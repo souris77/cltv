@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>简单反个坦克</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ozgjnj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dogfans">dogfans</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ozgjnj">Aug 06 2021 21:58:11</a>
+    </p>
+    <strong>简单反个坦克</strong>
+    <p><a href="https://i.redd.it/waezhomz7tf71.jpg">https://i.redd.it/waezhomz7tf71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h7zstsy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/YagokoroEirin">YagokoroEirin</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ozgjnj/_/h7zstsy">Aug 06 2021 23:11:31</a>
+    </p>
+    <div class="collapsible">
+        <p>王维林</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h7zwjiy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BearKickFrog">BearKickFrog</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ozgjnj/_/h7zwjiy">Aug 06 2021 23:42:48</a>
+    </p>
+    <div class="collapsible">
+        <p>美术生狂完了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h7ztvgp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RJZXZ">RJZXZ</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ozgjnj/_/h7ztvgp">Aug 06 2021 23:20:13</a>
+    </p>
+    <div class="collapsible">
+        <p>绷</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>首绷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rm5ocu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Sea-Patient-1804">Sea-Patient-1804</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rm5ocu">Dec 22 2021 13:52:54</a>
+    </p>
+    <strong>首绷</strong>
+    <p><a href="https://i.redd.it/zxt50pf7n3781.jpg">https://i.redd.it/zxt50pf7n3781.jpg</a></p>
+</div>
+<div class="comment" id="t1_hpk1fqw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pilaffff">Pilaffff</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rm5ocu/_/hpk1fqw">Dec 22 2021 13:58:07</a>
+    </p>
+    <div class="collapsible">
+        <p>辣妹子还辣吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hpk1qln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rm5ocu/_/hpk1qln">Dec 22 2021 14:00:38</a>
+    </p>
+    <div class="collapsible">
+        <p>这水印叠杀人书呢</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

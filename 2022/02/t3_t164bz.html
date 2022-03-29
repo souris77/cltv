@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>imagine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_t164bz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/personamyself">personamyself</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t164bz">Feb 25 2022 15:04:45</a>
+    </p>
+    <strong>imagine</strong>
+    <p><a href="https://youtu.be/YkgkThdzX-8">https://youtu.be/YkgkThdzX-8</a></p>
+</div>
+<div class="comment" id="t1_hye0kjp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liule65">liule65</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t164bz/_/hye0kjp">Feb 25 2022 15:19:22</a>
+    </p>
+    <div class="collapsible">
+        <p>☮️</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hye6r9h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Few-Extent5095">Few-Extent5095</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t164bz/_/hye6r9h">Feb 25 2022 16:00:22</a>
+    </p>
+    <div class="collapsible">
+        <p>我要活成列侬那样，爱人爱和平爱理性</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

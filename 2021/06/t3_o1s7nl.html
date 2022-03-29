@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>迷因</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_o1s7nl">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Inside-Tourist-3455">Inside-Tourist-3455</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o1s7nl">Jun 17 2021 08:28:43</a>
+    </p>
+    <strong>迷因</strong>
+    <p><a href="https://v.redd.it/tmh629kzds571">https://v.redd.it/tmh629kzds571</a></p>
+</div>
+<div class="comment" id="t1_h23qzq2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Gold_Bear_6761">Gold_Bear_6761</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/o1s7nl/_/h23qzq2">Jun 17 2021 16:09:28</a>
+    </p>
+    <div class="collapsible">
+        <p>没有高清小丑 你发个鸡儿</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

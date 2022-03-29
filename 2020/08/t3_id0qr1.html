@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>绷不住了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_id0qr1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Ra1nerZzz">Ra1nerZzz</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/id0qr1">Aug 20 2020 01:13:56</a>
+    </p>
+    <strong>绷不住了</strong>
+    <p><a href="https://i.redd.it/rg3cr5m162i51.jpg">https://i.redd.it/rg3cr5m162i51.jpg</a></p>
+</div>
+<div class="comment" id="t1_g26t0au">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/unbalancedstack">unbalancedstack</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/id0qr1/_/g26t0au">Aug 20 2020 06:29:06</a>
+    </p>
+    <div class="collapsible">
+        <p>有一说一，他眼睛是真的大。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g26uez1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/evilmindteddy">evilmindteddy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/id0qr1/_/g26uez1">Aug 20 2020 06:50:22</a>
+    </p>
+    <div class="collapsible">
+        <p>中国公民身份，很多中国人（农民）都拿不到</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

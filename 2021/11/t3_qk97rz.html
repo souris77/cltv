@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>沙!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qk97rz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/New-Edge-8765">New-Edge-8765</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qk97rz">Nov 01 2021 08:01:34</a>
+    </p>
+    <strong>沙!</strong>
+    <p><a href="https://youtu.be/YxE13tYtsyM">https://youtu.be/YxE13tYtsyM</a></p>
+</div>
+<div class="comment" id="t1_hiv1byp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Suodomar">Suodomar</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qk97rz/_/hiv1byp">Nov 01 2021 08:04:34</a>
+    </p>
+    <div class="collapsible">
+        <p>打，大打，打核战争！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hiv28ar">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TomorrowRelevant9354">TomorrowRelevant9354</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qk97rz/_/hiv28ar">Nov 01 2021 08:19:10</a>
+    </p>
+    <div class="collapsible">
+        <p>嗑藥嗑很兇阿</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

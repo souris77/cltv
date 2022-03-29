@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>这是否有点…</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_dd8hwt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Sauce-tartare">Sauce-tartare</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dd8hwt">Oct 04 2019 14:58:46</a>
+    </p>
+    <strong>这是否有点…</strong>
+    <p><a href="https://i.redd.it/cdw8bp8kgjq31.jpg">https://i.redd.it/cdw8bp8kgjq31.jpg</a></p>
+</div>
+<div class="comment" id="t1_f2epj8l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sauce-tartare">Sauce-tartare</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dd8hwt/_/f2epj8l">Oct 04 2019 15:00:50</a>
+    </p>
+    <div class="collapsible">
+        <p>https://zhuanlan.zhihu.com/p/85074025
+下面还有更多</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f2gtqu4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kstavish">kstavish</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dd8hwt/_/f2gtqu4">Oct 05 2019 00:29:44</a>
+    </p>
+    <div class="collapsible">
+        <p>我用华为，看不清楚你发的什么，是华为收购谷歌+苹果嘛？</p>
+        <div class="comment" id="t1_f2hwtk3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sauce-tartare">Sauce-tartare</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dd8hwt/_/f2hwtk3">Oct 05 2019 04:21:04</a>
+    </p>
+    <div class="collapsible">
+        <p>不是，是华为被彻底禁用GMS，还敢用华为呢？</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>我的晚饭</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s22kfq">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Mountain-Snow-896">Mountain-Snow-896</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s22kfq">Jan 12 2022 09:48:56</a>
+    </p>
+    <strong>我的晚饭</strong>
+    <p><a href="https://www.reddit.com/gallery/s22kfq">https://www.reddit.com/gallery/s22kfq</a></p>
+</div>
+<div class="comment" id="t1_hsbwqxt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pelifax">Pelifax</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s22kfq/_/hsbwqxt">Jan 12 2022 09:50:16</a>
+    </p>
+    <div class="collapsible">
+        <p>这都偷的？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hsbwrul">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mysterious_Lobster88">Mysterious_Lobster88</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s22kfq/_/hsbwrul">Jan 12 2022 09:50:37</a>
+    </p>
+    <div class="collapsible">
+        <p>你吃啥关大伙们屁事</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Hongkongers to-do list</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qereid">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Mtso2021">Mtso2021</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qereid">Oct 24 2021 12:41:31</a>
+    </p>
+    <strong>Hongkongers to-do list</strong>
+    <p><a href="https://i.redd.it/z1q4hhko8ev71.jpg">https://i.redd.it/z1q4hhko8ev71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hhut8dg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mtso2021">Mtso2021</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qereid/_/hhut8dg">Oct 24 2021 12:43:59</a>
+    </p>
+    <div class="collapsible">
+        <p>香港水費單附帶政治宣傳，舉報竟無短訊及微信以外渠道，這下 新乡岗人 Neo-Xianggang People 了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hhv3445">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Billlbb">Billlbb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qereid/_/hhv3445">Oct 24 2021 14:12:56</a>
+    </p>
+    <div class="collapsible">
+        <p>WeChat…………</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hhx461s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PreferenceOk707">PreferenceOk707</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qereid/_/hhx461s">Oct 24 2021 22:46:43</a>
+    </p>
+    <div class="collapsible">
+        <p>塔利班是中國的好朋友</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

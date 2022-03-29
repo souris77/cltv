@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>twitter网页布局更新了?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_dxxwfz">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Andromeda147">Andromeda147</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dxxwfz">Nov 18 2019 03:58:20</a>
+    </p>
+    <strong>twitter网页布局更新了?</strong>
+    <p><p>怎么一会就大变样了,没有以前好看了</p></p>
+</div>
+<div class="comment" id="t1_f7x9q0s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Andromeda147">Andromeda147</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/dxxwfz/_/f7x9q0s">Nov 18 2019 04:09:39</a>
+    </p>
+    <div class="collapsible">
+        <p>还有都是怎么解决电话验证问题的?不会真用墙内号码验证吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

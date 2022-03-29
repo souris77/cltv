@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>懂哥！</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rqv1ij">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Silver_Wings0006">Silver_Wings0006</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rqv1ij">Dec 29 2021 01:08:08</a>
+    </p>
+    <strong>懂哥！</strong>
+    <p><a href="https://i.redd.it/fl6hfc35td881.jpg">https://i.redd.it/fl6hfc35td881.jpg</a></p>
+</div>
+<div class="comment" id="t1_hqcnycu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Silver_Wings0006">Silver_Wings0006</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rqv1ij/_/hqcnycu">Dec 29 2021 01:09:22</a>
+    </p>
+    <div class="collapsible">
+        <p>减速人就该狠狠地拉出来批斗！</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

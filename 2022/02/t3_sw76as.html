@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>摄影集《盲》翻译求助：有没有把翻译好的文字自动拼接到图片下方的方法呢？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sw76as">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/2708334081">2708334081</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sw76as">Feb 19 2022 10:34:07</a>
+    </p>
+    <strong>摄影集《盲》翻译求助：有没有把翻译好的文字自动拼接到图片下方的方法呢？</strong>
+    <p><p>我在尝试把摄影集《盲》的序言和几张图片的描述翻译成多种语言。比如像这样的：https://imgur.com/a/1u0oyVX （原文：https://imgur.com/a/AoXn6D2）</p>
+<p>我已经把Crowdin上的翻译项目(https://crowdin.com/project/photobookblindness)同步到GitHub(https://github.com/WomenTraffickingInChina/PhotobookBlindness/tree/main/caption_translated)。</p>
+<p>但是要手动把这些翻译一个个嵌入对应的图片里效率太低。有没有一些好的建议可以将这个过程自动化呢？</p>
+<p>我现在的设想先把原图的描述截去，生成图片A。然后用翻译的文字渲染出白底黑字的图片B（要求B与A宽度相同）。最后将AB上下拼接。完成。</p>
+<p>但是我目前无法解决的问题是
+- 不知道如何限制文字渲染的宽度（从而保证图片B与A等宽）
+- 不知道如何得到文字渲染后的高度（从而制定图片B的高度）</p></p>
+</div>
+<div class="comment" id="t1_hxkbrsz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Practical-Car-6240">Practical-Car-6240</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sw76as/_/hxkbrsz">Feb 19 2022 10:44:08</a>
+    </p>
+    <div class="collapsible">
+        <p>可以考虑先用html+css渲染，然后用html2canvas之类的将html转为图片</p>
+        <div class="comment" id="t1_hxkc99y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/2708334081">2708334081</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sw76as/_/hxkc99y">Feb 19 2022 10:50:50</a>
+    </p>
+    <div class="collapsible">
+        <p>有道理的。感谢。</p>
+<p>如果要实现的话，是不是
+- 写index.html，包含main.js
+- 写main.js。&lt;canvas&rt;的操作都放这里</p>
+        <div class="comment" id="t1_hxkfsps">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Practical-Car-6240">Practical-Car-6240</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sw76as/_/hxkfsps">Feb 19 2022 11:40:02</a>
+    </p>
+    <div class="collapsible">
+        <p>是的，如果用纯js写的的话，模板引擎可以试试<a href="https://github.com/yanhaijing/template.js">template.js</a></p>
+<p>要在index.html里引用一下html2canvas.js和template.js。读取数据、模板渲染、canvas、保存图片等操作可以写在外部js里，也可以直接写在&lt;script&rt; &lt;/script&rt;标签里。翻译文件可以转成js友好的json格式，方便读取。</p>
+<p>如果用python的话，模板引擎和生成图片可以分别用jinja2和<a href="https://pypi.org/project/html2image/">html2image</a></p>
+<p>不是码老嗨，思路不一定对，仅供参考</p>
+        <div class="comment" id="t1_hxlp5tw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/2708334081">2708334081</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sw76as/_/hxlp5tw">Feb 19 2022 17:54:09</a>
+    </p>
+    <div class="collapsible">
+        <p>好的。十分感谢。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>可让我找到个好东西</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pz6t8r">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/personamyself">personamyself</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pz6t8r">Oct 01 2021 12:19:35</a>
+    </p>
+    <strong>可让我找到个好东西</strong>
+    <p><a href="https://i.redd.it/h2h8xnisztq71.jpg">https://i.redd.it/h2h8xnisztq71.jpg</a></p>
+</div>
+<div class="comment" id="t1_heyuzah">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Weary_Combination_87">Weary_Combination_87</a>
+        |
+        <span class="score">7 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pz6t8r/_/heyuzah">Oct 01 2021 12:33:38</a>
+    </p>
+    <div class="collapsible">
+        <p>屎里淘金是吧，我愿称你为冲浪黄红皇</p>
+        <div class="comment" id="t1_heyvgtd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/personamyself">personamyself</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pz6t8r/_/heyvgtd">Oct 01 2021 12:38:07</a>
+    </p>
+    <div class="collapsible">
+        <p>[冲浪工作室]提醒您，您已获得某神秘游戏的a测机会</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

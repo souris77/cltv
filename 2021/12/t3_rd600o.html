@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>问件事。第三者是不是看不到新号发帖的？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rd600o">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/xidadajbxiao">xidadajbxiao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rd600o">Dec 10 2021 10:43:07</a>
+    </p>
+    <strong>问件事。第三者是不是看不到新号发帖的？</strong>
+    <p><p>是的话如何能突破这个限制。我在半年前开了好几个号并关注冲浪，现在还是没人看到小号发言</p></p>
+</div>
+<div class="comment" id="t1_hnzldpl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jiangjindong">jiangjindong</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rd600o/_/hnzldpl">Dec 10 2021 14:12:38</a>
+    </p>
+    <div class="collapsible">
+        <p>被shadow ban了吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

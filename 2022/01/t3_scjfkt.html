@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>抽象孝女</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_scjfkt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Sea-Patient-1804">Sea-Patient-1804</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/scjfkt">Jan 25 2022 17:48:14</a>
+    </p>
+    <strong>抽象孝女</strong>
+    <p><a href="https://v.redd.it/pptvgje5gvd81">https://v.redd.it/pptvgje5gvd81</a></p>
+</div>
+<div class="comment" id="t1_hu6rbrv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jennychiu007">jennychiu007</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/scjfkt/_/hu6rbrv">Jan 25 2022 18:48:46</a>
+    </p>
+    <div class="collapsible">
+        <p>麻了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hu6v9u6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No-Membership-7676">No-Membership-7676</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/scjfkt/_/hu6v9u6">Jan 25 2022 19:13:39</a>
+    </p>
+    <div class="collapsible">
+        <p>久病床前无孝子。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

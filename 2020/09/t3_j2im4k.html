@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>什么是选举</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_j2im4k">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/pinpin1">pinpin1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/j2im4k">Sep 30 2020 08:57:30</a>
+    </p>
+    <strong>什么是选举</strong>
+    <p><a href="https://i.redd.it/j9h1pcf429q51.png">https://i.redd.it/j9h1pcf429q51.png</a></p>
+</div>
+<div class="comment" id="t1_g765tcv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ivnwng">ivnwng</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/j2im4k/_/g765tcv">Sep 30 2020 13:48:57</a>
+    </p>
+    <div class="collapsible">
+        <p>“Ya guys are having elections?”</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g77501e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Jacuening">Jacuening</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/j2im4k/_/g77501e">Sep 30 2020 18:06:35</a>
+    </p>
+    <div class="collapsible">
+        <p>不同意的请举手</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_g797sad">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/swatMin">swatMin</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/j2im4k/_/g797sad">Oct 01 2020 04:36:22</a>
+    </p>
+    <div class="collapsible">
+        <p>这张小英还挺漂亮的 嗯了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

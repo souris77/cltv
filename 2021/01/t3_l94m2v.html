@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>平壤</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l94m2v">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Boxdelyuo">Boxdelyuo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l94m2v">Jan 31 2021 04:35:16</a>
+    </p>
+    <strong>平壤</strong>
+    <p><a href="https://www.dw.com/zh/%E6%8E%A2%E8%AE%BF%E5%8C%BB%E9%99%A2%E5%90%8E-%E4%B8%96%E5%8D%AB%E4%B8%93%E5%AE%B6%E8%A2%AB%E5%AE%89%E6%8E%92%E5%8F%82%E8%A7%82%E6%8A%97%E7%96%AB%E6%88%90%E5%B0%B1%E5%B1%95/a-56390743">https://www.dw.com/zh/%E6%8E%A2%E8%AE%BF%E5%8C%BB%E9%99%A2%E5%90%8E-%E4%B8%96%E5%8D%AB%E4%B8%93%E5%AE%B6%E8%A2%AB%E5%AE%89%E6%8E%92%E5%8F%82%E8%A7%82%E6%8A%97%E7%96%AB%E6%88%90%E5%B0%B1%E5%B1%95/a-56390743</a></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>疑似被锁区</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_npp5gr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/BigearTuTu">BigearTuTu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/npp5gr">Jun 01 2021 08:28:58</a>
+    </p>
+    <strong>疑似被锁区</strong>
+    <p><a href="https://i.redd.it/gdp6u9cg7m271.jpg">https://i.redd.it/gdp6u9cg7m271.jpg</a></p>
+</div>
+<div class="comment" id="t1_h06cmk5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MeetMeAt80s">MeetMeAt80s</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/npp5gr/_/h06cmk5">Jun 01 2021 09:44:22</a>
+    </p>
+    <div class="collapsible">
+        <p>系统局</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h06u77z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Unclezhou">Unclezhou</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/npp5gr/_/h06u77z">Jun 01 2021 13:13:53</a>
+    </p>
+    <div class="collapsible">
+        <p>葡萄牙不错了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

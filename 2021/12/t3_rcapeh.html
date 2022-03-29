@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>很多网评员觉得理所应当又不知道的事</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rcapeh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/xidadajbxiao">xidadajbxiao</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rcapeh">Dec 09 2021 05:30:45</a>
+    </p>
+    <strong>很多网评员觉得理所应当又不知道的事</strong>
+    <p><p>他们在监狱能发帖减期或者改善伙食环境。外国的NGO可是出了不少力。在江胡时代，NGO隔一段事情就去监狱了解起人权状况并对其评估。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

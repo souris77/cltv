@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>抽象</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s9288g">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/QAZXSWCDEVFR396">QAZXSWCDEVFR396</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9288g">Jan 21 2022 04:34:04</a>
+    </p>
+    <strong>抽象</strong>
+    <p><a href="https://youtu.be/YQJhQpP-aL4">https://youtu.be/YQJhQpP-aL4</a></p>
+</div>
+<div class="comment" id="t1_htk8fc1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Butters_777999">Butters_777999</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9288g/_/htk8fc1">Jan 21 2022 05:18:36</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htkez94">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Old-Dance7271">Old-Dance7271</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9288g/_/htkez94">Jan 21 2022 06:20:18</a>
+    </p>
+    <div class="collapsible">
+        <p>哈人</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htn22uk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/leaveyi">leaveyi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9288g/_/htn22uk">Jan 21 2022 19:43:52</a>
+    </p>
+    <div class="collapsible">
+        <p>嗨呀是我吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_htnqs0o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cadenCeel_astic">cadenCeel_astic</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s9288g/_/htnqs0o">Jan 21 2022 22:12:32</a>
+    </p>
+    <div class="collapsible">
+        <p>666</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

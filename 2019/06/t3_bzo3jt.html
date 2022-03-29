@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>整点节目效果啊</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_bzo3jt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/DIanJIngLiBoQing">DIanJIngLiBoQing</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzo3jt">Jun 12 2019 07:23:17</a>
+    </p>
+    <strong>整点节目效果啊</strong>
+    <p><p>别特么冲了，人都冲废了</p></p>
+</div>
+<div class="comment" id="t1_equ4eh7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lkjhgfggdjsksk">lkjhgfggdjsksk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzo3jt/_/equ4eh7">Jun 12 2019 07:27:57</a>
+    </p>
+    <div class="collapsible">
+        <p>冲冲冲冲冲冲</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_equ4zd3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Miyauchi_Renge">Miyauchi_Renge</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzo3jt/_/equ4zd3">Jun 12 2019 07:31:41</a>
+    </p>
+    <div class="collapsible">
+        <p>理性谈论，金瓶这人行不行</p>
+        <div class="comment" id="t1_equ7fnf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sauce-tartare">Sauce-tartare</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzo3jt/_/equ7fnf">Jun 12 2019 07:48:39</a>
+    </p>
+    <div class="collapsible">
+        <p>。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_equag7l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/langren6324">langren6324</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzo3jt/_/equag7l">Jun 12 2019 08:09:16</a>
+    </p>
+    <div class="collapsible">
+        <p>s1活还行，多看看自己思考，大脑升级</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

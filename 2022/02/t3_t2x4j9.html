@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>最后通牒</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_t2x4j9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/OddBird_S">OddBird_S</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t2x4j9">Feb 27 2022 20:32:32</a>
+    </p>
+    <strong>最后通牒</strong>
+    <p><p>姚天佑同学，若你在12小时内不及时更正错误言论、并公开向乌克兰人民致歉，你的发言的译文将会被发送至学校管理处和你的导师并CC所有小组成员。我们都很尊重思想自由，因此你也不用害怕、隐藏你的观点，让大家都来看看，互相交流、进步，未尝不是好事。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

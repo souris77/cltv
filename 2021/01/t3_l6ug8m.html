@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>真的假的哟</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l6ug8m">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ehj18661">ehj18661</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l6ug8m">Jan 28 2021 11:28:19</a>
+    </p>
+    <strong>真的假的哟</strong>
+    <p><a href="https://mp.weixin.qq.com/s/tBZE8tQ8rb6glnNbVNjGwg">https://mp.weixin.qq.com/s/tBZE8tQ8rb6glnNbVNjGwg</a></p>
+</div>
+<div class="comment" id="t1_gl36p1g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WhitePufferfish">WhitePufferfish</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l6ug8m/_/gl36p1g">Jan 28 2021 13:58:37</a>
+    </p>
+    <div class="collapsible">
+        <p>别发蜘蛛网的链接，狗都不点</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gl2qo3l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Boxdelyuo">Boxdelyuo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l6ug8m/_/gl2qo3l">Jan 28 2021 11:34:52</a>
+    </p>
+    <div class="collapsible">
+        <p>复制出来啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gl3fk05">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l6ug8m/_/gl3fk05">Jan 28 2021 14:45:10</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

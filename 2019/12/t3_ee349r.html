@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>厉害</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ee349r">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Allen-ZOOM">Allen-ZOOM</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ee349r">Dec 22 2019 09:31:42</a>
+    </p>
+    <strong>厉害</strong>
+    <p><a href="https://i.redd.it/cxmuh4g8m5641.jpg">https://i.redd.it/cxmuh4g8m5641.jpg</a></p>
+</div>
+<div class="comment" id="t1_fbongu5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/EmperorPooh">EmperorPooh</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ee349r/_/fbongu5">Dec 22 2019 11:00:51</a>
+    </p>
+    <div class="collapsible">
+        <p>反转了这是醉包，酒泡大的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fbqsu5k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ShaBiA3">ShaBiA3</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ee349r/_/fbqsu5k">Dec 22 2019 17:21:21</a>
+    </p>
+    <div class="collapsible">
+        <p>在高速上疯狂倒车，还说你没酒驾？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

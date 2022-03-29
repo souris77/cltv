@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>黑社会扫黑社会</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nnqbxe">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/zhaonu">zhaonu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nnqbxe">May 29 2021 15:55:56</a>
+    </p>
+    <strong>黑社会扫黑社会</strong>
+    <p><a href="https://i.redd.it/6ru9vf4g03271.jpg">https://i.redd.it/6ru9vf4g03271.jpg</a></p>
+</div>
+<div class="comment" id="t1_gzyf4w4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mr_QAQ_Malone">Mr_QAQ_Malone</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nnqbxe/_/gzyf4w4">May 30 2021 08:01:32</a>
+    </p>
+    <div class="collapsible">
+        <p>黑吃黑</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

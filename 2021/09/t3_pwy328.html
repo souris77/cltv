@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>为何我的帖子会被红迪删除</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pwy328">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/hahhahahah111233">hahhahahah111233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwy328">Sep 28 2021 03:57:30</a>
+    </p>
+    <strong>为何我的帖子会被红迪删除</strong>
+    <p><p>刚才看到墙内迪迦解禁的新闻，所以打算发个帖子
+结果发了四次被删除了四次。难道我是被晶哥盯上了？</p></p>
+</div>
+<div class="comment" id="t1_hek1lil">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Xilvanas">Xilvanas</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwy328/_/hek1lil">Sep 28 2021 04:02:48</a>
+    </p>
+    <div class="collapsible">
+        <p>网络不好 风怒了</p>
+        <div class="comment" id="t1_hek2a9y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hahhahahah111233">hahhahahah111233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pwy328/_/hek2a9y">Sep 28 2021 04:09:29</a>
+    </p>
+    <div class="collapsible">
+        <p>麻了，怎么一下子发了这么多贴</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

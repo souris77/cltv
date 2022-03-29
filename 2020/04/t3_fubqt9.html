@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>我就拉清單</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fubqt9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/darkage3461">darkage3461</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fubqt9">Apr 03 2020 16:44:16</a>
+    </p>
+    <strong>我就拉清單</strong>
+    <p><a href="https://i.redd.it/fv6pdljbtmq41.jpg">https://i.redd.it/fv6pdljbtmq41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fme2ysk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ifuckchina">ifuckchina</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fubqt9/_/fme2ysk">Apr 04 2020 07:59:50</a>
+    </p>
+    <div class="collapsible">
+        <p>我就当崇祯</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

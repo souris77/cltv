@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>无知多么可怕</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sm8moj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Malchanceur">Malchanceur</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sm8moj">Feb 06 2022 21:50:05</a>
+    </p>
+    <strong>无知多么可怕</strong>
+    <p><a href="https://www.reddit.com/gallery/sm8moj">https://www.reddit.com/gallery/sm8moj</a></p>
+</div>
+<div class="comment" id="t1_hvw2aqe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Xi_Zhong_Xun">Xi_Zhong_Xun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sm8moj/_/hvw2aqe">Feb 07 2022 01:58:56</a>
+    </p>
+    <div class="collapsible">
+        <p>“用生命捍卫着国家领土”</p>
+<p>这位是朝鲜人？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>这是否有点</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_q7dacl">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/DeskOk2425">DeskOk2425</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q7dacl">Oct 13 2021 15:12:26</a>
+    </p>
+    <strong>这是否有点</strong>
+    <p><a href="https://i.redd.it/gtaw11rkh8t71.jpg">https://i.redd.it/gtaw11rkh8t71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hghrq6b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/baozhiyingcheng">baozhiyingcheng</a>
+        |
+        <span class="score">20 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q7dacl/_/hghrq6b">Oct 13 2021 15:26:54</a>
+    </p>
+    <div class="collapsible">
+        <p>噗噗熊：你在搜什么好玩的，给我康康？</p>
+        <div class="comment" id="t1_hghwb06">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DeskOk2425">DeskOk2425</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q7dacl/_/hghwb06">Oct 13 2021 15:58:14</a>
+    </p>
+    <div class="collapsible">
+        <p>摇了我吧😭</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

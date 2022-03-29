@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>用它做头像</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kgm3gt">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dklon5">dklon5</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgm3gt">Dec 20 2020 02:49:52</a>
+    </p>
+    <strong>用它做头像</strong>
+    <p><a href="https://i.redd.it/cpmhivada9661.jpg">https://i.redd.it/cpmhivada9661.jpg</a></p>
+</div>
+<div class="comment" id="t1_ggfqc66">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/i_am_rabbit_friend">i_am_rabbit_friend</a>
+        |
+        <span class="score">17 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgm3gt/_/ggfqc66">Dec 20 2020 03:16:20</a>
+    </p>
+    <div class="collapsible">
+        <p>居然有反对票？投反对票的人现在应该重开在北欧住大豪斯吃大牛排了</p>
+        <div class="comment" id="t1_ggh723p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Senbonkokome">Senbonkokome</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgm3gt/_/ggh723p">Dec 20 2020 14:09:31</a>
+    </p>
+    <div class="collapsible">
+        <p>两票反对票是强子和包子投的</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_ggfrr4w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/gredzeal">gredzeal</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgm3gt/_/ggfrr4w">Dec 20 2020 03:30:50</a>
+    </p>
+    <div class="collapsible">
+        <p>不如2970ver.</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ggfzwt1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cqer">cqer</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kgm3gt/_/ggfzwt1">Dec 20 2020 04:55:42</a>
+    </p>
+    <div class="collapsible">
+        <p>不是说没有 没有 没有吗</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

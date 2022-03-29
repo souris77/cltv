@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>呛人</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_efz3rn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/efz3rn">Dec 26 2019 18:40:35</a>
+    </p>
+    <strong>呛人</strong>
+    <p><a href="https://twitter.com/kitwaipig/status/1209901786384891904">https://twitter.com/kitwaipig/status/1209901786384891904</a></p>
+</div>
+<div class="comment" id="t1_fc3siqt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhgdbdb">zhgdbdb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/efz3rn/_/fc3siqt">Dec 26 2019 21:58:34</a>
+    </p>
+    <div class="collapsible">
+        <p>美国警察骑马牵黑人.jpg</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fc48l2r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liaoupupup">liaoupupup</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/efz3rn/_/fc48l2r">Dec 27 2019 01:19:16</a>
+    </p>
+    <div class="collapsible">
+        <p>香港还能坚持多久</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

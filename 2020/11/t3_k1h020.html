@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>我在大清有电脑。</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k1h020">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Library-Subject">Library-Subject</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k1h020">Nov 26 2020 15:22:16</a>
+    </p>
+    <strong>我在大清有电脑。</strong>
+    <p><a href="https://www.reddit.com/gallery/k0qm7g">https://www.reddit.com/gallery/k0qm7g</a></p>
+</div>
+<div class="comment" id="t1_gdovzu0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kknd1997">kknd1997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k1h020/_/gdovzu0">Nov 26 2020 19:09:45</a>
+    </p>
+    <div class="collapsible">
+        <p>win95的面世，可是当年上过新闻联播的。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

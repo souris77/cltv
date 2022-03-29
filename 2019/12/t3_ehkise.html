@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>每日批话之了解你自己</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ehkise">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Henanrentoujinggai">Henanrentoujinggai</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ehkise">Dec 30 2019 10:34:58</a>
+    </p>
+    <strong>每日批话之了解你自己</strong>
+    <p><p>问：一个人如何了解自己？<br>
+阿姨：你没法了解自己，就像眼睛看不见自己的眼睛一样，你只能通过镜子来看到自己的眼睛。世界就是你的镜子，你了解了世界，也就了解你自己了。 ​​​​</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>哎呀，红迪真的没落了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_t1dpw1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Honkmann514">Honkmann514</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t1dpw1">Feb 25 2022 20:31:01</a>
+    </p>
+    <strong>哎呀，红迪真的没落了</strong>
+    <p><p>这几天到处都是复读机俄孝子，血压都看高了</p></p>
+</div>
+<div class="comment" id="t1_hyfdbkx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ChiangKaiShek1949">ChiangKaiShek1949</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t1dpw1/_/hyfdbkx">Feb 25 2022 20:31:40</a>
+    </p>
+    <div class="collapsible">
+        <p>就是，多發給皇軍招魂的帖子</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

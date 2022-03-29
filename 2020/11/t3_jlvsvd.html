@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>我佛了，聊天室一点进去就卡死了，这又是什么bug</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_jlvsvd">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/PigReturn">PigReturn</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jlvsvd">Nov 01 2020 03:28:33</a>
+    </p>
+    <strong>我佛了，聊天室一点进去就卡死了，这又是什么bug</strong>
+    <p><a href="https://i.redd.it/kptnfcslsjw51.jpg">https://i.redd.it/kptnfcslsjw51.jpg</a></p>
+</div>
+<div class="comment" id="t1_garf8lk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Beautiful-Manager731">Beautiful-Manager731</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jlvsvd/_/garf8lk">Nov 01 2020 03:49:17</a>
+    </p>
+    <div class="collapsible">
+        <p>我也是</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_garuqr8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nul3i">nul3i</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/jlvsvd/_/garuqr8">Nov 01 2020 08:00:57</a>
+    </p>
+    <div class="collapsible">
+        <p>安卓不卡</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

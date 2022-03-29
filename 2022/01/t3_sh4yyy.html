@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>天气数据显示雾霾开始爆表了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sh4yyy">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Safe-Imagination-637">Safe-Imagination-637</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sh4yyy">Jan 31 2022 16:17:03</a>
+    </p>
+    <strong>天气数据显示雾霾开始爆表了</strong>
+    <p><p>政府禁止燃放，还TM放个不停，毒死那些爱走亲戚的蜘蛛。</p></p>
+</div>
+<div class="comment" id="t1_hv2djy2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Safe-Imagination-637">Safe-Imagination-637</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sh4yyy/_/hv2djy2">Feb 01 2022 00:08:09</a>
+    </p>
+    <div class="collapsible">
+        <p>就这样雾霾爆表的天气，健身蜘蛛开始了新年第一天晨跑，人肉吸雾器，早跑早死</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

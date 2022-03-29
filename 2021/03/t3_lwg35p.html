@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>整笑了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lwg35p">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Henanrentoujinggai">Henanrentoujinggai</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lwg35p">Mar 02 2021 23:56:09</a>
+    </p>
+    <strong>整笑了</strong>
+    <p><a href="https://i.redd.it/e87w67bwdpk61.jpg">https://i.redd.it/e87w67bwdpk61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gph5g0b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Henanrentoujinggai">Henanrentoujinggai</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lwg35p/_/gph5g0b">Mar 02 2021 23:58:10</a>
+    </p>
+    <div class="collapsible">
+        <p>这人十几个小时前在问题底下艾特了共青团中央，紫光阁等官号和一堆警察想测试一下这些号有没有用，然后回答就没了</p>
+<p>起码说明在网上还是有点用的哈哈</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

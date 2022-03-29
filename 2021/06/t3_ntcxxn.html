@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>真没绷住</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ntcxxn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/fujiko133">fujiko133</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ntcxxn">Jun 06 2021 03:54:11</a>
+    </p>
+    <strong>真没绷住</strong>
+    <p><a href="https://i.redd.it/cf10ecezik371.jpg">https://i.redd.it/cf10ecezik371.jpg</a></p>
+</div>
+<div class="comment" id="t1_h0rix55">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Cindycon">Cindycon</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ntcxxn/_/h0rix55">Jun 06 2021 04:58:14</a>
+    </p>
+    <div class="collapsible">
+        <p>YouTube运营浪人说</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0rjfvq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/flymess233">flymess233</a>
+        |
+        <span class="score">9 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ntcxxn/_/h0rjfvq">Jun 06 2021 05:04:37</a>
+    </p>
+    <div class="collapsible">
+        <p>行，都j8这德性了还没忘了穿鞋。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0rz82g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/pddududu">pddududu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ntcxxn/_/h0rz82g">Jun 06 2021 08:51:07</a>
+    </p>
+    <div class="collapsible">
+        <p>85</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

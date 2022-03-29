@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>是标准中国人吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_h8qh0a">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/sfdafas">sfdafas</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/h8qh0a">Jun 14 2020 09:10:51</a>
+    </p>
+    <strong>是标准中国人吗？</strong>
+    <p><a href="https://i.redd.it/hx31lyo1eu451.jpg">https://i.redd.it/hx31lyo1eu451.jpg</a></p>
+</div>
+<div class="comment" id="t1_fusb4zy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/junkohashi">junkohashi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/h8qh0a/_/fusb4zy">Jun 14 2020 09:20:27</a>
+    </p>
+    <div class="collapsible">
+        <p>支不支啊，太支了這個。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

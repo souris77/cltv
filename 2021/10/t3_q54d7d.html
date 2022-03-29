@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>为什么浪人新闻看不了友友们的评论啊，显示是私密频道</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_q54d7d">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FayeValente">FayeValente</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q54d7d">Oct 10 2021 08:53:49</a>
+    </p>
+    <strong>为什么浪人新闻看不了友友们的评论啊，显示是私密频道</strong>
+    <p><a href="https://i.redd.it/4ux727ta7ls71.jpg">https://i.redd.it/4ux727ta7ls71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hg35fbw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/louloulourabbit">louloulourabbit</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q54d7d/_/hg35fbw">Oct 10 2021 09:55:12</a>
+    </p>
+    <div class="collapsible">
+        <p>拉黑了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

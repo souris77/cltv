@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>我做错了什么呢？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_t3fhd4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Moist-Cress1395">Moist-Cress1395</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t3fhd4">Feb 28 2022 13:21:07</a>
+    </p>
+    <strong>我做错了什么呢？</strong>
+    <p><a href="https://www.reddit.com/gallery/t3fhd4">https://www.reddit.com/gallery/t3fhd4</a></p>
+</div>
+<div class="comment" id="t1_hyrxumx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ilwwn123">Ilwwn123</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/t3fhd4/_/hyrxumx">Feb 28 2022 13:34:31</a>
+    </p>
+    <div class="collapsible">
+        <p>认真作答。和对方只约会过一次的情况下，上来就问 “Who’s the dude” 有欠妥当。虽然你并无恶意。但是此女反应过激，各种blanket statement 比如toxic possessive gaslighting 劈头盖脸就来，对你的道歉选择性无视。You dodged a major bullet. </p>
+<p>这女是亚裔？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

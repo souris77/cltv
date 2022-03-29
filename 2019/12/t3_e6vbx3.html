@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>反转了！这是鞍山</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_e6vbx3">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/killu_in3days">killu_in3days</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e6vbx3">Dec 06 2019 07:13:36</a>
+    </p>
+    <strong>反转了！这是鞍山</strong>
+    <p><a href="https://i.imgur.com/MM8P2Fg.jpg">https://i.imgur.com/MM8P2Fg.jpg</a></p>
+</div>
+<div class="comment" id="t1_f9tlqs5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/woshiXJPdeyedie">woshiXJPdeyedie</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e6vbx3/_/f9tlqs5">Dec 06 2019 11:17:52</a>
+    </p>
+    <div class="collapsible">
+        <p>还不是小日本学我们的！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_f9tw0iq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/munemunechan">munemunechan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/e6vbx3/_/f9tw0iq">Dec 06 2019 13:43:08</a>
+    </p>
+    <div class="collapsible">
+        <p>不是写着姫路城？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

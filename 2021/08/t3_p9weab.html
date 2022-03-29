@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>學老嗨來</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p9weab">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Ela_Zhina">Ela_Zhina</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p9weab">Aug 23 2021 09:40:38</a>
+    </p>
+    <strong>學老嗨來</strong>
+    <p><p>有人分享一下ap歐洲史的學習心得嗎？</p></p>
+</div>
+<div class="comment" id="t1_ha0nysd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/GoulGoose">GoulGoose</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p9weab/_/ha0nysd">Aug 23 2021 10:56:33</a>
+    </p>
+    <div class="collapsible">
+        <p>不知道，找不到教材，我就一本本读，英国史，德国史，法国史。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ha0rsko">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WangSager">WangSager</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p9weab/_/ha0rsko">Aug 23 2021 11:41:11</a>
+    </p>
+    <div class="collapsible">
+        <p>先看科普向视频培养兴趣，再看书对照</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

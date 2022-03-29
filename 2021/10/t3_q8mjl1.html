@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>鼠鼠 😭😭 我的鼠鼠</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_q8mjl1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Sheak-Bear">Sheak-Bear</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q8mjl1">Oct 15 2021 11:32:37</a>
+    </p>
+    <strong>鼠鼠 😭😭 我的鼠鼠</strong>
+    <p><a href="https://www.youtube.com/watch?v=TG0NMO1nkyg&amp;t=485s">https://www.youtube.com/watch?v=TG0NMO1nkyg&amp;t=485s</a></p>
+</div>
+<div class="comment" id="t1_hgqa49j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SomeWoodpecker5267">SomeWoodpecker5267</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/q8mjl1/_/hgqa49j">Oct 15 2021 12:14:05</a>
+    </p>
+    <div class="collapsible">
+        <p>鼠鼠冒险记</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

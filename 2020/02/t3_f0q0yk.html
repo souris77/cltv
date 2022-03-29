@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Reddit User Blocker脚本</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_f0q0yk">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f0q0yk">Feb 08 2020 10:41:41</a>
+    </p>
+    <strong>Reddit User Blocker脚本</strong>
+    <p><p>在旧版reddit可以一键屏蔽</p>
+<p><code>// ==UserScript==</code></p>
+<p><code>// u/name         Reddit User Blocker</code></p>
+<p><code>// u/namespace    66d7e0a67864c7b9795d7c40ba3754eb9ad3f8f9</code></p>
+<p><code>// u/version      0.4</code></p>
+<p><code>// u/description  Blocks Reddit users without reporting them</code></p>
+<p><code>// u/author       /u/AyrA_ch</code></p>
+<p><code>// u/match</code>        <a href="https://www.reddit.com/*"><code>https://www.reddit.com/*</code></a></p>
+<p><code>// u/grant        none</code></p>
+<p><code>// ==/UserScript==</code></p>
+<p>&#x200B;</p>
+<p><code>// Changelog</code></p>
+<p><code>// 0.4 - Prevent links from being added to wrong elements</code></p>
+<p><code>// 0.3 - Design adjustments</code></p>
+<p><code>// 0.2 - Properly configure MutationObserver</code></p>
+<p><code>// 0.1 - Initial Version</code></p>
+<p>&#x200B;</p>
+<p><code>(function () {</code></p>
+<p><code>'use strict';</code></p>
+<p><code>//Creates an element with content and attributes</code></p>
+<p><code>var ce = function (type, props, content) {</code></p>
+<p><code>var e = document.createElement(type);</code></p>
+<p><code>var keys = Object.keys(props || {});</code></p>
+<p><code>for (var i = 0; i &amp;lt; keys.length; i++) {</code></p>
+<p><code>e.setAttribute(keys[i], props[keys[i]]);</code></p>
+<p><code>}</code></p>
+<p><code>if (content) {</code></p>
+<p><code>e.innerHTML = content;</code></p>
+<p><code>}</code></p>
+<p><code>return e;</code></p>
+<p><code>};</code></p>
+<p><code>//Content of the form</code></p>
+<p><code>var formContent = '&amp;lt;input type="hidden" name="executed" value="blocke' +</code></p>
+<p><code>'d"&amp;rt;&amp;lt;span class="option main active"&amp;rt;&amp;lt;a href="#" class="togglebut' +</code></p>
+<p><code>'ton " onclick="return toggle(this)" data-event-action="block_use' +</code></p>
+<p><code>'r"&amp;rt;block user&amp;lt;/a&amp;rt;&amp;lt;/span&amp;rt;&amp;lt;span class="option error"&amp;rt;are you sure?' +</code></p>
+<p><code>'  &amp;lt;a href="javascript:void(0)" class="yes" onclick="change_state' +</code></p>
+<p><code>'(this, &amp;quot;block&amp;quot;, hide_thing,undefined, null)"&amp;rt;yes&amp;lt;/a&amp;rt; /' +</code></p>
+<p><code>' &amp;lt;a href="javascript:void(0)" class="no" onclick="return toggle(' +</code></p>
+<p><code>'this)"&amp;rt;no&amp;lt;/a&amp;rt;&amp;lt;/span&amp;rt;';</code></p>
+<p><code>//Inserts a form into the given Element</code></p>
+<p><code>var insertForm = function (ele) {</code></p>
+<p><code>var form = ce("form", {</code></p>
+<p><code>"class": "toggle block-button",</code></p>
+<p><code>action: "#",</code></p>
+<p><code>method: "get"</code></p>
+<p><code>}, formContent);</code></p>
+<p><code>var li=document.createElement("li");</code></p>
+<p><code>li.appendChild(form);</code></p>
+<p><code>ele.appendChild(li);</code></p>
+<p><code>return li;</code></p>
+<p><code>};</code></p>
+<p><code>//Checks for elements that should have the block form but have not yet</code></p>
+<p><code>var checkAndAddForms = function () {</code></p>
+<p><code>//Containers that are supposed to hold the form</code></p>
+<p><code>var ele = document.querySelectorAll(".entry &amp;rt; ul.flat-list.buttons");</code></p>
+<p><code>for (var i = 0; i &amp;lt; ele.length; i++) {</code></p>
+<p><code>var e = ele[i];</code></p>
+<p><code>//Only insert form if it is not there already but other stuff is.</code></p>
+<p><code>if (e.childNodes.length &amp;rt; 0 &amp;&amp; !e.querySelector(".block-button")) {</code></p>
+<p><code>insertForm(e);</code></p>
+<p><code>}</code></p>
+<p><code>}</code></p>
+<p><code>};</code></p>
+<p><code>//Initially process all nodes</code></p>
+<p><code>checkAndAddForms();</code></p>
+<p><code>//Listen to document changes to dynamically add the block option</code></p>
+<p><code>var observer = new MutationObserver(checkAndAddForms);</code></p>
+<p><code>var config = {</code></p>
+<p><code>attributes: false,</code></p>
+<p><code>childList: true,</code></p>
+<p><code>characterData: false,</code></p>
+<p><code>subtree: true</code></p>
+<p><code>};</code></p>
+<p><code>observer.observe(document.body, config);</code></p>
+<p><code>})();</code></p>
+<p>&#x200B;</p>
+<p><code>/*</code></p>
+<p><code>LICENSE:</code></p>
+<p><code>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</code></p>
+<p><code>The full license text can be found here:</code> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><code>http://creativecommons.org/licenses/by-nc-sa/4.0/</code></a></p>
+<p><code>The link has an easy to understand version of the license and the full license text.</code></p>
+<p>&#x200B;</p>
+<p><code>DISCLAIMER:</code></p>
+<p><code>THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES,</code></p>
+<p><code>INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</code></p>
+<p><code>A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE</code></p>
+<p><code>LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</code></p>
+<p><code>DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS</code></p>
+<p><code>OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF</code></p>
+<p><code>LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR</code></p>
+<p><code>OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF</code></p>
+<p><code>THE POSSIBILITY OF SUCH DAMAGE.</code></p>
+<p><code>*/</code></p></p>
+</div>
+<div class="comment" id="t1_fgyu43y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/f0q0yk/_/fgyu43y">Feb 08 2020 18:36:53</a>
+    </p>
+    <div class="collapsible">
+        <p>哈哈哈，我好像是在为一个把我block了的人提供block的帮助</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

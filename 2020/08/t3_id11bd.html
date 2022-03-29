@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>谁发一下昨天爆吧的视频</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_id11bd">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/zzqlike">zzqlike</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/id11bd">Aug 20 2020 01:31:57</a>
+    </p>
+    <strong>谁发一下昨天爆吧的视频</strong>
+    <p><p>721金木的痛，昨天没看到就爆了</p></p>
+</div>
+<div class="comment" id="t1_g26488o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fuck_youto_death">fuck_youto_death</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/id11bd/_/g26488o">Aug 20 2020 01:53:22</a>
+    </p>
+    <div class="collapsible">
+        <p>自爆卡车，我看完我华为手机就炸了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

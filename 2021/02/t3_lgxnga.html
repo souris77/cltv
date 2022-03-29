@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>一语道破</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lgxnga">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/quasarYen">quasarYen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgxnga">Feb 10 2021 16:41:59</a>
+    </p>
+    <strong>一语道破</strong>
+    <p><a href="https://i.redd.it/7u2zidh8iog61.jpg">https://i.redd.it/7u2zidh8iog61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gmu5i62">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/duren13a">duren13a</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgxnga/_/gmu5i62">Feb 10 2021 17:22:47</a>
+    </p>
+    <div class="collapsible">
+        <p>？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gmu60pv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/duren13a">duren13a</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lgxnga/_/gmu60pv">Feb 10 2021 17:26:26</a>
+    </p>
+    <div class="collapsible">
+        <p>无职专生？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

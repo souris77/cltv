@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这说的是谁？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ekcrvk">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/gulumao">gulumao</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ekcrvk">Jan 05 2020 13:05:34</a>
+    </p>
+    <strong>这说的是谁？</strong>
+    <p><a href="https://i.redd.it/cktstam5ly841.jpg">https://i.redd.it/cktstam5ly841.jpg</a></p>
+</div>
+<div class="comment" id="t1_fdcuhif">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/NO1A">NO1A</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ekcrvk/_/fdcuhif">Jan 06 2020 04:24:26</a>
+    </p>
+    <div class="collapsible">
+        <p>还能是谁？死妈习近平呗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fddh39o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RomancingSugar">RomancingSugar</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ekcrvk/_/fddh39o">Jan 06 2020 11:59:51</a>
+    </p>
+    <div class="collapsible">
+        <p>大草原，题目第一遍还没看懂。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

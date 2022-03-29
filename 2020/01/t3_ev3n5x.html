@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>小组长</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ev3n5x">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bilibilixionggui">bilibilixionggui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ev3n5x">Jan 28 2020 10:00:44</a>
+    </p>
+    <strong>小组长</strong>
+    <p><a href="https://i.redd.it/wm45emobshd41.jpg">https://i.redd.it/wm45emobshd41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fft7vt3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/53453467">53453467</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ev3n5x/_/fft7vt3">Jan 28 2020 11:37:28</a>
+    </p>
+    <div class="collapsible">
+        <p>平時一點屁事都給自己鬧個小組長當，現在這麽好的在全國人面前出風頭做英雄的大好機會，縮了。真男兒。</p>
+        <div class="comment" id="t1_ffvq0o7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Br0nnOfTheBlackwater">Br0nnOfTheBlackwater</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ev3n5x/_/ffvq0o7">Jan 29 2020 03:54:50</a>
+    </p>
+    <div class="collapsible">
+        <p>从小学到初中就没当过班干部</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

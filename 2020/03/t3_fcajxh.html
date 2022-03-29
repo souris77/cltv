@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这不那谁?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_fcajxh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/13865456783">13865456783</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fcajxh">Mar 02 2020 11:10:39</a>
+    </p>
+    <strong>这不那谁?</strong>
+    <p><a href="https://i.redd.it/2wcbdzums8k41.jpg">https://i.redd.it/2wcbdzums8k41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fj9stfl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/car_repair_man">car_repair_man</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fcajxh/_/fj9stfl">Mar 02 2020 14:18:41</a>
+    </p>
+    <div class="collapsible">
+        <p>骑士团集合</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fja0tmi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Hymn11">Hymn11</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/fcajxh/_/fja0tmi">Mar 02 2020 15:46:21</a>
+    </p>
+    <div class="collapsible">
+        <p>乌兹女朋友 叫啥来这</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

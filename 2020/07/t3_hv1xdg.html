@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>浪人专用controller</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_hv1xdg">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Nashesvobodnoye">Nashesvobodnoye</a>
+        |
+        <span class="score">16 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hv1xdg">Jul 21 2020 05:50:57</a>
+    </p>
+    <strong>浪人专用controller</strong>
+    <p><a href="https://i.redd.it/012baghka4c51.jpg">https://i.redd.it/012baghka4c51.jpg</a></p>
+</div>
+<div class="comment" id="t1_fyrbodl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RyuBAI">RyuBAI</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hv1xdg/_/fyrbodl">Jul 21 2020 12:20:41</a>
+    </p>
+    <div class="collapsible">
+        <p>是家乡的名画</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fyqrrq8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OTTOoooooo">OTTOoooooo</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hv1xdg/_/fyqrrq8">Jul 21 2020 06:58:51</a>
+    </p>
+    <div class="collapsible">
+        <p>淘宝有链接吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fyr3pp1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/No_cuts">No_cuts</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hv1xdg/_/fyr3pp1">Jul 21 2020 10:20:48</a>
+    </p>
+    <div class="collapsible">
+        <p>好美</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fyqn9g6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fengfubuffalo">fengfubuffalo</a>
+        |
+        <span class="score">-12 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hv1xdg/_/fyqn9g6">Jul 21 2020 05:52:15</a>
+    </p>
+    <div class="collapsible">
+        <p>碰瓷穷蛆滚</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

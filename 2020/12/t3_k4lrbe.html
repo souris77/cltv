@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>伦友别匿名</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k4lrbe">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yangguo1997">yangguo1997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lrbe">Dec 01 2020 14:23:09</a>
+    </p>
+    <strong>伦友别匿名</strong>
+    <p><a href="https://i.redd.it/uodoejoq4l261.png">https://i.redd.it/uodoejoq4l261.png</a></p>
+</div>
+<div class="comment" id="t1_ge9gs5l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jinggebuyaoa">jinggebuyaoa</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k4lrbe/_/ge9gs5l">Dec 01 2020 14:50:57</a>
+    </p>
+    <div class="collapsible">
+        <p>他们才是名副其实的境外势力，把国卖爽了，人民的血吸饱了，抹抹嘴巴，搭上去往西欧或者北美的头等舱飞机和家人团聚，接着再换一个继续这么做</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

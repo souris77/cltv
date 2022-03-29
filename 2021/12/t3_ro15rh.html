@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>今日首绷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ro15rh">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/gugugu123w">gugugu123w</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ro15rh">Dec 25 2021 03:12:06</a>
+    </p>
+    <strong>今日首绷</strong>
+    <p><p>考研政治最后一面，那个某些国家是假多边主义，我很难不觉得不是浪友出的题，我们浪友真有那么大影响力？还有不断创造历史  我写到建国之后的历史艰苦探索，不小心写了个大健身</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

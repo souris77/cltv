@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>盖了帽了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mszdp9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Curious_Community937">Curious_Community937</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mszdp9">Apr 17 2021 21:19:56</a>
+    </p>
+    <strong>盖了帽了</strong>
+    <p><a href="https://i.redd.it/ax46vchzvst61.jpg">https://i.redd.it/ax46vchzvst61.jpg</a></p>
+</div>
+<div class="comment" id="t1_guwsfnr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Imnotsurprise">Imnotsurprise</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mszdp9/_/guwsfnr">Apr 17 2021 22:50:20</a>
+    </p>
+    <div class="collapsible">
+        <p>刺青刺臉上 是個狠人</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_guxqa6e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/suencua">suencua</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mszdp9/_/guxqa6e">Apr 18 2021 04:20:23</a>
+    </p>
+    <div class="collapsible">
+        <p>李麦克，吴哈利</p>
+        <div class="comment" id="t1_guxy6va">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Curious_Community937">Curious_Community937</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/mszdp9/_/guxy6va">Apr 18 2021 05:57:47</a>
+    </p>
+    <div class="collapsible">
+        <p>校试昆</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

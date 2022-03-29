@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>开个箱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_bzetp5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Meiily">Meiily</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzetp5">Jun 11 2019 16:44:12</a>
+    </p>
+    <strong>开个箱</strong>
+    <p><a href="https://youtu.be/35saL62cOaU">https://youtu.be/35saL62cOaU</a></p>
+</div>
+<div class="comment" id="t1_eqrx13g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/langrenchong">langrenchong</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzetp5/_/eqrx13g">Jun 11 2019 16:50:19</a>
+    </p>
+    <div class="collapsible">
+        <p>看了的好兄弟说一下开了什么</p>
+        <div class="comment" id="t1_eqt3swx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Meiily">Meiily</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzetp5/_/eqt3swx">Jun 12 2019 01:03:12</a>
+    </p>
+    <div class="collapsible">
+        <p>杀人犯的作案工具，还有个奇怪的医疗设备</p>
+        <div class="comment" id="t1_eqt4z9o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Surfingdaishewan">Surfingdaishewan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/bzetp5/_/eqt4z9o">Jun 12 2019 01:18:49</a>
+    </p>
+    <div class="collapsible">
+        <p>就是个恶作剧 这作者还不让评论 操</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>有沒有人知道這是怎麼回事？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_gjndsq">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Thornotodinson">Thornotodinson</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gjndsq">May 14 2020 14:28:06</a>
+    </p>
+    <strong>有沒有人知道這是怎麼回事？</strong>
+    <p><a href="https://global.udn.com/global_vision/story/8662/4523989">https://global.udn.com/global_vision/story/8662/4523989</a></p>
+</div>
+<div class="comment" id="t1_fqm3rpy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TechnicalPrinciple2">TechnicalPrinciple2</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gjndsq/_/fqm3rpy">May 14 2020 15:43:21</a>
+    </p>
+    <div class="collapsible">
+        <p>很早的消息了</p>
+        <div class="comment" id="t1_fqmi0tc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Thornotodinson">Thornotodinson</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gjndsq/_/fqmi0tc">May 14 2020 17:36:18</a>
+    </p>
+    <div class="collapsible">
+        <p>媽的，我剛才知道</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

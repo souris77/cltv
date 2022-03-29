@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>我喜欢带带大蕾姆</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_cr1f0o">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/frog4392">frog4392</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cr1f0o">Aug 16 2019 04:38:21</a>
+    </p>
+    <strong>我喜欢带带大蕾姆</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_ex16t1m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SurfingGypsy">SurfingGypsy</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cr1f0o/_/ex16t1m">Aug 16 2019 05:18:50</a>
+    </p>
+    <div class="collapsible">
+        <p>不如网络吉普赛</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ex2s1fy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/6324xingping">6324xingping</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cr1f0o/_/ex2s1fy">Aug 16 2019 16:52:44</a>
+    </p>
+    <div class="collapsible">
+        <p>我号没了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_ex50yij">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/pantentedw0rd">pantentedw0rd</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/cr1f0o/_/ex50yij">Aug 17 2019 04:03:32</a>
+    </p>
+    <div class="collapsible">
+        <p>网络吉普赛我爱你，你看得到吗</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

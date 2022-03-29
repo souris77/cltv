@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>夢開始的地方</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oi7u7y">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TW930211">TW930211</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oi7u7y">Jul 11 2021 16:41:52</a>
+    </p>
+    <strong>夢開始的地方</strong>
+    <p><a href="https://i.redd.it/pmi3tvsu3ma71.jpg">https://i.redd.it/pmi3tvsu3ma71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h4tqzur">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AnnihilateGCD">AnnihilateGCD</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oi7u7y/_/h4tqzur">Jul 11 2021 17:14:18</a>
+    </p>
+    <div class="collapsible">
+        <p>纳尼阔类</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h4u57tf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oi7u7y/_/h4u57tf">Jul 11 2021 19:11:45</a>
+    </p>
+    <div class="collapsible">
+        <p>细说</p>
+        <div class="comment" id="t1_h4u77zj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TW930211">TW930211</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oi7u7y/_/h4u77zj">Jul 11 2021 19:28:39</a>
+    </p>
+    <div class="collapsible">
+        <p>http://japan.people.com.cn/BIG5/n/2014/1218/c35469-26233525.html</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

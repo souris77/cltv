@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>这是否有点</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qxi4qr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AntonChen-">AntonChen-</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxi4qr">Nov 19 2021 15:05:36</a>
+    </p>
+    <strong>这是否有点</strong>
+    <p><a href="https://i.redd.it/oseu8c53ik081.jpg">https://i.redd.it/oseu8c53ik081.jpg</a></p>
+</div>
+<div class="comment" id="t1_hl9ho13">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bokuangyi">Bokuangyi</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxi4qr/_/hl9ho13">Nov 19 2021 15:20:34</a>
+    </p>
+    <div class="collapsible">
+        <p>用户名：你妈的 党</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hl9fs9e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Detective-3855">Ok-Detective-3855</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxi4qr/_/hl9fs9e">Nov 19 2021 15:07:07</a>
+    </p>
+    <div class="collapsible">
+        <p>刚来，我不太会说话，来个懂的评价评价</p>
+        <div class="comment" id="t1_hl9hlom">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qxi4qr/_/hl9hlom">Nov 19 2021 15:20:06</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

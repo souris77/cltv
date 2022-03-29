@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>以毒攻毒，通过添加维尼水印防止视频被偷到批站</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pttk1a">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ten_percent_a">ten_percent_a</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pttk1a">Sep 23 2021 11:55:12</a>
+    </p>
+    <strong>以毒攻毒，通过添加维尼水印防止视频被偷到批站</strong>
+    <p><p><a href="https://www.youtube.com/watch?v=tIDLV-b6FyI">https://www.youtube.com/watch?v=tIDLV-b6FyI</a></p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

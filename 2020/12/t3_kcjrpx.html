@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>典</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kcjrpx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/20duleon">20duleon</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kcjrpx">Dec 13 2020 21:57:50</a>
+    </p>
+    <strong>典</strong>
+    <p><a href="https://i.redd.it/6oyel9lo70561.jpg">https://i.redd.it/6oyel9lo70561.jpg</a></p>
+</div>
+<div class="comment" id="t1_gfr7gaj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aggravating_Bison644">Aggravating_Bison644</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kcjrpx/_/gfr7gaj">Dec 13 2020 23:29:34</a>
+    </p>
+    <div class="collapsible">
+        <p>not workers, but modern slaves.</p>
+        <div class="comment" id="t1_gfsatqs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/alanzung">alanzung</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kcjrpx/_/gfsatqs">Dec 14 2020 05:43:32</a>
+    </p>
+    <div class="collapsible">
+        <p>*serfs</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

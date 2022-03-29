@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>求助，怎么使用红迪搜索功能？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_hpz309">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/xiaogoubaodi">xiaogoubaodi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/hpz309">Jul 12 2020 18:17:50</a>
+    </p>
+    <strong>求助，怎么使用红迪搜索功能？</strong>
+    <p><p>以本吧为例，点击上方搜索框，输入内容，并不会出现结果。是因为它不喜欢中文么？
+我弄不明白。</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

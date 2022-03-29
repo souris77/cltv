@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>簡單吃個日料</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_phchvk">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/_Psyber">_Psyber</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/phchvk">Sep 03 2021 19:51:43</a>
+    </p>
+    <strong>簡單吃個日料</strong>
+    <p><a href="https://i.redd.it/kkhnqb2xecl71.png">https://i.redd.it/kkhnqb2xecl71.png</a></p>
+</div>
+<div class="comment" id="t1_hbio1lh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/indian-never-tip">indian-never-tip</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/phchvk/_/hbio1lh">Sep 04 2021 01:27:23</a>
+    </p>
+    <div class="collapsible">
+        <p>神奈川冲浪里</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

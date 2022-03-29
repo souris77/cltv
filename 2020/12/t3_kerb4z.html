@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>简单玩个乐器</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kerb4z">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/superblankmindedness">superblankmindedness</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kerb4z">Dec 17 2020 05:33:38</a>
+    </p>
+    <strong>简单玩个乐器</strong>
+    <p><a href="https://youtu.be/A0VYsiMtrNE">https://youtu.be/A0VYsiMtrNE</a></p>
+</div>
+<div class="comment" id="t1_gg4559j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/superblankmindedness">superblankmindedness</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kerb4z/_/gg4559j">Dec 17 2020 05:40:24</a>
+    </p>
+    <div class="collapsible">
+        <p><a href="https://youtu.be/bOfpQt4KFCc">条形码</a></p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gg45r2f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/datnoobisbloodthirst">datnoobisbloodthirst</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kerb4z/_/gg45r2f">Dec 17 2020 05:47:40</a>
+    </p>
+    <div class="collapsible">
+        <p>甚麼實驗音樂</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gg4739f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Errrrrxi">Errrrrxi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kerb4z/_/gg4739f">Dec 17 2020 06:04:24</a>
+    </p>
+    <div class="collapsible">
+        <p>我操 太酷了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

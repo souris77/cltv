@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>大学有一节课是要我们用java写一个编译器，能够用来测试其它语言编写的程序代码中的语法错误。我们很多人都是用函数递归做的，除了用递归的方式，还有其他的解决方案吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p1cm2i">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/BeneficialYam7">BeneficialYam7</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i">Aug 09 2021 22:56:31</a>
+    </p>
+    <strong>大学有一节课是要我们用java写一个编译器，能够用来测试其它语言编写的程序代码中的语法错误。我们很多人都是用函数递归做的，除了用递归的方式，还有其他的解决方案吗？</strong>
+    <p><p>已经毕业很久了，只是好奇问问。</p></p>
+</div>
+<div class="comment" id="t1_h8cw0gv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/hidden_Taksaka">hidden_Taksaka</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8cw0gv">Aug 10 2021 01:20:45</a>
+    </p>
+    <div class="collapsible">
+        <p>递归下降会有不必要的函数开销，如果你觉得这样效率下降可以用编译原理课本里的自底向上归约。但实际上，gcc也只是生成AST然后对它后序遍历来进行检查的，所以GCC的parser也是一个典型的递归下降分析过程。递归下降比那些自底向上的语法更好理解，也更好实现。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8ceei4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BeneficialYam7">BeneficialYam7</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8ceei4">Aug 09 2021 22:59:11</a>
+    </p>
+    <div class="collapsible">
+        <p>当初写这个写的头大。就是把其它编程语言的代码存到一个txt文件里面。然后java读取这个txt文件，看看里面的代码有什么语法错误。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8chpnj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Random-32927">Random-32927</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8chpnj">Aug 09 2021 23:25:28</a>
+    </p>
+    <div class="collapsible">
+        <p>都说了 写一个编译器 那解决方法就是写个编译器啊 从context free grammar 写起，再写个parser，如果parse 不了就有语法错误</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8cltm8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/netking_sunxiaochuan">netking_sunxiaochuan</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8cltm8">Aug 09 2021 23:58:57</a>
+    </p>
+    <div class="collapsible">
+        <p>啊这，编译器难道不是用c/cpp写吗</p>
+        <div class="comment" id="t1_h8coczf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BeneficialYam7">BeneficialYam7</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8coczf">Aug 10 2021 00:19:22</a>
+    </p>
+    <div class="collapsible">
+        <p>不是真的写一个编译器。只是要测试代码。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_h8cprxc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mechanialist">Mechanialist</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8cprxc">Aug 10 2021 00:30:47</a>
+    </p>
+    <div class="collapsible">
+        <p>什么码农tv</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8cscnp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8cscnp">Aug 10 2021 00:51:17</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8cx2jp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Ad-2513">Ok-Ad-2513</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8cx2jp">Aug 10 2021 01:29:16</a>
+    </p>
+    <div class="collapsible">
+        <p>你要看检查的具体是静态语言还是动态语言，而且要分两次检查，第一次是语法第二次是逻辑。这不是机导基础吗</p>
+        <div class="comment" id="t1_h8cxx7v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8cxx7v">Aug 10 2021 01:36:02</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8d4vav">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BeneficialYam7">BeneficialYam7</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8d4vav">Aug 10 2021 02:32:58</a>
+    </p>
+    <div class="collapsible">
+        <p>老师让我们测试的是ada语言。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_h8dbkkq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Anxious-Tonight-6014">Anxious-Tonight-6014</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8dbkkq">Aug 10 2021 03:32:06</a>
+    </p>
+    <div class="collapsible">
+        <p>机器学习</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h8fljqw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/peroxideal">peroxideal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p1cm2i/_/h8fljqw">Aug 10 2021 17:25:03</a>
+    </p>
+    <div class="collapsible">
+        <p>这让我想起了抽象老师讲了点mfc基础知识就让你开发一个GIS系统的故事</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

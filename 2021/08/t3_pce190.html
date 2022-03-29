@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Reddit的排序机制是什么？前几天发的《自由之战》又设计了一些角色想发出去让大家看看，但是好像没人看到，我再发一次链接。</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pce190">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Immediate-Deer-5015">Immediate-Deer-5015</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pce190">Aug 27 2021 02:17:10</a>
+    </p>
+    <strong>Reddit的排序机制是什么？前几天发的《自由之战》又设计了一些角色想发出去让大家看看，但是好像没人看到，我再发一次链接。</strong>
+    <p><a href="https://www.reddit.com/r/chonglangTV/comments/pa2iax/%E8%87%AA%E7%94%B1%E4%B9%8B%E6%88%98/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=iossmf">https://www.reddit.com/r/chonglangTV/comments/pa2iax/%E8%87%AA%E7%94%B1%E4%B9%8B%E6%88%98/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=iossmf</a></p>
+</div>
+<div class="comment" id="t1_haiauxj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aggravating_Camp_329">Aggravating_Camp_329</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pce190/_/haiauxj">Aug 27 2021 02:42:03</a>
+    </p>
+    <div class="collapsible">
+        <p>红迪是按热度排序的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_haiojot">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Top_Cartoonist5383">Top_Cartoonist5383</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pce190/_/haiojot">Aug 27 2021 04:40:49</a>
+    </p>
+    <div class="collapsible">
+        <p>没玩儿过卡牌对战，，，</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

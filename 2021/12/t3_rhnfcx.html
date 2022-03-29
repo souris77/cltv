@@ -1,0 +1,3382 @@
+<html>
+<head>
+<title>翻墙知识及教程 如何选择翻墙线路&amp;软件&amp;协议</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rhnfcx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx">Dec 16 2021 09:46:03</a>
+    </p>
+    <strong>翻墙知识及教程 如何选择翻墙线路&amp;软件&amp;协议</strong>
+    <p><h1>目录</h1>
+<ol>
+<li>前言</li>
+<li>GFW和翻墙方式的演变</li>
+<li>GFW和翻墙协议的运作原理</li>
+<li>VPN</li>
+<li>VPS vs 机场</li>
+<li>协议如何选择（SS SSR V2Ray Trojan）</li>
+<li>软件如何选择（Win Mac iOS Android Linux）</li>
+<li>机场线路如何选择（IPLC IEPL 163 CN2 BGP anycast 是否解锁流媒体）</li>
+<li>游戏加速 &amp; 软路由 &amp; 全局代理的一些问题</li>
+<li>TLDR ~~太长不看版本~~</li>
+</ol>
+<h1>1. 前言</h1>
+<ul>
+<li>这个教程可能不适合完全没有基础的人阅读，比如不知道SS和V2Ray，不知道IP和DNS，不知道代理服务器等等，请直接跳到第10部分(或者看一眼4578也可以)；如果你有基础的网络知识，但不了解socks5、TCP UDP、网络的OSI7层模型（在这个模型中，越往下数字越小越底层，见图）等，我会在接下来的文章里尽量和你解释清楚，如果你不想看，也可以跳到第4、5、7、8、10部分；如果你在用鸿蒙+老王+反诈APP+2345浏览器看这篇教程，请马上退出，你现在还活着证明你的翻墙方式没有问题，不用改。</li>
+<li>OP从初中开始学翻墙，到现在和GFW斗智斗勇也有快10年时间了，因为过几个月要润阿美了，在润之前和大家分享一下翻墙经验，希望对大家有帮助，特别是那些还在用VPN和SS的浪友，我对你的器官感到担忧。构思贴子+查资料+✍花了一天多时间，大家能不能支我一下</li>
+<li>教程不含任何推广，没有任何广告。~~如果有机场主愿意给我5位数的推广费，我马上把这一条删掉~~</li>
+<li>港友&amp;台友&amp;🦇也可以浏览一下，如有些Netflix资源只有美区有，如春节回国需要应急几周</li>
+<li>欢迎技术老嗨指出问题&amp;和我讨论</li>
+</ul>
+<h1>2. GFW和翻墙方式的演变</h1>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Great_Firewall">GFW，The <strong>Great Firewall</strong></a>，贵支政府称其为<strong>数据跨境安全网关</strong>，由蛤的长子江绵恒牵头建立，方滨兴为首要设计师。发展至今，GFW的探测手段已经变得无比复杂，但大体可以分为主动过滤、主动探测和代理分发。</li>
+</ul>
+<p>&rt;主动过滤：主动过滤是由华为、思科和恒扬公司的硬件实现的，功能包括DNS污染、端口阻断、URL关键字阻断等，这也是GFW主要用的封锁方法。详见英文wiki<br>
+&rt;<br>
+&rt;主动探测：当GFW检测到可疑节点的时候，会自己去建立一个TCP连接，验证该节点是否真的是翻墙节点<br>
+&rt;<br>
+&rt;代理分发：GFW会对VPS和tor的ip段进行批量封锁</p>
+<ul>
+<li>道高一尺，魔高一丈，GFW在逐渐演进，翻墙工具亦复如是。初期封锁不严重的时候，往往改一下hosts就能连接国外网站。同时期出现了一批VPN软件，免费的如lantern  Psiphon和轮子的VPN，付费的如astrill和许多国产。好景不长，由于VPN的流量特征过于明显，GFW已经能精确识别和封锁VPN流量，并且贵支规定所有的VPN都要报备，国内的厂家死的死跑的跑，只有几家国外的还在坚挺，但也要频繁更换IP以对抗封锁。后来在2012年出现了<a href="https://en.wikipedia.org/wiki/Shadowsocks">shadowsocks(ss)</a>，与VPN不同（VPN被研发的目的是加密通信而不是翻墙，翻墙只是一个bonus，所以在流量加密方面差了不是一星半点），ss生来就是为了翻墙，所以代码写的大开大阖，目的只有翻墙一个，没有其他功能，不得不说作者真的是个天才，后来的所有协议(SSR V2Ray Trojan)都是在ss的基础上改造的，没有ss可能就没有chonglangtv，可惜作者clowwindy在15年被喝茶了，还删除了所有代码(有备份就是了)，在喝茶后的几天内贵支政府还对GitHub进行过DDOS攻击。(<strong>用爱发电写代码的人在喝茶，卖机场的人在发财，凭借前面二者才能翻墙的粉红在爱国爱党，我麻</strong>)</li>
+</ul>
+<p>&rt;hosts就是手动DNS，当浏览器输入网址时，会首先在hosts中寻找，如果没有才会提交本地DNS服务器。前几个月裸连GitHub不稳定时，这种方法就能有效解决。<br>
+&rt;<br>
+&rt;<a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DDOS，Denial-of-service attack</a>，拒绝服务攻击，详见wiki</p>
+<ul>
+<li>继续说，除了SS，在其基础上又出现了多种协议，包括较早期的shadowsocksR(SSR)和最近几年出现的V2Ray和Trojan。SSR在SS的基础上做了一定的混淆；V2Ray则比较复杂，支持的协议的加密方式很多，安全性也有所提升；Trojan在我看来像是个简化的V2Ray，只有websocket+tls加密，省去了vmess的解码和编码，所以速度也会快一点点。在很长一段时间内，市场上都是这四个协议在混战，每种协议都有优劣，也各有支持者，吵架的贴子一吵就是几百条，虽然很多人说ss不如其他几个安全，但也没有事实支撑。</li>
+<li>上面这种混战一直持续到这个论文的发表：<a href="https://gfw.report/talks/imc20/en/">https://gfw.report/talks/imc20/en/</a> （<a href="https://gfw.report/">https://gfw.report/</a> 这个网站我劝你多看）这篇论文明确指出了GFW已经可以探测并封锁SS流量，于是VPS搭建者和机场主们纷纷改用其他协议，现在大部分机场应该不再支持SS协议了，如果你还在用，请马上更换V2Ray(为什么不换Trojan下面会说)</li>
+</ul>
+<p>&rt;探测的原理其实也很简单，ss把所有的流量都进行了加密，使得packet一点特征都没有，而恰恰这种一点特征都没有成为了SS的特征，只能说在理论上安全性没有问题，但实际中还是出现了问题</p>
+<h1>3. GFW和翻墙协议的运作原理</h1>
+<ul>
+<li>这个部分技术门槛稍高，但我会尽量少用专业术语</li>
+<li>想要翻墙，一台境外服务器（代理）肯定是必须的，无论你是直接租一台（什么富二代），还是买VPS（和其他人合租，但是虚拟化技术让你认为你独占这个服务器），还是用机场（机场主买出口专线或者VPS）。</li>
+<li>文明国家的网民想要访问Google服务器，过程是这样的：电脑发出packet，经过许多交换机和路由，找到Google服务器，获得数据后原路返回。贵支的过程是这样的：电脑发出packet，经过许多交换机和路由，遇上了GFW，GFW用前面我介绍的三种方式阻断了连接，于是出现404。</li>
+<li>有了VPN和境外服务器，我们也可以突破GFW了：电脑经由VPN发出加密packet，经过许多交换机和路由，遇上了GFW，可是packet显示目的地是代理服务器而不是Google，于是放行，到达境外服务器后再转到Google，然后原路返回</li>
+<li>SS是这样运作的：电脑发出packet，来到SS本地服务器（其实就是你电脑上的的SS软件啦），SS服务器对packet进行加密，然后发送，经过许多交换机和路由，遇上了GFW，GFW分析不出packet任何的流量特征，于是放行，packet来到了SS远程服务器（就是在你的境外服务器上部署的SS软件），远程服务器解密后转发给Google，然后原路返回（其他三种协议类似，不多赘述）</li>
+</ul>
+<h1>4.VPN</h1>
+<ul>
+<li>VPN全称 <strong>virtual private network</strong>，正如我在前面所说，VPN被研发的目的是加密通信而不是翻墙，翻墙只是一个bonus，事实上VPN有很多的正当用途：如果你在校外想要访问知网或者学校的服务器集群，连上学校的VPN即可；如果你在大公司上班，几乎所有大公司都会有VPN，比如我前几个月在字节实习就是全程 VPN连接。</li>
+<li>正因为VPN的本意不是翻墙，所以在安全性方面差很多，不用说老王VPN了，所有的VPN我都不推荐，如果你只是看看Youtube和Wikipedia，那VPN还能凑合凑合，但我相信本sub的应该都不止于此吧，为了你的器官着想，请<strong>停止使用VPN</strong></li>
+<li>VPN中出现钓鱼软件的比例极高，不说免费的几个(老王、蚂蚁什么的)，就算是收费而且定价比较贵的几家都被爆出有钓鱼嫌疑，包括但不限于 <strong>Turbo VPN，快连VPN</strong> 等等</li>
+<li>大厂的VPN也经常被封IP，他们和GFW的对抗方法就是频繁换IP，因为VPN的流量特征实在是太明显了</li>
+<li>小厂的VPN通常就是捞一笔就跑路，然后换个名字继续捞，速度慢还断连，而且有可能他们说自己是VPN，底层协议用的还是SS什么的，只是封装好一个客户端给你用，可能是<strong>因为VPN名声在外，很多人直接把VPN和翻墙画上了等号，这很明显是错误的</strong></li>
+</ul>
+<h1>5. VPS与机场</h1>
+<ul>
+<li>选择机场还是VPS？That is a question</li>
+</ul>
+<p>&rt;VPS是virtual private server，就是托管出售的虚拟机</p>
+<ul>
+<li>如果你熟练掌握了VPS+V2Ray+TLS+WebSocket+Nginx+CDN，对每个环节的配置都了然于胸，出了问题可以迅速定位并解决，带宽可以跑满千兆，每年军民大联欢纪念日都能正常使用，那我这个教程对你没有任何意义</li>
+<li>如果你不能做到上面几点，我的建议是选用机场，机场和VPS相比优劣如下（一定别选小机场）</li>
+</ul>
+<p><strong>优点1</strong> 机场主的经验总是比你丰富，出了问题他可以解决而你连定位都做不到</p>
+<p><strong>优点2</strong> VPS往往没有原生IP，看不了流媒体</p>
+<p>&rt;提一句，流媒体检测可以用<a href="https://github.com/sjlleo/netflix-verify">https://github.com/sjlleo/netflix-verify</a>和<a href="https://github.com/CoiaPrant/MediaUnlock_Test">https://github.com/CoiaPrant/MediaUnlock_Test</a></p>
+<p><strong>优点3</strong> 机场节点多，封了几个无伤大雅，VPS IP被封了要向运营商申请更换，而这往往不是免费的</p>
+<p><strong>优点4</strong> VPS往往在军民大联欢纪念日不能用，即"敏感时期不开机"，不开机还怎么来sub联欢？</p>
+<p><strong>缺点1</strong> 机场限流量，如果天天油管奈飞4K视频嗯造，还是买VPS便宜</p>
+<p><strong>缺点2</strong> VPS功能更多，而机场主给你什么你就要用什么</p>
+<p><strong>缺点3</strong> VPS也有一键配置V2ray的脚本，和机场也差不多（但是配置完了出问题就寄了，所以没经验还是选机场）</p>
+<p><strong>缺点4</strong> VPS能跑满千兆，机场跑百兆，虽然一台够用，但如果用在软路由上和男/女朋友或者室友一起用，还是差了点。软路由请参考第9部分</p>
+<ul>
+<li>前面说了，不做任何推荐，想买VPS自行Google</li>
+<li><strong>有一个机场测评的良心网站，很好用 毒药机场</strong> <a href="https://www.duyaoss.com/"><strong>https://www.duyaoss.com/</strong></a>在上面选择大型的机场，小的不要考虑，防止跑路，并且最好选择有tg群且tg群可以聊天的，靠谱一些</li>
+<li>至于<strong>如何甄别粉红机场，可以考虑以下几个方面</strong>，如查看一下机场的审计规则，看看是否block了轮子的网站；看看机场的标语，有没有说不要浏览"反动网站"；机场除了邮箱，是否还要手机号注册；我还看过一个机场在10月1祝贺国庆节，看着就抽象</li>
+</ul>
+<h1>6. 协议如何选择（SS SSR V2Ray Trojan）</h1>
+<p>喝口咖啡，继续写</p>
+<ul>
+<li><strong>首先要明确这样几个概念，协议 软件和线路</strong>。线路偏硬件，是OSI模型中的物理层和数据链路层（也包括网络层，如BGP）；协议就是SS(R) V2Ray Trojan等；软件就是基于上面这些协议的发行版，例如windows中想要跑V2ray协议可以用Qv2Ray或者V2RayN或者Clash，这些都是软件（看不懂没关系，接下来三节详细说明）</li>
+<li>上面说了，SS被2020年的一篇论文爆出来有安全问题，所以现在不要用了，此处按下不表</li>
+<li>不想写了！写了好多又删了，因为写的太复杂了。总之用V2Ray就对了，Trojan因为比较新，所以软件的兼容性不太好，而且随着硬件设备的进步，Trojan少占用的CPU资源和少发的几个握手packet其实算不了什么，不过有能力的可以都试一下，哪个快用哪个就是了，Trojan的安全性是可以和V2Ray媲美的。因为实际的网络环境很复杂，还要分墙内和墙外两段，所以哪个更快没人能给出标准答案，相较于协议对速度的影响，软件和机场的影响要大更多。</li>
+<li>再说以下协议的加密方式，如果你在用机场，那么加密方式就是机场主配置的，如果你在用VPS，就是自己配置。早些年的加密方式用过AES chacha20等等，不过现在最安全的还是Vmess/Vless/websocket+TLS。V2ray一般选择Vmess+websocket+TLS，Trojan已经定死了，就是TLS</li>
+</ul>
+<h1>7. 软件如何选择（Win Mac iOS Android Linux）</h1>
+<p>Win：V2RayN  Clash  Qv2Ray</p>
+<p>Mac： ClashX  Surge  Qv2Ray</p>
+<p>iOS： Shadowrocket  Surge  Stash（刚出的软件，兼容Clash还比小火箭便宜）</p>
+<p>Android：V2RayNG  Clash</p>
+<p>Linux：Q2Ray（可惜4月停更了）</p>
+<p>其中Clash、Surge和Stash是比较特殊的，因为它们支持网关模式，此处内容太多，按下不表</p>
+<h1>8. 机场线路如何选择（IPLC IEPL 163 CN2 BGP AIA 是否解锁流媒体）</h1>
+<ul>
+<li>此处的内容是让你看懂这几个单词的意思，到底哪个更快需要实际测试，并不一定有IEPL &rt; IPLC &rt; CN2 &rt; 163</li>
+<li>IPLC，International Private Leased Circuit，指的是点对点传输，内网专线直达，数据不经过墙，实际上是OSI模型的第一层，物理层。比如常见的深港专线、沪日专线，不过IPLC奇贵无比，提供IPLC的机场少之又少，很多机场的IPLC线路都有一个倍率，比如×3倍率就是用100G按照300G计算，购买机场时务必注意。当然IPLC不一定就是最好，因为数据过墙只有一小段，墙内和墙外仍然有许多次packet的转发，还是按需购买</li>
+<li>IEPL是 International Ethernet Private Line，国际以太网专线，和IPLC比较类似，都是高端线路，IEPL在OSI模型的第二层数据链路层，速度略好于IPLC。对于很多机场来说，IPLC和IEPL已经成为了噱头，不要被忽悠到</li>
+<li>163骨干网，是中国电信第一代通信网络，速度较慢，需要过墙</li>
+<li>CN2是ChinaNet Next Carrying Network，中国电信下一代通信网络，速度较快，也需要过墙。CN2GIA和CN2GT都属于此列，其中CN2GIA优于CN2GT</li>
+<li>BGP是 Border Gateway Protocol，即边界网关协议，这是一个 路由选择协议，可以妥善配置负载均衡等问题，在OSI模型的第三层网络层</li>
+<li>AIA是Anycast Internet Acceleration，Anycast公网加速，这是一个动态网络，可以在第三层对网络进行优化，同时避免单点故障等问题，数据也会走内网，更快</li>
+<li>是否解锁流媒体一般会在机场上标识，没标识的一般是全部都可以或者全部不可以。一般来说，原生IP可以解锁，判断一个IP是否原生的方式就是看 IP 的注册地址与 VPS 机房所在位置是否一致。检测脚本<a href="https://github.com/sjlleo/netflix-verify">https://github.com/sjlleo/netflix-verify</a>和<a href="https://github.com/CoiaPrant/MediaUnlock_Test">https://github.com/CoiaPrant/MediaUnlock_Test</a></li>
+</ul>
+<h1>9. 游戏加速 &amp; 软路由 &amp; 全局代理的一些问题</h1>
+<ul>
+<li>游戏加速也是支国特色了。从原理上来看，市面上流行的各类加速器如UU等其实就是VPN，只是加速器厂商对能访问的服务器进行了严格的限制，采用的是白名单而不是黑名单（我猜的），所以不能拿来翻墙</li>
+<li>同理可得，VPN是可以拿来游戏加速的，但一是VPN不安全，最好不要用，二是VPN的效果往往不如专业加速器，专业加速器都是优化过的IPLC和IEPL线路，普通的VPN肯定是比不上的。</li>
+<li>为什么第7部分说的那些软件开启了后也不能加速呢？这是一个好问题，因为那些软件是跑在OSI7层模型中的第五层会话层，属于比较顶端的部分，而游戏流量是TCP或者UDP，这在第四层，很明显是不归代理软件管的。同理，从win10商店中下载的UWP应用也不能简单地用那些代理软件代理，需要下载<a href="https://www.telerik.com/fiddler">Fiddler</a>更改沙盒设置，这也就是为什么从win10商店下载的Netflix不能打开就用。</li>
+<li>同理，你翻墙后在shell里面ping google.com，一样ping不通，这是因为<code>ping</code>这个报文属于第三层网络层，比代理软件的层级低很多，当然ping不通</li>
+<li>话说回来，为什么VPN可以而代理软件不行？这是因为VPN跑在OSI的第二层，相当于虚拟出来一个网卡，所以上面所说的所有流量VPN都能代理</li>
+<li>我不想用VPN还想代理底层流量怎么办？当然可以，一些开源软件例如Netch、SSTAP（好像不能用了，不知道）也可以虚拟出一个网卡，并且兼容V2Ray协议，来强制接管流量</li>
+<li>当然还有一个方法，就是给路由器刷第三方固件或者用软路由，使得从路由器出来的流量就是代理之后的，这样就是真正意义上的全局代理。有些硬件，不能用7中提到的软件，例如Oculus VR，例如Xbox PS5，例如各种TV，这时软路由就是最好选择</li>
+<li>也就是说，7部分中提到的软件，其实只能代理应用层的流量，那为什么有的软件还有"全局代理"和"PAC代理"或者"路由规则"呢，这是因为应用层流量也不一定就要全走代理，例如完全可以实现看Youtube用代理流量，看b站用本地流量，这里的全局指的是应用层的全局，而不是整个电脑or手机的全局</li>
+</ul>
+<h1>10. TLDR 太长不看版本</h1>
+<p>无论你是一步一步读下来的还是直接跳过来的，感谢你能读到这里</p>
+<p>总结</p>
+<ol>
+<li>不要用VPN和SS。从我上一个贴子的投票来看，用VPN的人数 &rt; 机场+V2Ray &rt; 机场+SS ≈ VPS，大概有50%的人要全过程民主的捐献器官了</li>
+<li>技术不好不要用VPS</li>
+<li>买机场参考第5条，注意避开粉红机场</li>
+<li>可以无脑大机场+V2Ray，目前看来是没有问题的</li>
+<li>如果看不懂机场对线路的描述，请参考第8部分</li>
+<li>如果你在好奇为什么你用的机场不能加速游戏，请参考第9部分</li>
+<li>如果预算比较低，也不要用VPN，可以选择一个月几块甚至免费的机场＋V2ray，不过安全性就差了些</li>
+<li>请分清协议&amp;软件&amp;线路，这是三个不同的东西！</li>
+</ol>
+<p>&#x200B;</p>
+<p>https://preview.redd.it/ihbehxp2kv581.jpg?width=560&amp;format=pjpg&amp;auto=webp&amp;s=5aa3b5017dbd2a2a2d9f67c2c895a550d5348866</p></p>
+</div>
+<div class="comment" id="t1_horhk47">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/QAZXSWCDEVFR396">QAZXSWCDEVFR396</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horhk47">Dec 16 2021 09:58:57</a>
+    </p>
+    <div class="collapsible">
+        <p>好！一直等你呢！</p>
+        <div class="comment" id="t1_horho71">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horho71">Dec 16 2021 10:00:33</a>
+    </p>
+    <div class="collapsible">
+        <p>🥰</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horhlpo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Real__XiJinPing">Real__XiJinPing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horhlpo">Dec 16 2021 09:59:34</a>
+    </p>
+    <div class="collapsible">
+        <p>支持技术贴</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horhpir">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Damyonnya">Damyonnya</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horhpir">Dec 16 2021 10:01:03</a>
+    </p>
+    <div class="collapsible">
+        <p>DUYAOSS进不去 咋回事</p>
+        <div class="comment" id="t1_horhzcm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horhzcm">Dec 16 2021 10:04:53</a>
+    </p>
+    <div class="collapsible">
+        <p>用全局代理</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hori693">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/nanchinew">nanchinew</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hori693">Dec 16 2021 10:07:36</a>
+    </p>
+    <div class="collapsible">
+        <p>支持</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hori7rn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhi-na-zhu">zhi-na-zhu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hori7rn">Dec 16 2021 10:08:11</a>
+    </p>
+    <div class="collapsible">
+        <p>为什么像薯条这样的大机场用的还是ss？</p>
+        <div class="comment" id="t1_horig6h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horig6h">Dec 16 2021 10:11:25</a>
+    </p>
+    <div class="collapsible">
+        <p>历史遗留问题，但是V2Ray和Trojan肯定是支持的，不然可以换一家了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horpun7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/H_0_H">H_0_H</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horpun7">Dec 16 2021 11:47:02</a>
+    </p>
+    <div class="collapsible">
+        <p>薯条是ss(r)吧。
+他家用户多，ss占用资源更少。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horibmo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/river_mama">river_mama</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horibmo">Dec 16 2021 10:09:39</a>
+    </p>
+    <div class="collapsible">
+        <p>支持冲浪随想👍</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horioli">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/asyncable">asyncable</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horioli">Dec 16 2021 10:14:41</a>
+    </p>
+    <div class="collapsible">
+        <p>不错，这里少有的长文。好奇你是怎么run的。</p>
+        <div class="comment" id="t1_horj40r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horj40r">Dec 16 2021 10:20:36</a>
+    </p>
+    <div class="collapsible">
+        <p>研究生</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horj002">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Detective-3855">Ok-Detective-3855</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horj002">Dec 16 2021 10:19:07</a>
+    </p>
+    <div class="collapsible">
+        <p>计老嗨</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horj0ln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horj0ln">Dec 16 2021 10:19:20</a>
+    </p>
+    <div class="collapsible">
+        <p>毒药良心个鸡巴，推荐一堆粉红爱支机场</p>
+        <div class="comment" id="t1_horj2ow">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horj2ow">Dec 16 2021 10:20:07</a>
+    </p>
+    <div class="collapsible">
+        <p>😥😥那你从什么地方找的机场</p>
+        <div class="comment" id="t1_horjea3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjea3">Dec 16 2021 10:24:28</a>
+    </p>
+    <div class="collapsible">
+        <p>视奸黑皮看着你，说了更遭殃</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hot9ovt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ericln">Ericln</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hot9ovt">Dec 16 2021 18:40:35</a>
+    </p>
+    <div class="collapsible">
+        <p>最下面没上推荐的有个叫维尼云的 也不知道哪位浪友开的 域名里有delta 开幕邢平语录差点没把我笑死</p>
+        <div class="comment" id="t1_ht9nu3u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ruca6666">Ruca6666</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/ht9nu3u">Jan 19 2022 02:56:40</a>
+    </p>
+    <div class="collapsible">
+        <p>维尼云性价比不高，v3的节点都无法解锁奈飞 。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hoy5ohy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/abcfghjkl1">abcfghjkl1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoy5ohy">Dec 17 2021 18:19:27</a>
+    </p>
+    <div class="collapsible">
+        <p>确实是的啊</p>
+        <div class="comment" id="t1_hoy5vva">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoy5vva">Dec 17 2021 18:20:44</a>
+    </p>
+    <div class="collapsible">
+        <p>是什么</p>
+        <div class="comment" id="t1_hoy61vn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/abcfghjkl1">abcfghjkl1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoy61vn">Dec 17 2021 18:21:47</a>
+    </p>
+    <div class="collapsible">
+        <p>你说的 “duyao推荐一堆粉红机场”，我也觉得。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horj9ba">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Confident_Garden671">Confident_Garden671</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horj9ba">Dec 16 2021 10:22:35</a>
+    </p>
+    <div class="collapsible">
+        <p>感谢分享i你<img alt="gif" src="emote|free_emotes_pack|heart_eyes"></p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horjdm0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KevinKack">KevinKack</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjdm0">Dec 16 2021 10:24:13</a>
+    </p>
+    <div class="collapsible">
+        <p>军民大联欢纪念日建议入典</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horjhta">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Busy-Picture-6681">Busy-Picture-6681</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjhta">Dec 16 2021 10:25:48</a>
+    </p>
+    <div class="collapsible">
+        <p>有代理全局的工具，ping也能代理</p>
+        <div class="comment" id="t1_horjkh4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjkh4">Dec 16 2021 10:26:47</a>
+    </p>
+    <div class="collapsible">
+        <p>SSTAP Proxifier tun2socks Netch都可以呢</p>
+        <div class="comment" id="t1_horjv4y">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Busy-Picture-6681">Busy-Picture-6681</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjv4y">Dec 16 2021 10:30:49</a>
+    </p>
+    <div class="collapsible">
+        <p>mac上我就用clash x pro</p>
+        <div class="comment" id="t1_horjx3w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjx3w">Dec 16 2021 10:31:35</a>
+    </p>
+    <div class="collapsible">
+        <p>clash比较特殊，用的是网关模式，相当于虚拟出一个网关，原理不太一样</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horjmzt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/_Catseye">_Catseye</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjmzt">Dec 16 2021 10:27:44</a>
+    </p>
+    <div class="collapsible">
+        <p>clash都出现在了反诈app宣传片上了，真的安全吗...</p>
+        <div class="comment" id="t1_horjqja">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjqja">Dec 16 2021 10:29:06</a>
+    </p>
+    <div class="collapsible">
+        <p>Clash是软件不是协议，何来安全一说</p>
+        <div class="comment" id="t1_hork677">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/_Catseye">_Catseye</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hork677">Dec 16 2021 10:35:01</a>
+    </p>
+    <div class="collapsible">
+        <p>不安全还被推荐是吧.</p>
+        <div class="comment" id="t1_horktki">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horktki">Dec 16 2021 10:43:57</a>
+    </p>
+    <div class="collapsible">
+        <p>软件只有开源和闭源，没有什么安全不安全的。安全性靠的是各种协议的伪装和加密，和Clash这个软件没有关系</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horl5eh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horl5eh">Dec 16 2021 10:48:29</a>
+    </p>
+    <div class="collapsible">
+        <p>这是两个东西，不是那种打包好的安装完软件一键连接VPN，跟软件没关，安不安全在于你选的服务商，机场。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horjubw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dkmfTheMaster">dkmfTheMaster</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horjubw">Dec 16 2021 10:30:31</a>
+    </p>
+    <div class="collapsible">
+        <p>我一直用的都是V2Ray+免费狗汉奸机场啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horkgxt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/golangolang">golangolang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horkgxt">Dec 16 2021 10:39:08</a>
+    </p>
+    <div class="collapsible">
+        <p>Windows端使用最广泛的的Clash for Windows是闭源软件, 在隐私方面总归是不如开源软件, 个人推荐开源的更轻量化的<a href="https://github.com/lzdnico/ClashWeb">ClashWeb</a>, 没有Clash for Windows那么漂亮的客户端界面, 但是也更轻量化, 已知有个使用缺陷是开启代理后Python的pip无法使用, 以前Clash for Windows也有这个问题, 后面改进修复了这个问题, 但是CLashWeb目前还有这个问题.</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horkxaq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chushengxjp">chushengxjp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horkxaq">Dec 16 2021 10:45:23</a>
+    </p>
+    <div class="collapsible">
+        <p>网上搜来的，给懒的搜的浪友看看。毒药测评黑历史：介绍了一家名叫yoyu的机场，说是安全不搜集用户隐私。一用户因为此机场主私自下架高速节点（买的是高级套餐，但是节点下架了！等于和普通用户一个待遇）在向机场主提出质疑的时候，被机场主把个人信息曝光。机场主追后借口解决问题，向他询问他的账号，后直接曝光在tg群内。曝光的信息包括：邮箱，账号，密码，身份证号，手机号，地区地址。用机场就是有这种风险，机场主在看着你，还很有可能转手就把这些信息卖了。该机场在毒药的机场排名榜里高居第四，该机场主是毒药 Telegram 群组管理员。毒药时候也承认是自己的朋友。且该机场仍在毒药的推荐当中。理由如下1.如此排名靠前（力推）的机场竟然是评测机构的亲密朋友，于是我不禁怀疑该评测排行的客观性（莫非肥水不流外人田？其他前几名也是朋友？）2.毒药在这件事发生后仍然在推荐，后来迫于舆论，在机场跑路后清除排名（是的，舆论原因。机场官网直接炸了。4.这是对于已经付费用户的不尊重，据我所知没有退款。）毒药的后来声明说朋友已经悔改并删除，好的，我相信毒药，所以往下看——事后，其他网友在毒药的 Telegram 提及此事，机场主 “Deleted Account”的回应（人在毒药的群，毒药看见机场主的回应了。毒药的态度是 把质疑机场的人直接踢了！！！没有任何警告！！</p>
+        <div class="comment" id="t1_horl49x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horl49x">Dec 16 2021 10:48:03</a>
+    </p>
+    <div class="collapsible">
+        <p>好吧 我编辑掉了<img alt="gif" src="emote|free_emotes_pack|scream"></p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horrpb3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kiru_shina_buta">kiru_shina_buta</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horrpb3">Dec 16 2021 12:07:20</a>
+    </p>
+    <div class="collapsible">
+        <p>别信毒药，YouTube有个粉蛆电玩科技，他一直推荐这个毒药</p>
+        <div class="comment" id="t1_hos4n4g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Bitter_Assistance689">Bitter_Assistance689</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos4n4g">Dec 16 2021 14:05:05</a>
+    </p>
+    <div class="collapsible">
+        <p>电玩科技死妈</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hosin46">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Shawn--Lee">Shawn--Lee</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hosin46">Dec 16 2021 15:45:21</a>
+    </p>
+    <div class="collapsible">
+        <p>电玩科技死一万次妈都不够。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotwu18">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/satoshiba3">satoshiba3</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotwu18">Dec 16 2021 21:11:35</a>
+    </p>
+    <div class="collapsible">
+        <p>电玩科技是粉曲？有什么事迹吗？他那硬核翻墙系列做得还是不错的。</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horl85x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chiwawachina">chiwawachina</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horl85x">Dec 16 2021 10:49:27</a>
+    </p>
+    <div class="collapsible">
+        <p>好活，资瓷</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horlr7p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Equal_Translator_574">Equal_Translator_574</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horlr7p">Dec 16 2021 10:56:21</a>
+    </p>
+    <div class="collapsible">
+        <p>支持</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hormd4k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiaolaba999">xiaolaba999</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hormd4k">Dec 16 2021 11:04:18</a>
+    </p>
+    <div class="collapsible">
+        <p>转贴还不贴地址</p>
+        <div class="comment" id="t1_hormunl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hormunl">Dec 16 2021 11:10:38</a>
+    </p>
+    <div class="collapsible">
+        <p>不中嘞 我转谁的贴了<img alt="gif" src="emote|free_emotes_pack|disapproval"></p>
+        <div class="comment" id="t1_horo5hl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xiaolaba999">xiaolaba999</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horo5hl">Dec 16 2021 11:26:45</a>
+    </p>
+    <div class="collapsible">
+        <p>我记得品葱有这样的贴</p>
+        <div class="comment" id="t1_horta6n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horta6n">Dec 16 2021 12:23:34</a>
+    </p>
+    <div class="collapsible">
+        <p>我都没用过品葱，辛辛苦苦写完的😡😡</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hormdlb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WhitePufferfish">WhitePufferfish</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hormdlb">Dec 16 2021 11:04:28</a>
+    </p>
+    <div class="collapsible">
+        <p>说起来TG的爱国机场推荐很久没更新了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hormo3r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Expeditiousnuts">Expeditiousnuts</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hormo3r">Dec 16 2021 11:08:13</a>
+    </p>
+    <div class="collapsible">
+        <p>草这也太硬了，我先支一手</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horn0v7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/inksaploi">inksaploi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horn0v7">Dec 16 2021 11:12:56</a>
+    </p>
+    <div class="collapsible">
+        <p>操你妈计网白学了。你去阿美读什么方向</p>
+        <div class="comment" id="t1_horn7ux">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horn7ux">Dec 16 2021 11:15:24</a>
+    </p>
+    <div class="collapsible">
+        <p>AI</p>
+        <div class="comment" id="t1_horp1bu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/inksaploi">inksaploi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horp1bu">Dec 16 2021 11:37:19</a>
+    </p>
+    <div class="collapsible">
+        <p>大佬我可以给你嗦牛子吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horpqiu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ccp-killer">ccp-killer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horpqiu">Dec 16 2021 11:45:42</a>
+    </p>
+    <div class="collapsible">
+        <p>好家伙，蝙蝠人？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hp4ocg9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Eric_Li_2064">Eric_Li_2064</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hp4ocg9">Dec 19 2021 04:00:58</a>
+    </p>
+    <div class="collapsible">
+        <p>把我装行李箱吧求你了</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horn5yq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horn5yq">Dec 16 2021 11:14:45</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hornr5n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Takiyagenji1988">Takiyagenji1988</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hornr5n">Dec 16 2021 11:21:58</a>
+    </p>
+    <div class="collapsible">
+        <p>谢谢OP，有什么相关的书籍或者视频教程推荐吗，我对网络这块很感兴趣。</p>
+        <div class="comment" id="t1_hornyn4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hornyn4">Dec 16 2021 11:24:28</a>
+    </p>
+    <div class="collapsible">
+        <p>教材有计算机网络自顶向下和计算机网络系统方法，如果只是和翻墙有关的，可以去油管上找</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotle87">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/stockings_kat">stockings_kat</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotle87">Dec 16 2021 19:57:11</a>
+    </p>
+    <div class="collapsible">
+        <p>b站中科大郑烇老师，用自顶向下这本书讲的，很好</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hornt5m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mediocre-Bobcat-9466">Mediocre-Bobcat-9466</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hornt5m">Dec 16 2021 11:22:37</a>
+    </p>
+    <div class="collapsible">
+        <p>赞</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hornxxo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Same_Dream9179">Same_Dream9179</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hornxxo">Dec 16 2021 11:24:14</a>
+    </p>
+    <div class="collapsible">
+        <p>op你好，请问一下翻墙论坛提供的免费公益节点安全性可靠吗，还有youtube上的某些频道免费分享的节点能不能安全使用？</p>
+        <div class="comment" id="t1_horph25">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horph25">Dec 16 2021 11:42:37</a>
+    </p>
+    <div class="collapsible">
+        <p>优于VPN，劣于VPS和付费机场</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horo94h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bot16380247">bot16380247</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horo94h">Dec 16 2021 11:27:57</a>
+    </p>
+    <div class="collapsible">
+        <p>写的挺好的，去年我就和朋友讨论的时候就指出ss没有任何特征就是特征了
+然后今年我的ss线路已经全部暴毙叻</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horpc30">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/li2k118">li2k118</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horpc30">Dec 16 2021 11:40:58</a>
+    </p>
+    <div class="collapsible">
+        <p>技术老嗨牛逼！请多多发帖指导我们</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horpch8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/arkcompiler">arkcompiler</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horpch8">Dec 16 2021 11:41:06</a>
+    </p>
+    <div class="collapsible">
+        <p>本来俺想把俺之前的内容粘贴一下，好像原post被删除了，俺就直接打字补充几点。</p>
+<p>首先，协议除了安全性以外，还要表现的像其他普通协议一样，要不然人家看你长时间天天怪模怪样也会有可能封掉。俺用协议倾向于使用Trojan，主要是因为它的思路就是伪装成https流量，这不仅会减少被封杀的可能性，节省资源也是附加的作用。像vmess这些仅靠高强度加密是莽夫行为。</p>
+<p>其次，俺一直都用免费节点，隔几天就换新节点，不是因为俺不觉得一分钱一分货，是因为付费的信息很有可能会被支国晶晶标记，增加自己的危险。免费的节点大多数情况下是安全的，如果你的流量大部分是加密的（比如https、DoH等），节点作为中间人很难进行截获流量并解密获取内容，而且如果ccp真的想去标记，不如直接搭建爱国机场，买过的人全部进行监控。</p>
+<p>最后，不管咋样，早日肉身翻墙，比赛博翻墙更安全。祝各位能在没有黑暗的地方见面。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horpsmv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/alaska_aboriginal">alaska_aboriginal</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horpsmv">Dec 16 2021 11:46:23</a>
+    </p>
+    <div class="collapsible">
+        <p>有些东西点到为止，想学的谷歌有教学，不过大部分作者特意写成英文了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horptsm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ccp-killer">ccp-killer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horptsm">Dec 16 2021 11:46:45</a>
+    </p>
+    <div class="collapsible">
+        <p>我一直用的轮友的自由门</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horpych">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Real_Noble6">Real_Noble6</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horpych">Dec 16 2021 11:48:13</a>
+    </p>
+    <div class="collapsible">
+        <p>好极，但是穷蛆只能颅内award一下了
+以及能否转载到墙内呢？</p>
+        <div class="comment" id="t1_horqoyu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horqoyu">Dec 16 2021 11:56:30</a>
+    </p>
+    <div class="collapsible">
+        <p>当然可以</p>
+<p>好奇一下，墙内哪个网站不删这种内容？</p>
+        <div class="comment" id="t1_horqyef">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Real_Noble6">Real_Noble6</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horqyef">Dec 16 2021 11:59:25</a>
+    </p>
+    <div class="collapsible">
+        <p>只是打算虚拟号注册知乎冲个塔
+能活一分钟算一分钟吧</p>
+        <div class="comment" id="t1_hos0v8n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Excellent_World_1202">Excellent_World_1202</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos0v8n">Dec 16 2021 13:34:04</a>
+    </p>
+    <div class="collapsible">
+        <p>知乎不搞支那号无法发言的吧</p>
+        <div class="comment" id="t1_hotgvky">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/COCOFLESA_">COCOFLESA_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotgvky">Dec 16 2021 19:27:35</a>
+    </p>
+    <div class="collapsible">
+        <p>可以，googlevoice之前亲自冲浪</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horq8mi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/H_0_H">H_0_H</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horq8mi">Dec 16 2021 11:51:23</a>
+    </p>
+    <div class="collapsible">
+        <p>感觉现在每个机场都说自己有iplc了…有什么办法辨别？</p>
+        <div class="comment" id="t1_horqtcg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horqtcg">Dec 16 2021 11:57:52</a>
+    </p>
+    <div class="collapsible">
+        <p>没办法，只能看实测了，或者看其他人评价，iplc水很深</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horqhym">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horqhym">Dec 16 2021 11:54:19</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horqq5w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WinnieThePool8">WinnieThePool8</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horqq5w">Dec 16 2021 11:56:52</a>
+    </p>
+    <div class="collapsible">
+        <p>这学期刚学完机网，感觉能看懂大部分。但是实操方面怎么继续学习？有啥推荐的教程/博主吗</p>
+        <div class="comment" id="t1_horr01k">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horr01k">Dec 16 2021 11:59:55</a>
+    </p>
+    <div class="collapsible">
+        <p>自己配一个VPS就是最好的实操🤣</p>
+<p>教程可以去油管找，编程随想也发过不少相关的内容</p>
+        <div class="comment" id="t1_horr7tz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WinnieThePool8">WinnieThePool8</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horr7tz">Dec 16 2021 12:02:12</a>
+    </p>
+    <div class="collapsible">
+        <p>谢谢，我们终将在没有黑暗的地方再见</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horscpk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/realkzk">realkzk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horscpk">Dec 16 2021 12:14:12</a>
+    </p>
+    <div class="collapsible">
+        <p>v2ray文档刷一遍</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotcqok">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotcqok">Dec 16 2021 19:00:22</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horr1is">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Suspicious-Talk1160">Suspicious-Talk1160</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horr1is">Dec 16 2021 12:00:21</a>
+    </p>
+    <div class="collapsible">
+        <p>保存了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horr8fn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/David_Crane114">David_Crane114</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horr8fn">Dec 16 2021 12:02:24</a>
+    </p>
+    <div class="collapsible">
+        <p>迷雾通能用吗</p>
+        <div class="comment" id="t1_horrp23">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horrp23">Dec 16 2021 12:07:16</a>
+    </p>
+    <div class="collapsible">
+        <p>没听说过 我搜一下</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horrqmz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/user-20211127">user-20211127</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horrqmz">Dec 16 2021 12:07:45</a>
+    </p>
+    <div class="collapsible">
+        <p>可以</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horrroo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horrroo">Dec 16 2021 12:08:03</a>
+    </p>
+    <div class="collapsible">
+        <p>VPN都别用</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hory73a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/reddit-Umaru_Chan">reddit-Umaru_Chan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hory73a">Dec 16 2021 13:10:42</a>
+    </p>
+    <div class="collapsible">
+        <p>迷雾通要不能用那就没有能用的了</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horrtvv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kiru_shina_buta">kiru_shina_buta</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horrtvv">Dec 16 2021 12:08:42</a>
+    </p>
+    <div class="collapsible">
+        <p>楼主说的很专业很全面了，我八年翻老嗨文中还有些对我有帮助的内容，很感谢</p>
+        <div class="comment" id="t1_horrxsy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horrxsy">Dec 16 2021 12:09:50</a>
+    </p>
+    <div class="collapsible">
+        <p>🥰🥰</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horsh2w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Appropriate_Way876">Appropriate_Way876</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horsh2w">Dec 16 2021 12:15:28</a>
+    </p>
+    <div class="collapsible">
+        <p>这么说所有的vpn都是晶哥后花园？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horsj2u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/user-20211127">user-20211127</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horsj2u">Dec 16 2021 12:16:02</a>
+    </p>
+    <div class="collapsible">
+        <p>VPN不是不安全,wireguard,openvpn等协议安全性都很好的.而且层级低可以代理所有流量是很方便的.只是简中环境下钓鱼的太多,流量特征明显不适用于翻墙.如果你本身就在墙外,网络环境不存在像gfw一样严重的网络封锁的话.完全可以自建或用可信的如Mozilla VPN来保护隐私.</p>
+        <div class="comment" id="t1_horsorg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horsorg">Dec 16 2021 12:17:40</a>
+    </p>
+    <div class="collapsible">
+        <p>确实</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horz96p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/77wwnn">77wwnn</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horz96p">Dec 16 2021 13:20:10</a>
+    </p>
+    <div class="collapsible">
+        <p>请问shadowfly安全吗，对这方面完全不懂，只会用vpn的我哭了😭</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horslbx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/realkzk">realkzk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horslbx">Dec 16 2021 12:16:40</a>
+    </p>
+    <div class="collapsible">
+        <p>问op一个无关翻墙问题，在美一年学费加生活费得多少？</p>
+        <div class="comment" id="t1_horsqpc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horsqpc">Dec 16 2021 12:18:13</a>
+    </p>
+    <div class="collapsible">
+        <p>还不知道呢</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hort014">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hort014">Dec 16 2021 12:20:46</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horvcuq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Glad_Rough">Glad_Rough</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horvcuq">Dec 16 2021 12:44:04</a>
+    </p>
+    <div class="collapsible">
+        <p>我要狠狠地支你，壹速雲怎麼樣</p>
+        <div class="comment" id="t1_horw0oo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horw0oo">Dec 16 2021 12:50:23</a>
+    </p>
+    <div class="collapsible">
+        <p>能抗过64和10月1的都能用</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_horxbbt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OpenStorm5">OpenStorm5</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horxbbt">Dec 16 2021 13:02:35</a>
+    </p>
+    <div class="collapsible">
+        <p>字节是吧，抓</p>
+        <div class="comment" id="t1_horxej5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horxej5">Dec 16 2021 13:03:23</a>
+    </p>
+    <div class="collapsible">
+        <p>晶饶</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hory4av">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Accomplished_Tie_333">Accomplished_Tie_333</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hory4av">Dec 16 2021 13:09:59</a>
+    </p>
+    <div class="collapsible">
+        <p>虽然一直在用机场，不过还是要为这种古老的分享精神点赞，祝老哥run阿美一切顺利。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hory8bf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pickle_Z">Pickle_Z</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hory8bf">Dec 16 2021 13:11:00</a>
+    </p>
+    <div class="collapsible">
+        <p><img alt="gif" src="emote|free_emotes_pack|give_upvote"></p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horzdzq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HistoryCommercial249">HistoryCommercial249</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horzdzq">Dec 16 2021 13:21:20</a>
+    </p>
+    <div class="collapsible">
+        <p>支</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horzr11">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/FayeValente">FayeValente</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horzr11">Dec 16 2021 13:24:30</a>
+    </p>
+    <div class="collapsible">
+        <p>什么冲浪随想，收藏了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_horzysi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/radeonRTX">radeonRTX</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/horzysi">Dec 16 2021 13:26:24</a>
+    </p>
+    <div class="collapsible">
+        <p>我用9900KS搭了个软路由，爽到飞起</p>
+        <div class="comment" id="t1_houxnev">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/shinaman_">shinaman_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/houxnev">Dec 17 2021 01:34:56</a>
+    </p>
+    <div class="collapsible">
+        <p>你是真的有钱啊。。</p>
+        <div class="comment" id="t1_houy2y4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/radeonRTX">radeonRTX</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/houy2y4">Dec 17 2021 01:38:03</a>
+    </p>
+    <div class="collapsible">
+        <p>去年升级10900K就给换下来装了套软路由。今年升级12900K之后11900K和10900K也闲置了，还不知道弄点啥呢</p>
+        <div class="comment" id="t1_hovvknu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/shinaman_">shinaman_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hovvknu">Dec 17 2021 06:08:56</a>
+    </p>
+    <div class="collapsible">
+        <p>走咸鱼吗？你先挂出来 链接发我</p>
+        <div class="comment" id="t1_howf9pz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/radeonRTX">radeonRTX</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howf9pz">Dec 17 2021 10:06:08</a>
+    </p>
+    <div class="collapsible">
+        <p>晶哥不要啊</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hos0bv1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DirectAd1101">DirectAd1101</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos0bv1">Dec 16 2021 13:29:31</a>
+    </p>
+    <div class="collapsible">
+        <p>替我身上的器官谢谢你</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos0iw4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Excellent_World_1202">Excellent_World_1202</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos0iw4">Dec 16 2021 13:31:10</a>
+    </p>
+    <div class="collapsible">
+        <p>支持👍</p>
+<p><img alt="gif" src="giphy|3Gm15eZOsNk0tptIuG"></p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos0yhx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Excellent_World_1202">Excellent_World_1202</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos0yhx">Dec 16 2021 13:34:50</a>
+    </p>
+    <div class="collapsible">
+        <p>视奸粉红：原来如此 马上偷回去装逼</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos17rj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Craig_lee">Craig_lee</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos17rj">Dec 16 2021 13:37:02</a>
+    </p>
+    <div class="collapsible">
+        <p>纯小白问下Ghelper安全吗 不想跟老干部合体</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos3ety">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/comp1_asswond_roUs">comp1_asswond_roUs</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos3ety">Dec 16 2021 13:55:10</a>
+    </p>
+    <div class="collapsible">
+        <p>轮友的vpn还是很安全的，还有如果官网被墙的vpn肯定不是钓鱼的。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos5lua">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/IndecaDe_power">IndecaDe_power</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos5lua">Dec 16 2021 14:12:38</a>
+    </p>
+    <div class="collapsible">
+        <p>Ios只有ss，我是不是要换个安卓了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos6aim">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Nearby_Condition_502">Nearby_Condition_502</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos6aim">Dec 16 2021 14:17:54</a>
+    </p>
+    <div class="collapsible">
+        <p>做得好😇👍🏻 chonglang credit +30000000</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos75y1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dzg42">dzg42</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos75y1">Dec 16 2021 14:24:28</a>
+    </p>
+    <div class="collapsible">
+        <p>什么？随想回来了？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hos899j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Civil_Equivalent9668">Civil_Equivalent9668</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hos899j">Dec 16 2021 14:32:46</a>
+    </p>
+    <div class="collapsible">
+        <p>问一下，just my socks 好用嗎，據説無審計規則，不知道網速咋樣，目前有比較穩定的機場，主要是想尝个鲜</p>
+        <div class="comment" id="t1_hosa2l1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hosa2l1">Dec 16 2021 14:46:04</a>
+    </p>
+    <div class="collapsible">
+        <p>我也不知道...机场太多了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_houam6z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ashenone0813">Ashenone0813</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/houam6z">Dec 16 2021 22:44:08</a>
+    </p>
+    <div class="collapsible">
+        <p>在用la1000的，速度就那样，不过稳定性挺好. 我一直想试试佩奇或者tag的.</p>
+        <div class="comment" id="t1_hp119f9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Civil_Equivalent9668">Civil_Equivalent9668</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hp119f9">Dec 18 2021 08:34:16</a>
+    </p>
+    <div class="collapsible">
+        <p>好的，謝謝！</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hose88o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/RebornAtANewWorld">RebornAtANewWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hose88o">Dec 16 2021 15:15:25</a>
+    </p>
+    <div class="collapsible">
+        <p>请问完全理解这些东西的原理需要什么课程或者教材？</p>
+        <div class="comment" id="t1_hoskadf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoskadf">Dec 16 2021 15:56:16</a>
+    </p>
+    <div class="collapsible">
+        <p>看教材就够了，计算机网络自顶向下或者计算机网络系统方法，不过这些原理都很无聊，单纯为了翻墙其实没必要看</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hosf9bg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WonderfulEconomist39">WonderfulEconomist39</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hosf9bg">Dec 16 2021 15:22:33</a>
+    </p>
+    <div class="collapsible">
+        <p>家人能不能直接出个操作贴？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hoshmbv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/XWN_BS">XWN_BS</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoshmbv">Dec 16 2021 15:38:36</a>
+    </p>
+    <div class="collapsible">
+        <p>编程随想是你吗</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hosj8br">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hosj8br">Dec 16 2021 15:49:15</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hosq5h4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Plus-Can5629">Plus-Can5629</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hosq5h4">Dec 16 2021 16:34:51</a>
+    </p>
+    <div class="collapsible">
+        <p>本人文科穷蛆不太懂这些技术性问题但也看了个大概，请问ios系统如何做才能保证安全呢？日版手机，美区id没插卡一直用的Wi-Fi翻墙，有什么需要注意的地方吗？现在用的是小火箭ssr，安全性是不如v2ray吗？可以私信告知一下在哪里能买到正规不被黑皮钓鱼的机场吗？万分感激</p>
+        <div class="comment" id="t1_hossd8l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hossd8l">Dec 16 2021 16:49:05</a>
+    </p>
+    <div class="collapsible">
+        <p>已经很安全了🧟‍♂️另外你既然都用了小火箭ssr，机场应该也提供V2Ray连接吧，直接小火箭V2Ray就好了。如果机场不提供V2Ray，也可以先用着SSR，SSR换V2Ray感觉有点吹毛求疵了，等到期了再换<img alt="gif" src="emote|free_emotes_pack|give_upvote"></p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hot4lo2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/TheDeltaW0lf">TheDeltaW0lf</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hot4lo2">Dec 16 2021 18:07:19</a>
+    </p>
+    <div class="collapsible">
+        <p>what</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotaufc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotaufc">Dec 16 2021 18:48:01</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hothhu6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/chonglang_guanjun">chonglang_guanjun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hothhu6">Dec 16 2021 19:31:39</a>
+    </p>
+    <div class="collapsible">
+        <p>怎麼看節點用的是什麼協議。看到clash在節點下面寫的shadowsocks 感覺器官要消失了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotjiap">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Environmental_Try_48">Environmental_Try_48</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotjiap">Dec 16 2021 19:44:50</a>
+    </p>
+    <div class="collapsible">
+        <p>感谢科普，之前一直没搞懂使用的vpn和vpn协议的区别</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotls1i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aggravating-Pie-1550">Aggravating-Pie-1550</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotls1i">Dec 16 2021 19:59:42</a>
+    </p>
+    <div class="collapsible">
+        <p>写得不错 支持一个</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hoto4kr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/im_lefty_bot">im_lefty_bot</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoto4kr">Dec 16 2021 20:14:55</a>
+    </p>
+    <div class="collapsible">
+        <p>翻墙知识及教程</p>
+<ol>
+<li>肉翻</li>
+</ol>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hotwlu7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/satoshiba3">satoshiba3</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hotwlu7">Dec 16 2021 21:10:05</a>
+    </p>
+    <div class="collapsible">
+        <p>请教技术老嗨一个问题，有没有可能利用区块链做一个去中心化的翻墙机场框架呢？大概就是把运营一个vps节点供别人使用当成挖矿，和filecoin的模型类似。如果能让全世界都觉得推墙是件有利可图的事情就好了。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hou7b21">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/PriorMud-7767">PriorMud-7767</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hou7b21">Dec 16 2021 22:21:04</a>
+    </p>
+    <div class="collapsible">
+        <p>看不懂看不懂</p>
+        <div class="comment" id="t1_how3bno">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Automatic-Maybe1245">Automatic-Maybe1245</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/how3bno">Dec 17 2021 07:33:13</a>
+    </p>
+    <div class="collapsible">
+        <p>俺也是</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_houdkmi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WRRRRRRY69">WRRRRRRY69</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/houdkmi">Dec 16 2021 23:05:01</a>
+    </p>
+    <div class="collapsible">
+        <p>🐴</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hour6pm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DaiHaoRen_258">DaiHaoRen_258</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hour6pm">Dec 17 2021 00:46:33</a>
+    </p>
+    <div class="collapsible">
+        <p>好！感谢分享！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hous8i9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kamidazo">kamidazo</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hous8i9">Dec 17 2021 00:54:20</a>
+    </p>
+    <div class="collapsible">
+        <p>大佬，我用的glados的机场，每次用的时候关了GPS后Google会显示我的位置在广东，这有没有问题啊。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_houv6mh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/demello14">demello14</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/houv6mh">Dec 17 2021 01:16:42</a>
+    </p>
+    <div class="collapsible">
+        <p>问op一个问题，直接用VPN加红迪app的话有没有比VPN加谷歌浏览器安全？还有op能不能讲讲Tor浏览器？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_houx1us">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Daisuke_Nanba">Daisuke_Nanba</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/houx1us">Dec 17 2021 01:30:41</a>
+    </p>
+    <div class="collapsible">
+        <p>感谢OP，这篇文章解决了我很多疑惑，尤其是第九部分。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hovqlqu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Skylinezz52">Skylinezz52</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hovqlqu">Dec 17 2021 05:20:11</a>
+    </p>
+    <div class="collapsible">
+        <p>op只讲了SS不安全，能否讲讲SSR也一样不安全吗，还有翻墙使用p2p下载似乎总被机场明令禁止，能否讲讲如何连入国际互联网进行p2p下载</p>
+        <div class="comment" id="t1_how7s34">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SwiftVPN">SwiftVPN</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/how7s34">Dec 17 2021 08:28:02</a>
+    </p>
+    <div class="collapsible">
+        <p>现在两个都有DNS缺陷</p>
+        <div class="comment" id="t1_howa7pj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Skylinezz52">Skylinezz52</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howa7pj">Dec 17 2021 08:59:49</a>
+    </p>
+    <div class="collapsible">
+        <p>意思是ssr和ss会被同样的方式识别吗，懂了。那现在岂不是只有v2ray和trojan没有缺陷，但他俩网速没ssr快，哭了</p>
+        <div class="comment" id="t1_howagwj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SwiftVPN">SwiftVPN</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howagwj">Dec 17 2021 09:03:18</a>
+    </p>
+    <div class="collapsible">
+        <p>这个缺陷不是能被识别的缺陷，是对DNS污染无能为力。</p>
+        <div class="comment" id="t1_howb6qu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Skylinezz52">Skylinezz52</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howb6qu">Dec 17 2021 09:12:37</a>
+    </p>
+    <div class="collapsible">
+        <p>哦哦就是gfw想封还是能主动封掉ssr呗</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hovskwn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Azusa434">Azusa434</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hovskwn">Dec 17 2021 05:39:02</a>
+    </p>
+    <div class="collapsible">
+        <p>为什么我用的机场发的通知说，因为V2ray的重大漏洞问题，暂时下架了全部V2ray节点？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_how7kvz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SwiftVPN">SwiftVPN</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/how7kvz">Dec 17 2021 08:25:24</a>
+    </p>
+    <div class="collapsible">
+        <p>SS还有一个缺点就不转发DNS解释包。即DNS解释是不走代理的。前段时间他们开会就是搞DNS污染，SS就不能用了。v2ray则不存在这个问题</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_how90gk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Top-Mud-2368">Top-Mud-2368</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/how90gk">Dec 17 2021 08:43:58</a>
+    </p>
+    <div class="collapsible">
+        <p>“机场+V2Ray” 有什么推荐的么，本人劳累狗没那没多时间..</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_how9r14">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jamaicayamazaki">jamaicayamazaki</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/how9r14">Dec 17 2021 08:53:30</a>
+    </p>
+    <div class="collapsible">
+        <p>我在用ExpressVPN翻牆，請問大家會有更好用的推薦嗎？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_howet4s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Top_Garlic5250">Top_Garlic5250</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howet4s">Dec 17 2021 10:00:04</a>
+    </p>
+    <div class="collapsible">
+        <p>毒药的推荐可以说全是粉红机场，OP有没有好的评测推荐啊～我真找不到了……</p>
+        <div class="comment" id="t1_hoy6fqf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/abcfghjkl1">abcfghjkl1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoy6fqf">Dec 17 2021 18:24:14</a>
+    </p>
+    <div class="collapsible">
+        <p>+1同求</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_howf80j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KuzuDud">KuzuDud</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howf80j">Dec 17 2021 10:05:32</a>
+    </p>
+    <div class="collapsible">
+        <p>請問毒藥是指一個人？軟體？還是網站之類的呢？</p>
+        <div class="comment" id="t1_howfg71">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howfg71">Dec 17 2021 10:08:31</a>
+    </p>
+    <div class="collapsible">
+        <p>评测机场的网站 大家都说不靠谱 我就删掉了</p>
+        <div class="comment" id="t1_howfjce">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KuzuDud">KuzuDud</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howfjce">Dec 17 2021 10:09:40</a>
+    </p>
+    <div class="collapsible">
+        <p>請問評測機場是指真正的機場嗎？還是指評測VPN的網站？
+不好意思，比較不懂你們的用語</p>
+        <div class="comment" id="t1_howfsaf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Aromatic-Shoulder871">Aromatic-Shoulder871</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howfsaf">Dec 17 2021 10:12:52</a>
+    </p>
+    <div class="collapsible">
+        <p>因为shadowsocks(ss)的图标是一个小飞机，所以以前把卖ss线路的网站叫做机场，这个说法就这样传承下来了，即使现在很多机场不再提供ss。机场只卖线路，不卖VPN。毒药就是一个评测各种机场的网站。</p>
+        <div class="comment" id="t1_howfvti">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/KuzuDud">KuzuDud</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howfvti">Dec 17 2021 10:14:11</a>
+    </p>
+    <div class="collapsible">
+        <p><img alt="gif" src="emote|free_emotes_pack|give_upvote">了解了，謝謝<img alt="gif" src="emote|free_emotes_pack|give_upvote"></p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_howjqox">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/haha2020">haha2020</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/howjqox">Dec 17 2021 11:01:57</a>
+    </p>
+    <div class="collapsible">
+        <p>还是自己搭吧，粉红机场真的太多了，基本都是，有谁知道非粉红机场的，报个我开开眼界</p>
+        <div class="comment" id="t1_hoy7efa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/COCOFLESA_">COCOFLESA_</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoy7efa">Dec 17 2021 18:30:57</a>
+    </p>
+    <div class="collapsible">
+        <p>https://kan.gar.ooo/
+第一个是公益节点，台湾的还可以看奈飞，看政治立场直接打开它的更新日志或者电报群。
+https://delta.winnie.cloud/ 维尼云 这个不用多说了吧</p>
+<p>https://naiko.cloud/user 审计只有百度定位，垃圾邮件,bt下载，轻量包bgp中转和iepl的所有节点支持流媒体解锁，而且bgp中转那个我用netch连接gta5老美战局也很流畅，支那人开挂的遇见很少了。
+第三个日用，但要是红迪评论或者上大纪元和自由亚洲我还是用第一个</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hoy1ho3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/colinzha">colinzha</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoy1ho3">Dec 17 2021 17:52:58</a>
+    </p>
+    <div class="collapsible">
+        <p>Astrill 安全吗？</p>
+        <div class="comment" id="t1_hp12mzi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ashenone0813">Ashenone0813</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hp12mzi">Dec 18 2021 08:53:37</a>
+    </p>
+    <div class="collapsible">
+        <p>上海超多外国人用.应该还行</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hoz4sn7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ReinMayer">ReinMayer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoz4sn7">Dec 17 2021 22:12:57</a>
+    </p>
+    <div class="collapsible">
+        <p>妈的我早点看到这贴就好了，前几天刚买的quest2用clash共享了代理结果更新一直卡在0%，后来才发现要开udp转发才下得动，害我弄了一下午。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hoz6eab">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/ReinMayer">ReinMayer</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hoz6eab">Dec 17 2021 22:24:06</a>
+    </p>
+    <div class="collapsible">
+        <p>Shadowsocks.com
+这个机场我用了几年了，有没有翻老嗨评价下这家。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hp0wu7a">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Disastrous-Ad-714">Disastrous-Ad-714</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hp0wu7a">Dec 18 2021 07:33:57</a>
+    </p>
+    <div class="collapsible">
+        <p>非计算机专业看的云里雾里。只想问问，那个号称最安全的express VPN可用么？不便宜，用了好久了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hp0yqqk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Disastrous-Ad-714">Disastrous-Ad-714</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hp0yqqk">Dec 18 2021 07:59:47</a>
+    </p>
+    <div class="collapsible">
+        <p>纯小白用大白话来总结一下，方便后人看。说错了楼主指正。软件就是安装在电脑和手机上的那个软件，看样子楼主推荐的是小火箭图标的shadowrocket，机场就是卖线路的网站，线路就是一个链接，载入小火箭图标就能翻墙的那个东西。所以最安全做法是用shadowrocket，再找个靠谱机场买个线路？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hpmya9f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hpmya9f">Dec 23 2021 02:31:58</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hpmz0vz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hpmz0vz">Dec 23 2021 02:37:59</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hpn4cd1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/undefined2077">undefined2077</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hpn4cd1">Dec 23 2021 03:21:25</a>
+    </p>
+    <div class="collapsible">
+        <p>∧,,　 
+　　　　ヾ ｀. ､<code>フ
+　　　(,｀'´ヽ､､ﾂﾞ
+　 (ヽｖ'</code>''ﾞつ
+　　,ゝ　 ⌒`ｙ'''´
+　 （ (´＾ヽこつ
+　　 ) )
+　　(ノ​</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hpn4n1n">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/undefined2077">undefined2077</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hpn4n1n">Dec 23 2021 03:23:55</a>
+    </p>
+    <div class="collapsible">
+        <p>∧,,　                                                                       <br>
+　　　　ヾ ｀. ､<code>フ                                                                                                                                                     
+　　　(,｀'´ヽ､､ﾂﾞ                                                                                                                                 
+　 (ヽｖ'</code>''ﾞつ                                                                                                                               <br>
+　　,ゝ　 ⌒`ｙ'''´                                                                                                                               <br>
+　 （ (´＾ヽこつ                                                                                                                               <br>
+　　 ) )                                                                                                                                <br>
+　　(ノ​</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hpn58yz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/undefined2077">undefined2077</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hpn58yz">Dec 23 2021 03:29:06</a>
+    </p>
+    <div class="collapsible">
+        <pre><code>               ∧,,                                                                                                     
+            ヾ ｀. ､`フ                                                                                                    
+        (,｀'´ヽ､､ﾂﾞ                                                                                                    
+ (ヽｖ'            `''ﾞつ                                                                                                    
+    ,ゝ     ⌒`ｙ'''´                                                                                                    
+ （ (´＾ヽこつ                                                                                                    
+     ) )
+</code></pre>
+<p>(ノ​</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hq14fps">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/agqn-Zhengguocheng">agqn-Zhengguocheng</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hq14fps">Dec 26 2021 15:09:10</a>
+    </p>
+    <div class="collapsible">
+        <p>ios有没有可靠的推荐下啊。手机鼠鼠</p>
+        <div class="comment" id="t1_hq7gto6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Evangeline-2021">Evangeline-2021</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hq7gto6">Dec 27 2021 23:15:27</a>
+    </p>
+    <div class="collapsible">
+        <p>我之前用一个免费的叫better net，不过会不会被抓就不知道了，</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hufrjhm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Antique_Ad5679">Antique_Ad5679</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hufrjhm">Jan 27 2022 13:47:12</a>
+    </p>
+    <div class="collapsible">
+        <p>翻老嗨 推荐一下机场 我用的是clash
+主要Xbox玩apex 看油管和奈飞</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hymp7v1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ziyv">Ziyv</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhnfcx/_/hymp7v1">Feb 27 2022 10:35:14</a>
+    </p>
+    <div class="collapsible">
+        <p>感谢科普 但是很好奇ss v2ray不够安全为什么clash就安全一些呢？明明ss和v2ray的节点只是简单转了clash而已</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

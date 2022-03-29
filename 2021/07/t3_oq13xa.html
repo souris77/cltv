@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>还能不能玩了？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_oq13xa">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/bnuygfc5577">bnuygfc5577</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oq13xa">Jul 23 2021 12:12:27</a>
+    </p>
+    <strong>还能不能玩了？</strong>
+    <p><a href="https://i.redd.it/ltov2vopeyc71.jpg">https://i.redd.it/ltov2vopeyc71.jpg</a></p>
+</div>
+<div class="comment" id="t1_h68ntut">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Some-Commercial-4387">Some-Commercial-4387</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oq13xa/_/h68ntut">Jul 23 2021 12:16:24</a>
+    </p>
+    <div class="collapsible">
+        <p>妈的，我这边也是，真的是死妈，我都不想用红迪了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h697zra">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Anybody-Few">Anybody-Few</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/oq13xa/_/h697zra">Jul 23 2021 15:03:18</a>
+    </p>
+    <div class="collapsible">
+        <p>我过了半天就好了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

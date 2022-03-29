@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>简单支持一下</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rslnta">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/AngelNight1012">AngelNight1012</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rslnta">Dec 31 2021 04:44:31</a>
+    </p>
+    <strong>简单支持一下</strong>
+    <p><a href="https://i.redd.it/6arzhtek5t881.jpg">https://i.redd.it/6arzhtek5t881.jpg</a></p>
+</div>
+<div class="comment" id="t1_hqn80cw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Evangeline-2021">Evangeline-2021</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rslnta/_/hqn80cw">Dec 31 2021 04:50:12</a>
+    </p>
+    <div class="collapsible">
+        <p>这个游戏好，很有paper please的味道，我很喜欢paper please</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqnc7wo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fislinter">fislinter</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rslnta/_/hqnc7wo">Dec 31 2021 05:28:12</a>
+    </p>
+    <div class="collapsible">
+        <p>冲浪手势2.0了？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqnx509">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/auspiciousness233">auspiciousness233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rslnta/_/hqnx509">Dec 31 2021 09:29:08</a>
+    </p>
+    <div class="collapsible">
+        <p>手势都摆不明白，引流狗滚</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hqo8186">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DISCE729">DISCE729</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rslnta/_/hqo8186">Dec 31 2021 11:54:54</a>
+    </p>
+    <div class="collapsible">
+        <p>繁体字</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

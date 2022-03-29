@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>李彦宏这人行</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_klsfzm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/fangbaohui">fangbaohui</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/klsfzm">Dec 28 2020 15:25:33</a>
+    </p>
+    <strong>李彦宏这人行</strong>
+    <p><a href="https://i.redd.it/5nhr3ogh4y761.jpg">https://i.redd.it/5nhr3ogh4y761.jpg</a></p>
+</div>
+<div class="comment" id="t1_ghap1cr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/YueNanJiZhe">YueNanJiZhe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/klsfzm/_/ghap1cr">Dec 28 2020 15:57:14</a>
+    </p>
+    <div class="collapsible">
+        <p>丁磊和李彦宏那个能处？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

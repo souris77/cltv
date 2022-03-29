@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>这么厉害啊</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p8rva9">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Artorious233">Artorious233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p8rva9">Aug 21 2021 13:54:53</a>
+    </p>
+    <strong>这么厉害啊</strong>
+    <p><p>&#x200B;</p>
+<p>https://preview.redd.it/l6mmstfevpi71.png?width=576&amp;format=png&amp;auto=webp&amp;s=8cbc0882622bca6ea69cf4b6e9b1eede79f259d2</p></p>
+</div>
+<div class="comment" id="t1_h9sxmnk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/p8rva9/_/h9sxmnk">Aug 21 2021 16:19:31</a>
+    </p>
+    <div class="collapsible">
+        <p>洋葱味收一收</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>底下的评论很独裁</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ks9qii">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/dklon5">dklon5</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ks9qii">Jan 07 2021 09:17:20</a>
+    </p>
+    <strong>底下的评论很独裁</strong>
+    <p><a href="https://v.redd.it/1awrb94vnv961">https://v.redd.it/1awrb94vnv961</a></p>
+</div>
+<div class="comment" id="t1_gier4oy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Soeng41">Soeng41</a>
+        |
+        <span class="score">16 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ks9qii/_/gier4oy">Jan 07 2021 09:20:05</a>
+    </p>
+    <div class="collapsible">
+        <p>独裁的原因很暖心</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gieu0qn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/pure_passer_by">pure_passer_by</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ks9qii/_/gieu0qn">Jan 07 2021 10:08:07</a>
+    </p>
+    <div class="collapsible">
+        <p>道个歉支猪就高潮了？这帮人怎么被杀被压迫都是他们应得的</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gif4gez">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Xitler1953">Xitler1953</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ks9qii/_/gif4gez">Jan 07 2021 12:47:17</a>
+    </p>
+    <div class="collapsible">
+        <p>卧日，世袭制的独裁者到底有能力在哪里了？镇压人民的能力？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

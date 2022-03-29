@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>这是否</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qzog68">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/JINPING_ARASAKA">JINPING_ARASAKA</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qzog68">Nov 22 2021 15:50:36</a>
+    </p>
+    <strong>这是否</strong>
+    <p><a href="https://i.redd.it/2ym39osu46181.jpg">https://i.redd.it/2ym39osu46181.jpg</a></p>
+</div>
+<div class="comment" id="t1_hlnrcrl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/EconGlobalization">EconGlobalization</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qzog68/_/hlnrcrl">Nov 22 2021 17:16:47</a>
+    </p>
+    <div class="collapsible">
+        <p>评论区有冲塔的吗？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hlppj2x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MidnightIcy4935">MidnightIcy4935</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qzog68/_/hlppj2x">Nov 23 2021 01:30:58</a>
+    </p>
+    <div class="collapsible">
+        <p>乳了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

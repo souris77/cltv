@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>旧词新解</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_n4dfy4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Itach_Sprince">Itach_Sprince</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/n4dfy4">May 04 2021 02:01:36</a>
+    </p>
+    <strong>旧词新解</strong>
+    <p><p>杀鸡焉用牛刀——指不需要用牛子就可以****
+对牛谈琴——指手冲
+木牛流马
+泥牛入海
+牛郎织女
+牛刀小试
+牛鬼蛇神——蛇，通假字，同舍
+牛高马大
+牛头不对马嘴
+牛头马面</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

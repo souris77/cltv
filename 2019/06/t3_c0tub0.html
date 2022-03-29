@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>NSFW 标签怎么加</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_c0tub0">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/jingzhengen">jingzhengen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0tub0">Jun 15 2019 05:21:20</a>
+    </p>
+    <strong>NSFW 标签怎么加</strong>
+    <p><a href="https://i.redd.it/mwmosu7egg431.jpg">https://i.redd.it/mwmosu7egg431.jpg</a></p>
+</div>
+<div class="comment" id="t1_er7umwf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liganss1">liganss1</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0tub0/_/er7umwf">Jun 15 2019 08:42:57</a>
+    </p>
+    <div class="collapsible">
+        <p>给老子动！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_er8muln">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/xidabian">xidabian</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0tub0/_/er8muln">Jun 15 2019 14:10:26</a>
+    </p>
+    <div class="collapsible">
+        <p>打出字就行了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_er8svyg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/6324vpvp">6324vpvp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0tub0/_/er8svyg">Jun 15 2019 15:05:09</a>
+    </p>
+    <div class="collapsible">
+        <p>这图出处是哪？</p>
+        <div class="comment" id="t1_er8szcm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jingzhengen">jingzhengen</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/c0tub0/_/er8szcm">Jun 15 2019 15:06:01</a>
+    </p>
+    <div class="collapsible">
+        <p>不知道，原图母狗的脸不好看</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

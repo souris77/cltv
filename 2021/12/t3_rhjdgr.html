@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>我有一个梦想</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rhjdgr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/TripMoist657">TripMoist657</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhjdgr">Dec 16 2021 05:17:40</a>
+    </p>
+    <strong>我有一个梦想</strong>
+    <p><p>是拥有纽约曼哈顿岛</p></p>
+</div>
+<div class="comment" id="t1_hoqudam">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/HanselYang">HanselYang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhjdgr/_/hoqudam">Dec 16 2021 05:20:17</a>
+    </p>
+    <div class="collapsible">
+        <p>他也有一个梦想，是玩上海的沙盒游戏。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hoqvdvr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jiji-233">jiji-233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhjdgr/_/hoqvdvr">Dec 16 2021 05:30:02</a>
+    </p>
+    <div class="collapsible">
+        <p>他也有个梦想，是全世界都说庆丰话</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hort0m8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Mtso2021">Mtso2021</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rhjdgr/_/hort0m8">Dec 16 2021 12:20:55</a>
+    </p>
+    <div class="collapsible">
+        <p>现在就有梦想，以后有什么都不敢想了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

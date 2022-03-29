@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>简单一个节目效果</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ryyjva">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/EnticE2000">EnticE2000</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ryyjva">Jan 08 2022 12:13:37</a>
+    </p>
+    <strong>简单一个节目效果</strong>
+    <p><a href="https://www.reddit.com/gallery/ryyjva">https://www.reddit.com/gallery/ryyjva</a></p>
+</div>
+<div class="comment" id="t1_hrrpbld">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/EnticE2000">EnticE2000</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ryyjva/_/hrrpbld">Jan 08 2022 12:14:19</a>
+    </p>
+    <div class="collapsible">
+        <p>ID鉴定为原批</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hrs20k1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/kyoko214">kyoko214</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ryyjva/_/hrs20k1">Jan 08 2022 14:18:49</a>
+    </p>
+    <div class="collapsible">
+        <p>观察者 2</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hrsc4tc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Last-Possibility8647">Last-Possibility8647</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ryyjva/_/hrsc4tc">Jan 08 2022 15:36:37</a>
+    </p>
+    <div class="collapsible">
+        <p>支那:出事了就說沒事兒,不用改</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

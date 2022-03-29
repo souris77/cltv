@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>所以知乎才被约谈了是吧</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ro4fvw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Arksheken">Arksheken</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ro4fvw">Dec 25 2021 06:47:46</a>
+    </p>
+    <strong>所以知乎才被约谈了是吧</strong>
+    <p><a href="https://i.redd.it/h0ghmm93ym781.jpg">https://i.redd.it/h0ghmm93ym781.jpg</a></p>
+</div>
+<div class="comment" id="t1_hpzbu67">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/sammilergood">sammilergood</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ro4fvw/_/hpzbu67">Dec 26 2021 02:16:02</a>
+    </p>
+    <div class="collapsible">
+        <p>这个问题可以入典</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

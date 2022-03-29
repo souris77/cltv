@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>谁整的好活，不过能搜出来但是点进去显示内容不存在，有懂哥知道原因吗</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qmegcw">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/RightTradition135">RightTradition135</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmegcw">Nov 04 2021 06:21:55</a>
+    </p>
+    <strong>谁整的好活，不过能搜出来但是点进去显示内容不存在，有懂哥知道原因吗</strong>
+    <p><a href="https://i.redd.it/zrcrw8suuix71.jpg">https://i.redd.it/zrcrw8suuix71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hj93d31">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/wangfeihe">wangfeihe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qmegcw/_/hj93d31">Nov 04 2021 06:22:46</a>
+    </p>
+    <div class="collapsible">
+        <p>不错。发展这么多年。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

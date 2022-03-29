@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>鼠鼠：麻了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lt0fgk">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/CollyZ">CollyZ</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt0fgk">Feb 26 2021 15:48:48</a>
+    </p>
+    <strong>鼠鼠：麻了</strong>
+    <p><a href="https://youtu.be/SeP9SQ2rIg8">https://youtu.be/SeP9SQ2rIg8</a></p>
+</div>
+<div class="comment" id="t1_gox3ulb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sager8964">Sager8964</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt0fgk/_/gox3ulb">Feb 27 2021 00:47:48</a>
+    </p>
+    <div class="collapsible">
+        <p>猫崽你坏事做尽！</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gox83sf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Inevitable_Bag7587">Inevitable_Bag7587</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/lt0fgk/_/gox83sf">Feb 27 2021 01:26:55</a>
+    </p>
+    <div class="collapsible">
+        <p>我家猫逮到老鼠从来不吃，玩死了再扔街上</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,348 @@
+<html>
+<head>
+<title>今天简单谈谈Android 应用隔离</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_shrep5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/park_chung_xi">park_chung_xi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5">Feb 01 2022 10:00:38</a>
+    </p>
+    <strong>今天简单谈谈Android 应用隔离</strong>
+    <p><p>本文专为Eco上不来的浪友们而写，前排先提醒：此方法安全性绝对不如多机物理隔离！拿个50去收一台老机子刷个轻量的AOSP专门冲浪用机不好么？</p>
+<p>&#x200B;</p>
+<p>（靠恁娘我基础建设呢？）</p>
+<p>&#x200B;</p>
+<p>应用隔离基本上就两种方式，一种是并行parallel</p>
+<p>[主操作部][隔离操作部]</p>
+<p>还有一种是包含关系include</p>
+<p>[主操作部(隔离操作部)主操作部]</p>
+<p>&#x200B;</p>
+<p>前者两者互不能直接访问（如多机物理隔离、或单机多盘按需连接），后者主操作部可能有能力获取隔离操作部的信息（大部分都是如此，如虚拟机/模拟器、Android 工作文件夹，单机单盘多系统可按此模型）</p>
+<p>介于本文只讲Android隔离，所以采用第二种模型，也就是隔离有效的前提是主操作部纯净！</p>
+<p>&#x200B;</p>
+<p>隔离首推Android工作文件夹，其利用Android多用户机制，为工作用户创建一个独立储存与应用安装空间。需使用第三方app配置，首推自由开源的Shelter(<a href="https://f-droid.org/en/packages/net.typeblog.shelter">https://f-droid.org/en/packages/net.typeblog.shelter</a>)和Insular(<a href="https://f-droid.org/en/packages/com.oasisfeng.island.fdroid">https://f-droid.org/en/packages/com.oasisfeng.island.fdroid</a>)；后者源自于国内炼妖壶Island作者放出的源码构建。</p>
+<p>&#x200B;</p>
+<p>（插一嘴：f-droid上的app都是f-droid自己亲自从源码编译打包签名的，所以可以杜绝迫真开源的情况。里面有一些常见软件开源版或全过程开源版，如telegram foss。在我的观点中，开源国外developer app&rt;开源国内developer app&rt;闭源国外app&rt;闭源国内app，国内有时开源app是迫真开源，源代码和最终打包的二进制文件不一致，点名批评V2rayNG，请在用的浪友赶紧换成真开源SagerNet! link: <a href="https://f-droid.org/en/packages/io.nekohasekai.sagernet">https://f-droid.org/en/packages/io.nekohasekai.sagernet</a> 或github）</p>
+<p>&#x200B;</p>
+<p>也可以用虚拟机，一个是久未更新的VXposed（<a href="https://github.com/android-hacker/VirtualXposed">https://github.com/android-hacker/VirtualXposed</a> ，f-droid有源码打包版，<a href="https://f-droid.org/en/packages/io.va.exposed）（开源，基于VirtualApp，其之后版本闭源商用），或者就是其他闭源app了，不推荐，因为大部分支产，如vmos。">https://f-droid.org/en/packages/io.va.exposed）（开源，基于VirtualApp，其之后版本闭源商用），或者就是其他闭源app了，不推荐，因为大部分支产，如vmos。</a></p>
+<p>&#x200B;</p>
+<p>本来想写Appops权限管理的，但是经亲测在Android 11及以上用第三方软件调的Appops优先级低于系统，导致应用在系统层授予权限（即应用申请权限时授予）会覆盖Appops设置，所以暂时不写。Appops第三方管理软件在f-droid有自由开源版，如App Manager (<a href="https://f-droid.org/en/packages/io.github.muntashirakon.AppManager">https://f-droid.org/en/packages/io.github.muntashirakon.AppManager</a>)、Permission Manager X(<a href="https://f-droid.org/en/packages/com.mirfatif.permissionmanagerx">https://f-droid.org/en/packages/com.mirfatif.permissionmanagerx</a>)、AppOpsX(<a href="https://f-droid.org/en/packages/com.zzzmode.appopsx">https://f-droid.org/en/packages/com.zzzmode.appopsx</a>)、XPrivacyLua(需Xposed/LSPosed, <a href="https://f-droid.org/en/packages/eu.faircode.xlua">https://f-droid.org/en/packages/eu.faircode.xlua</a>)。墙内那个写的不开源。好像有个更高级的Thanox（同支人写），安全性未知。还有应用冻结，f-droid上的那个Disabler(<a href="https://f-droid.org/en/packages/com.servoz.appsdisabler">https://f-droid.org/en/packages/com.servoz.appsdisabler</a>)不稳，墙内的冰箱Icebox好像不开源。</p></p>
+</div>
+<div class="comment" id="t1_hv47s0h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SINOKITES">SINOKITES</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv47s0h">Feb 01 2022 10:31:57</a>
+    </p>
+    <div class="collapsible">
+        <p>大陆好像买不到fairphone</p>
+        <div class="comment" id="t1_hv4ohgs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/park_chung_xi">park_chung_xi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4ohgs">Feb 01 2022 13:27:43</a>
+    </p>
+    <div class="collapsible">
+        <p>所以推荐蝙蝠人买</p>
+        <div class="comment" id="t1_hv4q00e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/SINOKITES">SINOKITES</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4q00e">Feb 01 2022 13:40:13</a>
+    </p>
+    <div class="collapsible">
+        <p>我哭死</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hv48eeq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv48eeq">Feb 01 2022 10:40:02</a>
+    </p>
+    <div class="collapsible">
+        <p>鼠鼠们都懒狗，折腾给谁用啊</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hv4cjuq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Cartographer7461">Ok-Cartographer7461</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4cjuq">Feb 01 2022 11:31:15</a>
+    </p>
+    <div class="collapsible">
+        <p>对F-droid的好感度增加了，文章写得很好，建议加大力度。</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hv4cv4s">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok-Cartographer7461">Ok-Cartographer7461</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4cv4s">Feb 01 2022 11:34:53</a>
+    </p>
+    <div class="collapsible">
+        <p>看了下这SagerNet，哪都好，功能还全，就这图标过于饱和了。</p>
+        <div class="comment" id="t1_hv4f26g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bvadbbbyeahiuuis">bvadbbbyeahiuuis</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4f26g">Feb 01 2022 11:59:32</a>
+    </p>
+    <div class="collapsible">
+        <p>经典配色</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hv4fcqw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/zhunaqumeima">zhunaqumeima</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4fcqw">Feb 01 2022 12:02:51</a>
+    </p>
+    <div class="collapsible">
+        <p>软件信不过，只用物理隔离</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hv4j0s2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bvadbbbyeahiuuis">bvadbbbyeahiuuis</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4j0s2">Feb 01 2022 12:39:48</a>
+    </p>
+    <div class="collapsible">
+        <p>往SagerNet导入订阅链接时显示无法在剪切板内找到服务器配置，于是我挨个服务器扫码添加，后边会不会出什么问题</p>
+        <div class="comment" id="t1_hv4ondt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/park_chung_xi">park_chung_xi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4ondt">Feb 01 2022 13:29:05</a>
+    </p>
+    <div class="collapsible">
+        <p>可能是导入链接没有换行，复制到哪个备忘录之类的app看一下</p>
+        <div class="comment" id="t1_hv4qsh2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bvadbbbyeahiuuis">bvadbbbyeahiuuis</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4qsh2">Feb 01 2022 13:46:29</a>
+    </p>
+    <div class="collapsible">
+        <p>还是不成，要没什么问题我就不折腾了</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hv4w1kj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv4w1kj">Feb 01 2022 14:25:49</a>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hv50fr4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/pussyshinapig">pussyshinapig</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv50fr4">Feb 01 2022 14:56:17</a>
+    </p>
+    <div class="collapsible">
+        <p>不怕大不了直接开图</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hv5vpku">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/henanpunk">henanpunk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv5vpku">Feb 01 2022 18:11:08</a>
+    </p>
+    <div class="collapsible">
+        <p>外围社区做这种事情挺徒劳的，没有双向反馈很难持久。最近一次是逗比根据地被打烂。简中不配有开源就说的这种。哪怕做的合规业务也只能出口转内销。</p>
+        <div class="comment" id="t1_hv7rq95">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/park_chung_xi">park_chung_xi</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/shrep5/_/hv7rq95">Feb 02 2022 01:29:15</a>
+    </p>
+    <div class="collapsible">
+        <p>但不代表反对开源，支那的开源软件最终要么闭源不可信化要么转生变成洋大人的开源fork，洼地喜欢把别人自由开源软件拿去卖我就觉得支那该图</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>這不是丁神嗎？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l3fqgg">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Taiwanshenyou">Taiwanshenyou</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3fqgg">Jan 23 2021 16:54:58</a>
+    </p>
+    <strong>這不是丁神嗎？</strong>
+    <p><a href="https://twitter.com/realjiangzemin0/status/1352993150382399488?s=21">https://twitter.com/realjiangzemin0/status/1352993150382399488?s=21</a></p>
+</div>
+<div class="comment" id="t1_gkg25rz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/46ac116">46ac116</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3fqgg/_/gkg25rz">Jan 23 2021 21:10:10</a>
+    </p>
+    <div class="collapsible">
+        <p>什么牌子的电子烟？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

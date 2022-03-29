@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>It’s a dog-eat-dog world out there.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r4axt8">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/FrostingCreative1328">FrostingCreative1328</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r4axt8">Nov 28 2021 18:32:50</a>
+    </p>
+    <strong>It’s a dog-eat-dog world out there.</strong>
+    <p><a href="https://youtu.be/UXKVA1HxJ4k">https://youtu.be/UXKVA1HxJ4k</a></p>
+</div>
+<div class="comment" id="t1_hmfshub">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Lunarfalcon666">Lunarfalcon666</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r4axt8/_/hmfshub">Nov 28 2021 19:51:41</a>
+    </p>
+    <div class="collapsible">
+        <p>我就奇怪怎么这么拉垮还在抢衣服，一看是一年前了。最近的smash and grab运动抢的可比这值钱得多，早进化了。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>新家呢</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_byuup5">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Meiily">Meiily</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byuup5">Jun 10 2019 07:21:47</a>
+    </p>
+    <strong>新家呢</strong>
+    <p><a href="https://i.redd.it/rezm2iobdh331.jpg">https://i.redd.it/rezm2iobdh331.jpg</a></p>
+</div>
+<div class="comment" id="t1_eqlwjcu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/QingYanGe">QingYanGe</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byuup5/_/eqlwjcu">Jun 10 2019 07:31:25</a>
+    </p>
+    <div class="collapsible">
+        <p>这里</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eqlx5dd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/redditchonglang">redditchonglang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byuup5/_/eqlx5dd">Jun 10 2019 07:37:26</a>
+    </p>
+    <div class="collapsible">
+        <p>妹有了妹有了全部爆破</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

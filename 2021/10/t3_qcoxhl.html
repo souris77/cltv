@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>为何我总是能刷到这么支的评论区</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qcoxhl">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Xixixixi0777">Xixixixi0777</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qcoxhl">Oct 21 2021 10:41:25</a>
+    </p>
+    <strong>为何我总是能刷到这么支的评论区</strong>
+    <p><a href="https://i.redd.it/taduq9qi8su71.jpg">https://i.redd.it/taduq9qi8su71.jpg</a></p>
+</div>
+<div class="comment" id="t1_hhh5abd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Pinochat2">Pinochat2</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qcoxhl/_/hhh5abd">Oct 21 2021 10:47:44</a>
+    </p>
+    <div class="collapsible">
+        <p>确实支，然而同样的图片发在这里只会得到更支的评论</p>
+        <div class="comment" id="t1_hhh6rr4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Xixixixi0777">Xixixixi0777</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qcoxhl/_/hhh6rr4">Oct 21 2021 11:06:05</a>
+    </p>
+    <div class="collapsible">
+        <p>唉，哪里人性都不是能考验的</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

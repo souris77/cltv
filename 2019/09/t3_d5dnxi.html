@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>什么意思啊，都是下九流是吧</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_d5dnxi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Fan_gege">Fan_gege</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/d5dnxi">Sep 17 2019 07:40:32</a>
+    </p>
+    <strong>什么意思啊，都是下九流是吧</strong>
+    <p><a href="https://i.redd.it/4zwp07kwy3n31.jpg">https://i.redd.it/4zwp07kwy3n31.jpg</a></p>
+</div>
+<div class="comment" id="t1_f0lag2e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Miyauchi_Renge">Miyauchi_Renge</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/d5dnxi/_/f0lag2e">Sep 17 2019 07:54:28</a>
+    </p>
+    <div class="collapsible">
+        <p>现在的年轻人呐，都是靡靡之音呐，都是轻歌曼舞啊。我跟你说长大了都没出息。这个呀，就是得豪迈！</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

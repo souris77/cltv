@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>伊曼努尔圣献忠</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_obelsa">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/imperatorfidelis">imperatorfidelis</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/obelsa">Jul 01 2021 04:57:16</a>
+    </p>
+    <strong>伊曼努尔圣献忠</strong>
+    <p><a href="https://i.redd.it/k7nq6v919j871.jpg">https://i.redd.it/k7nq6v919j871.jpg</a></p>
+</div>
+<div class="comment" id="t1_h3nhghw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/monsterfreetimparker">monsterfreetimparker</a>
+        |
+        <span class="score">4 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/obelsa/_/h3nhghw">Jul 01 2021 05:41:48</a>
+    </p>
+    <div class="collapsible">
+        <p>德国神学的产儿，康德拉了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

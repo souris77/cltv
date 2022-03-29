@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>这下无鲸了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_s18dki">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Intrepid-Eye-4625">Intrepid-Eye-4625</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s18dki">Jan 11 2022 08:40:15</a>
+    </p>
+    <strong>这下无鲸了</strong>
+    <p><a href="https://i.redd.it/6l2utf5nt0b81.jpg">https://i.redd.it/6l2utf5nt0b81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hs6rx38">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Dramatic-Lunch2481">Dramatic-Lunch2481</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/s18dki/_/hs6rx38">Jan 11 2022 09:35:02</a>
+    </p>
+    <div class="collapsible">
+        <p>一眼丁真，都点到泰国和海南去了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

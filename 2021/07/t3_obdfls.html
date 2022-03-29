@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>最近有些难受了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_obdfls">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/GetL00se">GetL00se</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/obdfls">Jul 01 2021 03:41:02</a>
+    </p>
+    <strong>最近有些难受了</strong>
+    <p><p>最近每一次冲完都会有一种无尽的空虚感，不知道为什么。睡眠也变少了，一天就六七个小时。看书也看不进去。我觉得我该尝试与生活中的人多交流交流
+不知道他们会不会看得起我</p></p>
+</div>
+<div class="comment" id="t1_h3nht4x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/monsterfreetimparker">monsterfreetimparker</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/obdfls/_/h3nht4x">Jul 01 2021 05:46:07</a>
+    </p>
+    <div class="collapsible">
+        <p>我劝你读萨德侯爵</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

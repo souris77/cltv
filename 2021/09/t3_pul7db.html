@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>关于复刻神吧活动的QA环节</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pul7db">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/sovietjoke_official">sovietjoke_official</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pul7db">Sep 24 2021 14:40:19</a>
+    </p>
+    <strong>关于复刻神吧活动的QA环节</strong>
+    <p><p>我要是过去反串，结果不知道的浪友看到我发的言论气急败坏把我开盒挂在reddit上，这岂不是不值？</p></p>
+</div>
+<div class="comment" id="t1_he6739h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/duskxnxxdk">duskxnxxdk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pul7db/_/he6739h">Sep 25 2021 02:24:58</a>
+    </p>
+    <div class="collapsible">
+        <p>后缀😶‍🌫️ 暗号</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

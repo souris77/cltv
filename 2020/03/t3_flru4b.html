@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>这是否有点...</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_flru4b">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Henanrentoujinggai">Henanrentoujinggai</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/flru4b">Mar 20 2020 08:59:01</a>
+    </p>
+    <strong>这是否有点...</strong>
+    <p><a href="https://i.redd.it/ybequhhjlsn41.jpg">https://i.redd.it/ybequhhjlsn41.jpg</a></p>
+</div>
+<div class="comment" id="t1_fl08ie9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/killu_in3days">killu_in3days</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/flru4b/_/fl08ie9">Mar 20 2020 09:24:27</a>
+    </p>
+    <div class="collapsible">
+        <p>偷了，我这就去发朋友圈</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fl08mv4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Kappa31415">Kappa31415</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/flru4b/_/fl08mv4">Mar 20 2020 09:27:11</a>
+    </p>
+    <div class="collapsible">
+        <p>反串吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fl09a5v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/formalisme">formalisme</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/flru4b/_/fl09a5v">Mar 20 2020 09:41:06</a>
+    </p>
+    <div class="collapsible">
+        <p>玩明白了才这样发</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fl0dqnw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/dhhhja">dhhhja</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/flru4b/_/fl0dqnw">Mar 20 2020 11:12:49</a>
+    </p>
+    <div class="collapsible">
+        <p>这是用屁眼读的吧</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

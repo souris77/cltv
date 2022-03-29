@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>测试 Markdown 格式能否正常显示</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_qony2a">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/NoChinaNoLife">NoChinaNoLife</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/qony2a">Nov 07 2021 12:53:39</a>
+    </p>
+    <strong>测试 Markdown 格式能否正常显示</strong>
+    <p><p>1.加粗</p>
+<p><strong>加粗</strong></p>
+<p>2.斜体</p>
+<p><em>斜体</em></p>
+<p>3.链接</p>
+<p><a href="www.google.com">谷歌</a></p>
+<p>4.引用</p>
+<p>&rt; 这是一句引用。</p>
+<ol>
+<li>分隔线</li>
+</ol>
+<hr></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

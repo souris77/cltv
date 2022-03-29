@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>意见箱</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_syjyhj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ChungkuoRun">ChungkuoRun</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/syjyhj">Feb 22 2022 10:04:11</a>
+    </p>
+    <strong>意见箱</strong>
+    <p><a href="https://i.redd.it/ssurveuvycj81.jpg">https://i.redd.it/ssurveuvycj81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hxy4nh6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/BroccoliFantastic497">BroccoliFantastic497</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/syjyhj/_/hxy4nh6">Feb 22 2022 10:05:44</a>
+    </p>
+    <div class="collapsible">
+        <p>可不敢乱有意见</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hxy7qb8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/enphiurm">enphiurm</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/syjyhj/_/hxy7qb8">Feb 22 2022 10:48:47</a>
+    </p>
+    <div class="collapsible">
+        <p>监控区内不要调皮哦</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hxya63w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/cltv20">cltv20</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/syjyhj/_/hxya63w">Feb 22 2022 11:21:32</a>
+    </p>
+    <div class="collapsible">
+        <p>有意见的请举手，没有，没有，没有</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

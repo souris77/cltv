@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>凡尔赛一下</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kdmooi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/fddcrsxvfcd">fddcrsxvfcd</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kdmooi">Dec 15 2020 14:28:43</a>
+    </p>
+    <strong>凡尔赛一下</strong>
+    <p><a href="https://i.redd.it/jdsr6hth2d561.jpg">https://i.redd.it/jdsr6hth2d561.jpg</a></p>
+</div>
+<div class="comment" id="t1_gfx99ra">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fddcrsxvfcd">fddcrsxvfcd</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/kdmooi/_/gfx99ra">Dec 15 2020 14:30:31</a>
+    </p>
+    <div class="collapsible">
+        <p>按照景气标的进行周权重打分，然后在15分钟的ema级别进行波动均衡，最终形成月度调仓计划即可。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>行为艺术</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_spkfbn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/ILoveOurWorld">ILoveOurWorld</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spkfbn">Feb 10 2022 23:55:10</a>
+    </p>
+    <strong>行为艺术</strong>
+    <p><a href="https://i.redd.it/en1b1jt7g3h81.jpg">https://i.redd.it/en1b1jt7g3h81.jpg</a></p>
+</div>
+<div class="comment" id="t1_hwgpbqq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/bihiki">bihiki</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spkfbn/_/hwgpbqq">Feb 11 2022 04:16:34</a>
+    </p>
+    <div class="collapsible">
+        <p>这锁也太迫真了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwhc6z1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/liululu">liululu</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spkfbn/_/hwhc6z1">Feb 11 2022 08:16:20</a>
+    </p>
+    <div class="collapsible">
+        <p>😭😭😭😭😭😭😭😭😭</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hwhl0bu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Automatic_Scale7110">Automatic_Scale7110</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/spkfbn/_/hwhl0bu">Feb 11 2022 10:16:23</a>
+    </p>
+    <div class="collapsible">
+        <p>鎖了個寄把 勒緊點</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

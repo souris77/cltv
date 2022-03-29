@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>您好，我想请问一下现在可以开碾了吗？</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_nrib7d">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/SineEyent">SineEyent</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nrib7d">Jun 03 2021 17:01:19</a>
+    </p>
+    <strong>您好，我想请问一下现在可以开碾了吗？</strong>
+    <p></p>
+</div>
+<div class="comment" id="t1_h0h2obo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/jobsjoestar">jobsjoestar</a>
+        |
+        <span class="score">10 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nrib7d/_/h0h2obo">Jun 03 2021 19:02:44</a>
+    </p>
+    <div class="collapsible">
+        <p>可以了，开始做肉饼吧</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h0ilsqb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Traditional-Ruin9150">Traditional-Ruin9150</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/nrib7d/_/h0ilsqb">Jun 04 2021 02:03:31</a>
+    </p>
+    <div class="collapsible">
+        <p>不是，一个人没有你碾什么</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

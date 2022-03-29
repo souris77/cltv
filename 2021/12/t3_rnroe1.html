@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Wegame2.0版本解析</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rnroe1">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/StarPing">StarPing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rnroe1">Dec 24 2021 18:13:38</a>
+    </p>
+    <strong>Wegame2.0版本解析</strong>
+    <p><a href="https://youtu.be/gk4uO6VauJo">https://youtu.be/gk4uO6VauJo</a></p>
+</div>
+<div class="comment" id="t1_hpu17o7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/NoMovie7281">NoMovie7281</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rnroe1/_/hpu17o7">Dec 24 2021 18:26:19</a>
+    </p>
+    <div class="collapsible">
+        <p>太老了，跟不上版本了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

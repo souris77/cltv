@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>自证</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_m16yvi">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/HrsXd">HrsXd</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m16yvi">Mar 09 2021 14:00:44</a>
+    </p>
+    <strong>自证</strong>
+    <p><a href="https://www.reddit.com/gallery/m16yvi">https://www.reddit.com/gallery/m16yvi</a></p>
+</div>
+<div class="comment" id="t1_gqbtas9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Xi_Winnie_Pooh">Xi_Winnie_Pooh</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m16yvi/_/gqbtas9">Mar 09 2021 14:03:28</a>
+    </p>
+    <div class="collapsible">
+        <p>疑似有点自爆了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gqbtbxs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Sex_pistols_fans">Sex_pistols_fans</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/m16yvi/_/gqbtbxs">Mar 09 2021 14:03:45</a>
+    </p>
+    <div class="collapsible">
+        <p>自杀是吧，这里真有网警监视</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

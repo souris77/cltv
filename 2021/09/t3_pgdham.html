@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>节目效果</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pgdham">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/4sth">4sth</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham">Sep 02 2021 08:08:42</a>
+    </p>
+    <strong>节目效果</strong>
+    <p><a href="https://v.redd.it/c08hq5pu41l71">https://v.redd.it/c08hq5pu41l71</a></p>
+</div>
+<div class="comment" id="t1_hbakwt2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/covertandthesame">covertandthesame</a>
+        |
+        <span class="score">3 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham/_/hbakwt2">Sep 02 2021 08:45:43</a>
+    </p>
+    <div class="collapsible">
+        <p>为什么不爆炸，我一直以为加油站起火就会爆炸</p>
+        <div class="comment" id="t1_hbaya0m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/DogRarelySee">DogRarelySee</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham/_/hbaya0m">Sep 02 2021 11:40:32</a>
+    </p>
+    <div class="collapsible">
+        <p>空气里又没别的可燃物</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_hbap4b9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/MrWAVEChing">MrWAVEChing</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham/_/hbap4b9">Sep 02 2021 09:49:09</a>
+    </p>
+    <div class="collapsible">
+        <p>下意识扭一扭～嗯爽</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hbat78z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Rude_Acanthisitta_74">Rude_Acanthisitta_74</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham/_/hbat78z">Sep 02 2021 10:43:44</a>
+    </p>
+    <div class="collapsible">
+        <p>什么恶灵骑士</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hbefc4m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Tadaoki_Z">Tadaoki_Z</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham/_/hbefc4m">Sep 03 2021 02:58:39</a>
+    </p>
+    <div class="collapsible">
+        <p>膩鮥行</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hbelmyl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/miyin0">miyin0</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pgdham/_/hbelmyl">Sep 03 2021 03:52:01</a>
+    </p>
+    <div class="collapsible">
+        <p>简单摩擦起火</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

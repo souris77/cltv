@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>发图需要客户端吗，我现在是网页</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_byvdk4">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/redditchonglang">redditchonglang</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byvdk4">Jun 10 2019 08:35:52</a>
+    </p>
+    <strong>发图需要客户端吗，我现在是网页</strong>
+    <p><p>怎么发图啊，apollo那个软件发帖好像还要钱？nmsl</p></p>
+</div>
+<div class="comment" id="t1_eqmd4i0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byvdk4/_/eqmd4i0">Jun 10 2019 09:57:57</a>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eqmdejn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/OneMore14">OneMore14</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byvdk4/_/eqmdejn">Jun 10 2019 10:00:25</a>
+    </p>
+    <div class="collapsible">
+        <p>发帖的时候可以带图，回复不行，回复最多发个图片链接</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_eqo62lv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/langrenchong">langrenchong</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/byvdk4/_/eqo62lv">Jun 10 2019 16:36:00</a>
+    </p>
+    <div class="collapsible">
+        <p>app方便一点</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

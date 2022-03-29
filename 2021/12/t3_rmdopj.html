@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>我想回国了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_rmdopj">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Eguoqiongqv">Eguoqiongqv</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rmdopj">Dec 22 2021 20:12:54</a>
+    </p>
+    <strong>我想回国了</strong>
+    <p><p>俄罗斯真是傻逼地方</p></p>
+</div>
+<div class="comment" id="t1_hpljfqb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/AlohaSaladBar">AlohaSaladBar</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rmdopj/_/hpljfqb">Dec 22 2021 20:15:00</a>
+    </p>
+    <div class="collapsible">
+        <p>毛子这地方连朝鲜人都不去😅</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hplkxg7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/WilsonEdwardz">WilsonEdwardz</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/rmdopj/_/hplkxg7">Dec 22 2021 20:25:02</a>
+    </p>
+    <div class="collapsible">
+        <p>怎么了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

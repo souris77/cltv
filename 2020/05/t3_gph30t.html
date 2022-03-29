@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>这个给我看乐了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_gph30t">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Trick_Storage">Trick_Storage</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gph30t">May 24 2020 01:40:35</a>
+    </p>
+    <strong>这个给我看乐了</strong>
+    <p><a href="https://i.redd.it/5rrud6wkam051.jpg">https://i.redd.it/5rrud6wkam051.jpg</a></p>
+</div>
+<div class="comment" id="t1_frm8fnt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/winnie-popp">winnie-popp</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gph30t/_/frm8fnt">May 24 2020 04:18:18</a>
+    </p>
+    <div class="collapsible">
+        <p>朝着纳粹进步吧</p>
+        <div class="comment" id="t1_frmermt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Jacuening">Jacuening</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/gph30t/_/frmermt">May 24 2020 05:40:45</a>
+    </p>
+    <div class="collapsible">
+        <p>不破不立</p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

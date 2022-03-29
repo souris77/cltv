@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>亮点自寻</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_htd0nu">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/sibdehhs">sibdehhs</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/htd0nu">Jul 18 2020 08:02:08</a>
+    </p>
+    <strong>亮点自寻</strong>
+    <p><a href="https://i.redd.it/vlizcbz1iia51.jpg">https://i.redd.it/vlizcbz1iia51.jpg</a></p>
+</div>
+<div class="comment" id="t1_fyg3i8b">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/H_0_H">H_0_H</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/htd0nu/_/fyg3i8b">Jul 18 2020 08:44:56</a>
+    </p>
+    <div class="collapsible">
+        <p>岿kui然不动</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_fygzz8v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/p1111nk">p1111nk</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/htd0nu/_/fygzz8v">Jul 18 2020 16:00:49</a>
+    </p>
+    <div class="collapsible">
+        <p>看到疯狂宇宙绷不住了</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

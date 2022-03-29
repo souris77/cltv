@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>精致碳水</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_pi8qbm">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Artorious233">Artorious233</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pi8qbm">Sep 05 2021 07:38:44</a>
+    </p>
+    <strong>精致碳水</strong>
+    <p><a href="https://youtube.com/watch?v=R8ISxB55Q4s&amp;feature=share">https://youtube.com/watch?v=R8ISxB55Q4s&amp;feature=share</a></p>
+</div>
+<div class="comment" id="t1_hboeyos">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/qazesz1">qazesz1</a>
+        |
+        <span class="score">0 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/pi8qbm/_/hboeyos">Sep 05 2021 12:01:12</a>
+    </p>
+    <div class="collapsible">
+        <p>高油高糖高盐，不如家乡美食一根毛</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

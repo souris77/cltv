@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>中国的轮子</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k7zidx">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Different_Peach1955f">Different_Peach1955f</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k7zidx">Dec 06 2020 18:51:15</a>
+    </p>
+    <strong>中国的轮子</strong>
+    <p><a href="https://book.douban.com/subject/22994555/discussion/53743714/">https://book.douban.com/subject/22994555/discussion/53743714/</a></p>
+</div>
+<div class="comment" id="t1_gevj94w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/munemunechan">munemunechan</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/k7zidx/_/gevj94w">Dec 06 2020 21:23:07</a>
+    </p>
+    <div class="collapsible">
+        <p>没有资本家的话就很难有工业革命，说到最后还是保护私有财产才是发展动力。</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

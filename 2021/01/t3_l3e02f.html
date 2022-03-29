@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>懒惰的年轻人该管管了！</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_l3e02f">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/yangguo1997">yangguo1997</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3e02f">Jan 23 2021 15:25:22</a>
+    </p>
+    <strong>懒惰的年轻人该管管了！</strong>
+    <p><a href="https://i.redd.it/5jfkifd5o3d61.png">https://i.redd.it/5jfkifd5o3d61.png</a></p>
+</div>
+<div class="comment" id="t1_gkeueux">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Gold-Chair-9205">Gold-Chair-9205</a>
+        |
+        <span class="score">6 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/l3e02f/_/gkeueux">Jan 23 2021 17:28:51</a>
+    </p>
+    <div class="collapsible">
+        <p>早该管管了！</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

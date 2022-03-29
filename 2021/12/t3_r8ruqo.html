@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>好看</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_r8ruqo">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Xing-zi23">Xing-zi23</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8ruqo">Dec 04 2021 15:23:09</a>
+    </p>
+    <strong>好看</strong>
+    <p><a href="https://i.redd.it/vsaajl8wmj381.jpg">https://i.redd.it/vsaajl8wmj381.jpg</a></p>
+</div>
+<div class="comment" id="t1_hn7ccoe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Butters_777999">Butters_777999</a>
+        |
+        <span class="score">5 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8ruqo/_/hn7ccoe">Dec 04 2021 15:33:15</a>
+    </p>
+    <div class="collapsible">
+        <p>发我爹干啥？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hn9u8v5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Careless-Trash4369">Careless-Trash4369</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/r8ruqo/_/hn9u8v5">Dec 05 2021 02:15:56</a>
+    </p>
+    <div class="collapsible">
+        <p>Sbr必秒石之海</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

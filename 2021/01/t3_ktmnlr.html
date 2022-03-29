@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>又反转了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ktmnlr">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/rorschachlizeyu">rorschachlizeyu</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr">Jan 09 2021 07:45:22</a>
+    </p>
+    <strong>又反转了</strong>
+    <p><a href="https://i.redd.it/alyrzznbh9a61.jpg">https://i.redd.it/alyrzznbh9a61.jpg</a></p>
+</div>
+<div class="comment" id="t1_gimz4yp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/fupinduixiang">fupinduixiang</a>
+        |
+        <span class="score">16 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr/_/gimz4yp">Jan 09 2021 08:05:48</a>
+    </p>
+    <div class="collapsible">
+        <p>别急，过几天又反转，免费接种——指打针免费，药钱收费</p>
+        <div class="comment" id="t1_gimz6q5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/rorschachlizeyu">rorschachlizeyu</a>
+        |
+        <span class="score">8 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr/_/gimz6q5">Jan 09 2021 08:06:34</a>
+    </p>
+    <div class="collapsible">
+        <p>绷不住了，一毫升80元</p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gimxzud">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/stupink">stupink</a>
+        |
+        <span class="score">14 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr/_/gimxzud">Jan 09 2021 07:48:04</a>
+    </p>
+    <div class="collapsible">
+        <p>朝令夕改，连个准信都没有</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gimy5pa">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Quick-Accident2555">Quick-Accident2555</a>
+        |
+        <span class="score">11 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr/_/gimy5pa">Jan 09 2021 07:50:32</a>
+    </p>
+    <div class="collapsible">
+        <p>这意思是医保无底洞还可以挖的更深一点？？</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gin1n3h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/lbxyb">lbxyb</a>
+        |
+        <span class="score">2 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr/_/gin1n3h">Jan 09 2021 08:46:24</a>
+    </p>
+    <div class="collapsible">
+        <p>晕了</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gin2dq8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Yamamoto5-6">Yamamoto5-6</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/ktmnlr/_/gin2dq8">Jan 09 2021 08:58:51</a>
+    </p>
+    <div class="collapsible">
+        <p>我服务费呢？</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>我想有个批</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_sv0yxn">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/No_Albatross_3353">No_Albatross_3353</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/sv0yxn">Feb 17 2022 22:15:48</a>
+    </p>
+    <strong>我想有个批</strong>
+    <p><p>我想有个批
+当我贫穷时，批是提款机
+当我饥饿时，批是米其林
+当我无聊时，批是游乐园
+当我刷论坛，微博交流时
+批让我高人一等
+它可以是黑是粉，是脏是臭
+它可以是两片肉，也可以什么都不是
+幸好好，我有个批</p></p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

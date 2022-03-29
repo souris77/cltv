@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>笑嘻了</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.submission, .comment
+{
+    padding-left: 20px;
+    padding-right: 4px;
+}
+.comment
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.submission
+{
+    border: 2px solid blue;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_so9qga">
+    <p class="userinfo">
+        <a href="https://old.reddit.com/u/Inner_Designer9206">Inner_Designer9206</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/so9qga">Feb 09 2022 09:44:22</a>
+    </p>
+    <strong>笑嘻了</strong>
+    <p><a href="https://www.reddit.com/gallery/so9qga">https://www.reddit.com/gallery/so9qga</a></p>
+</div>
+<div class="comment" id="t1_hw7hydk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Ok_Scientist_691">Ok_Scientist_691</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/so9qga/_/hw7hydk">Feb 09 2022 10:16:16</a>
+    </p>
+    <div class="collapsible">
+        <p>擼管時間都沒有還擼貓呢</p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_hw7jrb3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://old.reddit.com/u/Wild_Parfait4469">Wild_Parfait4469</a>
+        |
+        <span class="score">1 points</span>
+        |
+        <a class="timestamp" href="https://old.reddit.com/r/chonglangTV/comments/so9qga/_/hw7jrb3">Feb 09 2022 10:39:54</a>
+    </p>
+    <div class="collapsible">
+        <p>你给我回来</p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>
