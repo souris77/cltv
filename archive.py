@@ -87,4 +87,4 @@ def makeIndex():
 
 
 if __name__ == "__main__":
-    data_collect()
+    makeIndex()
