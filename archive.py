@@ -1,6 +1,7 @@
 import os, sys, json, bs4, pathlib
 import numpy as np
 import pandas as pd
+from fuzzywuzzy import fuzz
 
 readpath = os.path.split(os.path.realpath(__file__))[0] + '/'
 datafile = readpath + "data.json"
@@ -85,6 +86,17 @@ def makeIndex():
                 text += "</font>"
                 file.write(text)
 
+def match():
+    df = getData()
+    while True:
+        keywords = input("keywords: ")
+        match_degree = []
+        for i in df.index:
+            title = df['title'][i]
+            match_degree.append(fuzz.ratio(keywords, title))
+        df_match = df.assign(match_degree = match_degree)
+        df_head10 = df_match.sort_values(by=['match_degree'], ascending=False)[['match_degree', 'title']].iloc[0:10]
+        print(df_head10)
 
 if __name__ == "__main__":
-    makeIndex()
+    match()
