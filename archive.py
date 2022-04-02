@@ -1,7 +1,9 @@
-import os, sys, json, bs4, pathlib
+import os, sys, json, bs4, pathlib, pymysql
+from alive_progress import alive_bar
 import numpy as np
 import pandas as pd
 from fuzzywuzzy import fuzz
+
 
 readpath = os.path.split(os.path.realpath(__file__))[0] + '/'
 datafile = readpath + "data.json"
@@ -88,8 +90,15 @@ def makeIndex():
 
 def match():
     df = getData()
+    df_head10 = ''
     while True:
         keywords = input("keywords: ")
+        try:
+            index = int(keywords)
+            print(df.loc[index, ['filename', 'year', 'month']])
+            continue
+        except:
+            pass
         match_degree = []
         for i in df.index:
             title = df['title'][i]
@@ -98,6 +107,40 @@ def match():
         df_head10 = df_match.sort_values(by=['match_degree'], ascending=False)[['match_degree', 'title']].iloc[0:10]
         print(df_head10)
 
+
+def sqlinsert():
+    df = getData()
+    total = df.index[-1]
+    db = pymysql.connect('192.168.0.106', 'root', 'p1234', 'web')
+    cursor = db.cursor()
+    with alive_bar(total, manual=True) as bar:
+        for i in df.index:
+            bar(i/total)
+            checkCommand = "SELECT * from cltv WHERE id=%s;" % str(i)
+            cursor.execute(checkCommand)
+            data = cursor.fetchone()
+            if data:
+                #print('[INFO] index %s already inserted.' % str(i))
+                continue
+            title = pymysql.escape_string(df['title'][i])
+            insertCommand = "INSERT INTO cltv (id, year, month, filename, title, date) values (%s, '%s', '%s', '%s', '%s', '%s');" % (str(i), df['year'][i], df['month'][i], df['filename'][i], title, df['date'][i])
+            try:
+                cursor.execute(insertCommand)
+                db.commit()
+            except:
+                db.rollback()
+                print("[INFO] Index %s insert failed." % str(i))
+                print(insertCommand)
+    db.close()
+
+def sql_search(keyword):
+    db = pymysql.connect('192.168.0.106', 'root', 'p1234', 'web')
+    cursor = db.cursor()
+    command = "SELECT * from cltv WHERE title LIKE '%%%s%%';" % keyword
+    cursor.execute(command)
+    data = cursor.fetchall()
+    db.close()
+    return data
+
 if __name__ == "__main__":
     match()
-    
